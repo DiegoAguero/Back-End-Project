@@ -2,9 +2,27 @@ import express from 'express'
 import ProductManager from './ProductManager.js'
 import productsRoute from './routes/product.router.js'
 import cartRoute from './routes/cart.router.js'
+import viewsRoute from './routes/views.router.js'
+import handlebars from 'express-handlebars'
+import {Server} from 'socket.io'
+import __dirname from './utils.js'
+
 const app = express()
 app.use(express.json())
-const prod = new ProductManager('../product/products.json') 
+const httpServer = app.listen(8080, ()=>{ console.log("listening") })
+const io = new Server(httpServer)
+
+app.engine('handlebars', handlebars.engine())
+app.set('views', __dirname + '/views')
+app.set('view engine', 'handlebars')
+app.use('/static', express.static(__dirname + '/public'))
+
+//Por alguna razón cuando pongo la carpeta afuera del src y escribo el path no reconoce la carpeta, pero en la terminal
+//me aparece la ruta bien y me lleva al archivo cuando lo clickeo, la verdad no sé por qué, tuve que hacer
+//nodemon --ignore .\src\product\products.json para que no se cree el bucle infinito y despues .\src\app.js para iniciarlo
+//todo en la misma linea
+// --> nodemon --ignore .\src\product\products.json .\src\app.js
+const prod = new ProductManager(__dirname + '/product/products.json') 
 prod.addProduct('Agua', 'Hola agua', 20, 'url', '12b', 20)
 prod.addProduct('Sprite', 'Hola sprite', 50, 'url', '1234b', 30)
 prod.addProduct('Coca Cola', 'Hola Coca Cola', 30, 'url', '124b', 10)
@@ -16,28 +34,23 @@ prod.addProduct('Toddy', 'Hola Toddy', 20, 'url', '123cb', 35)
 prod.addProduct('Frutigran', 'Hola Frutigran', 15, 'url', '12cd', 35)
 prod.addProduct('Rumba', 'Hola Rumba', 20, 'url', '132b', 50)
 
-// let allProducts = prod.getProducts()
 export default prod
-app.get('/products', (req, res)=>{
-    // try {
-    //     const products = prod.getProducts();
-    //     const limit = req.query.limit;
-    //     if (limit === undefined) return res.send(products);
-    //     return res.send(products.slice(0, limit));
-    // } catch (err) {
-    //     throw new Error(err);
-    // }
 
-})
 app.use('/api/products', productsRoute)
 app.use('/api/carts', cartRoute)
+app.use('/', viewsRoute)
 
-// app.get('/products/:pId', (req, res)=>{
-//     const id = req.params.pId
-//     const encontrado = prod.getProductById(id)
-//     if(encontrado === undefined) return res.send('Producto no encontrado')
-//     return res.send(encontrado)
-// })
+io.on('connection', socket=>{
+    console.log("New connection !")
+    socket.on('newProduct', async data =>{
+        const {title, description, price, stock, thumbnail, code, status} = data
+        console.log(title, description, price, stock, thumbnail, code, status)
+        prod.addProduct(title, description, price, stock, thumbnail, code, status)
+        const getProds = prod.getProducts()
+        io.emit('reload', getProds)
+    })
+
+})
 
 
-app.listen(8080)
+

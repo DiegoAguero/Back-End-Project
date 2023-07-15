@@ -1,4 +1,3 @@
-// const fs = require('fs')
 import fs from 'fs'
 let contenidoObj = ''
 export default class ProductManager {

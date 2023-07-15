@@ -1,0 +1,90 @@
+<form method="post" id="form">
+    
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title" required></br>
+
+    <label for="description">Description:</label>
+    <input type="text" name="description" id="description" required></br>
+
+    <label for="price">Price:</label>
+    <input type="number" name="price" id="price" required></br>
+
+    <label for="stock">Stock:</label>
+    <input type="number" name="stock" id="stock" required></br>
+
+    <label for="thumbnail">Thumbnail:</label>
+    <input type="text" name="thumbnail" id="thumbnail"></br>
+
+    <label for="code">Code:</label>
+    <input type="text" name="code" id="code" required></br>
+
+    <button type="submit">Send data</button> 
+
+</form>
+<hr>
+    <table   class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Code</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+                {{#each totalProducts}}
+                <tr>
+                    <th scope="row">{{this.id}}</th>
+                    <td>{{this.title}}</td>
+                    <td>{{this.description}}</td>
+                    <td>{{this.price}}</td>
+                    <td>{{this.stock}}</td>
+                    <td>{{this.code}}</td>
+                    <td>{{this.status}}</td>
+                {{/each}}
+                </tr>
+        </tbody>
+    </table>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io()
+    document.getElementById('form').onsubmit = e =>{
+        e.preventDefault()
+        const title = document.getElementById('title').value
+        const description = document.getElementById('description').value
+        const price = document.getElementById('price').value
+        const stock = document.getElementById('stock').value
+        const thumbnail = document.getElementById('thumbnail').value
+        const code = document.getElementById('code').value
+        const status = true
+        const newProd = {title, description, price, stock, thumbnail, code, status}
+        socket.emit('newProduct', newProd) 
+
+    }
+    socket.on('reload', prods=>{
+        console.log(prods)
+        const tbody = document.getElementById('tbody')
+        let html = ''
+            prods.forEach(prod => {
+                html += `   
+                    <tr>                 
+                        <th scope="row">${prod.id}</th>
+                        <td>${prod.title}</td>
+                        <td>${prod.description}</td>
+                        <td>${prod.price}</td>
+                        <td>${prod.stock}</td>
+                        <td>${prod.code}</td>
+                        <td>${prod.status}</td>
+                    </tr>
+                    `
+            })
+            html+= ''
+        tbody.innerHTML = html
+    })
+</script>

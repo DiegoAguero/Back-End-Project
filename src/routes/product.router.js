@@ -3,9 +3,9 @@ import prod from '../app.js'
 
 const router = Router()
 
-router.get('/', (req, res)=>{
+router.get('/', async (req, res)=>{
     try {
-        const products = prod.getProducts();
+        const products = await prod.getProducts();
         const limit = req.query.limit;
         if (limit === undefined) return res.send(products);
         return res.send(products.slice(0, limit));
@@ -15,6 +15,7 @@ router.get('/', (req, res)=>{
     }
     
 })
+
 router.get('/:pId', (req, res)=>{
     try{
     const id = req.params.pId
@@ -26,17 +27,19 @@ router.get('/:pId', (req, res)=>{
         throw new Error(error)
     }
 })
+
 router.post('/', (req, res)=>{
     try{
         const newProd = req.body
         const {title, description, price, thumbnail, code, stock, status} = newProd
-        prod.addProduct(title, description, price, thumbnail, code, stock, status)
-        res.send({status: 'success'})
+        const newProduct = prod.addProduct(title, description, price, thumbnail, code, stock, status)
+        res.send({product: newProduct, status: 'success'})
     }catch(error){
         res.send({status: 'error'})
         throw new Error(error)
     }
 })
+
 router.post('/:pId', (req, res)=>{
     try{
         const id = parseInt(req.params.pId)
@@ -50,4 +53,5 @@ router.post('/:pId', (req, res)=>{
         throw new Error(error)
     }
 })
+
 export default router
