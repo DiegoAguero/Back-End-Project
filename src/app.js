@@ -6,9 +6,14 @@ import viewsRoute from './routes/views.router.js'
 import handlebars from 'express-handlebars'
 import {Server} from 'socket.io'
 import __dirname from './utils.js'
+import mongoose from 'mongoose'
+
 
 const app = express()
+
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }));    
+
 const httpServer = app.listen(8080, ()=>{ console.log("listening") })
 const io = new Server(httpServer)
 
@@ -22,7 +27,11 @@ app.use('/static', express.static(__dirname + '/public'))
 //nodemon --ignore .\src\product\products.json para que no se cree el bucle infinito y despues .\src\app.js para iniciarlo
 //todo en la misma linea
 // --> nodemon --ignore .\src\product\products.json .\src\app.js
-const prod = new ProductManager(__dirname + '/product/products.json') 
+
+//Arreglar bucle infinito o preguntarle al profesor!
+
+
+const prod = new ProductManager(__dirname + '/../product/products.json') 
 prod.addProduct('Agua', 'Hola agua', 20, 'url', '12b', 20)
 prod.addProduct('Sprite', 'Hola sprite', 50, 'url', '1234b', 30)
 prod.addProduct('Coca Cola', 'Hola Coca Cola', 30, 'url', '124b', 10)
@@ -35,10 +44,25 @@ prod.addProduct('Frutigran', 'Hola Frutigran', 15, 'url', '12cd', 35)
 prod.addProduct('Rumba', 'Hola Rumba', 20, 'url', '132b', 50)
 
 export default prod
-
 app.use('/api/products', productsRoute)
 app.use('/api/carts', cartRoute)
 app.use('/', viewsRoute)
+
+
+//corremos el server de mongoose
+const URL =  "mongodb+srv://diegotomasaguero4123:mQxefoYlVTbSvdgu@cluster1.pfn01oe.mongodb.net/?retryWrites=true&w=majority"
+mongoose.set('strictQuery', false)
+
+mongoose.connect(URL, {
+    dbName: 'ecommerce'
+})
+    .then(() =>{
+        console.log('DB Connected with mongoose')
+        httpServer.on('error', e=> console.error(e))
+    })
+    .catch(e =>{
+        console.log("ERROR: Cant connect to the DB")
+    })
 
 io.on('connection', socket=>{
     console.log("New connection !")

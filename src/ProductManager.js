@@ -84,3 +84,4 @@ export default class ProductManager {
 // prod.addProduct('Botella de plastico', 'Hola soy una botella de plastico que tiene agua', 20, 'url', '123', 30)
 // prod.addProduct('Lolapalooza', 'Hola 12', 30, 'url', '123', 60)
 // prod.addProduct('Matias Spaciusk', '', 30, 'rs', 'ss', 30)
+    
