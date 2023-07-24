@@ -29,7 +29,7 @@ app.use('/static', express.static(__dirname + '/public'))
 // --> nodemon --ignore .\src\product\products.json .\src\app.js
 
 //Arreglar bucle infinito o preguntarle al profesor!
-
+//Fix 2
 
 const prod = new ProductManager(__dirname + '/../product/products.json') 
 prod.addProduct('Agua', 'Hola agua', 20, 'url', '12b', 20)
