@@ -4,12 +4,11 @@ import prodModel from "../dao/models/products.model.js"
 
 
 const router = Router()
-
+//Obtener todos los productos
 router.get('/', async (req, res)=>{
     try {
-        const products = await prodModel.find().lean().exec()
         
-        // const products = await prod.getProducts();
+        const products = await prod.getProducts();
         const limit = req.query.limit;
         if (limit === undefined) return res.send(products);
         return res.send(products.slice(0, limit));
@@ -19,7 +18,7 @@ router.get('/', async (req, res)=>{
     }
     
 })
-
+//Obtener producto especifico
 router.get('/:pId', async (req, res)=>{
     try{
         const id = req.params.pId
@@ -31,11 +30,11 @@ router.get('/:pId', async (req, res)=>{
         throw new Error(error)
     }
 })
+//Crear producto
 
 router.post('/', async (req, res)=>{
     try{
         const newProd = req.body
-
         const prodCreated = new prodModel(newProd)
         await prodCreated.save()
         
@@ -45,19 +44,27 @@ router.post('/', async (req, res)=>{
         throw new Error(error)
     }
 })
+//Actualizar producto
 
 router.post('/:pId', async (req, res)=>{
     try{
         const id = req.params.pId
         const product = await prodModel.findOneAndUpdate({_id: id}, req.body)
-        // const newProd = req.body
-        // const {title, description, price, thumbnail, code, stock, status} = newProd
-        // prod.updateProduct(id, title, description, price, thumbnail, code, stock, status)
         res.send({status: 'success'})
         
     }catch(error){
         res.send({status: 'error'})
         throw new Error(error)
+    }
+})
+//Borrar producto
+router.get('/delete/:pId', async (req, res)=>{
+    try{
+        const id = req.params.pId
+        await prodModel.deleteOne({_id: id})
+        res.redirect('/realtimeproducts')
+    }catch(e){
+        console.error(e)
     }
 })
 

@@ -64,23 +64,27 @@ const messages = []
 io.on('connection', socket=>{
     console.log("New connection !")
     socket.on('newProduct', async data =>{
-        // console.log(data)
-        // console.log(title, description, price, thumbnail, code, stock)
-        const prodCreated = await prod.addProduct(data)
-        // const {title, description, price, stock, thumbnail, code, status} = data
-        // console.log(title, description, price, stock, thumbnail, code, status)
-        // prod.addProduct(title, description, price, stock, thumbnail, code, status)
-        // const getProds = await prod.getProducts()
-
-        // io.emit('reload', getProds)
+        try{
+            const  {title, description, price, thumbnail, code, stock} = await data
+            const prodCreated = await prod.addProduct(title, description, price, thumbnail, code, stock)
+            const getProds = await prod.getProducts()
+            //Corregir reload
+            io.emit('reload', [prodCreated])
+        }catch(e){
+            return console.error(e)
+        }
     })
 
     socket.on('newUser',  user=>{
         console.log(`${user} se conectó`)
         socket.on('message', async data=>{
-            messages.push(data)
-            io.emit('logs', messages)
-            const log = new msgModel(data)
+            try{
+                messages.push(data)
+                const log = await msgModel.create(data) 
+                io.emit('logs', messages)
+            }catch(e){
+                return console.error(e)
+            }
         })
     })
 

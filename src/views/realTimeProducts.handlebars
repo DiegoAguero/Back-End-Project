@@ -45,6 +45,7 @@
                     <td>{{this.stock}}</td>
                     <td>{{this.code}}</td>
                     <td>{{this.status}}</td>
+                    <td><a href="api/products/delete/{{this._id}}">🗑️</a></td>
                 {{/each}}
                 </tr>
         </tbody>
@@ -54,7 +55,10 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
     const socket = io()
+    function deleteProduct(id){
+        document.getElementById(id)
 
+    }
     document.getElementById('form').onsubmit = e =>{
         e.preventDefault()
         const title = document.getElementById('title').value

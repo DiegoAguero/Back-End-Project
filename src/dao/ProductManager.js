@@ -22,14 +22,18 @@ export default class ProductManager {
             stock,
             status  
         }
-        
-        const newProd = new prodModel(product)
-        await newProd.save()
+
 
         if (title === undefined || description === undefined || price === null || stock === undefined || code === undefined || !title || !description || !price || !stock || !code) {
             return "Error, hay un campo incompleto. Se borrará el producto. Vuelva a introducir los datos nuevamente"
         } else {
-            const totalProducts = this.getProducts()
+            const newProd = await prodModel.create(product)
+            const {_id} = newProd
+            console.log(_id)
+            newProd._id = _id
+            await this.getProducts()
+            return newProd
+            
             // if (totalProducts.length >= 2) {
             //     for (let value in totalProducts) {
             //         let numeroIterado = parseInt(value) + 1
@@ -41,14 +45,14 @@ export default class ProductManager {
             // }
         }
     }
+
     async getProducts() {
         const products = await prodModel.find().lean().exec()
-        // const contenido = fs.readFileSync(this.#path, 'utf-8')
-        // contenidoObj = JSON.parsproducts
         return products
     }
-    getProductById(id) {
-        this.getProducts()
+
+    async getProductById(id) {
+        await this.getProducts()
         const findProduct = prodModel.findOne({_id: id})
         if (findProduct === undefined) {
             console.log("Not found")
@@ -59,21 +63,14 @@ export default class ProductManager {
         }
     }
     async deleteProductById(id) {
-        this.getProducts()
+        await this.getProducts()
         const prodDeleted = await prodModel.deleteOne({_id: id})
 
     }
     async updateProduct(id, title, description, price, thumbnail, code, stock, status){
-        this.getProducts()
-        const prodUpdated = prodModel.findOneAndUpdate({_id: id}, title, description, price, thumbnail, code, stock, status)
-        // const encontrar = contenidoObj.find((prod)=> prod.id === id)
-        // encontrar.title = title
-        // encontrar.description = description
-        // encontrar.price = price
-        // encontrar.thumbnail = thumbnail
-        // encontrar.code = code
-        // encontrar.stock = stock
-        // encontrar.status = status
+        await this.getProducts()
+        const prodUpdated = await prodModel.findOneAndUpdate({_id: id}, title, description, price, thumbnail, code, stock, status)
+
     }
 }
 
