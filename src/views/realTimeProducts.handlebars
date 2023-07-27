@@ -38,7 +38,7 @@
             
                 {{#each totalProducts}}
                 <tr>
-                    <th scope="row">{{this.id}}</th>
+                    <th scope="row">{{this._id}}</th>
                     <td>{{this.title}}</td>
                     <td>{{this.description}}</td>
                     <td>{{this.price}}</td>
@@ -54,20 +54,21 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
     const socket = io()
+
     document.getElementById('form').onsubmit = e =>{
         e.preventDefault()
         const title = document.getElementById('title').value
         const description = document.getElementById('description').value
-        const price = document.getElementById('price').value
-        const stock = document.getElementById('stock').value
+        const price = parseInt(document.getElementById('price').value)
+        const stock = parseInt(document.getElementById('stock').value)
         const thumbnail = document.getElementById('thumbnail').value
         const code = document.getElementById('code').value
         const status = true
         const newProd = {title, description, price, stock, thumbnail, code, status}
         socket.emit('newProduct', newProd) 
-
+        document.getElementById('form').reset()
     }
-    socket.on('reload', prods=>{
+    socket.on('reload', (prods)=>{
         console.log(prods)
         const tbody = document.getElementById('tbody')
         let html = ''

@@ -1,5 +1,5 @@
 import {Router} from "express"
-import prod from '../app.js'
+// import prod from '../app.js'
 import prodModel from "../dao/models/products.model.js"
 
 
@@ -20,12 +20,12 @@ router.get('/', async (req, res)=>{
     
 })
 
-router.get('/:pId', (req, res)=>{
+router.get('/:pId', async (req, res)=>{
     try{
         const id = req.params.pId
-        const encontrado = prod.getProductById(id)
-        if(encontrado === undefined) return res.send('Producto no encontrado')
-        return res.send(encontrado)
+        const product = await prodModel.findOne({_id: id})
+        console.log(product)
+        return res.send(product)
     }catch(error){
         res.send({status: 'error'})
         throw new Error(error)
@@ -39,7 +39,6 @@ router.post('/', async (req, res)=>{
         const prodCreated = new prodModel(newProd)
         await prodCreated.save()
         
-        // const newProduct = prod.addProduct(title, description, price, thumbnail, code, stock, status)
         res.send({product: prodCreated, status: 'success'})
     }catch(error){
         res.send({status: 'error'})
@@ -47,12 +46,13 @@ router.post('/', async (req, res)=>{
     }
 })
 
-router.post('/:pId', (req, res)=>{
+router.post('/:pId', async (req, res)=>{
     try{
-        const id = parseInt(req.params.pId)
-        const newProd = req.body
-        const {title, description, price, thumbnail, code, stock, status} = newProd
-        prod.updateProduct(id, title, description, price, thumbnail, code, stock, status)
+        const id = req.params.pId
+        const product = await prodModel.findOneAndUpdate({_id: id}, req.body)
+        // const newProd = req.body
+        // const {title, description, price, thumbnail, code, stock, status} = newProd
+        // prod.updateProduct(id, title, description, price, thumbnail, code, stock, status)
         res.send({status: 'success'})
         
     }catch(error){

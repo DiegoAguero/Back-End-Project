@@ -11,10 +11,12 @@ const prodSchema = new mongoose.Schema({
         type: String,
         unique: true    
     },
-    stock: Number
+    stock: Number,
+    status: {
+        type: Boolean,
+        default: true
+    }
 })
-
-mongoose.set('strictQuery', false)
 
 const prodModel = mongoose.model(prodCollection, prodSchema)
 

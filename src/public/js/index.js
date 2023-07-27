@@ -1,8 +1,47 @@
-// import ProductManager from '../../ProductManager.js'
-// const ProductManager = require('../../ProductManager.js')
-// const prod = new ProductManager('../product/products.json')
-// prod.addProduct('Agua', 'Hola agua', 20, 'url', '12b', 20)
-// const totalProd = prod.getProducts()
+const socket = io()
+const chatbox = document.getElementById('chatbox')
+let user = sessionStorage.getItem('user')|| ''
 
-// let parrafo = document.getElementById("prods")
-// parrafo.innerHTML += `${totalProd}`
+if(!user){
+    Swal.fire({
+        title: 'Auth',
+        input: 'text',
+        text: 'Set your email',
+        inputValidator: value=>{
+            return !value.trim() && 'Please, insert your email'
+        },
+        allowOutsideClick: false
+    }).then(result =>{
+        user = result.value
+        document.getElementById('username').innerHTML = user
+        sessionStorage.setItem("user", user)
+        socket.emit('newUser', user)
+    })
+}else{
+    document.getElementById('username').innerHTML = user
+    sessionStorage.setItem("user", user)
+    socket.emit('newUser', user)
+}
+
+chatbox.addEventListener('keyup', e =>{
+    if(e.key === 'Enter'){
+        const message = chatbox.value.trim()
+        if(message.length > 0){
+            socket.emit('message', {
+                user,
+                message
+            })
+            chatbox.value = ''
+        }
+    }
+})
+
+
+socket.on('logs', data=>{
+    const divLogs = document.getElementById('logs')
+    let messages = ''
+    data.forEach(message => {
+        messages = `<p><i>${message.user}: </i> ${message.message}</p>` + messages
+    });
+    divLogs.innerHTML = messages
+})

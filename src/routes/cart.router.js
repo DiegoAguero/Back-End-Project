@@ -1,16 +1,14 @@
 import {Router} from 'express'
-import prod from '../app.js'
-
+// import prod from '../app.js'
+import cartModel from '../dao/models/cart.model.js'
 const router = Router()
-// const products = []
 const cart = []
 
 let id = 0
 
 router.get('/:cId', (req, res)=>{
-    const id = parseInt(req.params.cId)
-    const encontrado = cart.find((cart)=> cart.id === id)
-
+    const id = req.params.cId
+    const cart = cartModel.findOne({_id: id})
     res.send({encontrado, status: 'success'})
 })
 router.post('/', (req, res)=>{
