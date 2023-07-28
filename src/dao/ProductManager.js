@@ -11,28 +11,20 @@ export default class ProductManager {
     //     const nextID = (id > 0) ? id + 1 : 1
     //     return nextID;
     // }
-    async addProduct(title, description, price, thumbnail, code, stock, status) {
 
-        const product = {
-            title,
-            description,
-            price,
-            thumbnail,
-            code,
-            stock,
-            status  
+    async addProductToDatabase(title, description, price, thumbnail, code, stock, status=true){
+
+        try{
+            const product = await prodModel.create({title, description, price, thumbnail, code, stock, status})
+            const {_id} = product
+            console.log(_id)
+            product._id = _id
+            // await this.getProducts()
+            return product
+        }catch(e){
+            return console.error(e) 
         }
 
-
-        if (title === undefined || description === undefined || price === null || stock === undefined || code === undefined || !title || !description || !price || !stock || !code) {
-            return "Error, hay un campo incompleto. Se borrará el producto. Vuelva a introducir los datos nuevamente"
-        } else {
-            const newProd = await prodModel.create(product)
-            const {_id} = newProd
-            console.log(_id)
-            newProd._id = _id
-            await this.getProducts()
-            return newProd
             
             // if (totalProducts.length >= 2) {
             //     for (let value in totalProducts) {
@@ -43,7 +35,18 @@ export default class ProductManager {
             //         }
             //     }
             // }
+    }
+    async addProduct(title, description, price, thumbnail, code, stock, status=true) {
+        if(title === undefined || description === undefined || price === NaN || stock === NaN || code === undefined || !title || !description || !price || !stock || !code){
+            return "Error, hay un campo incompleto. Se borrará el producto. Vuelva a introducir los datos nuevamente"
+        }else{
+            try{
+                return await this.addProductToDatabase(title, description, price, thumbnail, code, stock, status)
+            }catch(e){
+                return console.error(e)
+            }
         }
+
     }
 
     async getProducts() {
@@ -51,8 +54,12 @@ export default class ProductManager {
         return products
     }
 
+    async updateTotalProducts(){
+        const totalProducts = await this.getProducts()
+    }
+
     async getProductById(id) {
-        await this.getProducts()
+        await this.updateTotalProducts()
         const findProduct = prodModel.findOne({_id: id})
         if (findProduct === undefined) {
             console.log("Not found")
@@ -63,12 +70,12 @@ export default class ProductManager {
         }
     }
     async deleteProductById(id) {
-        await this.getProducts()
+        await this.updateTotalProducts()
         const prodDeleted = await prodModel.deleteOne({_id: id})
 
     }
     async updateProduct(id, title, description, price, thumbnail, code, stock, status){
-        await this.getProducts()
+        await this.updateTotalProducts()
         const prodUpdated = await prodModel.findOneAndUpdate({_id: id}, title, description, price, thumbnail, code, stock, status)
 
     }

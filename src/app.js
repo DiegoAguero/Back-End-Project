@@ -22,8 +22,6 @@ app.set('view engine', 'handlebars')
 app.use('/static', express.static(__dirname + '/public'))
 
 const prod = new ProductManager()
-//Arreglar bucle infinito o preguntarle al profesor!
-//Fix 2 
 
 // const prod = new ProductManager(__dirname + '/../product/products.json') 
 // prod.addProduct('Agua', 'Hola agua', 20, 'url', '12b', 20)
@@ -69,7 +67,7 @@ io.on('connection', socket=>{
             const prodCreated = await prod.addProduct(title, description, price, thumbnail, code, stock)
             const getProds = await prod.getProducts()
             //Corregir reload
-            io.emit('reload', [prodCreated])
+            io.emit('reload', getProds)
         }catch(e){
             return console.error(e)
         }
