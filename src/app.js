@@ -67,7 +67,8 @@ io.on('connection', socket=>{
             const prodCreated = await prod.addProduct(title, description, price, thumbnail, code, stock)
             const getProds = await prod.getProducts()
             //Corregir reload
-            io.emit('reload', getProds)
+            socket.emit('reload', getProds)
+            // io.emit('reload', getProds)
         }catch(e){
             return console.error(e)
         }

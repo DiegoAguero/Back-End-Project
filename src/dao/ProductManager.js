@@ -16,10 +16,7 @@ export default class ProductManager {
 
         try{
             const product = await prodModel.create({title, description, price, thumbnail, code, stock, status})
-            const {_id} = product
-            console.log(_id)
-            product._id = _id
-            // await this.getProducts()
+            await this.updateTotalProducts()
             return product
         }catch(e){
             return console.error(e) 
@@ -56,6 +53,7 @@ export default class ProductManager {
 
     async updateTotalProducts(){
         const totalProducts = await this.getProducts()
+        // return totalProducts
     }
 
     async getProductById(id) {

@@ -73,7 +73,6 @@
         document.getElementById('form').reset()
     }
     socket.on('reload', (prods)=>{
-        console.log(prods)
         const tbody = document.getElementById('tbody')
         let html = ''
             prods.forEach(prod => {

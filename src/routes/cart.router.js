@@ -1,23 +1,18 @@
 import {Router} from 'express'
-// import prod from '../app.js'
 import cartModel from '../dao/models/cart.model.js'
+import prodModel from '../dao/models/products.model.js'
 const router = Router()
-const cart = []
 
-let id = 0
-
-router.get('/:cId', (req, res)=>{
+router.get('/:cId', async (req, res)=>{
     const id = req.params.cId
-    const cart = cartModel.findOne({_id: id})
-    res.send({encontrado, status: 'success'})
+    const cart = await cartModel.findOne({_id: id})
+    res.send({cart, status: 'success'})
 })
 router.post ('/', async (req, res)=>{
     const newCart = {
         product: []
     }
     const createCart = await cartModel.create(newCart)
-    // console.log(createCart)
-    // cart.push(newCart)
     res.send({createCart, status: 'success'})
 })
 
@@ -25,22 +20,26 @@ router.post('/:cId/product/:pId', async (req, res)=>{
     try{
         const cartId = req.params.cId
         const prodId = req.params.pId
-        const carritoEncontrado = await cartModel.findOne({_id: cartId})
-        const productoEncontrado = await cartModel.findOne({_id: prodId})
-        carritoEncontrado.products.push(productoEncontrado)
-        // const encontrado = cart.find((cart)=> cart.id === cartId)
-        // const totalProd = prod.getProducts()
-        console.log(carritoEncontrado.products)
+        const carritoEncontrado = await cartModel.findById(cartId)
+        const productoEncontrado = await prodModel.findById(prodId)
 
-        if(productoEncontrado != undefined){
+
+        if(productoEncontrado === undefined){
             return res.send('No existe el producto')
         }else{  
-            const isRepeated = carritoEncontrado.products.find(prod=> console.log(prod))
-            isRepeated? 
-            isRepeated.quantity++ 
-            : 
-            carritoEncontrado.products.push({product: prodId, quantity: 1})
-            res.send({carritoEncontrado})
+
+            const isRepeated = carritoEncontrado.products.find(prod =>{
+                return prod.product._id.toString() === prodId
+            })
+            if(isRepeated){
+                isRepeated.quantity++
+                await carritoEncontrado.save()
+                res.send(carritoEncontrado)
+            }else{
+                carritoEncontrado.products.push({product: prodId})
+                await carritoEncontrado.save()
+                res.send(carritoEncontrado)
+            }
         }
 
     }catch(error){
