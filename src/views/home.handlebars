@@ -1,18 +1,26 @@
 <div>
     <h1>Products</h1>
     <ul>
-        {{#each totalProducts}}
+        {{#each docs}}
             <li>
                 <p>Id: {{this._id}}</p>
                 <p>Name: {{this.title}}</p>
                 <p>Description: {{this.description}}</p>
+                <p>Price: ${{this.price}}</p>
                 <p>Available stock: {{this.stock}}</p>
+                <p>Code: {{this.code}}</p>
             </li>   
         {{/each}}
-
     </ul>
+    <div>
+        {{#if hasPrevPage}}
+            <a href="{{prevLink}}">Anterior</a>
+        {{/if}}
+        {{#if hasNextPage}}
+            <a href="{{nextLink}}">Siguiente</a>
+        {{/if}}
+    </div>
 
 </div>
 
 <script src="/socket.io/socket.io.js"></script>
-<script src="/static/js/index.js"></script>

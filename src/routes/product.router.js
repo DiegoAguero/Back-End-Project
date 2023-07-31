@@ -9,9 +9,7 @@ router.get('/', async (req, res)=>{
     try {
         
         const products = await prod.getProducts();
-        const limit = req.query.limit;
-        if (limit === undefined) return res.send(products);
-        return res.send(products.slice(0, limit));
+        return res.send(products)
     } catch (error) {
         res.send({status: 'error'})
         throw new Error(error);
