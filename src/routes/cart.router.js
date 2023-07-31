@@ -4,9 +4,14 @@ import prodModel from '../dao/models/products.model.js'
 const router = Router()
 //Hacer para mañana: Populate y arreglar los filtros
 router.get('/:cId', async (req, res)=>{
-    const id = req.params.cId
-    const cart = await cartModel.findOne({_id: id})
-    res.send({cart, status: 'success'})
+    try{
+        const id = req.params.cId
+        const cart = await cartModel.findOne({_id: id})
+        res.send({status: 'success', cart})
+    }catch(e){
+        return console.error(e)
+    }
+
 })
 
 router.post ('/', async (req, res)=>{
@@ -30,7 +35,7 @@ router.post('/:cId/product/:pId', async (req, res)=>{
         }else{  
 
             const isRepeated = carritoEncontrado.products.find(prod =>{
-                return prod.product._id.toString() === prodId
+                return prod.product._id=== prodId
             })
             if(isRepeated){
                 isRepeated.quantity++
@@ -54,25 +59,25 @@ router.delete('/:cId/product/:pId', async (req, res)=>{
         const cartId = req.params.cId
         const prodId = req.params.pId
         const carritoEncontrado = await cartModel.findById(cartId)
-        // const productoEncontrado = await prodModel.findById(prodId)
+
         const isInCart = carritoEncontrado.products.find(prod =>{
             return prod.product._id.toString() === prodId
         })
-        // console.log(isInCart)
         if(isInCart){
             if(isInCart.quantity > 1){
                 isInCart.quantity = isInCart.quantity - 1
                 await carritoEncontrado.save()
                 res.send(carritoEncontrado)
             }else{
-                console.log('Igual a 1')
-                //Arreglar filtro que no funciona
-                const cartFilter = carritoEncontrado.products.filter(prod=> prod.product.toString() != isInCart.product)
-                console.log(cartFilter)
+                // console.log('Igual a 1')
+                const cartFilter = carritoEncontrado.products.filter(prod=>{return prod.product != isInCart.product})
+                carritoEncontrado.products = cartFilter
                 await carritoEncontrado.save()
-                res.send(carritoEncontrado.products)
+                res.send(carritoEncontrado)
             }
 
+        }else{
+            return res.send({status: 'error', payLoad: "No existe el producto en el array"})
         }
     } catch(e){
         return console.error(e)

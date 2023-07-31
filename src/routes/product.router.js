@@ -48,7 +48,7 @@ router.post('/:pId', async (req, res)=>{
     try{
         const id = req.params.pId
         const product = await prodModel.findOneAndUpdate({_id: id}, req.body)
-        res.send({status: 'success'})
+        res.send({status: 'success', product})
         
     }catch(error){
         res.send({status: 'error'})
