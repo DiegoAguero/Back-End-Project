@@ -17,13 +17,6 @@ router.get('/products', async (req, res)=>{
         const limit = parseInt(req.query?.limit) || 10
         const sort = parseInt(req.query?.sort) || -1
 
-        const sortByPrice = await prodModel.aggregate([
-            {
-                $sort: {
-                    price: sort
-                }
-            }
-        ]).exec();
 
         const options = {
             page,
