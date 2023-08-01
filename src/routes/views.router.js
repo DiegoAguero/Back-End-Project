@@ -10,20 +10,13 @@ router.get('/realtimeproducts', async (req, res)=>{
 })
 
 router.get('/products', async (req, res)=>{
+    try{
+
+    
         const page = parseInt(req.query?.page) || 1
         const limit = parseInt(req.query?.limit) || 10
         const sort = parseInt(req.query?.sort) || -1
-        // const query = req.query.query
-        // const searchForQuery = await prodModel.find()
-        // console.log("find",searchForQuery)
 
-        // const sortByPrice = await prodModel.aggregate([
-        //     {
-        //         $sort:{
-        //             price: sort
-        //         }
-        //     }
-        // ])
         const sortByPrice = await prodModel.aggregate([
             {
                 $sort: {
@@ -31,21 +24,27 @@ router.get('/products', async (req, res)=>{
                 }
             }
         ]).exec();
-        //Arreglar sort no se muestra en el array original
-        const totalProducts = await prodModel.paginate(sortByPrice, {
+
+        const options = {
             page,
             limit,
-            lean: true
+            sort:{
+                price: sort
+            },
+            lean:true
+        }
+        const totalProducts = await prodModel.paginate({}, options, (err, results)=>{
+            if(err){ console.log(err)}
+            return results
         })
 
-        console.log(totalProducts)
         totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}&sort=${sort}` : ''
         totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}&sort=${sort}`: ''
         
-    // console.log({result: 'success'}, totalProducts)
-
-    // const totalProducts = await prodModel.find().lean().exec()
-    res.render('home', ({result: 'success'}, totalProducts))
+        res.render('home', ({result: 'success'}, totalProducts))
+    }catch(e){
+        return console.error(e)
+    }
 })
 
 router.get('/chat', (req, res)=>{

@@ -52,13 +52,10 @@
     </table>
 
 
-<script src="/socket.io/socket.io.js"></script>
+<script src="http://localhost:8080/socket.io/socket.io.js"></script>
 <script>
     const socket = io()
-    function deleteProduct(id){
-        document.getElementById(id)
 
-    }
     document.getElementById('form').onsubmit = e =>{
         e.preventDefault()
         const title = document.getElementById('title').value
@@ -73,22 +70,25 @@
         document.getElementById('form').reset()
     }
     socket.on('reload', (prods)=>{
+        console.log('Reloading!')
         const tbody = document.getElementById('tbody')
         let html = ''
             prods.forEach(prod => {
                 html += `   
                     <tr>                 
-                        <th scope="row">${prod.id}</th>
+                        <th scope="row">${prod._id}</th>
                         <td>${prod.title}</td>
                         <td>${prod.description}</td>
                         <td>${prod.price}</td>
                         <td>${prod.stock}</td>
                         <td>${prod.code}</td>
                         <td>${prod.status}</td>
+                        <td><a href='api/products/delete/${prod._id}'>🗑️</a></td>
                     </tr>
                     `
             })
             html+= ''
         tbody.innerHTML = html
+
     })
 </script>

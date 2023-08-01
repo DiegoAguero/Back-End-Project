@@ -60,15 +60,13 @@ mongoose.connect(URL, {
 
 const messages = []
 io.on('connection', socket=>{
-    console.log("New connection !")
+    console.log("New connection!")
     socket.on('newProduct', async data =>{
         try{
             const  {title, description, price, thumbnail, code, stock} = await data
             const prodCreated = await prod.addProduct(title, description, price, thumbnail, code, stock)
             const getProds = await prod.getProducts()
-            //Corregir reload
             socket.emit('reload', getProds)
-            // io.emit('reload', getProds)
         }catch(e){
             return console.error(e)
         }
