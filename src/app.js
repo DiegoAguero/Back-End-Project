@@ -22,20 +22,7 @@ app.set('view engine', 'handlebars')
 app.use('/static', express.static(__dirname + '/public'))
 
 const prod = new ProductManager()
-
-// const prod = new ProductManager(__dirname + '/../product/products.json') 
-// prod.addProduct('Agua', 'Hola agua', 20, 'url', '12b', 20)
-// prod.addProduct('Sprite', 'Hola sprite', 50, 'url', '1234b', 30)
-// prod.addProduct('Coca Cola', 'Hola Coca Cola', 30, 'url', '124b', 10)
-// prod.addProduct('Mirinda', 'Hola Mirinda', 50, 'url', '14b', 25)
-// prod.addProduct('7up', 'Hola 7up', 10, 'url', '123b', 35)
-// prod.addProduct('Pepito', 'Hola Pepito', 15, 'url', '12pb', 30)
-// prod.addProduct('Oreo', 'Hola Oreo', 20, 'url', '1b2d', 50)
-// prod.addProduct('Toddy', 'Hola Toddy', 20, 'url', '123cb', 35)
-// prod.addProduct('Frutigran', 'Hola Frutigran', 15, 'url', '12cd', 35)
-// prod.addProduct('Rumba', 'Hola Rumba', 20, 'url', '132b', 50)
-
-// export default prod
+export default prod
 
 app.use('/api/products', productsRoute)
 app.use('/api/carts', cartRoute)
@@ -50,7 +37,12 @@ mongoose.connect(URL, {
     dbName: 'ecommerce'
 })
     .then(() =>{
+        
         console.log('DB Connected with mongoose')
+
+        // var db = db.db('ecommerce')
+        // var bulk = ecommerce.collection('carts').initializeUnorderedBulkOp()
+        
         httpServer.on('error', e=> console.error(e))
     })
     .catch(e =>{

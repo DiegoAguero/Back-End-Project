@@ -1,5 +1,5 @@
 import {Router} from "express"
-// import prod from '../app.js'
+import prod from '../app.js'
 import prodModel from "../dao/models/products.model.js"
 
 
@@ -20,7 +20,8 @@ router.get('/', async (req, res)=>{
 router.get('/:pId', async (req, res)=>{
     try{
         const id = req.params.pId
-        const product = await prodModel.findOne({_id: id})
+        // const product = await prodModel.findOne({_id: id})
+        const product = await prod.getProductById(id)
         console.log(product)
         return res.send(product)
     }catch(error){
@@ -29,12 +30,10 @@ router.get('/:pId', async (req, res)=>{
     }
 })
 //Crear producto
-
 router.post('/', async (req, res)=>{
     try{
-        const newProd = req.body
-        const prodCreated = new prodModel(newProd)
-        await prodCreated.save()
+        const {title, description, price, thumbnail, code, stock, status} = req.body
+        const prodCreated = await prod.addProduct(title, description, price, thumbnail, code, stock, status)
         
         res.send({product: prodCreated, status: 'success'})
     }catch(error){
@@ -43,11 +42,11 @@ router.post('/', async (req, res)=>{
     }
 })
 //Actualizar producto
-
-router.post('/:pId', async (req, res)=>{
+router.put('/:pId', async (req, res)=>{
     try{
         const id = req.params.pId
-        const product = await prodModel.findOneAndUpdate({_id: id}, req.body)
+        const {title, description, price, thumbnail, code, stock, status} = req.body
+        const product = await prod.updateProduct({_id: id}, {title, description, price, thumbnail, code, stock, status})
         res.send({status: 'success', product})
         
     }catch(error){
@@ -55,14 +54,27 @@ router.post('/:pId', async (req, res)=>{
         throw new Error(error)
     }
 })
-//Borrar producto
+
+//Borrar producto via form
 router.get('/delete/:pId', async (req, res)=>{
     try{
         const id = req.params.pId
-        await prodModel.deleteOne({_id: id})
-        res.redirect('/realtimeproducts')
+        const deleteProduct = await prod.deleteProductById(id)
+        res.redirect('/products')
     }catch(e){
         console.error(e)
+    }
+})
+
+//Borrar producto via postman
+router.delete('/delete/:pId', async(req, res)=>{
+    try{
+        const id = req.params.pId
+        const deleteProduct = await prod.deleteProductById(id)
+        res.send({status: 'success', payLoad: "Borrado"})
+        
+    }catch(e){
+        return console.error(e)
     }
 })
 

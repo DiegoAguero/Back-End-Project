@@ -1,0 +1,39 @@
+<h2>Descripcion del producto</h2>
+    
+    <table   class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Code</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+                {{#each product}}
+                    {{#if this.title}}
+                        {{#if cartId}}
+                            <tr>
+                                <th scope="row">{{this._id}}</th>
+                                <td>{{this.title}}</td>
+                                <td>{{this.description}}</td>
+                                <td>{{this.price}}</td>
+                                <td>{{this.stock}}</td>
+                                <td>{{this.code}}</td>
+                                <td>{{this.status}}</td>
+                                {{!-- Ver logica --}}
+                                <form action="/api/carts/{{@root cartId}}/product/{{this._id}}" method="post">
+                                    <td><button type="submit">Add to cart</button></td>
+                                </form>
+                                <form action="api/products/delete/{{this._id}}" method="post">
+                                    <td><button type="submit">Delete product</button></td>
+                                </form>
+                            </tr>
+                        {{/if}}
+                    {{/if}}
+                {{/each}}
+        </tbody>
+    </table>

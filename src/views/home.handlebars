@@ -1,23 +1,42 @@
 <div>
     <h1>Products</h1>
     <ul>
-        {{#each docs}}
-            <li>
-                <p>Id: {{this._id}}</p>
-                <p>Name: {{this.title}}</p>
-                <p>Description: {{this.description}}</p>
-                <p>Price: ${{this.price}}</p>
-                <p>Available stock: {{this.stock}}</p>
-                <p>Code: {{this.code}}</p>
-            </li>   
-        {{/each}}
+        {{#if totalProducts}}
+            {{#each totalProducts.docs}}
+                <li>
+                    <p>Id: {{id}}</p>
+                    <p>Name: {{title}}</p>
+                    <p>Description: {{description}}</p>
+                    <p>Price: ${{price}}</p>
+                    <p>Available stock: {{stock}}</p>
+                    <p>Code: {{code}}</p>
+                    <p>Status: {{status}}</p>
+                    <form action="/api/carts/{{@root.cartId}}/product/{{id}}" method="post">
+                        <button type="submit">Add to cart</button>
+                    </form>
+                    <form action="/api/products/delete/{{id}}" method="get">
+                        <button type="submit">Delete product</button>
+                    </form>
+                    {{!-- <form action="/api/carts/{{@root.cartId}}/product/{{id}}" method="post">
+                        <button type="Submit">Add to Cart</button>
+                    </form> --}}
+                    {{!-- <form action="/api/carts/{{@root cartId}}/product/{{id}}" method="post">
+                        <button type="submit">Add to cart</button>
+                    </form>
+                    <form action="/api/products/delete/{{id}}" method="post">
+                        <button type="submit">Delete product</button>
+                    </form> --}}
+                </li> 
+                {{/each}}
+        {{/if}}
+
     </ul>
     <div>
-        {{#if hasPrevPage}}
-            <a href="{{prevLink}}">Anterior</a>
+        {{#if totalProducts.hasPrevPage}}
+            <a href="{{totalProducts.prevLink}}">Anterior</a>
         {{/if}}
-        {{#if hasNextPage}}
-            <a href="{{nextLink}}">Siguiente</a>
+        {{#if totalProducts.hasNextPage}}
+            <a href="{{totalProducts.nextLink}}">Siguiente</a>
         {{/if}}
     </div>
 

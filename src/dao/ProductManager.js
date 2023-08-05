@@ -22,23 +22,20 @@ export default class ProductManager {
             return console.error(e) 
         }
 
-            
-            // if (totalProducts.length >= 2) {
-            //     for (let value in totalProducts) {
-            //         let numeroIterado = parseInt(value) + 1
-            //         if (totalProducts[value].code == totalProducts[numeroIterado]?.code) {
-            //             console.log('Error, objeto repetido: ', totalProducts[numeroIterado])
-            //             totalProducts.pop()
-            //         }
-            //     }
-            // }
     }
     async addProduct(title, description, price, thumbnail, code, stock, status=true) {
-        if(title === undefined || description === undefined || price === NaN || stock === NaN || code === undefined || !title || !description || !price || !stock || !code){
+        if(title === undefined || description === undefined || price === NaN || stock === NaN|| code === undefined || !title || !description || !price || !code){
             return "Error, hay un campo incompleto. Se borrará el producto. Vuelva a introducir los datos nuevamente"
         }else{
             try{
-                return await this.addProductToDatabase(title, description, price, thumbnail, code, stock, status)
+                if(parseInt(stock) === 0){
+                    status = false
+                    return await this.addProductToDatabase(title, description, price, thumbnail, code, stock, status)
+
+                }else{
+                    console.log("estoy")
+                    return await this.addProductToDatabase(title, description, price, thumbnail, code, stock, status)
+                }
             }catch(e){
                 return console.error(e)
             }
@@ -61,20 +58,19 @@ export default class ProductManager {
         const findProduct = prodModel.findOne({_id: id})
         if (findProduct === undefined) {
             console.log("Not found")
-            return encontrado
+            return findProduct
         } else {
-            console.log('Producto encontrado:', encontrado)
-            return encontrado
+            return findProduct
         }
     }
     async deleteProductById(id) {
         await this.updateTotalProducts()
         const prodDeleted = await prodModel.deleteOne({_id: id})
-
+        // console.log(prodDeleted)
     }
     async updateProduct(id, title, description, price, thumbnail, code, stock, status){
         await this.updateTotalProducts()
-        const prodUpdated = await prodModel.findOneAndUpdate({_id: id}, title, description, price, thumbnail, code, stock, status)
+        const prodUpdated = await prodModel.updateOne({_id: id}, title, description, price, thumbnail, code, stock, status)
 
     }
 }
