@@ -29,7 +29,7 @@ router.post('/register', async(req, res)=>{
     try {
         const user = req.body
         await userModel.create(user)
-        return res.redirect('/login')
+        return res.redirect('/')
     } catch (error) {
         return console.error(error)
     }
@@ -39,11 +39,10 @@ router.post('/register', async(req, res)=>{
 router.get('/logout', async(req, res)=>{
     try{
         if(req.session?.user){
-            console.log("hola destruir sesion")
             req.session.destroy()
-            return res.redirect('/login')
+            return res.redirect('/')
         }else{
-            return res.redirect('/login')
+            return res.redirect('/')
         }
     }catch(e){
         return console.error(e)

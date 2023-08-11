@@ -200,7 +200,7 @@ router.get('/chat', (req, res)=>{
     res.render('chat', {})
 })
 
-router.get('/login', (req, res)=>{
+router.get('/', (req, res)=>{
     if(req.session?.user){
         res.redirect('/products')
     }
