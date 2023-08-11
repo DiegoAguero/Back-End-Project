@@ -33,8 +33,8 @@ router.post('/register', async(req, res)=>{
     } catch (error) {
         return console.error(error)
     }
-
 })
+
 
 router.get('/logout', async(req, res)=>{
     try{

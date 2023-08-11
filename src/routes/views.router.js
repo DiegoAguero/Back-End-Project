@@ -8,8 +8,12 @@ router.get('/realtimeproducts', async (req, res)=>{
     const totalProducts = await prodModel.find().lean().exec()
     res.render('realTimeProducts', {totalProducts})
 })
-
-router.get('/products', async (req, res)=>{
+//Autenticacion para poder entrar solo si estas loggeado
+function auth(req, res, next){
+    if(req.session?.user) return next()
+    res.redirect('/')
+}
+router.get('/products', auth, async (req, res)=>{
     try{
         //arreglar cartURL
         const page = parseInt(req.query?.page) || 1
