@@ -183,7 +183,6 @@ router.put('/:cId/product/:pId', async(req, res)=>{
             
             res.send({status: 'error', payLoad: 'No existe ningun producto'})
         }
-        // }
     }catch(e){
         return console.error(e)
     }
@@ -194,54 +193,18 @@ router.put('/:cId', async(req, res)=>{
     try{
         const cartId = req.params.cId
         const carritoEncontrado = await cartModel.findById(cartId)
-        const products = req.body
-        // const db = 'ecommerce'
-        // const dbCollection = 'carts'
-        // var bulk = await db.dbCollection.initializeUnorderedBulkOp()
-        // console.log(bulk)
-        //Pedirle ayuda al profesor! IMPORTANTE
-        // const productosEncontrados = await prodModel.find({_id: product})
-        products.forEach(async product=>{
-
-            const productosEncontrados = await prodModel.find({_id: product.product})
-            console.log(productosEncontrados)
-            const isRepeated = carritoEncontrado.products.find(prod =>{
-                return prod.product?._id === product.product
-            })
-            
-            if(isRepeated){
-                isRepeated.quantity += 1
-                // 
-                // bulk.insert({
-                    // quantity: isRepeated.quantity
-                // })
-                // console.log(bulk)
-                // console.log("repetido")
-                // await carritoEncontrado.save()
-                // res.send(carritoEncontrado)
-            }else{
-                carritoEncontrado.products.push({product: product})
-                // res.send(carritoEncontrado)
-            }
-            // console.log(productosEncontrados)
-
-            // console.log(product.product)
-        })
-        // bulk.execute();
-        // console.log(bulk)
-        
-        // //Solucionar!!
-        // carritoEncontrado.products.push({product: product})
-        carritoEncontrado.save()
-        res.send({status: 'success', payLoad: carritoEncontrado})
+        const products = req.body.products
+        if(carritoEncontrado){
+            await cartModel.findByIdAndUpdate(cartId, {products: products, quantity: 1})
+            console.log(cartModel)
+            return res.status(201).json({message: 'Carrito actualizado con exito'})
+        }else{
+            const createdCart = await cartModel.create({products: products, quantity: 1})
+            res.status(201).json({message: 'Carrito creado con los productos', createdCart})
+        }
     }catch(e){
         return console.error(e)
     }
 
-    // const products = req.body
-
-    // const addedProduct = await prodModel.addedProduct(req.body)  
-    // console.log(addedProduct)    
-    // const isInCart = carritoEncontrado.products.product  
 })
 export default router

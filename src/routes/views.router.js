@@ -71,10 +71,19 @@ router.get('/products', async (req, res)=>{
                 cartUrl = `&cart=${cartId}`
                 totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
                 totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-                return res.render('home', ({result: 'success'}, {
-                    totalProducts: totalProducts,
-                    cartId: cartId
-                }))
+                if(req.session?.user){
+                    const user = req.session.user
+                    res.render('home', ({result: 'success'}, {
+                        totalProducts: totalProducts,
+                        cartId: cartId,
+                        user: user
+                    }))
+                }else{
+                    res.render('home', ({result: 'success'}, {
+                        totalProducts: totalProducts,
+                        cartId: cartId                
+                    })) 
+                }
             }else{
                 const statusFilter = {status: statusCheck}
                 const totalProducts = await prodModel.paginate(statusFilter, options, (err, results)=>{
@@ -91,19 +100,21 @@ router.get('/products', async (req, res)=>{
                 totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
                 totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
 
-                return res.render('home', ({result: 'success'}, {
-                    totalProducts: totalProducts,
-                    cartId: cartId
-                }))
+                if(req.session?.user){
+                    const user = req.session.user
+                    res.render('home', ({result: 'success'}, {
+                        totalProducts: totalProducts,
+                        cartId: cartId,
+                        user: user
+                    }))
+                }else{
+                    res.render('home', ({result: 'success'}, {
+                        totalProducts: totalProducts,
+                        cartId: cartId                
+                    })) 
+                }
             }
-            // const statusFilter = {status: statusCheck}
-            // const totalProducts = await prodModel.paginate(statusFilter, options, (err, results)=>{
-            //     if(err){ return console.log(err)}
-            //     return results
-            // })
-            // totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}` : ''
-            // totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}` : ''
-            // return res.render('home', ({result: 'success'}, totalProducts))
+
         }
         if(cart){
             const totalProducts = await prodModel.paginate({}, options, (err, results)=>{
@@ -115,11 +126,19 @@ router.get('/products', async (req, res)=>{
 
             totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-
-            res.render('home', ({result: 'success'}, {
-                totalProducts: totalProducts,
-                cartId: cartId
-            }))
+            if(req.session?.user){
+                const user = req.session.user
+                res.render('home', ({result: 'success'}, {
+                    totalProducts: totalProducts,
+                    cartId: cartId,
+                    user: user
+                }))
+            }else{
+                res.render('home', ({result: 'success'}, {
+                    totalProducts: totalProducts,
+                    cartId: cartId                
+                })) 
+            }
         }else{
             const totalProducts = await prodModel.paginate({}, options, (err, results)=>{
                 if(err){ return console.log(err)}
@@ -133,10 +152,20 @@ router.get('/products', async (req, res)=>{
             cartId = createCart._id
             totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-            res.render('home', ({result: 'success'}, {
-                totalProducts: totalProducts,
-                cartId: cartId
-            }))
+            if(req.session?.user){
+                const user = req.session.user
+                res.render('home', ({result: 'success'}, {
+                    totalProducts: totalProducts,
+                    cartId: cartId,
+                    user: user
+                }))
+            }else{
+                res.render('home', ({result: 'success'}, {
+                    totalProducts: totalProducts,
+                    cartId: cartId                
+                })) 
+            }
+
         }
 
     }catch(e){
@@ -169,5 +198,16 @@ router.get('/cart/:cId', async (req, res)=>{
 router.get('/chat', (req, res)=>{
     
     res.render('chat', {})
+})
+
+router.get('/login', (req, res)=>{
+    if(req.session?.user){
+        res.redirect('/products')
+    }
+    res.render('login', {})
+})
+router.get('/register', (req, res)=>{
+    
+    res.render('register', {})
 })
 export default router

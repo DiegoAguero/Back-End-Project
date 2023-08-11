@@ -1,4 +1,9 @@
 <div>
+    <h1>Bienvenido {{user.first_name}} {{user.last_name}}!</h1>
+    <h1>Age: {{user.age}}</h1>
+    <h1>Email: {{user.email}}</h1>
+    <h1>Rol: {{user.rol}}</h1>
+
     <h1>Products</h1>
     <ul>
         {{#if totalProducts}}
@@ -17,15 +22,6 @@
                     <form action="/api/products/delete/{{id}}" method="get">
                         <button type="submit">Delete product</button>
                     </form>
-                    {{!-- <form action="/api/carts/{{@root.cartId}}/product/{{id}}" method="post">
-                        <button type="Submit">Add to Cart</button>
-                    </form> --}}
-                    {{!-- <form action="/api/carts/{{@root cartId}}/product/{{id}}" method="post">
-                        <button type="submit">Add to cart</button>
-                    </form>
-                    <form action="/api/products/delete/{{id}}" method="post">
-                        <button type="submit">Delete product</button>
-                    </form> --}}
                 </li> 
                 {{/each}}
         {{/if}}
