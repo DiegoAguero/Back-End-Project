@@ -1,6 +1,4 @@
-// import fs from 'fs'
 import prodModel from './models/products.model.js';
-// let contenidoObj = ''
 export default class ProductManager {
     constructor() {
 

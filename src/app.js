@@ -11,6 +11,9 @@ import {Server} from 'socket.io'
 import __dirname from './utils.js'
 import mongoose from 'mongoose'
 import msgModel from './dao/models/messages.model.js'
+import initializePassport from './config/passport.config.js'
+import passport from 'passport'
+
 
 const app = express()
 
@@ -46,9 +49,15 @@ app.use('/static', express.static(__dirname + '/public'))
 const prod = new ProductManager()
 export default prod
 
+//passport
+initializePassport()
+app.use(passport.initialize())
+app.use(passport.session())
+
 app.use('/api/products', productsRoute)
 app.use('/api/carts', cartRoute)
 app.use('/api/session', sessionRoute)
+
 app.use('/', viewsRoute)
 
 

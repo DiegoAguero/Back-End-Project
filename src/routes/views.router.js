@@ -4,15 +4,16 @@ import prod from '../app.js'
 import cartModel from '../dao/models/cart.model.js'
 const router = Router()
 
-router.get('/realtimeproducts', async (req, res)=>{
-    const totalProducts = await prodModel.find().lean().exec()
-    res.render('realTimeProducts', {totalProducts})
-})
 //Autenticacion para poder entrar solo si estas loggeado
 function auth(req, res, next){
     if(req.session?.user) return next()
     res.redirect('/')
 }
+
+router.get('/realtimeproducts', auth, async (req, res)=>{
+    const totalProducts = await prodModel.find().lean().exec()
+    res.render('realTimeProducts', {totalProducts})
+})
 router.get('/products', auth, async (req, res)=>{
     try{
         //arreglar cartURL
@@ -158,6 +159,8 @@ router.get('/products', auth, async (req, res)=>{
             totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             if(req.session?.user){
                 const user = req.session.user
+                console.log(user)
+
                 res.render('home', ({result: 'success'}, {
                     totalProducts: totalProducts,
                     cartId: cartId,
@@ -200,9 +203,10 @@ router.get('/cart/:cId', async (req, res)=>{
     }
 })
 router.get('/chat', (req, res)=>{
-    
     res.render('chat', {})
 })
+
+
 
 router.get('/', (req, res)=>{
     if(req.session?.user){
@@ -210,6 +214,7 @@ router.get('/', (req, res)=>{
     }
     res.render('login', {})
 })
+
 router.get('/register', (req, res)=>{
     
     res.render('register', {})
