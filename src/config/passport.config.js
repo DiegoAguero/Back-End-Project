@@ -24,16 +24,26 @@ function initializePassport(){
             scope: ['user:email']
         },
         async (accessToken, refreshToken, profile, done)=>{
-            console.log(profile)
+
+
             try{
-                const user = await userModel.findOne({email: profile.emails[0].value})
+                console.log(profile)
+                const githubName = profile._json.name
+                const nameDivided = githubName.split(' ')
+                let firstName = nameDivided[0]
+                let lastName
+                if(nameDivided.length > 1){
+                    lastName = nameDivided.slice(1).join(' ')
+                }
+                const user = await userModel.findOne({email: profile._json.email})
                 if(user){
-                    console.log("User already exists " + profile.emails[0].value)
+                    console.log("User already exists " + profile._json.email)
                     return done(null, user)
                 }else{
                     const newUser = {
-                        name: profile._json.name,
-                        email: profile.emails[0].value,
+                        first_name: firstName,
+                        last_name: lastName,
+                        email: profile._json.email,
                         password: ''
                     }
                     const result = await userModel.create(newUser)
@@ -51,7 +61,7 @@ function initializePassport(){
             usernameField: 'email'
         }, 
         async(req, username, password, done)=>{
-            const {name, email} = req.body
+            const {first_name, last_name, age, rol, email} = req.body
             try{
                 const user = await userModel.findOne({email: username})
                 if(user){
@@ -59,7 +69,10 @@ function initializePassport(){
                     return done(null, false)
                 }
                 const newUser = {
-                    name,
+                    first_name,
+                    last_name,
+                    age,
+                    rol,
                     email,
                     password: createHash(password)
                 }
@@ -75,6 +88,20 @@ function initializePassport(){
         { usernameField: 'email'}, 
         async(username, password, done)=>{
             try {
+                if(username == 'adminCoder@coder.com' && password == 'adminCod3r123'){
+                    var mongoObjectId = function () {
+                        var timestamp = (new Date().getTime() / 1000 | 0).toString(16);
+                        return timestamp + 'xxxxxxxxxxxxxxxx'.replace(/[x]/g, function() {
+                            return (Math.random() * 16 | 0).toString(16);
+                        }).toLowerCase().lean().exec();
+                    };
+                    //Tuve que poner esta funcion para que me genere un string igual a una de mongo
+                    //De otra manera me tiraba un error gigantezco
+                    //Para ver el error solo consta con borrar el _id del user
+                    const user = {_id: mongoObjectId, email: username, password, rol: 'admin'}
+                    return done(null, user)
+
+                }
                 const user = await userModel.findOne({email: username}).lean().exec()
                 if(!user){
                     console.error('User doesnt exist')
@@ -84,7 +111,7 @@ function initializePassport(){
                     console.error('Password is not valid')
                     return done(null, false)
                 }
-    
+                console.log("Login completado")
                 return done(null, user)
             } catch (error) {
                 return done('Error logging in... ' + error)
@@ -94,6 +121,7 @@ function initializePassport(){
     ))
 
     passport.serializeUser((user, done)=>{
+        console.log(user)
         done(null, user._id)
     })
     

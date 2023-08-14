@@ -12,7 +12,7 @@ router.post('/login',
             return res.status(400).send('Invalid Credentials')
         }else{
             req.session.user = req.user
-            return res.redirect('/')
+            return res.redirect('/products')
         }
         // const {email, password} = req.body
         // if(email == 'adminCoder@coder.com' && password == 'adminCod3r123'){
@@ -40,8 +40,7 @@ router.post('/register',
     passport.authenticate('register', {failureRedirect: '/register'}),
     async(req, res)=>{
     try {
-        // const user = req.body
-        // await userModel.create(user)
+
         return res.redirect('/')
 
     } catch (error) {
