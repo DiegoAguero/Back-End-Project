@@ -12,6 +12,7 @@ router.post('/login',
             return res.status(400).send('Invalid Credentials')
         }else{
             req.session.user = req.user
+            console.log("error aca")
             return res.redirect('/products')
         }
         // const {email, password} = req.body
@@ -40,7 +41,6 @@ router.post('/register',
     passport.authenticate('register', {failureRedirect: '/register'}),
     async(req, res)=>{
     try {
-
         return res.redirect('/')
 
     } catch (error) {
@@ -53,6 +53,7 @@ router.get('/logout', async(req, res)=>{
     try{
         if(req.session?.user){
             req.session.destroy()
+            console.log("error?")
             return res.redirect('/')
         }else{
             return res.redirect('/')
@@ -76,7 +77,7 @@ router.get(
         console.log("Callback: " +  req.user)
         req.session.user = req.user
         console.log(req.session)
-        res.redirect('/')
+        res.redirect('/products')
     }
 )
 

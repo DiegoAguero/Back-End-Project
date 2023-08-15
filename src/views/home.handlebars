@@ -1,7 +1,12 @@
 <div>
-    <h1>Bienvenido {{user.first_name}} {{user.last_name}}!</h1>
-    {{#if age}}
-    <h1>Age: {{user.age}}</h1>
+    {{#if user.last_name}}
+        <h1>Bienvenido {{user.first_name}} {{user.last_name}}!</h1>
+        {{else}}
+        <h1>Bienvenido {{user.first_name}}!</h1>
+    {{/if}}
+
+    {{#if user.age}}
+        <h1>Age: {{user.age}}</h1>
     {{/if}}
     <h1>Email: {{user.email}}</h1>
     <h1>Rol: {{user.rol}}</h1>
