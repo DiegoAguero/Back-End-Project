@@ -1,10 +1,23 @@
 import passport from 'passport'
 import local from 'passport-local'
 import userModel from '../dao/models/user.model.js'
-import { createHash, isValidPassword } from '../utils.js'
+import { createHash, isValidPassword, extractCookie, generateToken } from '../utils.js'
 import GitHubStrategy from 'passport-github2'
+import dotenv from 'dotenv'
+import passportJWT from 'passport-jwt'
 
 const LocalStrategy = local.Strategy
+const JWTStrategy = passportJWT.Strategy
+const JWTExtract = passportJWT.ExtractJwt
+
+///.env config
+
+dotenv.config({path: '.env'})
+const CLIENT_ID_GITHUB = process.env.CLIENT_ID_GITHUB
+const CLIENT_SECRET_GITHUB = process.env.CLIENT_SECRET_GITHUB
+const CALLBACK_URL_GITHUB = process.env.CALLBACK_URL_GITHUB
+const SECRET_JWT = process.env.SECRET_JWT
+
 // App ID: 375167
 // Client ID: Iv1.bde27374545eed48
 // Secret: 458779cf168171d5fc50e7d98d644bb0e5238da5
@@ -13,26 +26,17 @@ function initializePassport(){
 
     passport.use('github', new GitHubStrategy(
         {
-            clientID: 'Iv1.bde27374545eed48',
-            clientSecret: '458779cf168171d5fc50e7d98d644bb0e5238da5',   
-            callbackURL: 'http://127.0.0.1:8080/api/session/githubcallback',
+            clientID: CLIENT_ID_GITHUB,
+            clientSecret: CLIENT_SECRET_GITHUB,   
+            callbackURL: CALLBACK_URL_GITHUB,
         },
         async (accessToken, refreshToken, profile, done)=>{
 
 
             try{
-                // console.log(profile)
-                // const githubName = profile._json.name
-                // const nameDivided = githubName.split(' ')
-                // let firstName = nameDivided[0]
-                // let lastName
-                // if(nameDivided.length > 1){
-                //     lastName = nameDivided.slice(1).join(' ')
-                // }
                 const user = await userModel.findOne({email: profile._json.email})
                 if(user){
                     console.log("User already exists " + profile._json.email)
-                    return done(null, user)
                 }else{
                     const newUser = {
                         first_name: profile._json.name,
@@ -40,13 +44,31 @@ function initializePassport(){
                         password: ''
                     }
                     const result = await userModel.create(newUser)
-                    return done(null, result)
+                    console.log(result)
                 }
+
+                //Creamos la token para el usuario
+                const token = generateToken(user)
+                user.token = token
+                console.log(user)
+                return done(null, user)
             }catch(e){
                 return done("Error to log-in with Github. " + e)
             }
         }
     ))
+    
+    passport.use('jwt', new JWTStrategy(
+        {
+            jwtFromRequest: JWTExtract.fromExtractors([extractCookie]),
+            secretOrKey: SECRET_JWT
+        },
+        (jwt_payload, done) => {
+            console.log({jwt_payload})
+            return done(null, jwt_payload)
+        }
+    ))
+
     //Esto funciona como un middleware
     passport.use('register', new LocalStrategy(
         {
@@ -92,7 +114,10 @@ function initializePassport(){
                     //De otra manera me tiraba un error gigantezco
                     //Para ver el error solo consta con borrar el _id del user
                     //_id: mongoObjectId, 
+                    //Creamos la token para el usuario
                     const user = {email: username, password, rol: 'admin'}
+                    const token = generateToken(user)
+                    user.token = token
                     return done(null, user)
 
                 }
@@ -105,7 +130,10 @@ function initializePassport(){
                     console.error('Password is not valid')
                     return done(null, false)
                 }
+
                 console.log("Login completado")
+                const token = generateToken(user)
+                user.token = token
                 return done(null, user)
             } catch (error) {
                 return done('Error logging in... ' + error)

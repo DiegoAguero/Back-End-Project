@@ -13,20 +13,27 @@ import mongoose from 'mongoose'
 import msgModel from './dao/models/messages.model.js'
 import initializePassport from './config/passport.config.js'
 import passport from 'passport'
-
+import dotenv from 'dotenv'
+import cookieParser from 'cookie-parser'
 
 const app = express()
 
-const URL =  "mongodb+srv://diegotomasaguero4123:mQxefoYlVTbSvdgu@cluster1.pfn01oe.mongodb.net/?retryWrites=true&w=majority"
-const dbName = 'ecommerce'
+//.env config
+dotenv.config({path: '.env'})
+const URI = process.env.MONGO_URI
+const PORT = parseInt(process.env.PORT)
+const DB_NAME = process.env.DB_NAME
+
+// console.log(URI, PORT)
+
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));    
-
+app.use(cookieParser())
 app.use(session({
     store: MongoStore.create({
-        mongoUrl: URL,
-        dbName: dbName,
+        mongoUrl: URI,
+        dbName: DB_NAME,
         mongoOptions:{
             useNewUrlParser: true,
             useUnifiedTopology: true
@@ -38,7 +45,7 @@ app.use(session({
     saveUninitialized: true
 }))
 
-const httpServer = app.listen(8080, ()=>{ console.log("listening") })
+const httpServer = app.listen(PORT, ()=>{ console.log("listening") })
 const io = new Server(httpServer)
 
 app.engine('handlebars', handlebars.engine())
@@ -65,8 +72,8 @@ app.use('/', viewsRoute)
 //corremos el server de mongoose
 mongoose.set('strictQuery', false)
 
-mongoose.connect(URL, {
-    dbName: 'ecommerce'
+mongoose.connect(URI, {
+    dbName: DB_NAME
 })
     .then(() =>{
         

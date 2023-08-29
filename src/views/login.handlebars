@@ -1,16 +1,16 @@
-<form action="/api/session/login" method="post" class="d-flex justify-content-center mt-2">
-    <div class="w-20">
+<form action="/api/session/login" method="post" class="d-flex justify-content-center mt-2" id="login">
+    <div class="w-25">
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" name="email">
             {{!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> --}}
         </div>
         <div class="form-group mb-2">
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button class="btn btn-primary"><a href="/api/session/login-github" class="text-white text-decoration-none">Login using GitHub</a></button>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+        <button class="btn btn-secondary"><a href="/api/session/login-github" class="text-white text-decoration-none">Login using GitHub</a></button>
     </div>
 </form>
 

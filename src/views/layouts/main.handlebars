@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://kit.fontawesome.com/60f68411d6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     {{!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#" style="margin-left: 1rem;">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,23 +36,97 @@
             </ul>
         </div>
     </nav> --}}
-    <nav class="navbar navbar-expand navbar-light bg-light d-flex">
-        <div class="container justify-content-center">
-            {{!-- <a class="navbar-brand" href="#">Logo</a> --}}
-            <ul class="navbar-nav">
-                <li class="nav-item">
+    {{!-- bg-body-tertiary --}}
+    <nav class="navbar navbar-expand-lg bg-light  ">
+        <div class="container-fluid justify-content-evenly text-main-color">
+            <a class="navbar-brand mx-5 mr-1">Logo</a>
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item p-2 ">
                     <a class="nav-link" href="/">Login</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item p-2">
                     <a class="nav-link" href="/register">Register</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item p-2">
                     <a class="nav-link" href="/api/session/logout">Logout</a>
                 </li>
             </ul>
+            <form>
+                <input class="form-control me-1" placeholder="Search your product!" aria-label="Search"
+                    id="searchProduct">
+            </form>
         </div>
     </nav>
+
+
+
     {{{body}}}
-    {{!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> --}}
+
+
+
+    <footer class="footer text-center text-lg-start bg-light" id="wrap">
+        <section class="">
+            <div class="container text-center text-md-start mt-5 text-main-color">
+                <div class="row mt-3">
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">About Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Privacy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Refund Policy</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p class="">Social networks
+                            <div>
+                                <a href="https://github.com/DiegoAguero" target="_blank" class="me-4 text-reset">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/diego-ag%C3%BCero-5064b0214/" target="_blank" class="me-4 text-reset">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            diegotomasaguero4123@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
 </body>
+
 </html>

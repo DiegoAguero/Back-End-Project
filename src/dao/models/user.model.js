@@ -13,8 +13,13 @@ const userSchema = new mongoose.Schema({
     password: String,
     rol: {
         type: String,
-        default: 'usuario'
+        default: 'user'
+    },
+    cart: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "cart"
     }
+    
 })
 const userModel = mongoose.model(userCollection, userSchema)
 

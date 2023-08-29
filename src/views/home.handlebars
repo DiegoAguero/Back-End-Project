@@ -1,4 +1,5 @@
-<div>
+<main class="mx-2" id="main">
+    
     {{#if user.last_name}}
         <h1>Bienvenido {{user.first_name}} {{user.last_name}}!</h1>
         {{else}}
@@ -12,7 +13,15 @@
     <h1>Rol: {{user.rol}}</h1>
 
     <h1>Products</h1>
-    <ul>
+    {{!-- <div class="card" style="width: 16rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div> --}}
+    {{!-- <ul>
         {{#if totalProducts}}
             {{#each totalProducts.docs}}
                 <li>
@@ -32,17 +41,39 @@
                 </li> 
                 {{/each}}
         {{/if}}
-
-    </ul>
-    <div>
+    </ul> --}}
+    <div class="d-flex flex-row flex-wrap justify-content-center">
+        {{#if totalProducts}}
+            {{#each totalProducts.docs}}
+                <div class="bg-light card m-2" style="width: 16rem;">
+                    <img src="{{thumbnail}}" class="card-img-top p-3" width="254px" height="254px" alt="{{title}}">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">{{title}}</h5>
+                        <p class="card-text">{{description}}</p>
+                        <form action="/api/carts/{{@root.cartId}}/product/{{id}}" method="post">
+                            <button type="submit" class="btn btn-secondary mb-2">Add to cart</button>
+                        </form>
+                        <form action="/api/products/delete/{{id}}" method="get">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            {{/each}}
+        {{/if}}
+    </div>
+    <div class="d-flex justify-content-center my-3">
         {{#if totalProducts.hasPrevPage}}
-            <a href="{{totalProducts.prevLink}}">Anterior</a>
+            <button class="btn btn-primary mx-2">
+                <a class="text-decoration-none text-white" href="{{totalProducts.prevLink}}">Anterior</a>
+            </button>
         {{/if}}
         {{#if totalProducts.hasNextPage}}
-            <a href="{{totalProducts.nextLink}}">Siguiente</a>
+            <button class=" btn btn-primary text-white">
+                <a class="text-decoration-none text-white" href="{{totalProducts.nextLink}}">Siguiente</a>
+            </button>
         {{/if}}
     </div>
 
-</div>
+</main>
 
 <script src="/socket.io/socket.io.js"></script>
