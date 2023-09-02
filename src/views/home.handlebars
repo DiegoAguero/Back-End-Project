@@ -1,47 +1,23 @@
 <main class="mx-2" id="main">
-    
-    {{#if user.last_name}}
-        <h1>Bienvenido {{user.first_name}} {{user.last_name}}!</h1>
-        {{else}}
-        <h1>Bienvenido {{user.first_name}}!</h1>
-    {{/if}}
+    {{user}}
+    {{#if user}}
+        {{#if user.last_name}}
+            <h1>Bienvenido {{user.first_name}} {{user.last_name}}!</h1>
+            {{else}}
+            <h1>Bienvenido {{user.first_name}}!</h1>
+        {{/if}}
 
-    {{#if user.age}}
-        <h1>Age: {{user.age}}</h1>
+        {{#if user.age}}
+            <h1>Age: {{user.age}}</h1>
+        {{/if}}
+        <h1>Email: {{user.email}}</h1>
+        <h1>Rol: {{user.rol}}</h1>
+        {{else}}
+            <h2>Please, log in to purchase any product!</h2>
     {{/if}}
-    <h1>Email: {{user.email}}</h1>
-    <h1>Rol: {{user.rol}}</h1>
 
     <h1>Products</h1>
-    {{!-- <div class="card" style="width: 16rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div> --}}
-    {{!-- <ul>
-        {{#if totalProducts}}
-            {{#each totalProducts.docs}}
-                <li>
-                    <p>Id: {{id}}</p>
-                    <p>Name: {{title}}</p>
-                    <p>Description: {{description}}</p>
-                    <p>Price: ${{price}}</p>
-                    <p>Available stock: {{stock}}</p>
-                    <p>Code: {{code}}</p>
-                    <p>Status: {{status}}</p>
-                    <form action="/api/carts/{{@root.cartId}}/product/{{id}}" method="post">
-                        <button type="submit">Add to cart</button>
-                    </form>
-                    <form action="/api/products/delete/{{id}}" method="get">
-                        <button type="submit">Delete product</button>
-                    </form>
-                </li> 
-                {{/each}}
-        {{/if}}
-    </ul> --}}
+
     <div class="d-flex flex-row flex-wrap justify-content-center">
         {{#if totalProducts}}
             {{#each totalProducts.docs}}
@@ -50,12 +26,16 @@
                     <div class="card-body text-dark">
                         <h5 class="card-title">{{title}}</h5>
                         <p class="card-text">{{description}}</p>
-                        <form action="/api/carts/{{@root.cartId}}/product/{{id}}" method="post">
-                            <button type="submit" class="btn btn-secondary mb-2">Add to cart</button>
-                        </form>
-                        <form action="/api/products/delete/{{id}}" method="get">
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
+                        {{#if @root.cartId}}
+                            <form action="/api/carts/{{@root.cartId}}/product/{{id}}" id="submit" method="post">
+                                <button type="submit" class="btn btn-secondary mb-2">Add to cart</button>
+                            </form>
+                        {{/if}}
+                        {{#if user.rol}}
+                            <form action="/api/products/delete/{{id}}" method="get">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        {{/if}}
                     </div>
                 </div>
             {{/each}}
@@ -77,3 +57,4 @@
 </main>
 
 <script src="/socket.io/socket.io.js"></script>
+

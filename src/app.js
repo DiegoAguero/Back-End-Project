@@ -48,6 +48,19 @@ app.use(session({
 const httpServer = app.listen(PORT, ()=>{ console.log("listening") })
 const io = new Server(httpServer)
 
+
+
+// create({
+//     default: 'main',
+//     layoutsDir: path.join(__dirname, 'views/layouts/main'),
+//     partialsDir: path.join(__dirname, 'views'),
+
+//     helpers: {
+//         compare: function(value1, value2){
+//             return value1 === value2
+//         }
+//     }
+// })
 app.engine('handlebars', handlebars.engine())
 app.set('views', __dirname + '/views')
 app.set('view engine', 'handlebars')
@@ -66,7 +79,6 @@ app.use('/api/carts', cartRoute)
 app.use('/api/session', sessionRoute)
 
 app.use('/', viewsRoute)
-
 
 
 //corremos el server de mongoose

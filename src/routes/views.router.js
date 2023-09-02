@@ -2,25 +2,46 @@ import {Router} from 'express'
 import prodModel from '../dao/models/products.model.js'
 import prod from '../app.js'
 import cartModel from '../dao/models/cart.model.js'
+import dotenv from 'dotenv'
+import jwt from 'jsonwebtoken'
+import { extractCookie } from '../utils.js'
+import userModel from '../dao/models/user.model.js'
 const router = Router()
+
+dotenv.config({path: '.env'})
+
+const SECRET_JWT = process.env.SECRET_JWT
+
+//Modificar todo el archivo de views.router para que no se cree otro carrito todo el tiempo!
 
 //Autenticacion para poder entrar solo si estas loggeado
 function auth(req, res, next){
-    if(req.session?.user) return next()
-    res.redirect('/')
+    const token = extractCookie(req)
+    if(!token){ 
+        return res.redirect('/')
+    }
+    jwt.verify(token, SECRET_JWT, (error, credentials) =>{
+        if(error) return res.status(403).send({error: 'Not authorized / modified cookie'})
+        
+        console.log(credentials.user)
+        req.user = credentials.user
+        console.log("Authenticated!")
+        return next()
+    })
 }
 
 router.get('/realtimeproducts', auth, async (req, res)=>{
     const totalProducts = await prodModel.find().lean().exec()
     res.render('realTimeProducts', {totalProducts})
 })
-router.get('/products', auth, async (req, res)=>{
+router.get('/products', async (req, res)=>{
+    
     try{
         //arreglar cartURL
         const page = parseInt(req.query?.page) || 1
         const limit = parseInt(req.query?.limit) || 10
 
-        var cartId = req.query?.cart || '64c68a91456f4b467584190f'
+        var cartId = req.user?.cart || '64c68a91456f4b467584190f'
         // Bypass de este error: "Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"
         // Será temporal hasta que encuentre la solucion
         const cart = await cartModel.findById(cartId).populate('products.product').lean() || ''
@@ -76,17 +97,18 @@ router.get('/products', auth, async (req, res)=>{
                 cartUrl = `&cart=${cartId}`
                 totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
                 totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-                if(req.session?.user){
-                    const user = req.session.user
+                if(req.user){
+                    const user = req.user
                     res.render('home', ({result: 'success'}, {
                         totalProducts: totalProducts,
                         cartId: cartId,
                         user: user
                     }))
-                }else{
+                }
+                else{
                     res.render('home', ({result: 'success'}, {
                         totalProducts: totalProducts,
-                        cartId: cartId                
+                        // cartId: cartId                
                     })) 
                 }
             }else{
@@ -95,27 +117,29 @@ router.get('/products', auth, async (req, res)=>{
                     if(err){ return console.log(err)}
                     return results
                 })
-                const newCart = {
-                    product: []
-                }
-                const createCart = await cartModel.create(newCart)
-                console.log(createCart)
-                cartUrl = `&cart=${createCart._id}`
-                cartId = createCart._id
+                // const newCart = {
+                    // product: []
+                // }
+                // const createCart = await cartModel.create(newCart)
+                // console.log(createCart)
+                // cartUrl = `&cart=${createCart._id}`
+                // cartId = createCart._id
                 totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
                 totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
 
-                if(req.session?.user){
-                    const user = req.session.user
+                if(req.user){
+                    const user = req.user
+                    
                     res.render('home', ({result: 'success'}, {
                         totalProducts: totalProducts,
                         cartId: cartId,
                         user: user
                     }))
-                }else{
+                }
+                else{
                     res.render('home', ({result: 'success'}, {
                         totalProducts: totalProducts,
-                        cartId: cartId                
+                        // cartId: cartId                
                     })) 
                 }
             }
@@ -131,14 +155,17 @@ router.get('/products', auth, async (req, res)=>{
 
             totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-            if(req.session?.user){
-                const user = req.session.user
+            if(req.user){
+                // const user = req.user
+                const user = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
+                console.log(user)
                 res.render('home', ({result: 'success'}, {
                     totalProducts: totalProducts,
                     cartId: cartId,
                     user: user
                 }))
-            }else{
+            }
+            else{
                 res.render('home', ({result: 'success'}, {
                     totalProducts: totalProducts,
                     cartId: cartId                
@@ -149,16 +176,16 @@ router.get('/products', auth, async (req, res)=>{
                 if(err){ return console.log(err)}
                 return results
             })
-            const newCart = {
-                product: []
-            }
-            const createCart = await cartModel.create(newCart)
-            cartUrl = `&cart=${createCart._id}`
-            cartId = createCart._id
+            // const newCart = {
+                // product: []
+            // }
+            // const createCart = await cartModel.create(newCart)
+            // cartUrl = `&cart=${createCart._id}`
+            // cartId = createCart._id
             totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-            if(req.session?.user){
-                const user = req.session.user
+            if(req.user){
+                const user = req.user
                 console.log(user)
 
                 res.render('home', ({result: 'success'}, {
@@ -166,12 +193,13 @@ router.get('/products', auth, async (req, res)=>{
                     cartId: cartId,
                     user: user
                 }))
-            }else{
-                res.render('home', ({result: 'success'}, {
-                    totalProducts: totalProducts,
-                    cartId: cartId                
-                })) 
             }
+                else{
+                    res.render('home', ({result: 'success'}, {
+                        totalProducts: totalProducts,
+                        // cartId: cartId                
+                    })) 
+                }
 
         }
 

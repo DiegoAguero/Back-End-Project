@@ -26,13 +26,10 @@ export const generateToken = user =>{
 }
 
 export const authToken = (req, res, next) =>{
-    let authHeader = req.headers.auth
+    let authHeader = req.cookies[SECRET_JWT]
 
     if(!authHeader){
-        authHeader = req.cookies[SECRET_JWT]
-        if(!authHeader){
-            return res.status(401).send({error: 'Not authenticated'})
-        }
+        return res.status(401).send({error: 'Not authenticated'})
     }
     const token = authHeader
     jwt.verify(token, SECRET_JWT, (error, credentials) =>{
@@ -46,7 +43,6 @@ export const authToken = (req, res, next) =>{
 
 
 export const extractCookie = req =>{
-    console.log("Requested cookie: " + req + "Req all the cookies: " + req.cookies)
     return (req && req.cookies) ? req.cookies[SECRET_JWT] : null
 }
 

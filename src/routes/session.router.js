@@ -1,7 +1,8 @@
 import { Router } from 'express'
 import userModel from '../dao/models/user.model.js'
 import passport from 'passport'
-import { authorization, extractCookie } from '../utils.js'
+import { authToken, extractCookie } from '../utils.js'
+import jwt from 'jsonwebtoken'
 import dotenv from 'dotenv'
 
 const router = Router()
@@ -16,8 +17,7 @@ router.post('/login',
         if(!req.user){
             return res.status(400).send('Invalid Credentials')
         }else{
-            req.session.user = req.user
-            
+            // req.session.user = req.user
             console.log("error aca")
             
             return res.cookie(SECRET_JWT, req.user.token).redirect('/products')
@@ -84,7 +84,20 @@ router.get(
     }
 )
 
-router.get('/current', passport.authenticate('jwt', {session: false}), authorization('user'),(req, res)=>{
+router.get('/current',(req, res)=>{
+    try {
+        const token = extractCookie(req)
+        if(!token)return res.status(401).json({error: "Not authenticated"})
+    
+        jwt.verify(token, SECRET_JWT, (error, credentials)=>{
+            if(error) return res.status(403).json({error: "Not authorized"})
+            return res.json(credentials.user)
+        })
+    } catch (error) {
+        console.log(error)
+        return res.status(500).json({error: "Server error"})
+    }
+
     // let authHeader = req.cookies
 
     // console.log(authHeader)
@@ -92,6 +105,6 @@ router.get('/current', passport.authenticate('jwt', {session: false}), authoriza
         // return res.send({status: 'error', cookiePayload: 'Cookie not found', userPayload: req.user})
     // }
     // return res.send({status: "success", cookiePayload: authHeader, userPayload: req.user})
-    return res.json(req.user)
+    // return res.json(req.user)
 })
 export default router

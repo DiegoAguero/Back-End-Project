@@ -1,6 +1,7 @@
 import passport from 'passport'
 import local from 'passport-local'
 import userModel from '../dao/models/user.model.js'
+import CartManager from '../dao/CartManager.js'
 import { createHash, isValidPassword, extractCookie, generateToken } from '../utils.js'
 import GitHubStrategy from 'passport-github2'
 import dotenv from 'dotenv'
@@ -10,8 +11,9 @@ const LocalStrategy = local.Strategy
 const JWTStrategy = passportJWT.Strategy
 const JWTExtract = passportJWT.ExtractJwt
 
-///.env config
+const cartManager = new CartManager()
 
+///.env config
 dotenv.config({path: '.env'})
 const CLIENT_ID_GITHUB = process.env.CLIENT_ID_GITHUB
 const CLIENT_SECRET_GITHUB = process.env.CLIENT_SECRET_GITHUB
@@ -50,7 +52,8 @@ function initializePassport(){
                 //Creamos la token para el usuario
                 const token = generateToken(user)
                 user.token = token
-                console.log(user)
+                // console.log(token)
+                // console.log(user)
                 return done(null, user)
             }catch(e){
                 return done("Error to log-in with Github. " + e)
@@ -83,12 +86,14 @@ function initializePassport(){
                     console.log("User already exist")
                     return done(null, false)
                 }
+                const newCartForUser = await cartManager.createCart()
                 const newUser = {
                     first_name,
                     last_name,
                     age,
                     rol,
                     email,
+                    cart: newCartForUser._id,
                     password: createHash(password)
                 }
                 const result = await userModel.create(newUser)
@@ -115,13 +120,13 @@ function initializePassport(){
                     //Para ver el error solo consta con borrar el _id del user
                     //_id: mongoObjectId, 
                     //Creamos la token para el usuario
-                    const user = {email: username, password, rol: 'admin'}
+                    const user = {_id: mongoObjectId, email: username, password, rol: 'admin'}
                     const token = generateToken(user)
                     user.token = token
                     return done(null, user)
 
                 }
-                const user = await userModel.findOne({email: username}).lean().exec()
+                const user = await userModel.findOne({email: username}).populate('cart').lean().exec()
                 if(!user){
                     console.error('User doesnt exist')
                     return done(null, false)
@@ -130,7 +135,11 @@ function initializePassport(){
                     console.error('Password is not valid')
                     return done(null, false)
                 }
-
+                if(!user.cart){
+                    const newCart = await cartManager.createCart()
+                    user.cart = newCart._id
+                    console.log("Asignando nuevo carrito")
+                }
                 console.log("Login completado")
                 const token = generateToken(user)
                 user.token = token
