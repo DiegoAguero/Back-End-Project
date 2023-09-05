@@ -40,12 +40,14 @@ function initializePassport(){
                 if(user){
                     console.log("User already exists " + profile._json.email)
                 }else{
+                    const newCartForUser = await cartManager.createCart()
                     const newUser = {
                         first_name: profile._json.name,
                         email: profile._json.email,
+                        cart: newCartForUser._id,
                         password: ''
                     }
-                    const result = await userModel.create(newUser)
+                    const result = await userModel.create(newUser).lean()
                     console.log(result)
                 }
 

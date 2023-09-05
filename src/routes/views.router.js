@@ -158,7 +158,7 @@ router.get('/products', async (req, res)=>{
             if(req.user){
                 // const user = req.user
                 const user = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
-                console.log(user)
+                console.log("User logeado: " + user)
                 res.render('home', ({result: 'success'}, {
                     totalProducts: totalProducts,
                     cartId: cartId,
@@ -185,8 +185,11 @@ router.get('/products', async (req, res)=>{
             totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             if(req.user){
-                const user = req.user
-                console.log(user)
+                // const user = req.user
+                const user = await userModel.find({email: req.user.email}).populate('cart').lean()
+
+                console.log("User logeado: " + JSON.stringify(user))
+
 
                 res.render('home', ({result: 'success'}, {
                     totalProducts: totalProducts,

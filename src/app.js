@@ -61,7 +61,9 @@ const io = new Server(httpServer)
 //         }
 //     }
 // })
+handlebars.create({strict: false})
 app.engine('handlebars', handlebars.engine())
+
 app.set('views', __dirname + '/views')
 app.set('view engine', 'handlebars')
 app.use('/static', express.static(__dirname + '/public'))
