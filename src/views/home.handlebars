@@ -1,5 +1,4 @@
 <main class="mx-2" id="main">
-    {{user}}
     {{#if user}}
         {{#if user.last_name}}
             <h1>Bienvenido {{user.first_name}} {{user.last_name}}!</h1>
@@ -31,11 +30,11 @@
                                 <button type="submit" class="btn btn-secondary mb-2">Add to cart</button>
                             </form>
                         {{/if}}
-                        {{#if user.rol}}
+                        {{#compare user.rol 'admin'}}
                             <form action="/api/products/delete/{{id}}" method="get">
                                 <button type="submit" class="btn btn-danger">Delete</button>
                             </form>
-                        {{/if}}
+                        {{/compare}}
                     </div>
                 </div>
             {{/each}}

@@ -4,7 +4,7 @@ import prod from '../app.js'
 import cartModel from '../dao/models/cart.model.js'
 import dotenv from 'dotenv'
 import jwt from 'jsonwebtoken'
-import { extractCookie } from '../utils.js'
+import { extractCookie, authorization } from '../utils.js'
 import userModel from '../dao/models/user.model.js'
 const router = Router()
 
@@ -30,7 +30,7 @@ function auth(req, res, next){
     })
 }
 
-router.get('/realtimeproducts', auth, async (req, res)=>{
+router.get('/realtimeproducts', auth, authorization('admin'), async (req, res)=>{
     const totalProducts = await prodModel.find().lean().exec()
     res.render('realTimeProducts', {totalProducts})
 })
@@ -97,53 +97,27 @@ router.get('/products', async (req, res)=>{
                 cartUrl = `&cart=${cartId}`
                 totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
                 totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-                if(req.user){
-                    const user = req.user
+                // if(req.user){
+                if(!req.user){
                     res.render('home', ({result: 'success'}, {
-                        totalProducts: totalProducts,
-                        cartId: cartId,
-                        user: user
-                    }))
-                }
-                else{
-                    res.render('home', ({result: 'success'}, {
-                        totalProducts: totalProducts,
-                        // cartId: cartId                
+                        totalProducts: totalProducts,                
                     })) 
                 }
-            }else{
-                const statusFilter = {status: statusCheck}
-                const totalProducts = await prodModel.paginate(statusFilter, options, (err, results)=>{
-                    if(err){ return console.log(err)}
-                    return results
-                })
-                // const newCart = {
-                    // product: []
+                const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
+                const {_id, first_name, email, last_name, age, cart, rol} = userFound[0]
+                const user = {_id, first_name, email, last_name, age, cart, rol}
+    
+                res.render('home', ({result: 'success'}, {
+                    totalProducts: totalProducts,
+                    cartId: cartId,
+                    user: user
+                }))
+
                 // }
-                // const createCart = await cartModel.create(newCart)
-                // console.log(createCart)
-                // cartUrl = `&cart=${createCart._id}`
-                // cartId = createCart._id
-                totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-                totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
+                // else{
 
-                if(req.user){
-                    const user = req.user
-                    
-                    res.render('home', ({result: 'success'}, {
-                        totalProducts: totalProducts,
-                        cartId: cartId,
-                        user: user
-                    }))
-                }
-                else{
-                    res.render('home', ({result: 'success'}, {
-                        totalProducts: totalProducts,
-                        // cartId: cartId                
-                    })) 
-                }
+                // }
             }
-
         }
         if(cart){
             const totalProducts = await prodModel.paginate({}, options, (err, results)=>{
@@ -155,55 +129,25 @@ router.get('/products', async (req, res)=>{
 
             totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-            if(req.user){
-                // const user = req.user
-                const user = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
-                console.log("User logeado: " + user)
+            if(!req.user){
                 res.render('home', ({result: 'success'}, {
-                    totalProducts: totalProducts,
-                    cartId: cartId,
-                    user: user
+                    totalProducts: totalProducts
                 }))
             }
-            else{
-                res.render('home', ({result: 'success'}, {
-                    totalProducts: totalProducts,
-                    cartId: cartId                
-                })) 
-            }
-        }else{
-            const totalProducts = await prodModel.paginate({}, options, (err, results)=>{
-                if(err){ return console.log(err)}
-                return results
-            })
-            // const newCart = {
-                // product: []
-            // }
-            // const createCart = await cartModel.create(newCart)
-            // cartUrl = `&cart=${createCart._id}`
-            // cartId = createCart._id
-            totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-            totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-            if(req.user){
-                // const user = req.user
-                const user = await userModel.find({email: req.user.email}).populate('cart').lean()
-
-                console.log("User logeado: " + JSON.stringify(user))
-
-
-                res.render('home', ({result: 'success'}, {
-                    totalProducts: totalProducts,
-                    cartId: cartId,
-                    user: user
-                }))
-            }
-                else{
-                    res.render('home', ({result: 'success'}, {
-                        totalProducts: totalProducts,
-                        // cartId: cartId                
-                    })) 
-                }
-
+            // const user = req.user
+            const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
+            console.log(userFound[0]._id)
+            const {_id, first_name, email, last_name, age, cart, rol} = userFound[0]
+            // console.log(user)
+            
+            const user = {_id, first_name, email, last_name, age, cart, rol}
+            console.log(user)
+            // console.log("User logeado: " + user)
+            res.render('home', ({result: 'success'}, {
+                totalProducts: totalProducts,
+                cartId: cartId,
+                user: user
+            }))
         }
 
     }catch(e){

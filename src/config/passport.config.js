@@ -47,7 +47,7 @@ function initializePassport(){
                         cart: newCartForUser._id,
                         password: ''
                     }
-                    const result = await userModel.create(newUser).lean()
+                    const result = await userModel.create(newUser)
                     console.log(result)
                 }
 
@@ -140,6 +140,7 @@ function initializePassport(){
                 if(!user.cart){
                     const newCart = await cartManager.createCart()
                     user.cart = newCart._id
+                    await user.save()
                     console.log("Asignando nuevo carrito")
                 }
                 console.log("Login completado")

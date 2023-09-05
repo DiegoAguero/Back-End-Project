@@ -19,7 +19,6 @@ router.post('/login',
         }else{
             // req.session.user = req.user
             console.log("error aca")
-            
             return res.cookie(SECRET_JWT, req.user.token).redirect('/products')
 
             //return res.redirect('/products')
@@ -47,6 +46,7 @@ router.get('/logout', async(req, res)=>{
     try{
         if(req.cookies){
             res.clearCookie(SECRET_JWT)
+            req.session.destroy()
             console.log("cookie cleared")
             // res.end()
             return res.redirect('/')

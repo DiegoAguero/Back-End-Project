@@ -61,11 +61,16 @@ const io = new Server(httpServer)
 //         }
 //     }
 // })
-handlebars.create({strict: false})
-app.engine('handlebars', handlebars.engine())
 
-app.set('views', __dirname + '/views')
+app.engine('handlebars', handlebars.engine())
 app.set('view engine', 'handlebars')
+app.set('views', __dirname + '/views')
+
+const handleBars = handlebars.create({})
+handleBars.handlebars.registerHelper('compare', function (a, b){
+    return a == b
+})
+
 app.use('/static', express.static(__dirname + '/public'))
 
 const prod = new ProductManager()
