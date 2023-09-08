@@ -32,11 +32,13 @@ function auth(req, res, next){
 
 router.get('/realtimeproducts', auth, authorization('admin'), async (req, res)=>{
     const totalProducts = await prodModel.find().lean().exec()
+    req.session.touch()
     res.render('realTimeProducts', {totalProducts})
 })
 router.get('/products', async (req, res)=>{
     
     try{
+        req.session.touch()
         //arreglar cartURL
         const page = parseInt(req.query?.page) || 1
         const limit = parseInt(req.query?.limit) || 10

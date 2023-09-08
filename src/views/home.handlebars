@@ -11,9 +11,17 @@
         {{/if}}
         <h1>Email: {{user.email}}</h1>
         <h1>Rol: {{user.rol}}</h1>
+        <h1>
+            <form action="/api/carts/{{@root.cartId}}" method="get">
+                <button type="submit" class="btn btn-danger">Ir al carrito</button>
+
+            </form>
+            </h1>
         {{else}}
             <h2>Please, log in to purchase any product!</h2>
     {{/if}}
+
+
 
     <h1>Products</h1>
 

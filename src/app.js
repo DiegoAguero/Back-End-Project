@@ -38,11 +38,15 @@ app.use(session({
             useNewUrlParser: true,
             useUnifiedTopology: true
         },
-        ttl: 100
+        ttl: 10000
     }),
     secret: 'secret',
     resave: true,
-    saveUninitialized: true
+    saveUninitialized: true,
+    cookie:{
+        maxAge: 60000
+    },
+    logging: true
 }))
 
 const httpServer = app.listen(PORT, ()=>{ console.log("listening") })

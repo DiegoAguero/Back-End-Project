@@ -34,6 +34,7 @@ router.post ('/', async (req, res)=>{
 
 router.post('/:cId/product/:pId', async (req, res)=>{
     try{
+        req.session.touch()
         const cartId = req.params.cId
         const prodId = req.params.pId
 
@@ -61,10 +62,11 @@ router.post('/:cId/product/:pId', async (req, res)=>{
                     
                     //Cuando añadis más de 1 producto del mismo, te va a llevar a la pagina del carrito
 
-                    res.render('carts', {findedCart})
-                    res.redirect(`/cart/${cartId}`)
+                    // res.render('carts', {findedCart})
+                    // res.redirect(`/cart/${cartId}`)
 
                     // res.send(findedCart)
+                    res.redirect('/products')
 
                 }
 
@@ -77,9 +79,11 @@ router.post('/:cId/product/:pId', async (req, res)=>{
                 //Entonces cuando volves para atras se vuelve a crear otro carrito nuevo, la función de esto
                 //Es para que no se me creen muchos carritos cuando añado productos, de esta manera ya tengo el carrito
                 //Salvado en la query
+                
+                res.redirect('/products')
 
-                res.render('products', {findedCart})
-                res.redirect(`/products?cart=${cartId}`)
+                // res.render('products', {findedCart})
+                // res.redirect(`/products?cart=${cartId}`)
 
                 // res.send(carritoEncontrado)
             }

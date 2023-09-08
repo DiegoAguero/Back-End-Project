@@ -19,6 +19,7 @@ router.post('/login',
         }else{
             // req.session.user = req.user
             console.log("error aca")
+            console.log(req.user.token)
             return res.cookie(SECRET_JWT, req.user.token).redirect('/products')
 
             //return res.redirect('/products')
@@ -51,7 +52,7 @@ router.get('/logout', async(req, res)=>{
             // res.end()
             return res.redirect('/')
         }else{
-            console.log("Cookie not cleared")
+            console.log("No cookies")
             return res.redirect('/')
         }
         // if(req.session?.user){
@@ -87,12 +88,14 @@ router.get(
 router.get('/current',(req, res)=>{
     try {
         const token = extractCookie(req)
+        console.log(token)
         if(!token)return res.status(401).json({error: "Not authenticated"})
     
         jwt.verify(token, SECRET_JWT, (error, credentials)=>{
             if(error) return res.status(403).json({error: "Not authorized"})
             return res.json(credentials.user)
         })
+
     } catch (error) {
         console.log(error)
         return res.status(500).json({error: "Server error"})

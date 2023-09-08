@@ -49,8 +49,9 @@ export const extractCookie = req =>{
 export const authorization = rol =>{
     return async(req, res, next)=>{
         const user = req.user
+        console.log(user)
         if(!user) return res.status(401).send({error: 'Unauthorized'})
-        if(user.user.rol !== rol) return res.status(403).send({error: 'Not enough permissions'})
+        if(user.rol !== rol) return res.status(403).send({error: 'Not enough permissions'})
         return next()
     }
 }
