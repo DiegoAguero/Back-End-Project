@@ -1,11 +1,13 @@
 import passport from 'passport'
 import local from 'passport-local'
+import GitHubStrategy from 'passport-github2'
+import passportJWT from 'passport-jwt'
+
 import userModel from '../dao/models/user.model.js'
 import CartManager from '../dao/CartManager.js'
+//.env config
+import config from './config.js'
 import { createHash, isValidPassword, extractCookie, generateToken } from '../utils.js'
-import GitHubStrategy from 'passport-github2'
-import dotenv from 'dotenv'
-import passportJWT from 'passport-jwt'
 
 const LocalStrategy = local.Strategy
 const JWTStrategy = passportJWT.Strategy
@@ -13,12 +15,7 @@ const JWTExtract = passportJWT.ExtractJwt
 
 const cartManager = new CartManager()
 
-///.env config
-dotenv.config({path: '.env'})
-const CLIENT_ID_GITHUB = process.env.CLIENT_ID_GITHUB
-const CLIENT_SECRET_GITHUB = process.env.CLIENT_SECRET_GITHUB
-const CALLBACK_URL_GITHUB = process.env.CALLBACK_URL_GITHUB
-const SECRET_JWT = process.env.SECRET_JWT
+
 
 // App ID: 375167
 // Client ID: Iv1.bde27374545eed48
@@ -28,9 +25,9 @@ function initializePassport(){
 
     passport.use('github', new GitHubStrategy(
         {
-            clientID: CLIENT_ID_GITHUB,
-            clientSecret: CLIENT_SECRET_GITHUB,   
-            callbackURL: CALLBACK_URL_GITHUB,
+            clientID: config.CLIENT_ID_GITHUB,
+            clientSecret: config.CLIENT_SECRET_GITHUB,   
+            callbackURL: config.CALLBACK_URL_GITHUB,
         },
         async (accessToken, refreshToken, profile, done)=>{
 
@@ -66,7 +63,7 @@ function initializePassport(){
     passport.use('jwt', new JWTStrategy(
         {
             jwtFromRequest: JWTExtract.fromExtractors([extractCookie]),
-            secretOrKey: SECRET_JWT
+            secretOrKey: config.SECRET_JWT
         },
         (jwt_payload, done) => {
             console.log({jwt_payload})

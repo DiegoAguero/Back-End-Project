@@ -14,9 +14,8 @@
         <h1>
             <form action="/api/carts/{{@root.cartId}}" method="get">
                 <button type="submit" class="btn btn-danger">Ir al carrito</button>
-
             </form>
-            </h1>
+        </h1>
         {{else}}
             <h2>Please, log in to purchase any product!</h2>
     {{/if}}
@@ -33,16 +32,16 @@
                     <div class="card-body text-dark">
                         <h5 class="card-title">{{title}}</h5>
                         <p class="card-text">{{description}}</p>
+                        <p class="card-text">${{price}}</p>
+                        <p class="card-text">Total stock:   {{stock}}</p>
                         {{#if @root.cartId}}
                             <form action="/api/carts/{{@root.cartId}}/product/{{id}}" id="submit" method="post">
                                 <button type="submit" class="btn btn-secondary mb-2">Add to cart</button>
                             </form>
                         {{/if}}
-                        {{#compare user.rol 'admin'}}
                             <form action="/api/products/delete/{{id}}" method="get">
                                 <button type="submit" class="btn btn-danger">Delete</button>
                             </form>
-                        {{/compare}}
                     </div>
                 </div>
             {{/each}}

@@ -4,36 +4,31 @@ import MongoStore from 'connect-mongo'
 import ProductManager from './dao/ProductManager.js'
 import productsRoute from './routes/product.router.js'
 import cartRoute from './routes/cart.router.js'
-import sessionRoute from './routes/session.router.js'
-import viewsRoute from './routes/views.router.js'
 import handlebars from 'express-handlebars'
 import {Server} from 'socket.io'
-import __dirname from './utils.js'
 import mongoose from 'mongoose'
-import msgModel from './dao/models/messages.model.js'
-import initializePassport from './config/passport.config.js'
 import passport from 'passport'
-import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser'
 
-const app = express()
+import initializePassport from './config/passport.config.js'
+import msgModel from './dao/models/messages.model.js'
+import __dirname from './utils.js'
+import viewsRoute from './routes/views.router.js'
+import sessionRoute from './routes/session.router.js'
+import userModel from './dao/models/user.model.js'
 
 //.env config
-dotenv.config({path: '.env'})
-const URI = process.env.MONGO_URI
-const PORT = parseInt(process.env.PORT)
-const DB_NAME = process.env.DB_NAME
+import config from './config/config.js'
 
-// console.log(URI, PORT)
-
+const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));    
 app.use(cookieParser())
 app.use(session({
     store: MongoStore.create({
-        mongoUrl: URI,
-        dbName: DB_NAME,
+        mongoUrl: config.MONGO_URI,
+        dbName: config.DB_NAME,
         mongoOptions:{
             useNewUrlParser: true,
             useUnifiedTopology: true
@@ -49,31 +44,15 @@ app.use(session({
     logging: true
 }))
 
-const httpServer = app.listen(PORT, ()=>{ console.log("listening") })
+const httpServer = app.listen(config.PORT, ()=>{ console.log("listening") })
 const io = new Server(httpServer)
 
-
-
-// create({
-//     default: 'main',
-//     layoutsDir: path.join(__dirname, 'views/layouts/main'),
-//     partialsDir: path.join(__dirname, 'views'),
-
-//     helpers: {
-//         compare: function(value1, value2){
-//             return value1 === value2
-//         }
-//     }
-// })
 
 app.engine('handlebars', handlebars.engine())
 app.set('view engine', 'handlebars')
 app.set('views', __dirname + '/views')
 
-const handleBars = handlebars.create({})
-handleBars.handlebars.registerHelper('compare', function (a, b){
-    return a == b
-})
+
 
 app.use('/static', express.static(__dirname + '/public'))
 
@@ -91,12 +70,25 @@ app.use('/api/session', sessionRoute)
 
 app.use('/', viewsRoute)
 
+//Test de destruccion prematura de sesion
+app.get('*', (req, res, next) => {
 
+    req.session.touch()
+    console.log(req.session)
+    next()
+    
+})
+app.use((req, res, next) => {
+
+    console.log((req.session))
+    next()
+    
+})
 //corremos el server de mongoose
 mongoose.set('strictQuery', false)
 
-mongoose.connect(URI, {
-    dbName: DB_NAME
+mongoose.connect(config.MONGO_URI, {
+    dbName: config.DB_NAME
 })
     .then(() =>{
         
@@ -111,6 +103,9 @@ mongoose.connect(URI, {
 const messages = []
 io.on('connection', socket=>{
     console.log("New connection!")
+
+
+    
     socket.on('newProduct', async data =>{
         try{
             const  {title, description, price, thumbnail, code, stock} = await data

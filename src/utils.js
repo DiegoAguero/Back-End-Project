@@ -2,15 +2,12 @@ import {fileURLToPath} from 'url'
 import {dirname} from 'path'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import dotenv from 'dotenv'
+import config from './config/config.js'
 
-dotenv.config({path: '.env'})
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-const SECRET_JWT = process.env.SECRET_JWT
-const SECRET_COOKIE_JWT = process.env.SECRET_COOKIE_JWT
 
 export default __dirname
 
@@ -22,17 +19,17 @@ export const isValidPassword = (user, password)=>{
 }
 
 export const generateToken = user =>{
-    return jwt.sign({ user }, SECRET_JWT, {expiresIn: '24h'})
+    return jwt.sign({ user }, config.SECRET_JWT, {expiresIn: '24h'})
 }
 
 export const authToken = (req, res, next) =>{
-    let authHeader = req.cookies[SECRET_JWT]
+    let authHeader = req.cookies[config.SECRET_JWT]
 
     if(!authHeader){
         return res.status(401).send({error: 'Not authenticated'})
     }
     const token = authHeader
-    jwt.verify(token, SECRET_JWT, (error, credentials) =>{
+    jwt.verify(token, config.SECRET_JWT, (error, credentials) =>{
         if(error) return res.status(403).send({error: 'Not authorized'})
         
         console.log(credentials.user)
@@ -43,7 +40,7 @@ export const authToken = (req, res, next) =>{
 
 
 export const extractCookie = req =>{
-    return (req && req.cookies) ? req.cookies[SECRET_JWT] : null
+    return (req && req.cookies) ? req.cookies[config.SECRET_JWT] : null
 }
 
 export const authorization = rol =>{

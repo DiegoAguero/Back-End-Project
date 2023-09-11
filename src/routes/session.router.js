@@ -1,14 +1,12 @@
 import { Router } from 'express'
-import userModel from '../dao/models/user.model.js'
 import passport from 'passport'
-import { authToken, extractCookie } from '../utils.js'
 import jwt from 'jsonwebtoken'
-import dotenv from 'dotenv'
+
+import userModel from '../dao/models/user.model.js'
+import { authToken, extractCookie } from '../utils.js'
+import config from '../config/config.js'
 
 const router = Router()
-
-dotenv.config({path: '.env'})
-const SECRET_JWT = process.env.SECRET_JWT
 
 router.post('/login', 
     passport.authenticate('login', '/login'),
@@ -20,7 +18,7 @@ router.post('/login',
             // req.session.user = req.user
             console.log("error aca")
             console.log(req.user.token)
-            return res.cookie(SECRET_JWT, req.user.token).redirect('/products')
+            return res.cookie(config.SECRET_JWT, req.user.token).redirect('/products')
 
             //return res.redirect('/products')
         }
@@ -46,7 +44,7 @@ router.post('/register',
 router.get('/logout', async(req, res)=>{
     try{
         if(req.cookies){
-            res.clearCookie(SECRET_JWT)
+            res.clearCookie(config.SECRET_JWT)
             req.session.destroy()
             console.log("cookie cleared")
             // res.end()
@@ -80,7 +78,7 @@ router.get(
     async (req, res)=>{
         console.log("Callback: " +  req.user)
         // req.session.user = req.user
-        return res.cookie(SECRET_JWT, req.user.token).redirect('/products')
+        return res.cookie(config.SECRET_JWT, req.user.token).redirect('/products')
         // console.log(req.user)
     }
 )
@@ -91,7 +89,7 @@ router.get('/current',(req, res)=>{
         console.log(token)
         if(!token)return res.status(401).json({error: "Not authenticated"})
     
-        jwt.verify(token, SECRET_JWT, (error, credentials)=>{
+        jwt.verify(token, config.SECRET_JWT, (error, credentials)=>{
             if(error) return res.status(403).json({error: "Not authorized"})
             return res.json(credentials.user)
         })

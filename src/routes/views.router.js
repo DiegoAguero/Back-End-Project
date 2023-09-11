@@ -1,18 +1,16 @@
 import {Router} from 'express'
-import prodModel from '../dao/models/products.model.js'
-import prod from '../app.js'
-import cartModel from '../dao/models/cart.model.js'
-import dotenv from 'dotenv'
 import jwt from 'jsonwebtoken'
-import { extractCookie, authorization } from '../utils.js'
+
+import prod from '../app.js'
+import prodModel from '../dao/models/products.model.js'
+import { extractCookie, authorization, authToken } from '../utils.js'
+import cartModel from '../dao/models/cart.model.js'
 import userModel from '../dao/models/user.model.js'
+//.env config
+import config from '../config/config.js'
+
 const router = Router()
 
-dotenv.config({path: '.env'})
-
-const SECRET_JWT = process.env.SECRET_JWT
-
-//Modificar todo el archivo de views.router para que no se cree otro carrito todo el tiempo!
 
 //Autenticacion para poder entrar solo si estas loggeado
 function auth(req, res, next){
@@ -20,7 +18,7 @@ function auth(req, res, next){
     if(!token){ 
         return res.redirect('/')
     }
-    jwt.verify(token, SECRET_JWT, (error, credentials) =>{
+    jwt.verify(token, config.SECRET_JWT, (error, credentials) =>{
         if(error) return res.status(403).send({error: 'Not authorized / modified cookie'})
         
         console.log(credentials.user)
@@ -30,7 +28,7 @@ function auth(req, res, next){
     })
 }
 
-router.get('/realtimeproducts', auth, authorization('admin'), async (req, res)=>{
+router.get('/realtimeproducts', authToken, authorization('admin'), async (req, res)=>{
     const totalProducts = await prodModel.find().lean().exec()
     req.session.touch()
     res.render('realTimeProducts', {totalProducts})
@@ -101,15 +99,14 @@ router.get('/products', async (req, res)=>{
                 totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
                 // if(req.user){
                 if(!req.user){
-                    res.render('home', ({result: 'success'}, {
+                    return res.render('home', ({result: 'success'}, {
                         totalProducts: totalProducts,                
                     })) 
                 }
                 const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
                 const {_id, first_name, email, last_name, age, cart, rol} = userFound[0]
                 const user = {_id, first_name, email, last_name, age, cart, rol}
-    
-                res.render('home', ({result: 'success'}, {
+                return res.render('home', ({result: 'success'}, {
                     totalProducts: totalProducts,
                     cartId: cartId,
                     user: user
@@ -132,7 +129,7 @@ router.get('/products', async (req, res)=>{
             totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
             if(!req.user){
-                res.render('home', ({result: 'success'}, {
+                return res.render('home', ({result: 'success'}, {
                     totalProducts: totalProducts
                 }))
             }
@@ -140,12 +137,27 @@ router.get('/products', async (req, res)=>{
             const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
             console.log(userFound[0]._id)
             const {_id, first_name, email, last_name, age, cart, rol} = userFound[0]
-            // console.log(user)
+
             
+            let totalQuantity = 0
+            userFound[0].cart.products.forEach(product => {
+                if(product.quantity == product.stock){
+                    console.log('Error: No puede agregar mas de este producto al carrito')
+                }
+                if(product.quantity > product.stock){
+                    console.log("Error: Tiene más cantidad que stock!, reseteando cantidad...")
+                    product.quantity = 0
+                }
+                console.log(product.quantity)
+                totalQuantity += product.quantity               
+            });
+            //Pasar este valor por la navbar para cambiar la cantidad de productos que tiene en el carrito
+            console.log('Total quantity: ' + totalQuantity)
+
             const user = {_id, first_name, email, last_name, age, cart, rol}
             console.log(user)
             // console.log("User logeado: " + user)
-            res.render('home', ({result: 'success'}, {
+            return res.render('home', ({result: 'success'}, {
                 totalProducts: totalProducts,
                 cartId: cartId,
                 user: user
@@ -186,9 +198,12 @@ router.get('/chat', (req, res)=>{
 
 
 router.get('/', (req, res)=>{
-    if(req.session?.user){
-        res.redirect('/products')
+    if(req.user){
+        return res.redirect('/products')
     }
+    // if(req.session?.user){
+    //     res.redirect('/products')
+    // }
     res.render('login', {})
 })
 
