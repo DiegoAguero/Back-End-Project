@@ -2,7 +2,7 @@ import { Router } from 'express'
 import passport from 'passport'
 import jwt from 'jsonwebtoken'
 
-import userModel from '../dao/models/user.model.js'
+import userModel from '../dao/mongo/models/user.model.js'
 import { authToken, extractCookie } from '../utils.js'
 import config from '../config/config.js'
 
@@ -83,8 +83,9 @@ router.get(
     }
 )
 
-router.get('/current',(req, res)=>{
+router.get('/current', authToken,(req, res)=>{
     try {
+        //Cambiar, no utilizar jwt.verify, se usa el de authToken
         const token = extractCookie(req)
         console.log(token)
         if(!token)return res.status(401).json({error: "Not authenticated"})

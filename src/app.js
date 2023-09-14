@@ -1,7 +1,7 @@
 import express from 'express'
 import session from 'express-session'
 import MongoStore from 'connect-mongo'
-import ProductManager from './dao/ProductManager.js'
+import ProductManager from './dao/mongo/ProductManager.js'
 import productsRoute from './routes/product.router.js'
 import cartRoute from './routes/cart.router.js'
 import handlebars from 'express-handlebars'
@@ -11,11 +11,11 @@ import passport from 'passport'
 import cookieParser from 'cookie-parser'
 
 import initializePassport from './config/passport.config.js'
-import msgModel from './dao/models/messages.model.js'
+import msgModel from './dao/mongo/models/messages.model.js'
 import __dirname from './utils.js'
 import viewsRoute from './routes/views.router.js'
 import sessionRoute from './routes/session.router.js'
-import userModel from './dao/models/user.model.js'
+import userModel from './dao/mongo/models/user.model.js'
 
 //.env config
 import config from './config/config.js'

@@ -72,15 +72,8 @@ export default class CartManager{
     async updateCartWithArray(cartId, products, quantity){
         try{
             await this.updateTotalCarts()
-            // const product = await prodModel.findById(prodId)
-                // if(product){
                 const cart = await cartModel.findOneAndUpdate({_id: cartId}, {product: products, quantity: quantity} )
                 return cart
-                // }else{
-                // console.log("Not found")
-                // }
-
-            // cart.updateOne()
         }catch(e){
             return console.error(e)
         }

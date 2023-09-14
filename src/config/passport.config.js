@@ -1,10 +1,10 @@
-import passport from 'passport'
+ import passport from 'passport'
 import local from 'passport-local'
 import GitHubStrategy from 'passport-github2'
 import passportJWT from 'passport-jwt'
 
-import userModel from '../dao/models/user.model.js'
-import CartManager from '../dao/CartManager.js'
+import userModel from '../dao/mongo/models/user.model.js'
+import CartManager from '../dao/mongo/CartManager.js'
 //.env config
 import config from './config.js'
 import { createHash, isValidPassword, extractCookie, generateToken } from '../utils.js'

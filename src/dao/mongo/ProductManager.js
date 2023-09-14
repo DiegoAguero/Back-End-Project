@@ -1,7 +1,6 @@
 import prodModel from './models/products.model.js';
 export default class ProductManager {
     constructor() {
-
     }
 
     // getNextID() {
@@ -48,7 +47,6 @@ export default class ProductManager {
 
     async updateTotalProducts(){
         const totalProducts = await this.getProducts()
-        // return totalProducts
     }
 
     async getProductById(id) {
@@ -64,7 +62,6 @@ export default class ProductManager {
     async deleteProductById(id) {
         await this.updateTotalProducts()
         const prodDeleted = await prodModel.deleteOne({_id: id})
-        // console.log(prodDeleted)
     }
     async updateProduct(id, title, description, price, thumbnail, code, stock, status){
         await this.updateTotalProducts()
@@ -72,9 +69,3 @@ export default class ProductManager {
 
     }
 }
-
-// const prod = new ProductManager('products.json')
-// prod.addProduct('Botella de plastico', 'Hola soy una botella de plastico que tiene agua', 20, 'url', '123', 30)
-// prod.addProduct('Lolapalooza', 'Hola 12', 30, 'url', '123', 60)
-// prod.addProduct('Matias Spaciusk', '', 30, 'rs', 'ss', 30)
-    

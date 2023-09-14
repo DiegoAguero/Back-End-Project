@@ -2,10 +2,10 @@ import {Router} from 'express'
 import jwt from 'jsonwebtoken'
 
 import prod from '../app.js'
-import prodModel from '../dao/models/products.model.js'
+import prodModel from '../dao/mongo/models/products.model.js'
 import { extractCookie, authorization, authToken } from '../utils.js'
-import cartModel from '../dao/models/cart.model.js'
-import userModel from '../dao/models/user.model.js'
+import cartModel from '../dao/mongo/models/cart.model.js'
+import userModel from '../dao/mongo/models/user.model.js'
 //.env config
 import config from '../config/config.js'
 

@@ -1,59 +1,27 @@
-import {Router} from 'express'
-// import prodModel from '../dao/models/products.model.js'
-import cartModel from '../dao/mongo/models/cart.model.js'
-import CartManager from '../dao/mongo/CartManager.js'
 import ProductManager from '../dao/mongo/ProductManager.js'
-import { addProductToCart, deleteCart, deleteProductFromCart, getCartById, updateCartWithArray, updateQuantityFromCart } from '../controllers/carts.controller.js'
-// import productManager from '../app.js'
-
-
-const router = Router()
-const cartManager = new CartManager()
+import CartManager from '../services/carts.repository.js'
+const cartsService = new CartManager()
 const productManager = new ProductManager()
-
-// router.get('/:cId', getCartById)
-// router.post('/:cId/product/:pId', addProductToCart)
-// router.post('/:cId/product/:pId/delete', deleteProductFromCart)
-// //postman
-// router.delete('/:cId/product/:pId/delete', deleteProductFromCart)
-// router.delete('/:cId', deleteCart)
-// router.put('/:cId/product/:pId', updateQuantityFromCart)
-// router.put('/:cId', updateCartWithArray)
+//seguir viendo videl del profesor min: 02:57:50
+//codigo inservible hasta que apliquemos la capa de persistencia
+//no iniciar
 
 
-router.get('/:cId', async (req, res)=>{
-    try{
-        const id = req.params.cId
-        // const cart = await cartModel.findOne({_id: id})
-        // .populate('products.product').exec()\
-        const cart = await cartManager.getCartById(id)
-        if(!cart) return res.send({status: 'error', payLoad: 'The cart does NOT exist.'})
-        console.log(JSON.stringify(cart, null,'\t'))
+export const getCartById = async (req, res) =>{
+    const {id} = req.params.id
+    const cart = await cartsService.getCartById(id)
+    if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
+    return res.send({status: 'success', cart})
+}
 
-        res.send({status: 'success', cart})
-    }catch(e){
-        return console.error(e)
-    }
-
-})
-
-router.post ('/', async (req, res)=>{
-    // const newCart = {
-        // product: []
-    // }
-    // const createCart = await cartModel.create(newCart)
-    const createCart = await cartManager.createCart()
-    res.send({createCart, status: 'success'})
-})
-
-router.post('/:cId/product/:pId', async (req, res)=>{
+export const addProductToCart = async (req, res)=>{
     try{
         req.session.touch()
-        const cartId = req.params.cId
-        const prodId = req.params.pId
+        const {cartId} = req.params.cId
+        const {prodId} = req.params.pId
 
         // const carritoEncontrado = await cartModel.findById(cartId)
-        const findedCart = await cartManager.getCartById(cartId)
+        const findedCart = await cartsService.getCartById(cartId)
         const findedProduct = await productManager.getProductById(prodId)
         // const productoEncontrado = await prodModel.findById(prodId)
         if(findedProduct === undefined){
@@ -96,46 +64,13 @@ router.post('/:cId/product/:pId', async (req, res)=>{
     }catch(error){
         throw new Error(error)
     }
+}
 
-})
-
-router.delete('/:cId/product/:pId/delete', async (req, res)=>{
+export const deleteProductFromCart = async (req, res)=>{
     try{
         const cartId = req.params.cId
         const prodId = req.params.pId
-        const findedCart = await cartManager.getCartById(cartId)
-        // const carritoEncontrado = await cartModel.findById(cartId)
-
-        const isInCart = findedCart.products.find(prod =>{
-            return prod.product._id.toString() === prodId
-        })
-        if(isInCart){
-            if(isInCart.quantity > 1){
-                isInCart.quantity -= 1
-                await findedCart.save()
-                res.send(findedCart)
-            }else{
-                const cartFilter = findedCart.products.filter(prod=>{return prod.product != isInCart.product})
-                findedCart.products = cartFilter
-                await findedCart.save()
-                res.send(findedCart)
-            }
-
-        }else{
-            return res.send({status: 'error', payLoad: "No existe el producto en el array"})
-        }
-    } catch(e){
-        return console.error(e)
-    }
-
-})
-
-//Delete metodo POST para los forms
-router.post('/:cId/product/:pId/delete', async (req, res)=>{
-    try{
-        const cartId = req.params.cId
-        const prodId = req.params.pId
-        const findedCart = await cartManager.getCartById(cartId)
+        const findedCart = await cartsService.getCartById(cartId)
 
         // const carritoEncontrado = await cartModel.findById(cartId)
 
@@ -164,12 +99,11 @@ router.post('/:cId/product/:pId/delete', async (req, res)=>{
     } catch(e){
         return console.error(e)
     }
+}
 
-})
-
-router.delete('/:cId', async(req, res)=>{
+export const deleteCart = async (req, res)=>{
     const cartId = req.params.cId
-    const findedCart = await cartManager.getCartById(cartId)
+    const findedCart = await cartsService.getCartById(cartId)
     // const carritoEncontrado = await cartModel.findById(cartId)
     if(findedCart.products.length === 0){
         console.log('if')
@@ -179,16 +113,15 @@ router.delete('/:cId', async(req, res)=>{
         await findedCart.save()
         return res.send({status: 'success', payLoad: `Productos eliminados correctamente`})
     }
+}
 
-})
-//Actualizar cantidad de un producto añadido
-router.put('/:cId/product/:pId', async(req, res)=>{
+export const updateQuantityFromCart = async (req, res)=>{
     try{
-        const cartId = req.params.cId
-        const prodId = req.params.pId
+        const {cartId} = req.params.cId
+        const {prodId} = req.params.pId
         const quantity = parseInt(req.body.quantity)
 
-        const findedCart = await cartManager.getCartById(cartId)
+        const findedCart = await cartsService.getCartById(cartId)
         // const carritoEncontrado = await cartModel.findById(cartId)
 
         const isRepeated = findedCart.products.find(prod =>{
@@ -206,18 +139,17 @@ router.put('/:cId/product/:pId', async(req, res)=>{
     }catch(e){
         return console.error(e)
     }
+}
 
-})
-
-router.put('/:cId', async(req, res)=>{
+export const updateCartWithArray = async (req, res)=>{
     try{
-        const cartId = req.params.cId
-        const findedCart = await cartManager.getCartById(cartId)
+        const {cartId} = req.params.cId
+        const findedCart = await cartsService.getCartById(cartId)
         // const carritoEncontrado = await cartModel.findById(cartId)
         const products = req.body.products
         const quantity = 1
         if(findedCart){
-            const updatedCartWithProducts = await cartManager.updateCartWithArray(cartId, products, quantity)
+            const updatedCartWithProducts = await cartsService.updateCartWithArray(cartId, products, quantity)
             // await cartModel.findByIdAndUpdate(cartId, {products: products, quantity: 1})
             // console.log(updatedCartWithProducts)
             return res.status(201).json({message: 'Carrito actualizado con exito', updatedCartWithProducts})
@@ -228,6 +160,4 @@ router.put('/:cId', async(req, res)=>{
     }catch(e){
         return console.error(e)
     }
-
-})
-export default router
+}

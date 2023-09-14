@@ -1,13 +1,23 @@
 import {Router} from "express"
 import prod from '../app.js'
-import prodModel from "../dao/models/products.model.js"
+import prodModel from "../dao/mongo/models/products.model.js"
+import { createProduct, deleteProduct, getProductByID, getProducts, updateProduct } from "../controllers/products.controller.js"
 
 
 const router = Router()
 //Obtener todos los productos
+
+router.get('/', getProducts)
+router.post('/', createProduct)
+router.get('/:pId', getProductByID)
+router.get('/delete/:pId', deleteProduct)
+
+//postman
+router.put('/:pId', updateProduct)
+router.delete('/delete/:pId', deleteProduct)
+
 router.get('/', async (req, res)=>{
     try {
-        
         const products = await prod.getProducts();
         return res.send(products)
     } catch (error) {
@@ -71,7 +81,7 @@ router.delete('/delete/:pId', async(req, res)=>{
     try{
         const id = req.params.pId
         const deleteProduct = await prod.deleteProductById(id)
-        res.send({status: 'success', payLoad: "Borrado"})
+        res.send({status: 'success', payLoad: "product deleted"})
         
     }catch(e){
         return console.error(e)
