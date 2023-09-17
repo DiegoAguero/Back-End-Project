@@ -1,11 +1,10 @@
 import ProductManager from "../dao/mongo/ProductManager.js";
-import productServices from '../services/products.repository.js'
-
-const productServices = new ProductsRepository()
-
+// import ProductsServices from '../services/products.repository.js'
+import {productService} from '../services/index.js'
+//El controller solamente debe pasar datos a la capa de negocio, osea al repository, luego ahí se hacen todas las preguntas
 export const getProducts = async(req, res)=>{
     try {
-        const products = await productServices.getProducts();
+        const products = await productService.getProducts();
         return res.send(products)
     } catch (error) {
         res.send({status: 'error'})
@@ -17,7 +16,7 @@ export const getProductByID = async(req, res) =>{
     try{
         const {id} = req.params.pId
         // const product = await prodModel.findOne({_id: id})
-        const product = await productServices.getProductById(id)
+        const product = await productService.getProductById(id)
         console.log(product)
         return res.send(product)
     }catch(error){
@@ -30,7 +29,7 @@ export const updateProduct = async (req, res)=>{
     try{
         const {id} = req.params.pId
         const {title, description, price, thumbnail, code, stock, status} = req.body
-        const product = await productServices.updateProduct({_id: id}, {title, description, price, thumbnail, code, stock, status})
+        const product = await productService.updateProduct({_id: id}, {title, description, price, thumbnail, code, stock, status})
         res.send({status: 'success', product})
         
     }catch(error){
@@ -42,7 +41,7 @@ export const updateProduct = async (req, res)=>{
 export const deleteProduct = async (req, res)=>{
     try{
         const {id} = req.params.pId
-        const deleteProduct = await productServices.deleteProductById(id)
+        const deleteProduct = await productService.deleteProductById(id)
         res.send({status: 'success', payLoad: `product deleted, ${deleteProduct}}`})
         
     }catch(e){
@@ -54,7 +53,7 @@ export const createProduct = async (req, res)=>{
     try{
         const {title, description, price, thumbnail, code, stock, status} = req.body
         const product = {title, description, price, thumbnail, code, stock, status}
-        const prodCreated = await productServices.addProduct(product)
+        const prodCreated = await productService.addProduct(product)
         
         res.send({product: prodCreated, status: 'success'})
     }catch(error){

@@ -70,42 +70,25 @@ app.use('/api/session', sessionRoute)
 
 app.use('/', viewsRoute)
 
-//Test de destruccion prematura de sesion
-app.get('*', (req, res, next) => {
-
-    req.session.touch()
-    console.log(req.session)
-    next()
-    
-})
-app.use((req, res, next) => {
-
-    console.log((req.session))
-    next()
-    
-})
 //corremos el server de mongoose
-mongoose.set('strictQuery', false)
+// mongoose.set('strictQuery', false)
 
-mongoose.connect(config.MONGO_URI, {
-    dbName: config.DB_NAME
-})
-    .then(() =>{
+// mongoose.connect(config.MONGO_URI, {
+//     dbName: config.DB_NAME
+// })
+//     .then(() =>{
         
-        console.log('DB Connected with mongoose')
-        httpServer.on('error', e=> console.error(e))
-    })
-    .catch(e =>{
-        console.log("ERROR: Cant connect to the DB")
-    })
+//         console.log('DB Connected with mongoose')
+//         httpServer.on('error', e=> console.error(e))
+//     })
+//     .catch(e =>{
+//         console.log("ERROR: Cant connect to the DB")
+//     })
 
 
 const messages = []
 io.on('connection', socket=>{
     console.log("New connection!")
-
-
-    
     socket.on('newProduct', async data =>{
         try{
             const  {title, description, price, thumbnail, code, stock} = await data

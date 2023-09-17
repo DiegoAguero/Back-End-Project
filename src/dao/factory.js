@@ -16,11 +16,18 @@ switch (config.PERSISTENCY) {
             dbName: config.DB_NAME 
         })
             .then(r=>{
-                console.log("Mongo connected")
+                console.log("Mongo connected") 
             })
             .catch(error =>{
                 console.error(error)
             })
+        // const {default: UserMongo} = await import('./mongo/')
+        const {default: CartMongo} = await import('./mongo/carts.mongo.js') 
+        const {default: ProductMongo} = await import('./mongo/products.mongo.js') 
+        // const {default: TicketMongo} = await import('./mongo/') 
+        // User = UserMongo
+        Cart = CartMongo
+        Product = ProductMongo
         break;
 
     default:

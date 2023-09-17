@@ -3,7 +3,7 @@ import {Router} from 'express'
 import cartModel from '../dao/mongo/models/cart.model.js'
 import CartManager from '../dao/mongo/CartManager.js'
 import ProductManager from '../dao/mongo/ProductManager.js'
-import { addProductToCart, deleteCart, deleteProductFromCart, getCartById, updateCartWithArray, updateQuantityFromCart } from '../controllers/carts.controller.js'
+import { addProductToCart, deleteCart, deleteProductFromCart, getCartById, updateCart, updateQuantityFromCart, createCart } from '../controllers/carts.controller.js'
 // import productManager from '../app.js'
 
 
@@ -11,14 +11,15 @@ const router = Router()
 const cartManager = new CartManager()
 const productManager = new ProductManager()
 
-// router.get('/:cId', getCartById)
-// router.post('/:cId/product/:pId', addProductToCart)
+router.post('/', createCart)
+router.get('/:cId', getCartById)
+router.post('/:cId/product/:pId', addProductToCart)
 // router.post('/:cId/product/:pId/delete', deleteProductFromCart)
 // //postman
 // router.delete('/:cId/product/:pId/delete', deleteProductFromCart)
-// router.delete('/:cId', deleteCart)
 // router.put('/:cId/product/:pId', updateQuantityFromCart)
-// router.put('/:cId', updateCartWithArray)
+router.delete('/:cId', deleteCart)
+router.put('/:cId', updateCart)
 
 
 router.get('/:cId', async (req, res)=>{
@@ -48,7 +49,6 @@ router.post ('/', async (req, res)=>{
 
 router.post('/:cId/product/:pId', async (req, res)=>{
     try{
-        req.session.touch()
         const cartId = req.params.cId
         const prodId = req.params.pId
 

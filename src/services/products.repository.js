@@ -9,7 +9,10 @@ export default class ProductsRepository{
         return await this.dao.getProducts()
     }
     async getProductById(id){
-        return await this.dao.getProductById(id)
+        const product = await this.dao.getProductById(id)
+        if(!product) throw new Error('Product not finded')
+        return product
+        // return await this.dao.getProductById(id)
     }
     async updateProduct(id){
         return await this.dao.updateProduct(id)
