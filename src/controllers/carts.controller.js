@@ -31,8 +31,8 @@ export const addProductToCart = async (req, res)=>{
     try{
         const cartId = req.params.cId
         const prodId = req.params.pId
-        
         const result = await cartService.addProductToCart(cartId, prodId)
+        console.log(result)
         if(!result) return res.send({status: 'error', payload: 'Something inexpected happened adding a product'})
         return res.send({status: 'success', payload: result})        
         // const carritoEncontrado= await cartModel.findById(cartId)
@@ -79,6 +79,14 @@ export const addProductToCart = async (req, res)=>{
     }catch(error){
         throw new Error(error)
     }
+}
+
+export const clearCart = async (req, res)=>{
+    const cartId = req.params.cId
+    const result = await cartService.clearCart(cartId)
+    if(!result) return res.send({status: 'error', payload: 'Error clearing the products'})
+    return res.send({status: 'success', payload: result})        
+
 }
 
 export const deleteProductFromCart = async (req, res)=>{
@@ -167,6 +175,7 @@ export const updateCart = async (req, res)=>{
         // const carritoEncontrado = await cartModel.findById(cartId)
         const products = req.body.products
         const quantity = req.body.quantity
+
         const updateCart = await cartService.updateCart(cartId, products, quantity)
         if(!updateCart) return res.status(400).json({error: "There is a/many product/s that was/were not found/finded"})
         return res.status(201).json({message: 'Carrito actualizado con exito', updateCart})

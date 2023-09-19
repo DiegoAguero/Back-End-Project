@@ -3,7 +3,7 @@ import {Router} from 'express'
 import cartModel from '../dao/mongo/models/cart.model.js'
 import CartManager from '../dao/mongo/CartManager.js'
 import ProductManager from '../dao/mongo/ProductManager.js'
-import { addProductToCart, deleteCart, deleteProductFromCart, getCartById, updateCart, updateQuantityFromCart, createCart } from '../controllers/carts.controller.js'
+import { addProductToCart, deleteCart, deleteProductFromCart, getCartById, updateCart, updateQuantityFromCart, createCart, clearCart } from '../controllers/carts.controller.js'
 // import productManager from '../app.js'
 
 
@@ -14,6 +14,7 @@ const productManager = new ProductManager()
 router.post('/', createCart)
 router.get('/:cId', getCartById)
 router.post('/:cId/product/:pId', addProductToCart)
+router.put('/:cId/clear-cart', clearCart)
 // router.post('/:cId/product/:pId/delete', deleteProductFromCart)
 // //postman
 // router.delete('/:cId/product/:pId/delete', deleteProductFromCart)

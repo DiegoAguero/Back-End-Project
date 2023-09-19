@@ -14,8 +14,7 @@ export default class CartManager{
     }
     async getCartById(cartId){
         try{
-            const cart = await cartModel.findById(cartId)
-                .populate('products.product').exec()
+            const cart = await cartModel.findById(cartId).populate('products.product').exec()
             if(cart === undefined){
                 console.log("Not found")
                 return cart
@@ -36,9 +35,10 @@ export default class CartManager{
     }
     async addProductToCart(cartId, prodId){
         try{
-            const cart = await cartModel.findById(cartId)
+            const cart = await cartModel.findById(cartId).exec()
             const product = await prodModel.findById(prodId)
             cart.products.push({_id: product})
+            await cart.save()
             return cart
         }catch(e){
             return console.error(e)
@@ -72,8 +72,8 @@ export default class CartManager{
     async updateCartWithArray(cartId, products, quantity){
         try{
             await this.updateTotalCarts()
-                const cart = await cartModel.findOneAndUpdate({_id: cartId}, {product: products, quantity: quantity} )
-                return cart
+            const cart = await cartModel.findOneAndUpdate({_id: cartId}, {product: products, quantity: quantity} )
+            return cart
         }catch(e){
             return console.error(e)
         }

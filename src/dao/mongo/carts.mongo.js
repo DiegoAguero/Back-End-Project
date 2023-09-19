@@ -1,6 +1,5 @@
 import cartModel from "./models/cart.model.js";
 import prodModel from './models/products.model.js'
-
 export default class CartManager{
     async createCart(){
         try {
@@ -46,8 +45,15 @@ export default class CartManager{
     async updateCart(cId, products, quantity){
         try {
             // const cart = await cartModel.findById(cId)
-            return await cartModel.updateOne({_id: cId, products: products, quantity: quantity})
-            // return updatedCart
+            //pruebas inconclusas
+            const prodsId = []
+            const prodsQuantity = []
+            products.forEach(prod=> {
+                prodsId.push(prod.product)
+                prodsQuantity.push(prod.quantity)
+            });
+            return await cartModel.updateOne({_id: cId, products: prodsId, quantity: prodsQuantity})
+            
 
         } catch (error) {
             return console.error(error)
@@ -57,9 +63,10 @@ export default class CartManager{
         try {
             const cart = await cartModel.findById(cId).populate('products.product').lean().exec()
             const product = await prodModel.findById(pId)
-            cart.products.push({product: product, quantity: 1})
+            cart.products.push({product: product._id, quantity: 1})
             await cart.save()
             return cart
+
         } catch (error) {
             return console.error(error)
         }

@@ -1,24 +1,24 @@
 import express from 'express'
 import session from 'express-session'
 import MongoStore from 'connect-mongo'
-import ProductManager from './dao/mongo/ProductManager.js'
-import productsRoute from './routes/product.router.js'
-import cartRoute from './routes/cart.router.js'
 import handlebars from 'express-handlebars'
 import {Server} from 'socket.io'
 import mongoose from 'mongoose'
 import passport from 'passport'
 import cookieParser from 'cookie-parser'
 
+import cartRoute from './routes/cart.router.js'
+import productsRoute from './routes/product.router.js'
+import ProductManager from './dao/mongo/ProductManager.js'
 import initializePassport from './config/passport.config.js'
 import msgModel from './dao/mongo/models/messages.model.js'
 import __dirname from './utils.js'
 import viewsRoute from './routes/views.router.js'
 import sessionRoute from './routes/session.router.js'
 import userModel from './dao/mongo/models/user.model.js'
-
 //.env config
 import config from './config/config.js'
+
 
 const app = express()
 
@@ -38,9 +38,6 @@ app.use(session({
     secret: 'secret',
     resave: true,
     saveUninitialized: true,
-    cookie:{
-        maxAge: 60000
-    },
     logging: true
 }))
 

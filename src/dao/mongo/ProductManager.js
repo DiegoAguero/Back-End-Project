@@ -30,7 +30,6 @@ export default class ProductManager {
                     return await this.addProductToDatabase(title, description, price, thumbnail, code, stock, status)
 
                 }else{
-                    console.log("estoy")
                     return await this.addProductToDatabase(title, description, price, thumbnail, code, stock, status)
                 }
             }catch(e){

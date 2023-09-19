@@ -9,7 +9,6 @@ import {productService} from '../services/index.js'
 export default class CartRepository{
     //DAO es la variable que recibimos desde el factory
     constructor(dao){
-        //hacer esto con todo
         this.dao = dao
     }
 
@@ -19,30 +18,33 @@ export default class CartRepository{
 
     async getCartById(id){
         const cart = await this.dao.getCartById(id)
-        if(!cart) throw new Error('Error: cart not finded')
         return cart
         // return await this.dao.getCartById(id)
     }
     async updateCart(cId, products, quantity){
-        const cart = this.dao.getCartById(cId)
-        if(!cart) throw new Error('Cart not finded')
         return await this.dao.updateCart(cId, products, parseInt(quantity))
     }
-5
+
+    async clearCart(id){
+        const cart = await this.dao.getCartById(id)
+        cart.products = []
+        return cart
+    }
 
     async addProductToCart(cId, pId){
-        const cart = await this.dao.getCartById(cId).populate('products.product').lean().exec()
+        const cart = await this.dao.getCartById(cId)
         const getProduct = await productService.getProductById(pId)
         const isRepeated = cart.products.find(prod =>{
             return prod.product?._id.toString() === getProduct._id
         })
         if(!isRepeated){
-            await this.dao.addProductToCart(cId, pId)
+            console.log(cart, getProduct)
+            return await this.dao.addProductToCart(cId, pId)
             // cart.products.push({product: getProduct._id, quantity: 1})
             // console.log(cart)
         }else{
 
-            await this.dao.updateCart(cId, getProduct, quantity++)
+            // await this.dao.updateCart(cId, getProduct, quantity++)
         }
         // if(cart.stock <= isRepeated.quantity) {
         //     throw new Error('No more stock')
