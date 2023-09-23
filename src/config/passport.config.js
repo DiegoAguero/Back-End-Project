@@ -1,4 +1,4 @@
- import passport from 'passport'
+import passport from 'passport'
 import local from 'passport-local'
 import GitHubStrategy from 'passport-github2'
 import passportJWT from 'passport-jwt'

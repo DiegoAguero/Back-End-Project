@@ -5,7 +5,7 @@ import mongoose from 'mongoose'
 export let User
 export let Cart
 export let Product
-
+export let Ticket
 console.log(`Persistency with ${config.PERSISTENCY}`)
 
 switch (config.PERSISTENCY) {
@@ -21,13 +21,14 @@ switch (config.PERSISTENCY) {
             .catch(error =>{
                 console.error(error)
             })
-        // const {default: UserMongo} = await import('./mongo/')
+        const {default: UserMongo} = await import('./mongo/users.mongo.js')
         const {default: CartMongo} = await import('./mongo/carts.mongo.js') 
         const {default: ProductMongo} = await import('./mongo/products.mongo.js') 
-        // const {default: TicketMongo} = await import('./mongo/') 
-        // User = UserMongo
+        const {default: TicketMongo} = await import('./mongo/tickets.mongo.js') 
+        User = UserMongo
         Cart = CartMongo
         Product = ProductMongo
+        Ticket = TicketMongo
         break;
 
     default:

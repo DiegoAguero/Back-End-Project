@@ -15,7 +15,8 @@ import msgModel from './dao/mongo/models/messages.model.js'
 import __dirname from './utils.js'
 import viewsRoute from './routes/views.router.js'
 import sessionRoute from './routes/session.router.js'
-import userModel from './dao/mongo/models/user.model.js'
+import ticketRoute from './routes/ticket.router.js'
+import userRoute from './routes/user.router.js'
 //.env config
 import config from './config/config.js'
 
@@ -64,6 +65,8 @@ app.use(passport.session())
 app.use('/api/products', productsRoute)
 app.use('/api/carts', cartRoute)
 app.use('/api/session', sessionRoute)
+app.use('/api/ticket', ticketRoute)
+app.use('/api/user', userRoute)
 
 app.use('/', viewsRoute)
 

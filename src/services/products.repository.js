@@ -9,21 +9,41 @@ export default class ProductsRepository{
         return await this.dao.getProducts()
     }
     async getProductById(id){
-        const product = await this.dao.getProductById(id)
-        if(!product) throw new Error('Product not finded')
-        return product
-        // return await this.dao.getProductById(id)
+        return await this.dao.getProductById(id)
     }
-    async updateProduct(id){
-        return await this.dao.updateProduct(id)
+    async updateProduct(id, product){
+        const updateProduct = new ProductDTO(product)
+        if(updateProduct.stock === 0){
+            updateProduct.status = false
+        }else{
+            updateProduct.status = true
+        }
+        return await this.dao.updateProduct(id, updateProduct)
     }
     async deleteProduct(id){
         return await this.dao.deleteProduct(id)
     }
-    async createProduct(product){
+
+    // {
+    //     "title": "Sour Cream Pringles",
+    //     "description": "Sour Cream Pringles 500gr",
+    //     "price": 5,
+    //     "thumbnail": "/static/images/pringlessourcream.png",
+    //     "code": "98cvs",
+    //     "stock": 5,
+    //     "status": true
+    // }
+    async addProductToDatabase(product){
         const productToInsert = new ProductDTO(product)
-
-        return await this.dao.createProduct(productToInsert)
+        if(parseInt(productToInsert.stock) === 0) {
+            productToInsert.status = false
+            return await this.dao.addProductToDatabase(productToInsert)
+        }
+        return await this.dao.addProductToDatabase(productToInsert)
     }
+    async updateStock(id, stock){
+        
+        return await this.dao.updateStock(id, stock)
 
+    }
 }

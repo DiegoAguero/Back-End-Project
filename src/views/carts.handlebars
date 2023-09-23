@@ -1,5 +1,5 @@
     
-    <table   class="table">
+    <table class="table">
         <thead>
             <tr>
                 <th scope="col">ID</th>
@@ -15,31 +15,43 @@
         <tbody id="tbody">
 
                 <h2>Productos en el carrito</h2>
-                {{#each cart.products}} 
-                    <tr>
-                        <td>{{this.product._id}}</td>
-                        <td>{{this.product.title}}</td>
-                        <td>{{this.product.description}}</td>
-                        <td>${{this.product.price}}</td>
-                        <td>{{this.product.stock}}</td>
-                        <td>{{this.product.code}}</td>
-                        <td>{{this.product.status}}</td>
-                        <td>{{this.quantity}}</td>
-                        {{!-- Ver logica --}}
-                        <td>
-                            <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}" method="post">
-                                <button type="submit">Add + 1</button>
-                            </form>    
-                        </td>
-                        <td>
-                            <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}/delete" method="post">
-                                <button type="submit">Remove From Cart</button>
-                            </form>                   {{!-- Ver logica --}}
-                        </td>
-                        {{!-- <td><a href="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}/delete">🗑️</a></td> --}}
-
-                    </tr>
-                {{/each}}
-                
+                    {{#each cart.products}} 
+                        <tr>
+                            <td>{{this.product._id}}</td>
+                            <td>{{this.product.title}}</td>
+                            <td>{{this.product.description}}</td>
+                            <td>${{this.product.price}}</td>
+                            <td>{{this.product.stock}}</td>
+                            <td>{{this.product.code}}</td>
+                            <td>{{this.product.status}}</td>
+                            <td>{{this.quantity}}</td>
+                            {{!-- Ver logica --}}
+                            <td>
+                                <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}" method="post">
+                                    <button type="submit">Add + 1</button>
+                                </form>    
+                            </td>
+                            <td>
+                                <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}/delete" method="post">
+                                    <button type="submit">Remove From Cart</button>
+                                </form>                   {{!-- Ver logica --}}
+                            </td>
+                            {{!-- <td><a href="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}/delete">🗑️</a></td> --}}
+                        </tr>
+                    {{/each}}
         </tbody>
     </table>
+    <button id="{{@root.cart._id}}" onclick="purchaseProduct("{{@root.cart._id}}")" class="btn btn-danger">Finish purchase</button>
+
+<script>
+    const cart = document.getElementById("{{@root.cart._id}}").id
+    console.log(cart)
+    async function purchaseProduct(id){
+
+        const response = await fetch(`/api/carts/${id}/purchase`, {method: "post"})
+        const res = await response.json()
+        console.log(res)
+    }
+    
+</script>
+

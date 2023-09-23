@@ -24,46 +24,47 @@ export default class CartManager{
 
     async getCartById(id){
         try{
-            const cart = await cartModel.findById(id).populate('products.product').lean().exec()
-            if(!cart)return cart
+            const cart = await cartModel.findById(id)
+            if(!cart) throw new Error('The cart does not exist')
             return cart
         }catch(e){
             return console.error(e)
         }
     }
-
+    async getCartByIdPopulated(id){
+        try{
+            const cart = await cartModel.findById(id).populate('products.product').lean().exec()
+            console.log(cart)
+            if(!cart) throw new Error('The cart does not exist')
+            return cart
+        }catch(e){
+            return console.error(e)
+        }
+    }
     async deleteCart(id){
         try {
             const deletedCart = await cartModel.deleteOne({_id: id})
             if(!deletedCart) throw new Error('Error: cart does not exist')
+            return deletedCart
             
         } catch (error) {
             return console.error(error)
         }
     }
 
-    async updateCart(cId, products, quantity){
+    async updateCart(cId, products){
         try {
-            // const cart = await cartModel.findById(cId)
-            //pruebas inconclusas
-            const prodsId = []
-            const prodsQuantity = []
-            products.forEach(prod=> {
-                prodsId.push(prod.product)
-                prodsQuantity.push(prod.quantity)
-            });
-            return await cartModel.updateOne({_id: cId, products: prodsId, quantity: prodsQuantity})
-            
-
+            const cart = await this.getCartById(cId)
+            return await cartModel.findByIdAndUpdate({_id: cart._id}, {products: products})
         } catch (error) {
             return console.error(error)
         }
     }
     async addProductToCart(cId, pId){        
         try {
-            const cart = await cartModel.findById(cId).populate('products.product').lean().exec()
+            const cart = await this.getCartById(cId)
             const product = await prodModel.findById(pId)
-            cart.products.push({product: product._id, quantity: 1})
+            cart.products.push({product: product._id})
             await cart.save()
             return cart
 

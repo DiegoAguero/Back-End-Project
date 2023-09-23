@@ -33,19 +33,24 @@ router.get('/realtimeproducts', authToken, authorization('admin'), async (req, r
     req.session.touch()
     res.render('realTimeProducts', {totalProducts})
 })
-router.get('/products', async (req, res)=>{
+router.get('/products', authToken, async (req, res)=>{
     
     try{
-        req.session.touch()
+        if(!req.user){
+            throw new Error('Please, log in to see our products!')
+        }
         //arreglar cartURL
         const page = parseInt(req.query?.page) || 1
         const limit = parseInt(req.query?.limit) || 10
 
-        var cartId = req.user?.cart || '64c68a91456f4b467584190f'
-        // Bypass de este error: "Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer"
-        // Será temporal hasta que encuentre la solucion
-        const cart = await cartModel.findById(cartId).populate('products.product').lean() || ''
-        var cartUrl = ''
+        var cartId = req.user.cart
+        const cartObtained = await cartModel.findById(cartId).populate('products.product').lean().exec()
+        if(!cartObtained) throw new Error("The cart does not exist")
+
+        const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
+        const {_id, first_name, email, last_name, age, cart, rol} = userFound[0]
+        const user = {_id, first_name, email, last_name, age, cart, rol}
+
 
         const sortType = parseInt(req.query?.sort) || ''
         let sort = ''
@@ -87,82 +92,62 @@ router.get('/products', async (req, res)=>{
         }
 
         if(statusCheck !== ''){
-            if(cart){
-                const statusFilter = {status: statusCheck}
-                const totalProducts = await prodModel.paginate(statusFilter, options, (err, results)=>{
-                    if(err){ return console.log(err)}
-                    return results
-                })
-
-                cartUrl = `&cart=${cartId}`
-                totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-                totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-                // if(req.user){
-                if(!req.user){
-                    return res.render('home', ({result: 'success'}, {
-                        totalProducts: totalProducts,                
-                    })) 
-                }
-                const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
-                const {_id, first_name, email, last_name, age, cart, rol} = userFound[0]
-                const user = {_id, first_name, email, last_name, age, cart, rol}
-                return res.render('home', ({result: 'success'}, {
-                    totalProducts: totalProducts,
-                    cartId: cartId,
-                    user: user
-                }))
-
-                // }
-                // else{
-
-                // }
-            }
-        }
-        if(cart){
-            const totalProducts = await prodModel.paginate({}, options, (err, results)=>{
+            const statusFilter = {status: statusCheck}
+            const totalProducts = await prodModel.paginate(statusFilter, options, (err, results)=>{
                 if(err){ return console.log(err)}
                 return results
             })
 
-            cartUrl = `&cart=${cartId}`
+            totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}` : ''
+            totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}` : ''
 
-            totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-            totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}${cartUrl}` : ''
-            if(!req.user){
-                return res.render('home', ({result: 'success'}, {
-                    totalProducts: totalProducts
-                }))
-            }
-            // const user = req.user
-            const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
-            console.log(userFound[0]._id)
-            const {_id, first_name, email, last_name, age, cart, rol} = userFound[0]
-
-            
-            let totalQuantity = 0
-            userFound[0].cart.products.forEach(product => {
-                if(product.quantity == product.stock){
-                    console.log('Error: No puede agregar mas de este producto al carrito')
-                }
-                if(product.quantity > product.stock){
-                    console.log("Error: Tiene más cantidad que stock!, reseteando cantidad...")
-                    product.quantity = 0
-                }
-                console.log(product.quantity)
-                totalQuantity += product.quantity               
-            });
-            //Pasar este valor por la navbar para cambiar la cantidad de productos que tiene en el carrito
-            console.log('Total quantity: ' + totalQuantity)
-
-            const user = {_id, first_name, email, last_name, age, cart, rol}
-            console.log(user)
-            // console.log("User logeado: " + user)
+            // const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
+            // const {_id, first_name, email, last_name, age, cart, rol} = userFound[0]
+            // const user = {_id, first_name, email, last_name, age, cart, rol}
             return res.render('home', ({result: 'success'}, {
                 totalProducts: totalProducts,
                 cartId: cartId,
                 user: user
             }))
+
+            // }
+            // else{
+
+            // }
         }
+        const totalProducts = await prodModel.paginate({}, options, (err, results)=>{
+            if(err){ return console.log(err)}
+            return results
+        })
+
+
+        totalProducts.prevLink = totalProducts.hasPrevPage? `/products?page=${totalProducts.prevPage}&limit=${limit}${sort}${status}` : ''
+        totalProducts.nextLink = totalProducts.hasNextPage? `/products?page=${totalProducts.nextPage}&limit=${limit}${sort}${status}` : ''
+        // const user = req.user
+
+        
+        let totalQuantity = 0
+        cartObtained.products.forEach(product => {
+            if(product.quantity == product.stock){
+                console.log('Error: No puede agregar mas de este producto al carrito')
+            }
+            if(product.quantity > product.stock){
+                console.log("Error: Tiene más cantidad que stock!, reseteando cantidad...")
+                product.quantity = 0
+            }
+            console.log(product.quantity)
+            totalQuantity += product.quantity               
+        });
+        //Pasar este valor por la navbar para cambiar la cantidad de productos que tiene en el carrito
+        console.log('Total quantity: ' + totalQuantity)
+
+        console.log(user)
+        // console.log("User logeado: " + user)
+        return res.render('home', ({result: 'success'}, {
+            totalProducts: totalProducts,
+            cartId: cartId,
+            user: user
+        }))
 
     }catch(e){
         return console.error(e)
