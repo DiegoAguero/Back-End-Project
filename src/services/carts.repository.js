@@ -23,7 +23,7 @@ export default class CartRepository{
         // return await this.dao.getCartById(id)
     }
     async getCartByIdPopulated(id){
-        const cart = await this.dao.getCartByIdPopulated(id)
+        const cart = await this.dao.getCartById(id)
         return cart
     }
     async updateCart(cId, products){
@@ -33,7 +33,8 @@ export default class CartRepository{
     async clearCart(id){
         const cart = await this.dao.getCartById(id)
         cart.products = []
-        await cart.save()
+        await this.dao.updateCart(id, cart.products)
+        // await cart.save()
         return cart
     }
 
@@ -92,11 +93,11 @@ export default class CartRepository{
     }
 
     async purchaseProducts(cId, email){
-        const cartPopulated = await this.dao.getCartByIdPopulated(cId)
+        const cartPopulated = await this.dao.getCartById(cId)
         // const cart = await this.dao.getCartById(cId)
         let totalPrice = 0
         let productsNotProcessed = []
-        console.log("cart populated", cartPopulated)
+        // console.log("cart populated", cartPopulated)
         cartPopulated.products.forEach(prod => {
             if(prod.product.stock < prod.quantity){
                 let quantityProductsNotPurchased = prod.quantity - prod.product.stock
@@ -104,21 +105,25 @@ export default class CartRepository{
 
                 totalPrice += prod.product.price * prod.product.stock
             }else{
-                const totalStock = prod.product.stock - prod.quantity
-                //solucionar esto
+                prod.product.stock -= prod.quantity
+                // const totalStock = prod.product.stock - prod.quantity
                 totalPrice += prod.product.price * prod.quantity 
             }
         });
+        // console.log("Cart populated", cartPopulated)
         // console.log(cart, cartPopulated)
         //La mejor forma de guardar un carrito con populate
         //Es haciendo $set, mirar documentacion 
         //Arreglar esto
         console.log('Precio total: ', totalPrice)
         console.log("Cantidad de productos que no fueron procesados: ", productsNotProcessed)
+        console.log(JSON.stringify(cartPopulated, null,'\t'))
+        const result = await this.dao.updateCart(cId, cartPopulated.products)
+        console.log("Result of update: ", JSON.stringify(result, null,'\t'))
         // const purchasedAt = new Date()
         // console.log(purchasedAt.toString())
         
-        return await ticketService.createTicket(totalPrice, email)
+        // return await ticketService.createTicket(totalPrice, email)
         // const ticketCreated = ticketModel.create({amount: totalPrice, purchasedAt.toString()})
     }
     

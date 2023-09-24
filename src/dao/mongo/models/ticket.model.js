@@ -4,8 +4,8 @@ const ticketCollection = 'tickets'
 
 const ticketSchema = new mongoose.Schema({
     //Dudas de como hacer esto autogenerable y que no sea propio de mongo
-    code: Number,
-    purchase_datetime: Date,
+    code: String,
+    purchase_datetime: String,
     amount: Number,
     purchaser: String
 })

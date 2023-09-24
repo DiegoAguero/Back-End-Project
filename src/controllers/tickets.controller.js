@@ -1,8 +1,8 @@
 import {ticketService} from '../services/index.js'
 
 export const createTicket = async (req, res)=>{
-    const ticket = req.body
-    const ticketCreated = await ticketService.createTicket(ticket)
+    const {amount, purchaser} = req.body
+    const ticketCreated = await ticketService.createTicket({amount, purchaser})
     if(!ticketCreated) return res.send({status: 'error', payload: 'Unexpected error while creating a ticket'})
     return res.send({status: 'success', payload: ticketCreated})
 

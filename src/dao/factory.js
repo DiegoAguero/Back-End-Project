@@ -30,7 +30,16 @@ switch (config.PERSISTENCY) {
         Product = ProductMongo
         Ticket = TicketMongo
         break;
-
+    case 'FILE':
+        const {default: ProductFile} = await import('./file/products.file.js')
+        const {default: CartFile} = await import('./file/carts.file.js')
+        const {default: TicketFile} = await import('./file/tickets.file.js')
+        const {default: UserFile} = await import('./file/users.file.js')
+        Cart = CartFile
+        Product = ProductFile
+        User = UserFile
+        Ticket = TicketFile
+        break;
     default:
         break;
 }

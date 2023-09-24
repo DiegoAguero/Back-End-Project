@@ -13,7 +13,7 @@ router.post('/:cId/product/:pId/delete', deleteProductFromCart)
 router.post('/:cId', clearCart)
 
 router.post('/:cId/purchase', purchaseProducts)
-// //postman
+//postman
 router.delete('/:cId/product/:pId/delete', deleteProductFromCart)
 router.put('/:cId/product/:pId', updateQuantityFromCart)
 router.delete('/:cId', clearCart)

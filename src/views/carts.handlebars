@@ -41,11 +41,12 @@
                     {{/each}}
         </tbody>
     </table>
-    <button id="{{@root.cart._id}}" onclick="purchaseProduct("{{@root.cart._id}}")" class="btn btn-danger">Finish purchase</button>
+    <form action="/api/carts/{{@root.cart._id}}/purchase" method="post">
+        <button type="submit">Finish purchase</button>
+    </form>
+    {{!-- <button id="purchase" onclick="purchaseProduct({{@root.cart._id}})" class="btn btn-danger">Finish purchase</button> --}}
 
 <script>
-    const cart = document.getElementById("{{@root.cart._id}}").id
-    console.log(cart)
     async function purchaseProduct(id){
 
         const response = await fetch(`/api/carts/${id}/purchase`, {method: "post"})

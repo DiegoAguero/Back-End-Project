@@ -6,6 +6,8 @@ import prodModel from '../dao/mongo/models/products.model.js'
 import { extractCookie, authorization, authToken } from '../utils.js'
 import cartModel from '../dao/mongo/models/cart.model.js'
 import userModel from '../dao/mongo/models/user.model.js'
+import { productService, cartService, userService } from '../services/index.js'
+
 //.env config
 import config from '../config/config.js'
 
@@ -29,8 +31,9 @@ function auth(req, res, next){
 }
 
 router.get('/realtimeproducts', authToken, authorization('admin'), async (req, res)=>{
-    const totalProducts = await prodModel.find().lean().exec()
-    req.session.touch()
+    
+    // const totalProducts = await prodModel.find().lean().exec()
+    const totalProducts = await productService.getProducts()
     res.render('realTimeProducts', {totalProducts})
 })
 router.get('/products', authToken, async (req, res)=>{
@@ -44,7 +47,8 @@ router.get('/products', authToken, async (req, res)=>{
         const limit = parseInt(req.query?.limit) || 10
 
         var cartId = req.user.cart
-        const cartObtained = await cartModel.findById(cartId).populate('products.product').lean().exec()
+        // const cartObtained = await cartModel.findById(cartId).populate('products.product').lean().exec()
+        const cartObtained = await cartService.getCartByIdPopulated(cartId)
         if(!cartObtained) throw new Error("The cart does not exist")
 
         const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()

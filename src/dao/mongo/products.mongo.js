@@ -38,8 +38,8 @@ export default class ProductManager{
         return prodUpdated
     }
 
-    async updateStock(id, stock){
-        await this.updateTotalProducts()
-        return await prodModel.updateOne({_id: id}, {$set: stock})
-    }
+    // async updateStock(id, stock){
+    //     await this.updateTotalProducts()
+    //     return await prodModel.updateOne({_id: id}, {$set: stock})
+    // }
 }

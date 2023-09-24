@@ -15,7 +15,7 @@ export const getCartById = async (req, res) =>{
     const id = req.params.cId
     const cart = await cartService.getCartById(id)
     console.log(cart)
-    // res.render('carts', {cart})
+    res.render('carts', {cart})
     if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
 
 }
@@ -23,7 +23,8 @@ export const getCartByIdPopulated = async (req, res)=>{
     const id = req.params.cId
     const cart = await cartService.getCartByIdPopulated(id)
     console.log(cart)
-    return res.render('carts', {cart})
+    res.send(cart)
+    // return res.render('carts', {cart})
     // return res.send({cart})
     // return res.render('carts', {cart})
 
@@ -141,9 +142,11 @@ export const updateQuantityFromCart = async (req, res)=>{
 
         if(isRepeated){
             isRepeated.quantity += quantity
-            await findedCart.save()
+            await cartService.updateCart(cartId, findedCart.products)
+            // await findedCart.save()
+            console.log(findedCart)
             res.send({status: 'success', payload: findedCart})
-            return res.render('carts', {result})
+            // return res.render('carts', {findedCart})
 
         }else{
             return res.send({status: 'error', payLoad: 'No existe ningun producto'})
