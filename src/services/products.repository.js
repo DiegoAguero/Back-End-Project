@@ -12,13 +12,14 @@ export default class ProductsRepository{
         return await this.dao.getProductById(id)
     }
     async updateProduct(id, product){
-        const updateProduct = new ProductDTO(product)
-        if(updateProduct.stock === 0){
-            updateProduct.status = false
+        const updatedProduct = new ProductDTO(product)
+        if(updatedProduct.stock === 0){
+            updatedProduct.status = false
         }else{
-            updateProduct.status = true
+            updatedProduct.status = true
         }
-        return await this.dao.updateProduct(id, updateProduct)
+        updatedProduct.id = id
+        return await this.dao.updateProduct(updatedProduct)
     }
     async deleteProduct(id){
         return await this.dao.deleteProduct(id)

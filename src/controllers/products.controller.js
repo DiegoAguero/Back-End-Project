@@ -8,8 +8,7 @@ export const getProducts = async(req, res)=>{
         const products = await productService.getProducts();
         return res.send(products)
     } catch (error) {
-        res.send({status: 'error'})
-        throw new Error(error);
+        return res.send({status: 'error', payload: error})
     }
 }
 
@@ -21,8 +20,8 @@ export const getProductByID = async(req, res) =>{
         console.log(product)
         return res.send(product)
     }catch(error){
-        res.send({status: 'error'})
-        throw new Error(error)
+        return res.send({status: 'error', payload: error})
+
     }
 }
 
@@ -31,7 +30,8 @@ export const updateProduct = async (req, res)=>{
         const id = req.params.pId
         const {title, description, price, thumbnail, code, stock, status} = req.body
         const newProduct = {title, description, price, thumbnail, code, stock, status}
-        const product = await productService.updateProduct({_id: id}, newProduct)
+        console.log(id)
+        const product = await productService.updateProduct(parseInt(id), newProduct)
         return res.send({status: 'success', product})
         
     }catch(error){
@@ -69,6 +69,7 @@ export const addProductToDatabase = async (req, res)=>{
         const prodCreated = await productService.addProductToDatabase(product)
         return res.send({status: 'success', product: prodCreated})
     }catch(error){
-        return res.send({status: 'error'})
+        console.log(error)
+        return res.send({status: 'error', payload: error})
     }
 }

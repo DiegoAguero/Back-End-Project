@@ -1,26 +1,17 @@
 import fs from 'fs'
-let contenidoObj
-export default class CartManager{
-    #path
-    constructor(path) {
-        this.#path = path
-        this.carts = []
+import FileManager from './FileManager.js'
+export default class CartManager extends FileManager{
+    constructor(path = './db/carts.db.js') {
+        super(path)
     }
-
-    getNextID() {
-        const id = this.products.length;
-        const nextID = (id > 0) ? id + 1 : 1
-        return nextID;
+    //Terminar esto y products
+    async getAllCarts(){
+        return await this.get()
     }
-    getAllCarts(){
-        const contenido = fs.readFileSync(this.#path, 'utf-8')
-        contenidoObj = JSON.parse(contenido)
-        return contenidoObj
+    async getCartById(id){
+        return await this.getById(id)
     }
-    getCartById(id){
-        
-    }
-    addProductToCart(cartId, prodId){
+    async addProductToCart(cartId, prodId){
         
     }
 
