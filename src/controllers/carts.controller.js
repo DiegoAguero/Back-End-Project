@@ -6,7 +6,10 @@ import {cartService, productService} from '../services/index.js'
 
 
 export const createCart = async (req, res) =>{
-    const createCart = await cartService.createCart()
+    const cart = req.body
+    const createCart = await cartService.createCart(cart)
+    //Por alguna razón createCart da undefined pero me crea el carrito y todo
+    console.log(createCart)
     if(!createCart) return res.send({status: 'error', payload: 'Unexpected error: cart not created'})
     return res.send({status: 'success', payload: createCart})
 }
@@ -43,6 +46,7 @@ export const addProductToCart = async (req, res)=>{
         const result = await cartService.addProductToCart(cartId, prodId)
         console.log(result)
         if(!result) return res.send({status: 'error', payload: 'Something inexpected happened adding a product'})
+        return res.send({status: 'success', payload: result})
         res.redirect(`/api/carts/${cartId}`)
         return res.render('carts', {result})
         // return res.send({status: 'success', payload: result})        

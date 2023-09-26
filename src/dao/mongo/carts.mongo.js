@@ -1,12 +1,10 @@
 import cartModel from "./models/cart.model.js";
 import prodModel from './models/products.model.js'
 export default class CartManager{
-    async createCart(){
+    async createCart(array){
         try {
-            const createCart = {
-                product: []
-            }
-            const cart = await cartModel.create(createCart)
+            
+            const cart = await cartModel.create(array)
             return cart
         } catch (e) {
             return console.error(e)

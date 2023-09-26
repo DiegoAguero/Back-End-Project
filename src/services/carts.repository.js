@@ -1,7 +1,7 @@
 import CartDTO from '../dao/DTO/carts.dto.js'
 import ProductDTO from '../dao/DTO/products.dto.js'
 import {productService, ticketService} from '../services/index.js'
-
+import config from '../config/config.js'
 // import ProductsServices from './products.repository.js'
 
 
@@ -12,8 +12,10 @@ export default class CartRepository{
         this.dao = dao
     }
 
-    async createCart(){
-        return await this.dao.createCart()
+    async createCart(array){
+        const cartToInsert = new CartDTO(array)
+        console.log(cartToInsert)
+        return await this.dao.createCart(cartToInsert)
     }
     async getCarts(){
         return await this.dao.getCarts()
@@ -29,31 +31,28 @@ export default class CartRepository{
     async updateCart(cId, products){
         return await this.dao.updateCart(cId, products)
     }
-
-    async clearCart(id){
-        const cart = await this.dao.getCartById(id)
-        cart.products = []
-        await this.dao.updateCart(id, cart.products)
-        // await cart.save()
-        return cart
-    }
-
     async addProductToCart(cId, pId){
         const cart = await this.dao.getCartById(cId)
         const getProduct = await productService.getProductById(pId)
         //por alguna razon no me dejaba compararlos como tal sin ponerle toString, simplemente decia que esa condicion era false todo el tiempo
         const isRepeated = cart.products.find(prod =>{
-            return prod.product?._id.toString() === getProduct._id.toString()
+            return prod.product?._id === getProduct._id
         })
+        // console.log(isRepeated)
         if(!isRepeated){
-            console.log(cart, getProduct)
+            // console.log('Entro aca siempre')
             return await this.dao.addProductToCart(cId, pId)
 
         }else{
-            isRepeated.quantiasyty++
-            await cart.save()
-            return cart
-            // await this.dao.updateCart(cId, getProduct, quantity++)
+            isRepeated.quantity++
+            // console.log(isRepeated.quantity++)
+            // console.log(isRepeated)
+            // console.log(cart)
+            return await this.dao.updateCart(cart)
+            // console.log(isRepeated.quantity++)
+           // console.log(cart.products.push())            // isRepeated.quantity++
+            // return await this.dao.updateCart(isRepeated)
+            // await cart.save()
         }
     }
 
