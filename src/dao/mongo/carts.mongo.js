@@ -1,6 +1,10 @@
 import cartModel from "./models/cart.model.js";
 import prodModel from './models/products.model.js'
+import ProductManager from "./products.mongo.js";
 export default class CartManager{
+    constructor(){
+        this.productManager = new ProductManager()
+    }
     async createCart(array){
         try {
             
@@ -11,9 +15,13 @@ export default class CartManager{
         }
     }
 
-    async getCarts(){
+    async getAllCarts(populate = false){
         try{
-            const getCarts = await cartModel.find().populate('products.product').lean().exec()
+            if(populate){
+                const getCarts = await cartModel.find().populate('products.product').lean().exec()
+                return getCarts
+            }
+            const getCarts = await cartModel.find().lean().exec()
             return getCarts
         }catch(e){
             return console.error(e)
@@ -52,9 +60,6 @@ export default class CartManager{
 
     async updateCart(cId, products){
         try {
-            // const cart = await this.getCartById(cId)
-            // console.log(JSON.stringify(cartPopulated, null,'\t'))
-            // console.log('Cart', JSON.stringify(cart, null,'\t'))
             return await cartModel.findByIdAndUpdate({_id: cId}, {$set: {products: products}})
         } catch (error) {
             return console.error(error)

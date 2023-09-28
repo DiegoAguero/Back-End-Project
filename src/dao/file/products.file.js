@@ -17,8 +17,8 @@ export default class ProductManager extends FileManager {
         return await this.add(product)
     }
 
-    async updateProduct(data){
-        return await this.update(data)
+    async updateProduct(id, data){
+        return await this.update(id, data)
     }
 }
 

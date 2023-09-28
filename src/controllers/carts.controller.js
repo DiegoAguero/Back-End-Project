@@ -13,12 +13,23 @@ export const createCart = async (req, res) =>{
     if(!createCart) return res.send({status: 'error', payload: 'Unexpected error: cart not created'})
     return res.send({status: 'success', payload: createCart})
 }
-
+export const getAllCarts = async (req, res)=>{
+    try {
+        let populate = req.query?.populate ?? false
+        populate = populate === "false" ? false : true
+        const allCarts = await cartService.getAllCarts(populate)
+        res.send({status: 'success', payload: allCarts})
+    
+    } catch (error) {
+        return console.error(error)
+    }
+}
 export const getCartById = async (req, res) =>{
     const id = req.params.cId
     const cart = await cartService.getCartById(id)
     console.log(cart)
-    res.render('carts', {cart})
+    res.send({cart})
+    // res.render('carts', {cart})
     if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
 
 }
@@ -49,47 +60,6 @@ export const addProductToCart = async (req, res)=>{
         return res.send({status: 'success', payload: result})
         res.redirect(`/api/carts/${cartId}`)
         return res.render('carts', {result})
-        // return res.send({status: 'success', payload: result})        
-        // const carritoEncontrado= await cartModel.findById(cartId)
-        // const findedCart = await cartService.getCartById(cartId)
-        // const findedProduct = await productManager.getProductById(prodId)
-        // const productoEncontrado = await prodModel.findById(prodId)
-        // if(findedProduct === undefined){
-        //     return res.send('No existe el producto')
-        // }else{  
-
-        //     const isRepeated = findedCart.products.find(prod =>{
-        //         return prod.product?._id.toString() === prodId
-        //     })
-        //     if(isRepeated){
-        //         if(findedProduct.stock <= isRepeated.quantity){
-        //             res.send({status: 'error', payLoad: 'No hay más stock de este producto'})
-        //         }else{
-        //             isRepeated.quantity++
-        //             await findedCart.save()
-                    
-        //             //Cada vez que añado un producto al carrito de una manera u otra aparece este mensaje
-        //             //"Cannot set headers after they are sent to the client", no me rompe el flujo del codigo 
-        //             //Pero aparece cada vez que añado o elimino por el res.render
-                    
-        //             //Cuando añadis más de 1 producto del mismo, te va a llevar a la pagina del carrito
-
-        //             // res.render('carts', {findedCart})
-        //             // res.redirect(`/cart/${cartId}`)
-
-        //             // res.send(findedCart)
-        //             res.redirect('/products')
-
-        //         }
-
-        //     }else{
-        //         findedCart.products.push({product: prodId})                
-        //         await findedCart.save()
-                
-        //         res.redirect('/products')
-
-        //     }
-        // }
 
     }catch(error){
         throw new Error(error)
@@ -112,9 +82,11 @@ export const deleteProductFromCart = async (req, res)=>{
         const prodId = req.params.pId
         // const carritoEncontrado = await cartModel.findById(cartId)
         const result = await cartService.deleteProductFromCart(cartId, prodId)
+        console.log(result)
         if(!result) return res.send({status: 'error', payload: 'There has been a problem deleting a product from your cart'})
-        res.redirect(`/api/carts/${cartId}`)
-        return res.render('carts', {result})
+        // res.redirect(`/api/carts/${cartId}`)
+        res.send({result})
+        // return res.render('carts', {result})
         // return res.send({status: 'success', payload: result})
 
     } catch(e){
@@ -181,7 +153,7 @@ export const purchaseProducts = async (req, res)=>{
     try {
         const cartId = req.params.cId
         console.log('CartID: ', cartId)
-        const userEmail = req.user?.email || ""
+        const userEmail = req.user?.email || req.body.email
         return await cartService.purchaseProducts(cartId, userEmail)
     } catch (error) {
         throw new Error(error)

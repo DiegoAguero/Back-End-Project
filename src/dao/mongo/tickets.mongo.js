@@ -1,12 +1,8 @@
 import ticketModel from "./models/ticket.model.js";
-import customId from 'r2-custom-id'
 
 export default class TicketManager{
     
-    async createTicket(amount, purchaser){
-        const code = customId({
-            randomLength: 4
-        })
+    async createTicket(ticket){
 
         // const ticket = {
         //     code: code.toString(),
@@ -14,8 +10,7 @@ export default class TicketManager{
         //     amount: amount,
         //     purchaser_datetime: dayTime
         // }
-        const dayTime = new Date().toString()
-        const ticketCreated = await ticketModel.create({code: code.toString(), purchaser: purchaser, amount: amount, purchaser_datetime: dayTime})
+        const ticketCreated = await ticketModel.create(ticket)
         if(!ticketCreated) throw new Error('Error trying to create a ticket!')
         return ticketCreated
     }

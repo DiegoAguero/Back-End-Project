@@ -33,13 +33,18 @@ export default class ProductManager{
 
     async updateProduct(id, product){
         await this.updateTotalProducts()
-        console.log(product)
+        // if(product.length > 1){
+        //     const allProducts = await this.getProducts()
+        //     product.forEach(prod => {
+        //         console.log(prod)
+        //     });
+        // }
         const prodUpdated = await prodModel.updateOne({_id: id}, product)
         return prodUpdated
     }
 
-    // async updateStock(id, stock){
-    //     await this.updateTotalProducts()
-    //     return await prodModel.updateOne({_id: id}, {$set: stock})
-    // }
+    async updateStock(id, stock){
+        await this.updateTotalProducts()
+        return await prodModel.updateOne({_id: id}, {$set: stock})
+    }
 }

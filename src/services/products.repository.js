@@ -18,8 +18,9 @@ export default class ProductsRepository{
         }else{
             updatedProduct.status = true
         }
-        updatedProduct.id = id
-        return await this.dao.updateProduct(updatedProduct)
+
+        updatedProduct._id = id
+        return await this.dao.updateProduct(updatedProduct._id, updatedProduct)
     }
     async deleteProduct(id){
         return await this.dao.deleteProduct(id)

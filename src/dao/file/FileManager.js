@@ -18,20 +18,20 @@ class FileManager{
     }
     async getById(id){
         const data = await this.get()
-        console.log(typeof data)
         return data.find(d => d._id == id)
     }
     async add(data){
         const list = await this.get()
         data._id = this.getNextId(list)
         list.push(data)
-        return fs.promises.writeFile(this.path, JSON.stringify(list))
+        return fs.promises.writeFile(this.path, JSON.stringify(list)), data
     }
-    async update(data){
+    async update(id, data){
+        console.log(data)
         const list = await this.get()
-        const idx = list.findIndex(item => item._id == data._id )
+        const idx = list.findIndex(item => item._id == id )
         list[idx] = data
-        return fs.promises.writeFile(this.path, JSON.stringify(list))
+        return fs.promises.writeFile(this.path, JSON.stringify(list)), data
     }
 }
 
