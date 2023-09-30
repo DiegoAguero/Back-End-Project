@@ -4,7 +4,7 @@ export default class ProductManager extends FileManager {
     constructor(path = './db/products.json'){
         super(path)
     }
-
+    
     async getProducts(){
         return await this.get()
     }

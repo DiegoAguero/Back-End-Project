@@ -40,6 +40,17 @@ switch (config.PERSISTENCY) {
         User = UserFile
         Ticket = TicketFile
         break;
+    case 'MEMORY':
+        const {default: ProductMemory} = await import('./memory/products.memory.js')
+        const {default: CartMemory} = await import('./memory/carts.memory.js')
+        const {default: UserMemory} = await import('./memory/users.memory.js')
+        const {default: TicketMemory} = await import('./memory/tickets.memory.js')
+        
+        Cart = CartMemory
+        Product = ProductMemory
+        User = UserMemory
+        Ticket = TicketMemory
+        break;
     default:
         break;
 }

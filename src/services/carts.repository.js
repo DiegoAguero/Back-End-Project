@@ -98,11 +98,10 @@ export default class CartRepository{
     }
 
     async purchaseProducts(cId, email){
-        let cartPopulated = await this.dao.getCartById(cId)
-        // const cart = await this.dao.getCartById(cId)
+        let cartPopulated = await this.dao.getCartById(true, cId)
+        console.log(cartPopulated)
         let totalPrice = 0
         let productsNotProcessed = []
-        // console.log("cart populated", cartPopulated)
         cartPopulated.products.forEach(async prod => {
             if(prod.product.stock < prod.quantity){
                 let quantityProductsNotPurchased = prod.quantity - prod.product.stock
@@ -112,25 +111,23 @@ export default class CartRepository{
                     console.log('Supuestamente no tengo 0 stock, ' + prod.product.stock)
                     totalPrice += prod.product.price * prod.product.stock
                 }
-                console.log(totalPrice)
                 prod.product.stock -= prod.product.stock
-                const result = await productService.updateProduct(prod.product._id, prod.product)
+                await productService.updateProduct(prod.product._id, prod.product)
 
             }else{
                 prod.product.stock -= prod.quantity
                 totalPrice += prod.product.price * prod.quantity 
-                const result = await productService.updateProduct(prod.product._id, prod.product)
-                console.log(totalPrice)
+                await productService.updateProduct(prod.product._id, prod.product)
 
             }
         });
 
         const resultCart = await cartService.updateCart(cId, productsNotProcessed)
+        console.log(resultCart)
         const ticket = await ticketService.createTicket(totalPrice, email)
         console.log(ticket)
         //Solucionar error de que ticketService no retorna el ticket
         return ticket
-        // const ticketCreated = ticketModel.create({amount: totalPrice, purchasedAt.toString()})
     }
     
 } 

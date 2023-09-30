@@ -17,6 +17,7 @@ import viewsRoute from './routes/views.router.js'
 import sessionRoute from './routes/session.router.js'
 import ticketRoute from './routes/ticket.router.js'
 import userRoute from './routes/user.router.js'
+import mockingRoute from './routes/mocking.router.js'
 //.env config
 import config from './config/config.js'
 
@@ -67,7 +68,7 @@ app.use('/api/carts', cartRoute)
 app.use('/api/session', sessionRoute)
 app.use('/api/ticket', ticketRoute)
 app.use('/api/user', userRoute)
-
+app.use('/api/mocking', mockingRoute)
 app.use('/', viewsRoute)
 
 //corremos el server de mongoose

@@ -30,8 +30,20 @@ export default class CartManager extends FileManager{
         }
         return carts
     }
-    async getCartById(id){
-        return await this.getById(id)
+    async getCartById(populate = false, id){
+        const cart = await this.getById(id)
+        if(populate){
+            const products = await this.productManager.getProducts()
+            const result = []
+
+            cart.products.forEach(product=>{
+                let prod = products.find(prod=> parseInt(prod._id) == parseInt(product.product))
+                result.push(prod)
+            })
+            cart.products = result
+            console.log(result)
+        }
+        return cart
     }
     async addProductToCart(cartId, prodId){
         const prod = await this.productManager.getProductById(prodId)
