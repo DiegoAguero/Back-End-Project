@@ -33,4 +33,8 @@ export default class UserManager extends FileManager{
         return userEmail
     }
 
+    async getUserById(id){
+        return await this.getById(id)
+    }
+
 }

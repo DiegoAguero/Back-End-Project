@@ -10,13 +10,13 @@ export default class UserRepository{
         return await this.dao.getAllUsers(populate)
     }
     async createUser(user){
-        user.password = createHash(user.password)
-        const userCart = await this.cartManager.createCart([]) 
-        user.cart = userCart._id
         const userToCreate = new UserDTO(user)
         return await this.dao.createUser(userToCreate)
     }
-    async getUserByEmail(email){
-        return await this.dao.getUserByEmail(email)
+    async getUserByEmail(email, populate = false){
+        return await this.dao.getUserByEmail(email, populate)
+    }
+    async getUserById(id){
+        return await this.dao.getUserById(id)
     }
 }   

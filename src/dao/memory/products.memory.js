@@ -8,16 +8,16 @@ export default class ProductManager{
         return this.products
     }
     async addProductToDatabase(product){
-        const productToInsert = new ProductDTO(product)
-        productToInsert._id = this.products.length + 1
-        const prod = this.products.push(productToInsert)
+        product._id = this.products.length + 1
+        const prod = this.products.push(product)
+        console.log(this.products)
         return prod
     }
 
     async getProductById(id){
         try {
-            const product = this.products.find(p => p._id === id)
-            return product    
+            return await this.products.find(p => p._id === parseInt(id))
+            // return product    
         } catch (error) {
             throw new Error('Product not finded')
         }
@@ -25,7 +25,7 @@ export default class ProductManager{
 
     async updateProduct(id, data){
         try {
-            const product = this.getProductById(id)
+            const product = await this.getProductById(id)
             product = data
             return product
         } catch (error) {

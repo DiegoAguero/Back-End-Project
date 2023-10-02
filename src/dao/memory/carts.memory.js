@@ -1,7 +1,6 @@
 import ProductManager from './products.memory.js'
 export default class CartManager{
     constructor(){
-        // this.id = 0
         this.cart = []
         this.productManager = new ProductManager()
     }
@@ -20,9 +19,10 @@ export default class CartManager{
         return newCart
     }
 
-    async getCartByID(id){
+    async getCartById(id){
         try {
-            const cart = this.cart.find(c => c.id === id)
+            console.log(id)
+            const cart = this.cart.find(c =>c._id === parseInt(id))
             return cart 
         } catch (error) {
             throw new Error('Cart not finded')
@@ -31,15 +31,15 @@ export default class CartManager{
     }
 
     async addProductToCart(cartId, prodId){
-        const cart = this.getCartByID(cartId)
-        const product = this.productManager.getProductById(prodId)
-        cart.product.push(product)
+        const cart = await this.getCartById(cartId)
+        const product = await this.productManager.getProductById(prodId)
+        console.log(product)
+        cart.products.push(product)
         return cart
-        // const product = 
     }
 
     async updateCart(id, cart){
-        let cartFinded = this.cart.find(c => c.id === id)
+        let cartFinded = this.cart.find(c => c._id === id)
         console.log(cartFinded)
         cartFinded = cart
         console.log(cartFinded)

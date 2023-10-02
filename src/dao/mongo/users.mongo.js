@@ -7,10 +7,18 @@ export default class UserManager{
         return userCreated
     }
     
-    async getUserByEmail(email){
+    async getUserByEmail(email, populate = false){
+        if(populate){
+            const findUser = await userModel.findOne({email: email}).populate('cart').lean().exec()
+            return findUser
+        }
         const findUser = await userModel.findOne({email: email})
-        if(!findUser) throw new Error('Unable to find the user!')
+        // if(!findUser) throw new Error('Unable to find the user!')
         return findUser
+    }
+
+    async getUserById(id){
+        return await userModel.findById(id)
     }
 
 

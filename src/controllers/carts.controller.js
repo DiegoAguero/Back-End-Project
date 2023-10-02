@@ -8,7 +8,6 @@ import {cartService, productService} from '../services/index.js'
 export const createCart = async (req, res) =>{
     const cart = req.body
     const createCart = await cartService.createCart(cart)
-    //Por alguna razón createCart da undefined pero me crea el carrito y todo
     console.log(createCart)
     if(!createCart) return res.send({status: 'error', payload: 'Unexpected error: cart not created'})
     return res.send({status: 'success', payload: createCart})
@@ -19,7 +18,6 @@ export const getAllCarts = async (req, res)=>{
         populate = populate === "false" ? false : true
         const allCarts = await cartService.getAllCarts(populate)
         res.send({status: 'success', payload: allCarts})
-    
     } catch (error) {
         return console.error(error)
     }
@@ -28,8 +26,9 @@ export const getCartById = async (req, res) =>{
     const id = req.params.cId
     const cart = await cartService.getCartById(id)
     console.log(cart)
-    res.send({cart})
+    // res.send({cart})
     // res.render('carts', {cart})
+    return res.send(cart)
     if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
 
 }
@@ -43,13 +42,7 @@ export const getCartByIdPopulated = async (req, res)=>{
     // return res.render('carts', {cart})
 
 }
-export const getCarts = async (req, res)=>{
-    try{
-        return await cartService.getCarts()
-    }catch(e){
-        throw new Error(e)
-    }
-}
+
 export const addProductToCart = async (req, res)=>{
     try{
         const cartId = req.params.cId
@@ -68,7 +61,7 @@ export const addProductToCart = async (req, res)=>{
 
 export const clearCart = async (req, res)=>{
     const cartId = req.params.cId
-    const cart = cartService.getCartById(cartId)
+    const cart = await cartService.getCartById(cartId)
     const result = await cartService.clearCart(cartId)
     if(cart.products?.length === 0) return res.send({status: 'error', payload: 'There are no products in the cart at the moment.'})
     if(!result) return res.send({status: 'error', payload: 'Error clearing the products'})

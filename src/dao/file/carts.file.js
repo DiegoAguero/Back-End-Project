@@ -35,13 +35,15 @@ export default class CartManager extends FileManager{
         if(populate){
             const products = await this.productManager.getProducts()
             const result = []
+            if(cart?.products){
+                cart.products.forEach(product=>{
+                    let prod = products.find(prod=> parseInt(prod._id) == parseInt(product.product))
+                    result.push(prod)
+                })
+                cart.products = result
+                console.log(result)
+            }
 
-            cart.products.forEach(product=>{
-                let prod = products.find(prod=> parseInt(prod._id) == parseInt(product.product))
-                result.push(prod)
-            })
-            cart.products = result
-            console.log(result)
         }
         return cart
     }

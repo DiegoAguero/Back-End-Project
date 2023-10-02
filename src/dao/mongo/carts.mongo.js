@@ -28,9 +28,14 @@ export default class CartManager{
         }
     }
 
-    async getCartById(id){
+    async getCartById(id, populate = false){
         try{
-            const cart = await cartModel.findById(id).populate('products.product').lean().exec()
+            if(populate){
+                const cart = await cartModel.findById(id).populate('products.product').lean().exec()
+                return cart
+            }
+            const cart = await cartModel.findById(id)
+
             if(!cart) throw new Error('The cart does not exist')
             return cart
         }catch(e){
@@ -60,16 +65,18 @@ export default class CartManager{
 
     async updateCart(cId, products){
         try {
-            return await cartModel.findByIdAndUpdate({_id: cId}, {$set: {products: products}})
+            const prod = await cartModel.findByIdAndUpdate({_id: cId}, {$set: {products: products}})
+            console.log(prod)
+            return prod
         } catch (error) {
             return console.error(error)
         }
     }
     async addProductToCart(cId, pId){        
         try {
-            const cart = await this.getCartById(cId)
+            const cart = await this.getCartById(cId, false)
             const product = await prodModel.findById(pId)
-            cart.products.push({product: product._id})
+            cart.products.push({product: product._id, quantity: 1})
             await cart.save()
             return cart
 

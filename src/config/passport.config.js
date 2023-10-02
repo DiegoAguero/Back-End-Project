@@ -3,8 +3,8 @@ import local from 'passport-local'
 import GitHubStrategy from 'passport-github2'
 import passportJWT from 'passport-jwt'
 
+import { cartService, userService } from '../services/index.js'
 import userModel from '../dao/mongo/models/user.model.js'
-import CartManager from '../dao/mongo/CartManager.js'
 //.env config
 import config from './config.js'
 import { createHash, isValidPassword, extractCookie, generateToken } from '../utils.js'
@@ -13,7 +13,6 @@ const LocalStrategy = local.Strategy
 const JWTStrategy = passportJWT.Strategy
 const JWTExtract = passportJWT.ExtractJwt
 
-const cartManager = new CartManager()
 
 
 
@@ -33,19 +32,19 @@ function initializePassport(){
 
 
             try{
-                const user = await userModel.findOne({email: profile._json.email})
+                const user = await userService.getUserByEmail(profile._json.email)
                 if(user){
                     console.log("User already exists " + profile._json.email)
                 }else{
-                    const newCartForUser = await cartManager.createCart()
+                    const newCartForUser = await cartService.createCart()
                     const newUser = {
                         first_name: profile._json.name,
                         email: profile._json.email,
                         cart: newCartForUser._id,
                         password: ''
                     }
-                    const result = await userModel.create(newUser)
-                    console.log(result)
+                    const result = await userService.createUser(newUser)
+                    // const result = await userModel.create(newUser)
                 }
 
                 //Creamos la token para el usuario
@@ -66,7 +65,7 @@ function initializePassport(){
             secretOrKey: config.SECRET_JWT
         },
         (jwt_payload, done) => {
-            console.log({jwt_payload})
+            // console.log({jwt_payload})
             return done(null, jwt_payload)
         }
     ))
@@ -78,14 +77,15 @@ function initializePassport(){
             usernameField: 'email'
         }, 
         async(req, username, password, done)=>{
-            const {first_name, last_name, age, rol, email} = req.body
             try{
-                const user = await userModel.findOne({email: username})
+                const {first_name, last_name, age, rol, email} = req.body
+                const user = await userService.getUserByEmail(username)
+                // const user = await userModel.findOne({email: username})
                 if(user){
                     console.log("User already exist")
                     return done(null, false)
                 }
-                const newCartForUser = await cartManager.createCart()
+                const newCartForUser = await cartService.createCart([])
                 const newUser = {
                     first_name,
                     last_name,
@@ -95,10 +95,10 @@ function initializePassport(){
                     cart: newCartForUser._id,
                     password: createHash(password)
                 }
-                const result = await userModel.create(newUser)
+                const result = await userService.createUser(newUser)
                 return done(null, result)
             }catch(e){
-                return done('Error to register' + e)
+                return done('Error to register: ' + e)
             }
         }
     ))
@@ -125,7 +125,8 @@ function initializePassport(){
                     return done(null, user)
 
                 }
-                const user = await userModel.findOne({email: username}).populate('cart').lean().exec()
+                const user = await userService.getUserByEmail(username, true)
+                // const user = await userModel.findOne({email: username}).populate('cart').lean().exec()
                 if(!user){
                     console.error('User doesnt exist')
                     return done(null, false)
@@ -134,15 +135,16 @@ function initializePassport(){
                     console.error('Password is not valid')
                     return done(null, false)
                 }
-                if(!user.cart){
-                    const newCart = await cartManager.createCart()
-                    user.cart = newCart._id
-                    await user.save()
-                    console.log("Asignando nuevo carrito")
-                }
+                // if(!user.cart){
+                //     const newCart = await cartService.createCart()
+                //     user.cart = newCart._id
+                //     await user.save()
+                //     console.log("Asignando nuevo carrito")
+                // }
                 console.log("Login completado")
                 const token = generateToken(user)
                 user.token = token
+                console.log(user)
                 return done(null, user)
             } catch (error) {
                 return done('Error logging in... ' + error)
@@ -156,7 +158,7 @@ function initializePassport(){
     })
     
     passport.deserializeUser(async(id, done)=>{
-        const user = await userModel.findById(id)
+        const user = await userService.getUserById(id)
         done(null, user)
     })
 }

@@ -8,6 +8,7 @@ export default class CartRepository{
     //DAO es la variable que recibimos desde el factory
     constructor(dao){
         this.dao = dao
+
     }
 
     async createCart(array){
@@ -17,29 +18,34 @@ export default class CartRepository{
     async getAllCarts(populate = false){
         return await this.dao.getAllCarts(populate)
     }
-    async getCartById(id){
-        return await this.dao.getCartById(id)
-    }
-    async getCartByIdPopulated(id){
-        const cart = await this.dao.getCartById(id)
-        return cart
+    async getCartById(populate = false, id){
+        return await this.dao.getCartById(populate, id)
     }
     async updateCart(cId, products){
         return await this.dao.updateCart(cId, products)
     }
+    async clearCart(id){
+        const cart = await this.dao.getCartById(id)
+        cart.products = []
+        await this.dao.updateCart(id, cart.products)
+        // await cart.save()
+        return cart
+    }
     async addProductToCart(cId, pId){
         const cart = await this.dao.getCartById(cId)
         const getProduct = await productService.getProductById(pId)
-        //por alguna razon no me dejaba compararlos como tal sin ponerle toString, simplemente decia que esa condicion era false todo el tiempo
-        const isRepeated = cart.products.find(prod =>{
+        // por alguna razon no me dejaba compararlos como tal sin ponerle toString, simplemente decia que esa condicion era false todo el tiempo
+        const isRepeated = cart.products?.find(prod =>{
             if(prod.product?._id){
-                return prod.product?._id === getProduct._id
+                console.log(prod.product?._id.toString() === getProduct._id.toString())
+                return prod.product?._id.toString() === getProduct._id.toString()
             }else{
-                return prod.product === getProduct._id
+                return prod?.product === getProduct._id
             }
         })
         // console.log(isRepeated)
         if(!isRepeated){
+            console.log('entre aca')
             return await this.dao.addProductToCart(cId, pId)
 
         }else{
@@ -47,9 +53,11 @@ export default class CartRepository{
             // console.log(isRepeated.quantity++)
             // console.log(isRepeated)
             // console.log(cart)
-            return await this.dao.updateCart(cart._id, cart)
+            //Solucionar error de que no se actualiza en la primera iteracion, se actualiza en la segunda
+            return await this.dao.updateCart(cart._id, isRepeated)
             // console.log(isRepeated.quantity++)
-           // console.log(cart.products.push())            // isRepeated.quantity++
+            // console.log(cart.products.push())            
+            // isRepeated.quantity++
             // return await this.dao.updateCart(isRepeated)
             // await cart.save()
         }
@@ -105,12 +113,12 @@ export default class CartRepository{
         cartPopulated.products.forEach(async prod => {
             if(prod.product.stock < prod.quantity){
                 let quantityProductsNotPurchased = prod.quantity - prod.product.stock
-                //Esto es para dejarlo exactamente a 0 y no negativo, ya sabemos que hay menos stock que cantidad
                 productsNotProcessed.push({product: prod.product._id, quantity: quantityProductsNotPurchased})
                 if(prod.product.stock !== 0){
                     console.log('Supuestamente no tengo 0 stock, ' + prod.product.stock)
                     totalPrice += prod.product.price * prod.product.stock
                 }
+                //Esto es para dejarlo exactamente a 0 y no negativo, ya sabemos que hay menos stock que cantidad
                 prod.product.stock -= prod.product.stock
                 await productService.updateProduct(prod.product._id, prod.product)
 

@@ -1,9 +1,7 @@
 import { Router } from 'express'
 import passport from 'passport'
-import jwt from 'jsonwebtoken'
 
-import userModel from '../dao/mongo/models/user.model.js'
-import { authToken, extractCookie } from '../utils.js'
+import { authToken } from '../utils.js'
 import config from '../config/config.js'
 
 const router = Router()
@@ -15,9 +13,6 @@ router.post('/login',
         if(!req.user){
             return res.status(400).send('Invalid Credentials')
         }else{
-            // req.session.user = req.user
-            console.log("error aca")
-            console.log(req.user.token)
             return res.cookie(config.SECRET_JWT, req.user.token).redirect('/products')
 
             //return res.redirect('/products')
@@ -30,7 +25,7 @@ router.post('/login',
 })
 
 router.post('/register', 
-    passport.authenticate('register', {failureRedirect: '/register'}),
+    passport.authenticate('register', '/register'),
     async(req, res)=>{
     try {
         return res.redirect('/')
@@ -76,7 +71,6 @@ router.get(
     '/githubcallback', 
     passport.authenticate('github', {failureRedirect: '/'}), 
     async (req, res)=>{
-        console.log("Callback: " +  req.user)
         // req.session.user = req.user
         return res.cookie(config.SECRET_JWT, req.user.token).redirect('/products')
         // console.log(req.user)
@@ -85,15 +79,14 @@ router.get(
 
 router.get('/current', authToken,(req, res)=>{
     try {
-        //Cambiar, no utilizar jwt.verify, se usa el de authToken
-        const token = extractCookie(req)
-        console.log(token)
-        if(!token)return res.status(401).json({error: "Not authenticated"})
-    
-        jwt.verify(token, config.SECRET_JWT, (error, credentials)=>{
-            if(error) return res.status(403).json({error: "Not authorized"})
-            return res.json(credentials.user)
-        })
+        const user = {
+            first_name: req.user.first_name,
+            last_name: req.user?.last_name,
+            age: req.user?.age,
+            email: req.user.email,
+            rol: req.user.rol
+        }
+        return res.json(user)
 
     } catch (error) {
         console.log(error)

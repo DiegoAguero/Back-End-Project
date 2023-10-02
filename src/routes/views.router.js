@@ -48,11 +48,12 @@ router.get('/products', authToken, async (req, res)=>{
 
         var cartId = req.user.cart
         // const cartObtained = await cartModel.findById(cartId).populate('products.product').lean().exec()
-        const cartObtained = await cartService.getCartByIdPopulated(cartId)
+        const cartObtained = await cartService.getCartById(false, cartId)
         if(!cartObtained) throw new Error("The cart does not exist")
 
-        const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
-        const {_id, first_name, email, last_name, age, cart, rol} = userFound[0]
+        const userFound = await userService.getUserByEmail(req.user.email, true)
+        // const userFound = await userModel.find({email: req.user.email}).populate('cart').lean().exec()
+        const {_id, first_name, email, last_name, age, cart, rol} = userFound
         const user = {_id, first_name, email, last_name, age, cart, rol}
 
 
