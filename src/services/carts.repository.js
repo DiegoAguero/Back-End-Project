@@ -34,7 +34,6 @@ export default class CartRepository{
     async addProductToCart(cId, pId){
         const cart = await this.dao.getCartById(cId)
         const getProduct = await productService.getProductById(pId)
-        // por alguna razon no me dejaba compararlos como tal sin ponerle toString, simplemente decia que esa condicion era false todo el tiempo
         const isRepeated = cart.products?.find(prod =>{
             if(prod.product?._id){
                 console.log(prod.product?._id.toString() === getProduct._id.toString())
@@ -43,32 +42,22 @@ export default class CartRepository{
                 return prod?.product === getProduct._id
             }
         })
-        // console.log(isRepeated)
         if(!isRepeated){
-            console.log('entre aca')
             return await this.dao.addProductToCart(cId, pId)
 
         }else{
             isRepeated.quantity++
-            // console.log(isRepeated.quantity++)
-            // console.log(isRepeated)
-            // console.log(cart)
-            //Solucionar error de que no se actualiza en la primera iteracion, se actualiza en la segunda
-            return await this.dao.updateCart(cart._id, isRepeated)
-            // console.log(isRepeated.quantity++)
-            // console.log(cart.products.push())            
-            // isRepeated.quantity++
-            // return await this.dao.updateCart(isRepeated)
-            // await cart.save()
+            return await this.dao.updateCart(cart._id, cart.products)
+
         }
     }
 
     async deleteProductFromCart(cId, pId){
-        const cart = await this.dao.getCartById(cId)
+        const cart = await this.dao.getCartById(cId, true)
         const product = await productService.getProductById(pId)
         const isInCart = cart.products.find(prod =>{
             if(prod.product._id){
-                return prod.product._id === product._id
+                return prod.product._id.toString() === product._id.toString()
             }else{
                 console.log(prod.product === product._id)
                 return prod.product === product._id
@@ -78,22 +67,13 @@ export default class CartRepository{
         if(isInCart){
             if(isInCart.quantity > 1){
                 isInCart.quantity -= 1
-                return await this.dao.updateCart(cart._id, cart)
-                // return await cart.save()
-                
-                // res.send(carritoEncontrado)
-                // res.send({findedCart})
-                // res.render('carts', {findedCart})
-                // res.redirect(`/cart/${cartId}`)
+                return await this.dao.updateCart(cart._id, cart.products)
+
             }else{
                 const cartFilter = cart.products.filter(prod=>{return prod.product != isInCart.product})
                 cart.products = cartFilter
-                // return await cart.save()
-                return await this.dao.updateCart(cart._id, cart)
-                
-                // res.send(carritoEncontrado)
-                // res.render('carts', {findedCart})
-                // res.redirect(`/cart/${cartId}`)
+                return await this.dao.updateCart(cart._id, cart.products)
+
             }
         }
     }
@@ -106,7 +86,7 @@ export default class CartRepository{
     }
 
     async purchaseProducts(cId, email){
-        let cartPopulated = await this.dao.getCartById(true, cId)
+        let cartPopulated = await this.dao.getCartById(cId, true)
         console.log(cartPopulated)
         let totalPrice = 0
         let productsNotProcessed = []
@@ -115,7 +95,6 @@ export default class CartRepository{
                 let quantityProductsNotPurchased = prod.quantity - prod.product.stock
                 productsNotProcessed.push({product: prod.product._id, quantity: quantityProductsNotPurchased})
                 if(prod.product.stock !== 0){
-                    console.log('Supuestamente no tengo 0 stock, ' + prod.product.stock)
                     totalPrice += prod.product.price * prod.product.stock
                 }
                 //Esto es para dejarlo exactamente a 0 y no negativo, ya sabemos que hay menos stock que cantidad
@@ -132,10 +111,10 @@ export default class CartRepository{
 
         const resultCart = await cartService.updateCart(cId, productsNotProcessed)
         console.log(resultCart)
-        const ticket = await ticketService.createTicket(totalPrice, email)
-        console.log(ticket)
+        return await ticketService.createTicket(totalPrice, email)
+        // console.log(ticket)
         //Solucionar error de que ticketService no retorna el ticket
-        return ticket
+        // return ticket
     }
     
 } 

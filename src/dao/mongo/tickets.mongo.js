@@ -10,9 +10,9 @@ export default class TicketManager{
         //     amount: amount,
         //     purchaser_datetime: dayTime
         // }
-        const ticketCreated = await ticketModel.create(ticket)
-        if(!ticketCreated) throw new Error('Error trying to create a ticket!')
-        return ticketCreated
+        return await ticketModel.create(ticket)
+        // if(!ticketCreated) throw new Error('Error trying to create a ticket!')
+        // return ticketCreated
     }
     async getTicketByCode(code){
         const ticket = await ticketModel.findOne({code: code})

@@ -1,4 +1,3 @@
-import fs from 'fs'
 import FileManager from './FileManager.js'
 export default class ProductManager extends FileManager {
     constructor(path = './db/products.json'){

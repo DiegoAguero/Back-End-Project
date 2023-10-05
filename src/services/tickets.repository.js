@@ -18,7 +18,7 @@ export default class TicketRepository{
         //     purchase_datetime: dateTime
         // }
         const ticketToinsert = new TicketDTO({code, dateTime, amount, purchaser})
-        console.log(ticketToinsert)
+        // console.log(ticketToinsert)
         return await this.dao.createTicket(ticketToinsert)
 
     }

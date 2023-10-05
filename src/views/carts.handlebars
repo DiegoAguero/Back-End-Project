@@ -13,7 +13,6 @@
             </tr>
         </thead>
         <tbody id="tbody">
-
                 <h2>Productos en el carrito</h2>
                     {{#each cart.products}} 
                         <tr>
@@ -36,22 +35,25 @@
                                     <button type="submit">Remove From Cart</button>
                                 </form>                   {{!-- Ver logica --}}
                             </td>
-                            {{!-- <td><a href="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}/delete">🗑️</a></td> --}}
                         </tr>
                     {{/each}}
         </tbody>
     </table>
+    <button id={{@root.cart._id}}>Finish purchase</button>
     <form action="/api/carts/{{@root.cart._id}}/purchase" method="post">
         <button type="submit">Finish purchase</button>
     </form>
     {{!-- <button id="purchase" onclick="purchaseProduct({{@root.cart._id}})" class="btn btn-danger">Finish purchase</button> --}}
 
 <script>
+    let finishButton = document.getElementById(`{{@root.cart._id}}`);
+    finishButton.addEventListener("click",() =>{
+        purchaseProduct(finishButton.id)
+    })
+    console.log(finishButton)
     async function purchaseProduct(id){
-
         const response = await fetch(`/api/carts/${id}/purchase`, {method: "post"})
         const res = await response.json()
-        console.log(res)
     }
     
 </script>

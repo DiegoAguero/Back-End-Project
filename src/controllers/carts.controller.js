@@ -24,12 +24,12 @@ export const getAllCarts = async (req, res)=>{
 }
 export const getCartById = async (req, res) =>{
     const id = req.params.cId
-    const cart = await cartService.getCartById(id)
+    const cart = await cartService.getCartById(id, true)
     console.log(cart)
     // res.send({cart})
-    // res.render('carts', {cart})
-    return res.send(cart)
     if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
+    return res.render('carts', {cart})
+    // return res.send(cart)
 
 }
 export const getCartByIdPopulated = async (req, res)=>{
@@ -50,9 +50,9 @@ export const addProductToCart = async (req, res)=>{
         const result = await cartService.addProductToCart(cartId, prodId)
         console.log(result)
         if(!result) return res.send({status: 'error', payload: 'Something inexpected happened adding a product'})
-        return res.send({status: 'success', payload: result})
+        // return res.send({status: 'success', payload: result})
         res.redirect(`/api/carts/${cartId}`)
-        return res.render('carts', {result})
+        return res.render('carts', result)
 
     }catch(error){
         throw new Error(error)
@@ -78,8 +78,9 @@ export const deleteProductFromCart = async (req, res)=>{
         console.log(result)
         if(!result) return res.send({status: 'error', payload: 'There has been a problem deleting a product from your cart'})
         // res.redirect(`/api/carts/${cartId}`)
-        res.send({result})
-        // return res.render('carts', {result})
+        // res.send({result})
+        res.redirect(`/api/carts/${cartId}`)
+        return res.render('carts', {result})
         // return res.send({status: 'success', payload: result})
 
     } catch(e){

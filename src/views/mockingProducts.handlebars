@@ -1,0 +1,18 @@
+<div class="d-flex flex-row flex-wrap justify-content-center">
+    {{#each totalProducts}}
+        <div class="bg-light card m-2" style="width: 16rem;">
+            <img src="{{thumbnail}}" class="card-img-top p-3" width="254px" height="254px" alt="{{title}}">
+            <div class="card-body text-dark">
+                <h5 class="card-title">{{title}}</h5>
+                <p class="card-text">{{description}}</p>
+                <p class="card-text">${{price}}</p>
+                <p class="card-text">Total stock:   {{stock}}</p>
+                {{#if @root.cartId}}
+                    <form action="/api/carts/{{@root.cartId}}/product/{{id}}" id="submit" method="post">
+                        <button type="submit" class="btn btn-secondary mb-2">Add to cart</button>
+                    </form>
+                {{/if}}
+            </div>
+        </div>
+    {{/each}}
+</div>

@@ -35,7 +35,6 @@ export default class CartManager{
                 return cart
             }
             const cart = await cartModel.findById(id)
-
             if(!cart) throw new Error('The cart does not exist')
             return cart
         }catch(e){
@@ -66,7 +65,6 @@ export default class CartManager{
     async updateCart(cId, products){
         try {
             const prod = await cartModel.findByIdAndUpdate({_id: cId}, {$set: {products: products}})
-            console.log(prod)
             return prod
         } catch (error) {
             return console.error(error)
@@ -75,7 +73,7 @@ export default class CartManager{
     async addProductToCart(cId, pId){        
         try {
             const cart = await this.getCartById(cId, false)
-            const product = await prodModel.findById(pId)
+            const product = await this.productManager.getProductById(pId)
             cart.products.push({product: product._id, quantity: 1})
             await cart.save()
             return cart
