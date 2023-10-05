@@ -19,6 +19,7 @@ import ticketRoute from './routes/ticket.router.js'
 import userRoute from './routes/user.router.js'
 //.env config
 import config from './config/config.js'
+import { addLogger } from './services/logger/logger.js'
 
 
 const app = express()
@@ -41,7 +42,17 @@ app.use(session({
     saveUninitialized: true,
     logging: true
 }))
+app.use(addLogger)
+app.get('/test', (req, res) => {
 
+    req.logger.fatal('fatal test')
+    req.logger.error('error test')
+    req.logger.warning('warning test')
+    req.logger.info('info test')
+    req.logger.debug('debug test')
+
+    res.send('logger testing')
+})
 const httpServer = app.listen(config.PORT, ()=>{ console.log("listening") })
 const io = new Server(httpServer)
 

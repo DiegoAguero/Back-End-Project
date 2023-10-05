@@ -1,7 +1,7 @@
 import CartDTO from '../dao/DTO/carts.dto.js'
-import ProductDTO from '../dao/DTO/products.dto.js'
 import {cartService, productService, ticketService} from '../services/index.js'
-
+import CustomError from './errors/customErrors.js'
+import EErrors from './errors/enums.js'
 
 
 export default class CartRepository{
@@ -12,11 +12,30 @@ export default class CartRepository{
     }
 
     async createCart(array){
-        const cartToInsert = new CartDTO(array)
-        return await this.dao.createCart(cartToInsert)
+        try {
+            const cartToInsert = new CartDTO(array)
+            return await this.dao.createCart(cartToInsert)
+        } catch (error) {
+            CustomError.createError({
+                name: "Cart creation error",
+                cause: error,
+                message: "Error trying to create the cart",
+                code: EErrors.DATABASES_ERROR
+            })
+        }
+
     }
     async getAllCarts(populate = false){
-        return await this.dao.getAllCarts(populate)
+        try {
+            return await this.dao.getAllCarts(populate)
+        } catch (error) {
+            CustomError.createError({
+                name: "Get all carts error",
+                cause: error,
+                message: "Error trying to get all the carts",
+                code: EErrors.DATABASES_ERROR
+            })
+        }
     }
     async getCartById(populate = false, id){
         return await this.dao.getCartById(populate, id)

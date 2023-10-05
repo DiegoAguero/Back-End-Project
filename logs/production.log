@@ -1,0 +1,5 @@
+info: GET on /test - 5/10/2023
+fatal: fatal test
+error: error test
+warning: warning test
+info: info test

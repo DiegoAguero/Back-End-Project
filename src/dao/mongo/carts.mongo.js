@@ -1,6 +1,8 @@
+import CustomError from "../../services/errors/customErrors.js";
 import cartModel from "./models/cart.model.js";
 import prodModel from './models/products.model.js'
 import ProductManager from "./products.mongo.js";
+import EErrors from "../../services/errors/enums.js";
 export default class CartManager{
     constructor(){
         this.productManager = new ProductManager()
@@ -24,7 +26,12 @@ export default class CartManager{
             const getCarts = await cartModel.find().lean().exec()
             return getCarts
         }catch(e){
-            return console.error(e)
+            CustomError.createError({
+                name: "Get all carts error",
+                cause: e,
+                message: "Error trying to get all the carts",
+                code: EErrors.DATABASES_ERROR
+            })
         }
     }
 
@@ -35,10 +42,14 @@ export default class CartManager{
                 return cart
             }
             const cart = await cartModel.findById(id)
-            if(!cart) throw new Error('The cart does not exist')
             return cart
         }catch(e){
-            return console.error(e)
+            CustomError.createError({   
+                name: "Get cart error",
+                cause: e,
+                message: "Error trying to get the cart",
+                code: EErrors.DATABASES_ERROR
+            })
         }
     }
     // async getCartByIdPopulated(id){
@@ -58,7 +69,12 @@ export default class CartManager{
             return deletedCart
             
         } catch (error) {
-            return console.error(error)
+            CustomError.createError({
+                name: "Delete cart error",
+                cause: error,
+                message: "Error trying to delete the cart",
+                code: EErrors.DATABASES_ERROR
+            })
         }
     }
 
@@ -67,7 +83,12 @@ export default class CartManager{
             const prod = await cartModel.findByIdAndUpdate({_id: cId}, {$set: {products: products}})
             return prod
         } catch (error) {
-            return console.error(error)
+            CustomError.createError({
+                name: "Update cart error",
+                cause: error,
+                message: "Error trying to update the cart",
+                code: EErrors.DATABASES_ERROR
+            })
         }
     }
     async addProductToCart(cId, pId){        
@@ -79,7 +100,12 @@ export default class CartManager{
             return cart
 
         } catch (error) {
-            return console.error(error)
+            CustomError.createError({
+                name: "Add product to cart error",
+                cause: error,
+                message: "Error trying to add the product to the cart",
+                code: EErrors.DATABASES_ERROR
+            })
         }
     }
 
