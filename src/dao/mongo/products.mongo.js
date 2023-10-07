@@ -1,4 +1,5 @@
 import prodModel from "./models/products.model.js";
+import { logger } from "../../services/logger/logger.js";
 export default class ProductManager{
 
     async getProducts(){
@@ -16,7 +17,7 @@ export default class ProductManager{
     async addProductToDatabase(product){
         try{
             const productCreated = await prodModel.create(product)
-            console.log(productCreated)
+            logger.info(productCreated)
             await this.updateTotalProducts()
             return productCreated
         }catch(e){

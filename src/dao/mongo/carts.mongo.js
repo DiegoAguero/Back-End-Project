@@ -13,7 +13,12 @@ export default class CartManager{
             const cart = await cartModel.create(array)
             return cart
         } catch (e) {
-            return console.error(e)
+            return CustomError.createError({
+                name: "Create cart error",
+                cause: e,
+                message: "Error trying to create the cart",
+                code: EErrors.DATABASES_ERROR
+            })
         }
     }
 
@@ -65,9 +70,7 @@ export default class CartManager{
     async deleteCart(id){
         try {
             const deletedCart = await cartModel.deleteOne({_id: id})
-            if(!deletedCart) throw new Error('Error: cart does not exist')
             return deletedCart
-            
         } catch (error) {
             CustomError.createError({
                 name: "Delete cart error",

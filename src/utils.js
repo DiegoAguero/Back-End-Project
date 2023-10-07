@@ -3,7 +3,7 @@ import {dirname} from 'path'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import config from './config/config.js'
-
+import { logger } from './services/logger/logger.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -32,7 +32,7 @@ export const authToken = (req, res, next) =>{
     jwt.verify(token, config.SECRET_JWT, (error, credentials) =>{
         if(error) return res.status(403).send({error: 'Not authorized'})
         
-        console.log(credentials.user)
+        logger.info(credentials.user)
         req.user = credentials.user
         next()
     })
@@ -46,7 +46,7 @@ export const extractCookie = req =>{
 export const authorization = rol =>{
     return async(req, res, next)=>{
         const user = req.user
-        console.log(user)
+        logger.info(user)
         if(!user) return res.status(401).send({error: 'Unauthorized'})
         if(user.rol !== rol) return res.status(403).send({error: 'Not enough permissions'})
         return next()

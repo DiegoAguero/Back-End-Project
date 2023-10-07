@@ -1,6 +1,6 @@
 import config from '../config/config.js'
 import mongoose from 'mongoose'
-
+import { logger } from '../services/logger/logger.js'
 
 export let User
 export let Cart
@@ -16,10 +16,10 @@ switch (config.PERSISTENCY) {
             dbName: config.DB_NAME 
         })
             .then(r=>{
-                console.log("Mongo connected") 
+                logger.info("Mongo connected") 
             })
             .catch(error =>{
-                console.error(error)
+                logger.error(error)
             })
         const {default: UserMongo} = await import('./mongo/users.mongo.js')
         const {default: CartMongo} = await import('./mongo/carts.mongo.js') 

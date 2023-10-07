@@ -2,6 +2,7 @@ import CartDTO from '../dao/DTO/carts.dto.js'
 import {cartService, productService, ticketService} from '../services/index.js'
 import CustomError from './errors/customErrors.js'
 import EErrors from './errors/enums.js'
+import {logger} from '../services/logger/logger.js'
 
 
 export default class CartRepository{
@@ -29,12 +30,7 @@ export default class CartRepository{
         try {
             return await this.dao.getAllCarts(populate)
         } catch (error) {
-            CustomError.createError({
-                name: "Get all carts error",
-                cause: error,
-                message: "Error trying to get all the carts",
-                code: EErrors.DATABASES_ERROR
-            })
+
         }
     }
     async getCartById(populate = false, id){
@@ -55,7 +51,6 @@ export default class CartRepository{
         const getProduct = await productService.getProductById(pId)
         const isRepeated = cart.products?.find(prod =>{
             if(prod.product?._id){
-                console.log(prod.product?._id.toString() === getProduct._id.toString())
                 return prod.product?._id.toString() === getProduct._id.toString()
             }else{
                 return prod?.product === getProduct._id
@@ -78,7 +73,6 @@ export default class CartRepository{
             if(prod.product._id){
                 return prod.product._id.toString() === product._id.toString()
             }else{
-                console.log(prod.product === product._id)
                 return prod.product === product._id
             }
         })
@@ -106,7 +100,7 @@ export default class CartRepository{
 
     async purchaseProducts(cId, email){
         let cartPopulated = await this.dao.getCartById(cId, true)
-        console.log(cartPopulated)
+        logger.info(cartPopulated)
         let totalPrice = 0
         let productsNotProcessed = []
         cartPopulated.products.forEach(async prod => {
@@ -129,7 +123,8 @@ export default class CartRepository{
         });
 
         const resultCart = await cartService.updateCart(cId, productsNotProcessed)
-        console.log(resultCart)
+        // console.log(resultCart)
+        logger.info(`${resultCart}`)
         return await ticketService.createTicket(totalPrice, email)
         // console.log(ticket)
         //Solucionar error de que ticketService no retorna el ticket

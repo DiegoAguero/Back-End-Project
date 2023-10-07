@@ -1,3 +1,4 @@
+import { logger } from "../../services/logger/logger.js";
 import prodModel from "./models/products.model.js"
 export default class ViewManager{
     async getPaginatedProducts(limit, page, sort, status){
@@ -27,7 +28,7 @@ export default class ViewManager{
                     },
                     lean: true
                 }
-                console.log(status)
+                logger.info(status)
                 const products = await prodModel.paginate(status, options)
                 products.prevLink = products.hasPrevPage? `/products?page=${products.prevPage}&limit=${limit}&sort=${sort}&status=${status}` : ''
                 products.nextLink = products.hasNextPage? `/products?page=${products.nextPage}&limit=${limit}&sort=${sort}&status=${status}` : ''
@@ -39,7 +40,7 @@ export default class ViewManager{
             return products
 
         }catch(e){
-            return console.error(e)
+            return logger.error(e)
         }
     }
 

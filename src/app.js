@@ -43,6 +43,7 @@ app.use(session({
     logging: true
 }))
 app.use(addLogger)
+//Logger test
 app.get('/test', (req, res) => {
 
     req.logger.fatal('fatal test')

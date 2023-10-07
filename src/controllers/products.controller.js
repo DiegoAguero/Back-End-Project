@@ -17,7 +17,7 @@ export const getProductByID = async(req, res) =>{
         const id = req.params.pId
         // const product = await prodModel.findOne({_id: id})
         const product = await productService.getProductById(id)
-        console.log(product)
+        req.logger.info(product)
         return res.send(product)
     }catch(error){
         return res.send({status: 'error', payload: error})
@@ -30,7 +30,7 @@ export const updateProduct = async (req, res)=>{
         const id = req.params.pId
         const {title, description, price, thumbnail, code, stock, status} = req.body
         const newProduct = {title, description, price, thumbnail, code, stock, status}
-        console.log(id)
+        req.logger.info(id)
         const product = await productService.updateProduct(parseInt(id), newProduct)
         return res.send({status: 'success', product})
         
@@ -69,7 +69,7 @@ export const addProductToDatabase = async (req, res)=>{
         const prodCreated = await productService.addProductToDatabase(product)
         return res.send({status: 'success', product: prodCreated})
     }catch(error){
-        console.log(error)
+        req.logger.info(error)
         return res.send({status: 'error', payload: error})
     }
 }

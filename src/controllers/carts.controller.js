@@ -1,6 +1,5 @@
 
 import {cartService, productService} from '../services/index.js'
-
 //El controller solamente debe pasar datos a la capa de negocio, osea al repository, luego ahí se hacen todas las preguntas
 //Cambiar todo lo de findedProduct y toda esta pelotudez
 
@@ -8,7 +7,6 @@ import {cartService, productService} from '../services/index.js'
 export const createCart = async (req, res) =>{
     const cart = req.body
     const createCart = await cartService.createCart(cart)
-    console.log(createCart)
     if(!createCart) return res.send({status: 'error', payload: 'Unexpected error: cart not created'})
     return res.send({status: 'success', payload: createCart})
 }
@@ -19,36 +17,28 @@ export const getAllCarts = async (req, res)=>{
         const allCarts = await cartService.getAllCarts(populate)
         res.send({status: 'success', payload: allCarts})
     } catch (error) {
-        return console.error(error)
+        return req.logger.error(error)
     }
 }
 export const getCartById = async (req, res) =>{
     const id = req.params.cId
     const cart = await cartService.getCartById(id, true)
-    console.log(cart)
+    
+    req.logger.info(cart)
     // res.send({cart})
     if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
     return res.render('carts', {cart})
     // return res.send(cart)
 
 }
-export const getCartByIdPopulated = async (req, res)=>{
-    const id = req.params.cId
-    const cart = await cartService.getCartByIdPopulated(id)
-    console.log(cart)
-    res.send(cart)
-    // return res.render('carts', {cart})
-    // return res.send({cart})
-    // return res.render('carts', {cart})
 
-}
 
 export const addProductToCart = async (req, res)=>{
     try{
         const cartId = req.params.cId
         const prodId = req.params.pId
         const result = await cartService.addProductToCart(cartId, prodId)
-        console.log(result)
+        req.logger.info(result)
         if(!result) return res.send({status: 'error', payload: 'Something inexpected happened adding a product'})
         // return res.send({status: 'success', payload: result})
         res.redirect(`/api/carts/${cartId}`)
@@ -75,7 +65,7 @@ export const deleteProductFromCart = async (req, res)=>{
         const prodId = req.params.pId
         // const carritoEncontrado = await cartModel.findById(cartId)
         const result = await cartService.deleteProductFromCart(cartId, prodId)
-        console.log(result)
+        req.logger.info(result)
         if(!result) return res.send({status: 'error', payload: 'There has been a problem deleting a product from your cart'})
         // res.redirect(`/api/carts/${cartId}`)
         // res.send({result})
@@ -84,14 +74,14 @@ export const deleteProductFromCart = async (req, res)=>{
         // return res.send({status: 'success', payload: result})
 
     } catch(e){
-        return console.error(e)
+        return req.logger.error(e)
     }
 }
 
 export const deleteCart = async (req, res)=>{
     const cartId = req.params.cId
     const result = await cartService.deleteCart(cartId)
-    console.log(result)
+    req.logger.info(result)
     if(!result) return res.send({status: 'error', payload: `Inexpected error by trying to delete the cart`})
     return res.send({status: 'success', payload: result})
 
@@ -114,15 +104,15 @@ export const updateQuantityFromCart = async (req, res)=>{
             isRepeated.quantity += quantity
             await cartService.updateCart(cartId, findedCart.products)
             // await findedCart.save()
-            console.log(findedCart)
-            res.send({status: 'success', payload: findedCart})
+            req.logger.info(findedCart)
+            return res.send({status: 'success', payload: findedCart})
             // return res.render('carts', {findedCart})
 
         }else{
             return res.send({status: 'error', payLoad: 'No existe ningun producto'})
         }
     }catch(e){
-        return console.error(e)
+        return req.logger.error(e)
     }
 }
 
@@ -139,17 +129,20 @@ export const updateCart = async (req, res)=>{
         return res.status(201).json({message: 'Carrito actualizado con exito', updateCart})
 
     }catch(e){
-        return console.error(e)
+        return req.logger.error(e)
     }
 }
 
 export const purchaseProducts = async (req, res)=>{
     try {
         const cartId = req.params.cId
-        console.log('CartID: ', cartId)
+        req.logger.info('CartID: ', cartId)
         const userEmail = req.user?.email || req.body.email
-        return await cartService.purchaseProducts(cartId, userEmail)
+
+        const ticket = await cartService.purchaseProducts(cartId, userEmail)
+        req.logger.info(ticket)
+        return res.send({ticket})
     } catch (error) {
-        throw new Error(error)
+        return req.logger.error(error)
     }
 }

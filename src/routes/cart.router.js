@@ -1,7 +1,7 @@
 import {Router} from 'express'
 import CartManager from '../dao/mongo/CartManager.js'
 import ProductManager from '../dao/mongo/ProductManager.js'
-import { addProductToCart, getCartByIdPopulated, purchaseProducts, deleteProductFromCart, getCartById, updateCart, updateQuantityFromCart, createCart, clearCart, getAllCarts } from '../controllers/carts.controller.js'
+import { addProductToCart, purchaseProducts, deleteProductFromCart, getCartById, updateCart, updateQuantityFromCart, createCart, clearCart, getAllCarts } from '../controllers/carts.controller.js'
 
 
 const router = Router()
