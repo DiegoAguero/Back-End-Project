@@ -6,7 +6,7 @@ export let User
 export let Cart
 export let Product
 export let Ticket
-console.log(`Persistency with ${config.PERSISTENCY}`)
+logger.info(`Persistency with ${config.PERSISTENCY}`)
 
 switch (config.PERSISTENCY) {
     case 'MONGO':

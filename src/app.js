@@ -3,7 +3,6 @@ import session from 'express-session'
 import MongoStore from 'connect-mongo'
 import handlebars from 'express-handlebars'
 import {Server} from 'socket.io'
-import mongoose from 'mongoose'
 import passport from 'passport'
 import cookieParser from 'cookie-parser'
 
@@ -44,7 +43,7 @@ app.use(session({
 }))
 app.use(addLogger)
 //Logger test
-app.get('/test', (req, res) => {
+app.get('/loggerTest', (req, res) => {
 
     req.logger.fatal('fatal test')
     req.logger.error('error test')
