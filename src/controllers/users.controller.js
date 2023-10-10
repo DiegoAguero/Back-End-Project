@@ -1,5 +1,6 @@
 import CustomError from "../services/errors/customErrors.js";
 import EErrors from "../services/errors/enums.js";
+import {logger} from '../services/logger/logger.js'
 import { generateUserErrorInfo } from "../services/errors/info.js";
 import { userService } from "../services/index.js";
 
@@ -33,21 +34,59 @@ export const createUser = async (req, res)=>{
     }
 }
 
-export const getUserByEmail = async (req, res)=>{
+export const getUserById = async(req, res)=>{
+    const userId = req.params.uid
     try {
-        // const email = req.body.email
-        const email = req.params.email
-        const getUser = await userService.getUserByEmail(email)
-        if(!getUser) {
-            CustomError.createError({
-                name: "Get user error",
-                cause: generateUserErrorInfo(email),
-                message: "User not found",
-                code: EErrors.NOT_FOUND_ERROR
-            })
-        }
-        return res.send({status: 'success', payload: getUser})
+        const getUser = await userService.getUserById(userId, true)
+        return res.send({status:'success', payload: getUser})
     } catch (error) {
-        throw new Error(error)
+        console.log(error)
+        CustomError.createError({
+            name: "Get user error",
+            cause: generateUserErrorInfo(userId),
+            message: "User not found",
+            code: EErrors.INVALID_TYPE_ERROR
+        })
     }
 }
+export const getUserByEmail = async (req, res)=>{
+    const email = req.params.email
+    try {
+        const getUser = await userService.getUserByEmail(email, true)
+        return res.send({status:'success', payload: getUser})
+    } catch (error) {
+        CustomError.createError({
+            name: "Get user error",
+            cause: generateUserErrorInfo(email),
+            message: "User not found",
+            code: EErrors.INVALID_TYPE_ERROR
+        })
+    }
+}
+export const changeUserRol = async (req, res)=>{
+    const userId = req.params.uid
+    try {
+        let getUser = await userService.getUserById(userId)
+        if(getUser.rol === "user"){ getUser.rol = "premium" }
+        else{ getUser.rol = "user" }
+
+        const saveUser = await userService.updateUser(getUser)
+        logger.info(saveUser)
+        return res.send({status: 'success', payload: saveUser})
+
+    } catch (error) {
+        CustomError.createError({
+            name: "Change role error",
+            cause: generateUserErrorInfo(userId),
+            message: error,
+            code: EErrors.INVALID_TYPE_ERROR
+        })
+    }
+}
+
+export const resetPassword = async (req, res)=>{
+    //ver nodemailer, video del profesor
+    //Reset password
+}
+
+

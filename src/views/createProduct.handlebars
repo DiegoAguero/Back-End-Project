@@ -1,0 +1,69 @@
+<h1>Welcome premium user {{user.first_name}} {{user.last_name}}!</h1>
+
+<form method="post" id="form">
+    
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title" required></br>
+
+    <label for="description">Description:</label>
+    <input type="text" name="description" id="description" required></br>
+
+    <label for="price">Price:</label>
+    <input type="number" name="price" id="price" required></br>
+
+    <label for="stock">Stock:</label>
+    <input type="number" name="stock" id="stock" required></br>
+
+    <label for="thumbnail">Thumbnail:</label>
+    <input type="text" name="thumbnail" id="thumbnail"></br>
+
+    <label for="code">Code:</label>
+    <input type="text" name="code" id="code" required></br>
+
+    <button type="submit" onclick="addProductToDatabase()">Send data</button> 
+
+</form>
+
+    <h1>Your products!</h1>
+    <div class="d-flex flex-row flex-wrap justify-content-center" id="allProducts">
+        {{#if totalProducts}}
+            {{#each this.totalProducts}}
+                <div class="bg-light card m-2" style="width: 16rem;">
+                    <img src="{{thumbnail}}" class="card-img-top p-3" width="254px" height="254px" alt="{{title}}">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">{{title}}</h5>
+                        <p class="card-text">{{description}}</p>
+                        <p class="card-text">Total stock:{{stock}}</p>
+                        <a href='/api/products/delete/${prod._id}' class="btn btn-danger">Delete product</a>
+                    </div>
+                </div>
+            {{/each}}
+        {{/if}}
+    </div>
+<script>
+
+    async function addProductToDatabase(){
+
+        const title = document.getElementById('title').value
+        const description = document.getElementById('description').value
+        const price = parseInt(document.getElementById('price').value)
+        const stock = parseInt(document.getElementById('stock').value)
+        const thumbnail = document.getElementById('thumbnail').value
+        const code = document.getElementById('code').value
+        const status = true
+        const newProd = {title, description, price, stock, thumbnail, code, status}
+        document.getElementById('form').onsubmit = e =>{
+            e.preventDefault()
+            document.getElementById('form').reset()
+        }
+        const response = await fetch(`/api/products`, {
+            method: "POST",
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newProd)
+        })
+        const result = await response.json()
+
+    }
+</script>

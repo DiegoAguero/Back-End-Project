@@ -40,7 +40,7 @@ export default class CartManager{
         }
     }
 
-    async getCartById(id, populate = false){
+    async getCartById(populate = false, id){
         try{
             if(populate){
                 const cart = await cartModel.findById(id).populate('products.product').lean().exec()
@@ -96,7 +96,7 @@ export default class CartManager{
     }
     async addProductToCart(cId, pId){        
         try {
-            const cart = await this.getCartById(cId, false)
+            const cart = await this.getCartById(false, cId)
             const product = await this.productManager.getProductById(pId)
             cart.products.push({product: product._id, quantity: 1})
             await cart.save()

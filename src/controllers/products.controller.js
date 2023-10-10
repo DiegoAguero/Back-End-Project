@@ -62,14 +62,23 @@ export const updateStock = async (req, res)=>{
     }
 }
 
+
+
 export const addProductToDatabase = async (req, res)=>{
     try{
-        const {title, description, price, thumbnail, code, stock, status} = req.body
+        const {title, description, price, thumbnail, code, stock, status} = await req.body
+        if(req.user.rol === 'premium'){
+            const owner = req.user.email
+            const product = {title, description, price, thumbnail, code, owner, stock, status}
+            req.logger.info(product)
+            const prodCreated = await productService.addProductToDatabase(product)
+            return res.send({status: 'success', product: prodCreated})
+        }
         const product = {title, description, price, thumbnail, code, stock, status}
         const prodCreated = await productService.addProductToDatabase(product)
         return res.send({status: 'success', product: prodCreated})
     }catch(error){
-        req.logger.info(error)
+        req.logger.info("Error: " + error)
         return res.send({status: 'error', payload: error})
     }
 }

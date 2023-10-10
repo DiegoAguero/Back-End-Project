@@ -1,4 +1,3 @@
-    
     <table class="table">
         <thead>
             <tr>
@@ -31,29 +30,40 @@
                                 </form>    
                             </td>
                             <td>
-                                <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}/delete" method="post">
+                                <button onclick="removeFromCart('{{this.product._id}}')" id="{{@root.cartId}}" name="{{this.product._id}}">Remove from cart</button>
+                                {{!-- <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}/delete" method="post">
                                     <button type="submit">Remove From Cart</button>
-                                </form>                   {{!-- Ver logica --}}
+                                </form>                    --}}
                             </td>
                         </tr>
                     {{/each}}
         </tbody>
     </table>
-    <button id={{@root.cart._id}}>Finish purchase</button>
-    <form action="/api/carts/{{@root.cart._id}}/purchase" method="post">
-        <button type="submit">Finish purchase</button>
-    </form>
+    <button onclick="purchaseProduct('{{@root.cartId}}')">Finish purchase</button>
+
     {{!-- <button id="purchase" onclick="purchaseProduct({{@root.cart._id}})" class="btn btn-danger">Finish purchase</button> --}}
 
 <script>
     let finishButton = document.getElementById(`{{@root.cart._id}}`);
+
     finishButton.addEventListener("click",() =>{
         purchaseProduct(finishButton.id)
     })
-    console.log(finishButton)
+    async function removeFromCart(id){
+        const response = await fetch(`/api/carts/{{@root.cartId}}/product/${id}/delete`, {method: "post"})
+        console.log(response)
+        return Swal.fire({
+            title: "Removed 1 unity from the cart!",
+            icon: 'success',
+            text: "Successfully removed 1 unity from the cart",
+            confirmButtonText: "Okay",
+            timer: 2000
+        })
+    }
     async function purchaseProduct(id){
         const response = await fetch(`/api/carts/${id}/purchase`, {method: "post"})
-        const res = await response.json()
+        
+        console.log(response)
     }
     
 </script>

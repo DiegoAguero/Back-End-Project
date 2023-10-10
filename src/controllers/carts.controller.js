@@ -22,13 +22,11 @@ export const getAllCarts = async (req, res)=>{
 }
 export const getCartById = async (req, res) =>{
     const id = req.params.cId
-    const cart = await cartService.getCartById(id, true)
+    const cart = await cartService.getCartById(true, id)
     
-    req.logger.info(cart)
-    // res.send({cart})
+    req.logger.info(JSON.stringify(cart))
     if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
     return res.render('carts', {cart})
-    // return res.send(cart)
 
 }
 
@@ -37,6 +35,16 @@ export const addProductToCart = async (req, res)=>{
     try{
         const cartId = req.params.cId
         const prodId = req.params.pId
+        const user = req.user
+        if(user.rol === 'premium'){
+            const allProducts = await productService.getProducts()
+            const productFilteredByOwner = allProducts.filter(product=>{ return product.owner === user.email })
+            if(productFilteredByOwner >= 1){
+                const ownerProduct = productFilteredByOwner.find(product => product._id.toString() === prodId.toString())
+                req.logger.info(ownerProduct)
+                return res.send({status: 'error', payload: 'You cant add your own product to the cart!'})
+            }
+        }
         const result = await cartService.addProductToCart(cartId, prodId)
         req.logger.info(result)
         if(!result) return res.send({status: 'error', payload: 'Something inexpected happened adding a product'})
@@ -136,12 +144,11 @@ export const updateCart = async (req, res)=>{
 export const purchaseProducts = async (req, res)=>{
     try {
         const cartId = req.params.cId
-        req.logger.info('CartID: ', cartId)
         const userEmail = req.user?.email || req.body.email
 
         const ticket = await cartService.purchaseProducts(cartId, userEmail)
         req.logger.info(ticket)
-        return res.send({ticket})
+        return res.send({status: 'success', payload: ticket})
     } catch (error) {
         return req.logger.error(error)
     }

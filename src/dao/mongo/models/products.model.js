@@ -12,6 +12,11 @@ const prodSchema = new mongoose.Schema({
         type: String,
         unique: true    
     },
+    owner:{
+        type: mongoose.Schema.Types.String,
+        ref: "users",
+        default: "admin"
+    },
     stock: Number,
     status: {
         type: Boolean,

@@ -16,6 +16,7 @@ import viewsRoute from './routes/views.router.js'
 import sessionRoute from './routes/session.router.js'
 import ticketRoute from './routes/ticket.router.js'
 import userRoute from './routes/user.router.js'
+import { productService } from './services/index.js'
 //.env config
 import config from './config/config.js'
 import { addLogger } from './services/logger/logger.js'
@@ -102,8 +103,9 @@ io.on('connection', socket=>{
     socket.on('newProduct', async data =>{
         try{
             const  {title, description, price, thumbnail, code, stock} = await data
-            const prodCreated = await prod.addProduct(title, description, price, thumbnail, code, stock)
-            const getProds = await prod.getProducts()
+            const product = {title, description, price, thumbnail, code, stock}
+            const prodCreated = await productService.addProductToDatabase(product)
+            const getProds = await productService.getProducts()
             socket.emit('reload', getProds)
         }catch(e){
             return console.error(e)

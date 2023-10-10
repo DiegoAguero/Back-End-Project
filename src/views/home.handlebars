@@ -12,9 +12,8 @@
         <h1>Email: {{user.email}}</h1>
         <h1>Rol: {{user.rol}}</h1>
         <h1>
-            <form action="/api/carts/{{@root.cartId}}" method="get">
-                <button type="submit" class="btn btn-danger">Ir al carrito</button>
-            </form>
+            <a href="/api/carts/{{@root.cartId}}" class="btn btn-danger">Go to the cart!</a>
+
         </h1>
         {{else}}
             <h2>Please, log in to purchase any product!</h2>
@@ -25,7 +24,6 @@
     <h1>Products</h1>
 
     <div class="d-flex flex-row flex-wrap justify-content-center">
-
             {{#if totalProducts.docs}}
                 {{#each totalProducts.docs}}
                     <div class="bg-light card m-2" style="width: 16rem;">
@@ -34,13 +32,8 @@
                             <h5 class="card-title">{{title}}</h5>
                             <p class="card-text">{{description}}</p>
                             <p class="card-text">${{price}}</p>
-                            <p class="card-text">Total stock:   {{stock}}</p>
-                            {{#if @root.cartId}}
-                                <form action="/api/carts/{{@root.cartId}}/product/{{id}}" id="submit" method="post">
-                                    <button type="submit" class="btn btn-secondary mb-2">Add to cart</button>
-                                </form>
-                            {{/if}}
-
+                            <p class="card-text">Total stock:{{stock}}</p>
+                            <button onclick="addProductToTheCart('{{id}}')" class="btn btn-secondary mb-2">Add to cart</button>
                         </div>
                     </div>
                 {{/each}}
@@ -60,5 +53,21 @@
     </div>
 
 </main>
+
+
+<script>
+
+    async function addProductToTheCart(id){
+        const res = await fetch(`/api/carts/{{@root.cartId}}/product/${id}`, {method: "post"})
+        console.log(res)
+        return Swal.fire({
+            title: "Added to the cart!",
+            icon: 'success',
+            text: "Product successfully added to the cart",
+            confirmButtonText: "Okay",
+            timer: 2000
+        })
+    }
+</script>
 
 

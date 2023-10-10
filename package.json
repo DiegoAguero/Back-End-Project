@@ -71,6 +71,7 @@
     "mongoose-paginate-v2": "^1.7.31",
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",
+    "nodemailer": "^6.9.6",
     "nodemon": "^2.0.22",
     "nopt": "^1.0.10",
     "normalize-path": "^3.0.0",

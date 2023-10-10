@@ -30,7 +30,12 @@ export default class CartRepository{
         try {
             return await this.dao.getAllCarts(populate)
         } catch (error) {
-
+            CustomError.createError({
+                name: "Get all carts error",
+                cause: error,
+                message: "Error trying to get the carts",
+                code: EErrors.DATABASES_ERROR
+            })
         }
     }
     async getCartById(populate = false, id){
@@ -47,7 +52,7 @@ export default class CartRepository{
         return cart
     }
     async addProductToCart(cId, pId){
-        const cart = await this.dao.getCartById(cId)
+        const cart = await this.dao.getCartById(true, cId)
         const getProduct = await productService.getProductById(pId)
         const isRepeated = cart.products?.find(prod =>{
             if(prod.product?._id){
@@ -67,7 +72,7 @@ export default class CartRepository{
     }
 
     async deleteProductFromCart(cId, pId){
-        const cart = await this.dao.getCartById(cId, true)
+        const cart = await this.dao.getCartById(true, cId)
         const product = await productService.getProductById(pId)
         const isInCart = cart.products.find(prod =>{
             if(prod.product._id){
@@ -99,7 +104,7 @@ export default class CartRepository{
     }
 
     async purchaseProducts(cId, email){
-        let cartPopulated = await this.dao.getCartById(cId, true)
+        let cartPopulated = await this.dao.getCartById(true, cId)
         logger.info(cartPopulated)
         let totalPrice = 0
         let productsNotProcessed = []

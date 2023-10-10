@@ -1,5 +1,6 @@
 import CustomError from "../../services/errors/customErrors.js";
 import EErrors from "../../services/errors/enums.js";
+import { generateUserErrorInfo } from "../../services/errors/info.js";
 import userModel from "./models/user.model.js";
 export default class UserManager{
 
@@ -19,15 +20,23 @@ export default class UserManager{
 
     }
     
+    async getUserById(id, populate = false){
+        try {
+            if(populate) return await userModel.findById(id).populate('cart').lean().exec()
+            return await userModel.findById(id)
+        } catch (error) {
+            CustomError.createError({
+                name: "Get user by id error",
+                cause: error,
+                message: "Error trying to get the user",
+                code: EErrors.DATABASES_ERROR
+            })
+        }
+    }
     async getUserByEmail(email, populate = false){
         try {
-            if(populate){
-                const findUser = await userModel.findOne({email: email}).populate('cart').lean().exec()
-                return findUser
-            }
-            const findUser = await userModel.findOne({email: email})
-            // if(!findUser) throw new Error('Unable to find the user!')
-            return findUser
+            if(populate) return await userModel.findOne({email: email}).populate('cart').lean().exec()
+            return await userModel.findOne({email: email})
         } catch (error) {
             CustomError.createError({
                 name: "Get user by email error",
@@ -36,17 +45,15 @@ export default class UserManager{
                 code: EErrors.DATABASES_ERROR
             })
         }
-
     }
-
-    async getUserById(id){
+    async updateUser(user){
         try {
-            return await userModel.findById(id)
+            return await userModel.findByIdAndUpdate(user._id, user)
         } catch (error) {
             CustomError.createError({
-                name: "Get user by id error",
+                name: "Update user error",
                 cause: error,
-                message: "Error trying to get the user",
+                message: "Error trying to update the user",
                 code: EErrors.DATABASES_ERROR
             })
         }

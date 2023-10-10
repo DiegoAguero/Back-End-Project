@@ -205,3 +205,3111 @@ info: Mongo connected
 info: Mongo connected
 info: Mongo connected
 info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /favicon.ico - 7/10/2023
+info: POST on /api/session/login - 7/10/2023
+info: GET on /api/session/login-github - 7/10/2023
+info: GET on /api/session/githubcallback?code=e7db9866f642e0300b0a - 7/10/2023
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /favicon.ico - 7/10/2023
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 7/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 1 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 7/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 7/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 1 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 7/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 7/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /favicon.ico - 7/10/2023
+info: GET on /api/session/login-github - 7/10/2023
+info: GET on /api/session/githubcallback?code=9fbb4604b3663ea50daf - 7/10/2023
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 7/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 2 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 7/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 7/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 7/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 3 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 7/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 7/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 7/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 7/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 4 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 7/10/2023
+info: [object Object]
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 7/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: GET on /products - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/images/donsatur.jpg - 7/10/2023
+info: GET on /static/images/viladrau.jpg - 7/10/2023
+info: GET on /static/images/lays-papas.jpg - 7/10/2023
+info: GET on /static/images/lays-3d.jpg - 7/10/2023
+info: GET on /static/images/doritos.jpg - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 7/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 5 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 7/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 7/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 7/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 7/10/2023
+info: GET on /static/css/style.css.map - 7/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /products - 8/10/2023
+info: GET on /favicon.ico - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /api/session/login-github - 8/10/2023
+info: GET on /api/session/githubcallback?code=16a065ee80037beb0017 - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 6 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 7 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 8 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+error: undefined {"code":3,"name":"Update cart error"}
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 9 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/ - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/ - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/ - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: CartID: 
+info: [object Object]
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 8 }
+  ],
+  __v: 38
+}
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [],
+  __v: 38
+}
+info: {
+  code: '4431DUNE7631XVOE',
+  purchase_datetime: 2023-10-08T09:47:45.447Z,
+  amount: 16,
+  purchaser: 'diegotomasaguero4123@gmail.com',
+  _id: new ObjectId("65227ac119203d61912979e7"),
+  __v: 0
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/ - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/10/2023
+info: CartID: 
+info: [object Object]
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 7 }
+  ],
+  __v: 38
+}
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 3 }
+  ],
+  __v: 38
+}
+info: {
+  code: '6774ESCQ1717MVNG',
+  purchase_datetime: 2023-10-08T09:48:04.476Z,
+  amount: 8,
+  purchaser: 'diegotomasaguero4123@gmail.com',
+  _id: new ObjectId("65227ad419203d61912979fb"),
+  __v: 0
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/10/2023
+info: CartID: 
+info: [object Object]
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 6 }
+  ],
+  __v: 38
+}
+info: {
+  code: '9379EACN7933EZIC',
+  purchase_datetime: 2023-10-08T09:48:14.042Z,
+  amount: 0,
+  purchaser: 'diegotomasaguero4123@gmail.com',
+  _id: new ObjectId("65227ade19203d6191297a09"),
+  __v: 0
+}
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 6 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/ - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: CartID: 
+info: [object Object]
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 5 }
+  ],
+  __v: 38
+}
+info: {
+  code: '6653JAXR8557LBSU',
+  purchase_datetime: 2023-10-08T09:48:37.509Z,
+  amount: 0,
+  purchaser: 'diegotomasaguero4123@gmail.com',
+  _id: new ObjectId("65227af519203d6191297a1e"),
+  __v: 0
+}
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 5 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/10/2023
+info: CartID: 
+info: [object Object]
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 4 }
+  ],
+  __v: 38
+}
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 4 }
+  ],
+  __v: 38
+}
+info: {
+  code: '3939ULOD2932TJMH',
+  purchase_datetime: 2023-10-08T09:48:52.411Z,
+  amount: 0,
+  purchaser: 'diegotomasaguero4123@gmail.com',
+  _id: new ObjectId("65227b0419203d6191297a2f"),
+  __v: 0
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/ - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/10/2023
+info: CartID: 
+info: [object Object]
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 3 }
+  ],
+  __v: 38
+}
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 3 }
+  ],
+  __v: 38
+}
+info: {
+  code: '6696IMER4694BTEQ',
+  purchase_datetime: 2023-10-08T09:48:55.965Z,
+  amount: 0,
+  purchaser: 'diegotomasaguero4123@gmail.com',
+  _id: new ObjectId("65227b0719203d6191297a43"),
+  __v: 0
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/ - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: CartID: 
+info: [object Object]
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 2 }
+  ],
+  __v: 38
+}
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 2 }
+  ],
+  __v: 38
+}
+info: {
+  code: '7221HCXH7612RYAL',
+  purchase_datetime: 2023-10-08T09:49:07.953Z,
+  amount: 0,
+  purchaser: 'diegotomasaguero4123@gmail.com',
+  _id: new ObjectId("65227b1319203d6191297a56"),
+  __v: 0
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/ - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/10/2023
+info: CartID: 
+info: [object Object]
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 1 }
+  ],
+  __v: 38
+}
+info: {
+  code: '4414TQDT4444HVBN',
+  purchase_datetime: 2023-10-08T09:49:14.485Z,
+  amount: 0,
+  purchaser: 'diegotomasaguero4123@gmail.com',
+  _id: new ObjectId("65227b1a19203d6191297a6a"),
+  __v: 0
+}
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 1 }
+  ],
+  __v: 38
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/ - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on / - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/carts//product/64c68f55bc27e50e669365ad - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: POST on /api/carts/$/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: POST on /api/carts/%22%22/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 1 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 1 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 2 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 3 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on / - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 4 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 5 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 6 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 7 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 8 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":9}],"__v":39}
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 9 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":8}],"__v":39}
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad/delete - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 8 }
+  ],
+  __v: 39
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":7}],"__v":39}
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":39}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":39}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":39}
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":39}
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8? - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":39}
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":39}
+info: GET on /api/carts/sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: POST on /api/carts/%22@root.cartId%22/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: POST on /api/carts/@root.cartId/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68f55bc27e50e669365ad - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 1 }
+  ],
+  __v: 40
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1}],"__v":40}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 1 },
+    { product: new ObjectId("64c68b0f456f4b4675841928"), quantity: 1 }
+  ],
+  __v: 41
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":38,"status":true,"__v":0},"quantity":1}],"__v":41}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 8/10/2023
+info: {
+  _id: new ObjectId("64f6d5cd0344516ec5f15cf8"),
+  products: [
+    { product: new ObjectId("64c68f55bc27e50e669365ad"), quantity: 1 },
+    { product: new ObjectId("64c68b0f456f4b4675841928"), quantity: 1 },
+    { product: new ObjectId("64c68b3b456f4b467584192d"), quantity: 1 }
+  ],
+  __v: 42
+}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/10/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":38,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1}],"__v":42}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/users/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/users/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: {
+  _id: new ObjectId("64f0562ce4d0d68169723d49"),
+  first_name: 'Lucas Rolando',
+  last_name: 'Lopez',
+  email: 'lucasrolandolopez@gmail.com',
+  age: 50,
+  password: '$2b$10$Yh1lGJtk/P9lln/4ZB.RiO5IIP5XiPSzZOOVN0KvqmeIwPSIhZWqm',
+  cart: new ObjectId("64f0562ce4d0d68169723d47"),
+  rol: 'premium',
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: {
+  _id: new ObjectId("64f0562ce4d0d68169723d49"),
+  first_name: 'Lucas Rolando',
+  last_name: 'Lopez',
+  email: 'lucasrolandolopez@gmail.com',
+  age: 50,
+  password: '$2b$10$Yh1lGJtk/P9lln/4ZB.RiO5IIP5XiPSzZOOVN0KvqmeIwPSIhZWqm',
+  cart: new ObjectId("64f0562ce4d0d68169723d47"),
+  rol: 'user',
+  __v: 0
+}
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: {
+  _id: new ObjectId("64f0562ce4d0d68169723d49"),
+  first_name: 'Lucas Rolando',
+  last_name: 'Lopez',
+  email: 'lucasrolandolopez@gmail.com',
+  age: 50,
+  password: '$2b$10$Yh1lGJtk/P9lln/4ZB.RiO5IIP5XiPSzZOOVN0KvqmeIwPSIhZWqm',
+  cart: new ObjectId("64f0562ce4d0d68169723d47"),
+  rol: 'premium',
+  __v: 0
+}
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: GET on /api/user/lucasrolandolopez@gmail.com - 8/10/2023
+info: GET on /api/user/premium/64f0562ce4d0d68169723d49 - 8/10/2023
+info: {
+  _id: new ObjectId("64f0562ce4d0d68169723d49"),
+  first_name: 'Lucas Rolando',
+  last_name: 'Lopez',
+  email: 'lucasrolandolopez@gmail.com',
+  age: 50,
+  password: '$2b$10$Yh1lGJtk/P9lln/4ZB.RiO5IIP5XiPSzZOOVN0KvqmeIwPSIhZWqm',
+  cart: new ObjectId("64f0562ce4d0d68169723d47"),
+  rol: 'user',
+  __v: 0
+}
+info: GET on /api/user/lucasrolandolopez@gmail.com - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/lucasrolandolopez@gmail.com - 8/10/2023
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: GET on /api/user/lucasrolandolopez@gmail.com - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/lucasrolandolopez@gmail.com - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/64f0562ce4d0d68169723d49 - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 8/10/2023
+info: GET on /favicon.ico - 8/10/2023
+info: GET on /login - 8/10/2023
+info: GET on / - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: POST on /api/session/login - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/session/login - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: POST on /api/session/login - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/session/login - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: POST on /api/session/login - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/session/login - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /premium - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /premium - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /premium - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /premium - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: {
+  title: 'Gaming 48',
+  description: 'Gaming 200',
+  price: 20,
+  thumbnail: 'ss',
+  code: 'Casd',
+  owner: 'admin',
+  stock: 20,
+  status: true,
+  _id: new ObjectId("6522bd7bca9b8e3ce7512e2d"),
+  __v: 0
+}
+info: GET on /realtimeproducts - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/cocacola.jpg - 8/10/2023
+info: GET on /static/images/chocolinas.jpg - 8/10/2023
+info: GET on /static/images/pringlessourcream.png - 8/10/2023
+info: GET on /static/images/frutigram-chocolate.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/amanda.png - 8/10/2023
+info: GET on /static/images/hellmans-mayonesa.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/termo.jpg - 8/10/2023
+info: GET on /static/images/mate.jpg - 8/10/2023
+info: GET on /static/images/merengadas.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /ss - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/session/logout - 8/10/2023
+info: GET on / - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: POST on /api/session/login - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /realtimeproducts - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /api/products/delete/6522bd7bca9b8e3ce7512e2d - 8/10/2023
+info: GET on /realtimeproducts - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /api/session/logout - 8/10/2023
+info: GET on / - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on / - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/session/login - 8/10/2023
+info: GET on /products - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/images/donsatur.jpg - 8/10/2023
+info: GET on /static/images/viladrau.jpg - 8/10/2023
+info: GET on /static/images/lays-papas.jpg - 8/10/2023
+info: GET on /static/images/doritos.jpg - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /static/images/lays-3d.jpg - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /premium - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: GET on /premium - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/products - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 8/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 8/10/2023
+info: GET on /sweetalert2.all.min.js - 8/10/2023
+info: GET on /static/css/style.css.map - 8/10/2023
+info: POST on /api/products - 8/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: GET on /favicon.ico - 9/10/2023
+info: GET on / - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: POST on /api/session/login - 9/10/2023
+info: GET on /products - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/images/donsatur.jpg - 9/10/2023
+info: GET on /static/images/lays-papas.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/images/lays-3d.jpg - 9/10/2023
+info: GET on /static/images/viladrau.jpg - 9/10/2023
+info: GET on /static/images/doritos.jpg - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /premium - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: Error: ReferenceError: logger is not defined
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: [object Object]
+info: {
+  title: 'asd',
+  description: 'asd',
+  price: 123,
+  thumbnail: 'asd',
+  code: 'asd',
+  owner: 'admin',
+  stock: 123,
+  status: true,
+  _id: new ObjectId("6523b52f92cbe2527e44efb8"),
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: [object Object]
+info: {
+  title: 'dsdd',
+  description: 'asdas',
+  price: 123,
+  thumbnail: 'asd',
+  code: 'sssss',
+  owner: 'admin',
+  stock: 123,
+  status: true,
+  _id: new ObjectId("6523b57778f773ab756d68f7"),
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: {
+  title: 'Call of duty ghost',
+  description: 'Call of duty ghost chiteado',
+  price: 20,
+  thumbnail: 'cc',
+  code: 'ghosteado',
+  owner: 'admin',
+  stock: 1,
+  status: true,
+  _id: new ObjectId("6523b721b3efcf55927f65b3"),
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: {
+  title: 'Solidificado',
+  description: 'Solido pa',
+  price: 12,
+  thumbnail: 'solido pa',
+  code: 'solidisimobaldu',
+  owner: 'admin',
+  stock: 20,
+  status: true,
+  _id: new ObjectId("6523b7d801519b752932297c"),
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: {
+  title: 'Burrrro',
+  description: 'Baldu burro',
+  price: 1,
+  thumbnail: 'Burroo',
+  code: 'burrrrro',
+  owner: 'admin',
+  stock: 20,
+  status: true,
+  _id: new ObjectId("6523b8068518205a8d1adf53"),
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: lucasrolandolopez@gmail.com
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: lucasrolandolopez@gmail.com
+info: {
+  title: 'asda',
+  description: 'sd',
+  price: 1231,
+  thumbnail: 'asdsa',
+  code: 'ssssdd',
+  owner: 'admin',
+  stock: 23,
+  status: true,
+  _id: new ObjectId("6523b9238d94003ddb0ade07"),
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: [object Object]
+info: {
+  title: 'Dale andame pagina',
+  description: 'paginadere',
+  price: 20,
+  thumbnail: 'sss',
+  code: 'sesconelpep',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 20,
+  status: true,
+  _id: new ObjectId("6523b9509473cc2db281a45b"),
+  __v: 0
+}
+info: GET on / - 9/10/2023
+info: GET on /products - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /Burroo - 9/10/2023
+info: GET on /static/images/viladrau.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/images/doritos.jpg - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /static/images/donsatur.jpg - 9/10/2023
+info: GET on /static/images/lays-papas.jpg - 9/10/2023
+info: GET on /api/session/logout - 9/10/2023
+info: GET on / - 9/10/2023
+info: GET on /products - 9/10/2023
+info: GET on / - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: POST on /api/session/login - 9/10/2023
+info: GET on /products - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /Burroo - 9/10/2023
+info: GET on /static/images/donsatur.jpg - 9/10/2023
+info: GET on /static/images/viladrau.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/images/lays-papas.jpg - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /static/images/doritos.jpg - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /api/products/delete/6523b9509473cc2db281a45b - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /api/products/delete/6523b9238d94003ddb0ade07 - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /api/products/delete/6523b8068518205a8d1adf53 - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /api/products/delete/6523b7d801519b752932297c - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /api/products/delete/6523b721b3efcf55927f65b3 - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /api/products/delete/6523b57778f773ab756d68f7 - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /api/products/delete/6523b52f92cbe2527e44efb8 - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: {
+  title: 'Baldegas',
+  description: 'El baldu, edicion limitada',
+  price: 200,
+  thumbnail: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2F%40zafirocs%2Fvideo%2F7249766451547082011&psig=AOvVaw1QjgdvoKL-hXeeAqzwFnzY&ust=1696926808108000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDMpo3H6IEDFQAAAAAdAAAAABAE',
+  code: 'baldegas',
+  owner: 'admin',
+  stock: 1,
+  status: true,
+  _id: new ObjectId("6523bb029473cc2db281a49a"),
+  __v: 0
+}
+info: GET on / - 9/10/2023
+info: GET on /products - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/images/donsatur.jpg - 9/10/2023
+info: GET on /static/images/viladrau.jpg - 9/10/2023
+info: GET on /static/images/lays-papas.jpg - 9/10/2023
+info: GET on /static/images/doritos.jpg - 9/10/2023
+info: GET on /static/images/lays-3d.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/cocacola.jpg - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/images/lays-3d.jpg - 9/10/2023
+info: GET on /static/images/frutigram-chocolate.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/images/pringlessourcream.png - 9/10/2023
+info: GET on /static/images/chocolinas.jpg - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/images/hellmans-mayonesa.jpg - 9/10/2023
+info: GET on /static/images/amanda.png - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/images/merengadas.jpg - 9/10/2023
+info: GET on /static/images/mate.jpg - 9/10/2023
+info: GET on /static/images/termo.jpg - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css.map - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /api/products/delete/6523bb029473cc2db281a49a - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /realtimeproducts - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on / - 9/10/2023
+info: GET on /products - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 9/10/2023
+info: GET on /static/images/donsatur.jpg - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/images/doritos.jpg - 9/10/2023
+info: GET on /static/images/lays-papas.jpg - 9/10/2023
+info: GET on /static/images/lays-3d.jpg - 9/10/2023
+info: GET on /api/session/logout - 9/10/2023
+info: GET on / - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: POST on /api/session/login - 9/10/2023
+info: GET on /products - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/images/donsatur.jpg - 9/10/2023
+info: GET on /static/images/viladrau.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/images/lays-3d.jpg - 9/10/2023
+info: GET on /static/images/doritos.jpg - 9/10/2023
+info: GET on /static/images/lays-papas.jpg - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: POST on /api/products - 9/10/2023
+info: [object Object]
+info: {
+  title: 'Baldegas',
+  description: 'El maldito baldu cs, edicion limitada',
+  price: 200,
+  thumbnail: 'https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp',
+  code: 'baldegas',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 1,
+  status: true,
+  _id: new ObjectId("6523bc689473cc2db281a4ca"),
+  __v: 0
+}
+info: GET on / - 9/10/2023
+info: GET on /products - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/images/viladrau.jpg - 9/10/2023
+info: GET on /static/images/donsatur.jpg - 9/10/2023
+info: GET on /static/images/lays-papas.jpg - 9/10/2023
+info: GET on /static/images/doritos.jpg - 9/10/2023
+info: GET on /static/images/lays-3d.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/cocacola.jpg - 9/10/2023
+info: GET on /static/images/lays-3d.jpg - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/images/chocolinas.jpg - 9/10/2023
+info: GET on /static/images/pringlessourcream.png - 9/10/2023
+info: GET on /static/images/frutigram-chocolate.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/images/amanda.png - 9/10/2023
+info: GET on /static/images/hellmans-mayonesa.jpg - 9/10/2023
+info: GET on /static/images/merengadas.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/images/mate.jpg - 9/10/2023
+info: GET on /static/images/termo.jpg - 9/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/session/logout - 9/10/2023
+info: GET on / - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: POST on /api/session/login - 9/10/2023
+info: GET on /products - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /static/images/viladrau.jpg - 9/10/2023
+info: GET on /static/images/lays-papas.jpg - 9/10/2023
+info: GET on /static/images/doritos.jpg - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/images/lays-3d.jpg - 9/10/2023
+info: GET on /static/images/donsatur.jpg - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: GET on /premium - 9/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 9/10/2023
+info: GET on /sweetalert2.all.min.js - 9/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/session/logout - 10/10/2023
+info: GET on / - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /favicon.ico - 10/10/2023
+info: POST on /api/session/login - 10/10/2023
+info: GET on /products - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /static/images/lays-papas.jpg - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/images/viladrau.jpg - 10/10/2023
+info: GET on /static/images/donsatur.jpg - 10/10/2023
+info: GET on /static/images/doritos.jpg - 10/10/2023
+info: GET on /static/images/lays-3d.jpg - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: POST on /api/products - 10/10/2023
+info: [object Object]
+info: {
+  title: 'Loco corcho',
+  description: 'Hola soy el loco koala',
+  price: 20,
+  thumbnail: 'notengo',
+  code: 'koala101',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 20,
+  status: true,
+  _id: new ObjectId("6525032476c61b16d06de890"),
+  __v: 0
+}
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on / - 10/10/2023
+info: GET on /products - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /static/images/donsatur.jpg - 10/10/2023
+info: GET on /static/images/doritos.jpg - 10/10/2023
+info: GET on /static/images/lays-papas.jpg - 10/10/2023
+info: GET on /static/images/lays-3d.jpg - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /static/images/viladrau.jpg - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /static/images/cocacola.jpg - 10/10/2023
+info: GET on /static/images/lays-3d.jpg - 10/10/2023
+info: GET on /static/images/chocolinas.jpg - 10/10/2023
+info: GET on /static/images/pringlessourcream.png - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/images/frutigram-chocolate.jpg - 10/10/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/hellmans-mayonesa.jpg - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /static/images/amanda.png - 10/10/2023
+info: GET on /static/images/merengadas.jpg - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/images/mate.jpg - 10/10/2023
+info: GET on /static/images/termo.jpg - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: POST on /api/carts/[object%20Object]/product/6523bc689473cc2db281a4ca - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /api/carts/[object%20Object] - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":"64c68ac2456f4b4675841919","quantity":5,"_id":"64f056b4afd3f5a78db14052"},{"product":"64c68aaf456f4b4675841914","quantity":2,"_id":"64f056d6afd3f5a78db14078"},{"product":"64c68a91456f4b467584190f","quantity":1,"_id":"64f056d9afd3f5a78db14086"},{"product":"64c68b3b456f4b467584192d","quantity":1,"_id":"6509c54f3f54bdab057e847d"},{"product":"64c68f55bc27e50e669365ad","quantity":1,"_id":"6509c5a13f54bdab057e8489"},{"product":"64c68c72bc27e50e669365a1","quantity":1,"_id":"6509c5cd3f54bdab057e849d"}],"__v":6}
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: "64f0562ce4d0d68169723d47"
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: POST on /api/carts/64f0562ce4d0d68169723d47/product/6523bc689473cc2db281a4ca - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /notengo - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: POST on /api/carts/64f0562ce4d0d68169723d47/product/6523bc689473cc2db281a4ca - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f0562ce4d0d68169723d47/product/6523bc689473cc2db281a4ca - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f0562ce4d0d68169723d47/product/6523bc689473cc2db281a4ca - 10/10/2023
+info: {
+  _id: new ObjectId("64f0562ce4d0d68169723d47"),
+  products: [
+    {
+      product: new ObjectId("64c68ac2456f4b4675841919"),
+      quantity: 5,
+      _id: new ObjectId("64f056b4afd3f5a78db14052")
+    },
+    {
+      product: new ObjectId("64c68aaf456f4b4675841914"),
+      quantity: 2,
+      _id: new ObjectId("64f056d6afd3f5a78db14078")
+    },
+    {
+      product: new ObjectId("64c68a91456f4b467584190f"),
+      quantity: 1,
+      _id: new ObjectId("64f056d9afd3f5a78db14086")
+    },
+    {
+      product: new ObjectId("64c68b3b456f4b467584192d"),
+      quantity: 1,
+      _id: new ObjectId("6509c54f3f54bdab057e847d")
+    },
+    {
+      product: new ObjectId("64c68f55bc27e50e669365ad"),
+      quantity: 1,
+      _id: new ObjectId("6509c5a13f54bdab057e8489")
+    },
+    {
+      product: new ObjectId("64c68c72bc27e50e669365a1"),
+      quantity: 1,
+      _id: new ObjectId("6509c5cd3f54bdab057e849d")
+    },
+    { product: new ObjectId("6523bc689473cc2db281a4ca"), quantity: 1 }
+  ],
+  __v: 7
+}
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 10/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /static/css/style.css.map - 10/10/2023
+info: GET on /sweetalert2.all.min.js - 10/10/2023
+info: POST on /api/carts/64f0562ce4d0d68169723d47/product/6523bc689473cc2db281a4ca - 10/10/2023
+info: {
+  _id: new ObjectId("64f0562ce4d0d68169723d47"),
+  products: [
+    {
+      product: new ObjectId("64c68ac2456f4b4675841919"),
+      quantity: 5,
+      _id: new ObjectId("64f056b4afd3f5a78db14052")
+    },
+    {
+      product: new ObjectId("64c68aaf456f4b4675841914"),
+      quantity: 2,
+      _id: new ObjectId("64f056d6afd3f5a78db14078")
+    },
+    {
+      product: new ObjectId("64c68a91456f4b467584190f"),
+      quantity: 1,
+      _id: new ObjectId("64f056d9afd3f5a78db14086")
+    },
+    {
+      product: new ObjectId("64c68b3b456f4b467584192d"),
+      quantity: 1,
+      _id: new ObjectId("6509c54f3f54bdab057e847d")
+    },
+    {
+      product: new ObjectId("64c68f55bc27e50e669365ad"),
+      quantity: 1,
+      _id: new ObjectId("6509c5a13f54bdab057e8489")
+    },
+    {
+      product: new ObjectId("64c68c72bc27e50e669365a1"),
+      quantity: 1,
+      _id: new ObjectId("6509c5cd3f54bdab057e849d")
+    },
+    { product: new ObjectId("6523bc689473cc2db281a4ca"), quantity: 1 }
+  ],
+  __v: 7
+}
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 10/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 10/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 10/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /api/carts/sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /static/css/style.css.map - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 10/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /api/carts/sweetalert2.all.min.js - 10/10/2023
+info: GET on /static/css/style.css - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 10/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 10/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 10/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 10/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected

@@ -4,7 +4,7 @@ import {faker} from '@faker-js/faker/locale/es'
 
 import { extractCookie, authorization, authToken } from '../utils.js'
 import { productService, cartService, userService } from '../services/index.js'
-import {getProductsViews} from '../controllers/views.controller.js'
+import {getProductsViews, premiumView} from '../controllers/views.controller.js'
 
 //.env config
 import config from '../config/config.js'
@@ -13,20 +13,20 @@ const router = Router()
 
 
 //Autenticacion para poder entrar solo si estas loggeado
-function auth(req, res, next){
-    const token = extractCookie(req)
-    if(!token){ 
-        return res.redirect('/')
-    }
-    jwt.verify(token, config.SECRET_JWT, (error, credentials) =>{
-        if(error) return res.status(403).send({error: 'Not authorized / modified cookie'})
+// function auth(req, res, next){
+//     const token = extractCookie(req)
+//     if(!token){ 
+//         return res.redirect('/')
+//     }
+//     jwt.verify(token, config.SECRET_JWT, (error, credentials) =>{
+//         if(error) return res.status(403).send({error: 'Not authorized / modified cookie'})
         
-        logger.info(credentials.user)
-        req.user = credentials.user
-        logger.info("Authenticated!")
-        return next()
-    })
-}
+//         logger.info(credentials.user)
+//         req.user = credentials.user
+//         logger.info("Authenticated!")
+//         return next()
+//     })
+// }
 
 router.get('/realtimeproducts', authToken, authorization('admin'), async (req, res)=>{
     
@@ -41,7 +41,7 @@ router.get('/products/:pId', async (req, res)=>{
         const product = await productService.getProductById(pId)
         res.render('products', {product})
     }catch(e){
-        return logger.warn(e)
+        return logger.error(e)
     }
 
 })
@@ -49,9 +49,9 @@ router.get('/cart/:cId', async (req, res)=>{
     try{
         const cId = req.params.cId
         const cart = await cartService.getCartById(true, cId)
+        req.logger.info(cart
+            )
         // const cart = await cartModel.findById(cId).populate('products.product').lean()
-
-
         return res.render('carts', {cart})
     }catch(e){
         return logger.error(e)
@@ -92,4 +92,6 @@ router.get('/mockingproducts', (req, res)=>{
     }
     return res.render('mockingProducts', {totalProducts: products})
 })
+
+router.get('/premium', authToken, authorization('premium'), premiumView)
 export default router
