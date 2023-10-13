@@ -39,7 +39,10 @@ export default class CartRepository{
         }
     }
     async getCartById(populate = false, id){
-        return await this.dao.getCartById(populate, id)
+        const cart = await this.dao.getCartById(populate, id)
+        logger.info(cart)
+        return cart
+        // return await this.dao.getCartById(populate, id)
     }
     async updateCart(cId, products){
         return await this.dao.updateCart(cId, products)
@@ -105,7 +108,6 @@ export default class CartRepository{
 
     async purchaseProducts(cId, email){
         let cartPopulated = await this.dao.getCartById(true, cId)
-        logger.info(cartPopulated)
         let totalPrice = 0
         let productsNotProcessed = []
         cartPopulated.products.forEach(async prod => {
@@ -129,8 +131,9 @@ export default class CartRepository{
 
         const resultCart = await cartService.updateCart(cId, productsNotProcessed)
         // console.log(resultCart)
-        logger.info(`${resultCart}`)
-        return await ticketService.createTicket(totalPrice, email)
+        const ticket = await ticketService.createTicket(totalPrice, email)
+        return resultCart
+
         // console.log(ticket)
         //Solucionar error de que ticketService no retorna el ticket
         // return ticket

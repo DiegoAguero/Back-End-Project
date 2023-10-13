@@ -13,6 +13,7 @@
         </thead>
         <tbody id="tbody">
                 <h2>Productos en el carrito</h2>
+                {{@root.cart._id}}
                     {{#each cart.products}} 
                         <tr>
                             <td>{{this.product._id}}</td>
@@ -39,16 +40,12 @@
                     {{/each}}
         </tbody>
     </table>
-    <button onclick="purchaseProduct('{{@root.cartId}}')">Finish purchase</button>
+    <button onclick="purchaseProduct('{{@root.cart._id}}')">Finish purchase</button>
 
     {{!-- <button id="purchase" onclick="purchaseProduct({{@root.cart._id}})" class="btn btn-danger">Finish purchase</button> --}}
 
 <script>
-    let finishButton = document.getElementById(`{{@root.cart._id}}`);
 
-    finishButton.addEventListener("click",() =>{
-        purchaseProduct(finishButton.id)
-    })
     async function removeFromCart(id){
         const response = await fetch(`/api/carts/{{@root.cartId}}/product/${id}/delete`, {method: "post"})
         console.log(response)
@@ -61,6 +58,7 @@
         })
     }
     async function purchaseProduct(id){
+        console.log(id)
         const response = await fetch(`/api/carts/${id}/purchase`, {method: "post"})
         
         console.log(response)

@@ -3,7 +3,7 @@ import passport from 'passport'
 
 import { authToken } from '../utils.js'
 import config from '../config/config.js'
-
+import {logger} from '../services/logger/logger.js'	
 const router = Router()
 
 router.post('/login', 
@@ -41,11 +41,11 @@ router.get('/logout', async(req, res)=>{
         if(req.cookies){
             res.clearCookie(config.SECRET_JWT)
             req.session.destroy()
-            console.log("cookie cleared")
+            logger.info("cookie cleared")
             // res.end()
             return res.redirect('/')
         }else{
-            console.log("No cookies")
+            logger.info("No cookies")
             return res.redirect('/')
         }
         // if(req.session?.user){
@@ -89,17 +89,12 @@ router.get('/current', authToken,(req, res)=>{
         return res.json(user)
 
     } catch (error) {
-        console.log(error)
         return res.status(500).json({error: "Server error"})
     }
 
-    // let authHeader = req.cookies
+})
 
-    // console.log(authHeader)
-    // if(!authHeader){
-        // return res.send({status: 'error', cookiePayload: 'Cookie not found', userPayload: req.user})
-    // }
-    // return res.send({status: "success", cookiePayload: authHeader, userPayload: req.user})
-    // return res.json(req.user)
+router.get('/resetPassword', (req, res)=>{
+    
 })
 export default router

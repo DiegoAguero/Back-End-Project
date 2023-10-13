@@ -1,7 +1,8 @@
 import ViewManager from '../dao/mongo/views.mongo.js' 
-import prodModel from '../dao/mongo/models/products.model.js'
-import { productService } from '../services/index.js'
+import { productService, cartService } from '../services/index.js'
 import config from '../config/config.js'
+import CustomError from '../services/errors/customErrors.js'
+import EErrors from '../services/errors/enums.js'
 import {logger} from '../services/logger/logger.js'
 const viewServices = new ViewManager()
 
@@ -42,4 +43,60 @@ export const premiumView = async (req, res)=>{
     const productFilteredByOwner = allProducts.filter(product=>{ return product.owner === user.email })
     console.log(productFilteredByOwner)
     return res.render('createProduct', {user: user, totalProducts: productFilteredByOwner})
+}
+
+export const getCartView = async (req, res)=>{
+    try{
+        const cId = req.params.cId
+        const cart = await cartService.getCartById(true, cId)
+        req.logger.info(JSON.stringify(cart))
+        return res.render('carts', {
+            cart: cart,
+        })
+    }catch(e){
+        CustomError.createError({
+            name: "Get cart error",
+            cause: e,
+            message: "Error trying to get the cart",
+            code: EErrors.DATABASES_ERROR
+        })
+    }
+}
+
+export const getProductView = async (req, res)=>{
+    try{
+        const pId = req.params.pId
+        const product = await productService.getProductById(pId)
+        res.render('products', {product})
+    }catch(e){
+        CustomError.createError({
+            name: "Get product error",
+            cause: e,
+            message: "Error trying to get the cart",
+            code: EErrors.DATABASES_ERROR
+        })
+    }
+}
+
+export const mockingProducts = async (req, res)=>{
+    const products = []
+    for (let i = 0; i < 100; i++) { 
+        const newProduct = {
+            _id: faker.database.mongodbObjectId(),
+            title: faker.commerce.productName(),
+            description: faker.commerce.productDescription(),
+            price: faker.commerce.price(),
+            thumbnail: faker.image.avatar(),
+            code:  faker.commerce.productAdjective(),
+            stock:  faker.helpers.rangeToNumber({min: 1, max:20}),
+            status: true
+        }
+        products.push(newProduct)
+    }
+    return res.render('mockingProducts', {totalProducts: products})
+}
+
+export const realTimeProducts = async (req, res)=>{
+    const totalProducts = await productService.getProducts()
+    return res.render('realTimeProducts', {totalProducts})
 }

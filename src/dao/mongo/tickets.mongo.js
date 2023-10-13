@@ -1,12 +1,14 @@
 import CustomError from "../../services/errors/customErrors.js";
 import EErrors from "../../services/errors/enums.js";
 import ticketModel from "./models/ticket.model.js";
-
+import {logger} from  '../../services/logger/logger.js'
 export default class TicketManager{
     
     async createTicket(ticket){
         try {
-            return await ticketModel.create(ticket)
+            const ticketCreated = await ticketModel.create(ticket)
+            logger.info(ticketCreated)
+            return ticketCreated
             
         } catch (error) {
             CustomError.createError({

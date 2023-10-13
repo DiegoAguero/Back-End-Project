@@ -1,9 +1,10 @@
+import jwt from 'jsonwebtoken';
 import CustomError from "../services/errors/customErrors.js";
 import EErrors from "../services/errors/enums.js";
 import {logger} from '../services/logger/logger.js'
 import { generateUserErrorInfo } from "../services/errors/info.js";
 import { userService } from "../services/index.js";
-
+import config from '../config/config.js';
 export const getAllUsers = async (req, res)=>{
     try {
         let populate = req.query?.populate || false
@@ -86,7 +87,25 @@ export const changeUserRol = async (req, res)=>{
 
 export const resetPassword = async (req, res)=>{
     //ver nodemailer, video del profesor
+    const {email} = req.body
+    const userExists = await userService.getUserByEmail(email)
+    if(!userExists){
+        CustomError.createError({
+            name: "Reset password error",
+            cause: generateUserErrorInfo(email),
+            message: "User not found",
+            code: EErrors.INVALID_TYPE_ERROR
+        })
+    }
+    // req.user = userExists
+    const payload = {
+        email: userExists.email,
+        id: userExists._id
+    }
+    const token = jwt.sign(payload, config.SECRET_JWT, { expiresIn: '1h' })
+    const resetLink = `https://127.0.0.1:8080/resetPassword/${userExists._id}/${token}`
+    console.log(resetLink)
+    return res.send('A link to reset your password has been sent to your email!')
     //Reset password
 }
-
 

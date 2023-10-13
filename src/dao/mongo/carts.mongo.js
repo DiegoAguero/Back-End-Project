@@ -43,7 +43,9 @@ export default class CartManager{
     async getCartById(populate = false, id){
         try{
             if(populate){
+                console.log(`Buscando el cart.. ${id}`)
                 const cart = await cartModel.findById(id).populate('products.product').lean().exec()
+                console.log({cart})
                 return cart
             }
             const cart = await cartModel.findById(id)

@@ -26,6 +26,7 @@ export const getCartById = async (req, res) =>{
     
     req.logger.info(JSON.stringify(cart))
     if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
+    // res.send({status: 'success', payload: cart})
     return res.render('carts', {cart})
 
 }

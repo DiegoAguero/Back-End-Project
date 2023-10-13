@@ -12,7 +12,7 @@
         <h1>Email: {{user.email}}</h1>
         <h1>Rol: {{user.rol}}</h1>
         <h1>
-            <a href="/api/carts/{{@root.cartId}}" class="btn btn-danger">Go to the cart!</a>
+            <a href="/cart/{{@root.cartId}}" class="btn btn-danger">Go to the cart!</a>
 
         </h1>
         {{else}}
@@ -58,7 +58,9 @@
 <script>
 
     async function addProductToTheCart(id){
-        const res = await fetch(`/api/carts/{{@root.cartId}}/product/${id}`, {method: "post"})
+        const url = `/api/carts/{{@root.cartId}}/product/${id}`
+        console.log(url)
+        const res = await fetch(url, {method: "post"})
         console.log(res)
         return Swal.fire({
             title: "Added to the cart!",

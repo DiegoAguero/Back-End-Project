@@ -3313,3 +3313,541 @@ info: Persistency with MONGO
 info: Mongo connected
 info: Persistency with MONGO
 info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /realtimeproducts - 11/10/2023
+info: GET on /favicon.ico - 11/10/2023
+info: GET on / - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /sweetalert2.all.min.js - 11/10/2023
+info: POST on /api/session/login - 11/10/2023
+info: GET on /products - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/images/viladrau.jpg - 11/10/2023
+info: GET on /static/images/lays-papas.jpg - 11/10/2023
+info: GET on /static/images/doritos.jpg - 11/10/2023
+info: GET on /static/images/lays-3d.jpg - 11/10/2023
+info: GET on /sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/images/donsatur.jpg - 11/10/2023
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 11/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 11/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 11/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 11/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 11/10/2023
+info: GET on / - 11/10/2023
+info: GET on /products - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/images/lays-papas.jpg - 11/10/2023
+info: GET on /static/images/lays-3d.jpg - 11/10/2023
+info: GET on /sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/images/doritos.jpg - 11/10/2023
+info: GET on /static/images/viladrau.jpg - 11/10/2023
+info: GET on /static/images/donsatur.jpg - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 11/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 11/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 11/10/2023
+info: GET on /products - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/images/lays-papas.jpg - 11/10/2023
+info: GET on /sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/images/doritos.jpg - 11/10/2023
+info: GET on /static/images/lays-3d.jpg - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: GET on /static/images/viladrau.jpg - 11/10/2023
+info: GET on /static/images/donsatur.jpg - 11/10/2023
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 11/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /api/carts/sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 11/10/2023
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /api/carts/sweetalert2.all.min.js - 11/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 11/10/2023
+info: GET on /sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /favicon.ico - 11/10/2023
+info: POST on /api/session/login - 11/10/2023
+info: GET on /products - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/donsatur.jpg - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/images/lays-papas.jpg - 11/10/2023
+info: GET on /static/images/doritos.jpg - 11/10/2023
+info: GET on /sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/images/lays-3d.jpg - 11/10/2023
+info: GET on /static/images/viladrau.jpg - 11/10/2023
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: [object Object]
+info: undefined
+info: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 11/10/2023
+info: GET on /products - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: GET on /static/images/lays-papas.jpg - 11/10/2023
+info: GET on /sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/images/doritos.jpg - 11/10/2023
+info: GET on /static/images/lays-3d.jpg - 11/10/2023
+info: GET on /static/images/donsatur.jpg - 11/10/2023
+info: GET on /static/images/viladrau.jpg - 11/10/2023
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /cart/sweetalert2.all.min.js - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts//purchase - 11/10/2023
+info: null
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 11/10/2023
+info: GET on /products - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: GET on /static/images/lays-papas.jpg - 11/10/2023
+info: GET on /static/images/doritos.jpg - 11/10/2023
+info: GET on /static/images/lays-3d.jpg - 11/10/2023
+info: GET on /static/images/viladrau.jpg - 11/10/2023
+info: GET on /static/images/donsatur.jpg - 11/10/2023
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68ac2456f4b4675841919","title":"Pepsi","description":"Pepsi","price":4,"thumbnail":"/static/images/pepsi.png","code":"pepsi","stock":55,"status":true,"__v":0},"quantity":5},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":70,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":47,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":50,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":1,"status":true,"__v":0},"quantity":2}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: POST on /api/carts/64f0562ce4d0d68169723d47/purchase - 11/10/2023
+info: {
+  code: '7673OMUF7363OSEF',
+  purchase_datetime: 2023-10-11T21:13:33.812Z,
+  amount: 233,
+  purchaser: 'lucasrolandolopez@gmail.com',
+  _id: new ObjectId("65270ffde82b48460b88b83b"),
+  __v: 0
+}
+info: {
+  code: '7673OMUF7363OSEF',
+  purchase_datetime: 2023-10-11T21:13:33.812Z,
+  amount: 233,
+  purchaser: 'lucasrolandolopez@gmail.com',
+  _id: new ObjectId("65270ffde82b48460b88b83b"),
+  __v: 0
+}
+info: GET on /cart/64f0562ce4d0d68169723d47 - 11/10/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegas","description":"El maldito baldu cs, edicion limitada","price":200,"thumbnail":"https://revistaepocadigital.com.ar/wp-content/uploads/2022/01/ba55.bmp","code":"baldegas","owner":"lucasrolandolopez@gmail.com","stock":0,"status":false,"__v":0},"quantity":1}],"__v":7}
+info: GET on /static/css/style.css - 11/10/2023
+info: GET on /static/css/style.css.map - 11/10/2023
+info: Persistency with MONGO
+info: GET on /api/session/logout - 12/10/2023
+info: cookie cleared
+info: GET on / - 12/10/2023
+info: Mongo connected
+info: GET on /static/css/style.css - 12/10/2023
+info: GET on /favicon.ico - 12/10/2023
+info: POST on /api/session/login - 12/10/2023
+info: GET on /resetPassword - 12/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /resetPassword - 12/10/2023
+info: GET on /static/css/style.css - 12/10/2023
+info: GET on /resetPassword - 12/10/2023
+info: GET on /resetPassword - 12/10/2023
+info: GET on /static/css/style.css - 12/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /resetPassword - 12/10/2023
+info: GET on /api/users/resetPassword - 12/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/users/resetPassword - 12/10/2023
+info: GET on / - 12/10/2023
+info: GET on /static/css/style.css - 12/10/2023
+info: GET on /reset - 12/10/2023
+info: GET on /resetPassword - 12/10/2023
+info: GET on /static/css/style.css - 12/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /resetPassword - 12/10/2023
+info: GET on /static/css/style.css - 12/10/2023
+info: POST on /api/user/resetpassword - 12/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /resetPassword - 12/10/2023
+info: GET on /static/css/style.css - 12/10/2023
+info: POST on /api/user/resetpassword - 12/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /resetPassword - 12/10/2023
+info: GET on /static/css/style.css - 12/10/2023
+info: POST on /api/user/resetpassword - 12/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /realtimeproducts - 12/10/2023
+info: GET on / - 12/10/2023
+info: GET on /static/css/style.css - 12/10/2023
+info: GET on /resetPassword - 12/10/2023
+info: GET on /static/css/style.css - 12/10/2023
+info: POST on /api/user/resetpassword - 12/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /realtimeproducts - 13/10/2023
+info: GET on /favicon.ico - 13/10/2023
+info: GET on / - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: POST on /api/session/login - 13/10/2023
+info: GET on /resetPassword - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: POST on /api/user/resetpassword - 13/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: GET on /realtimeproducts - 13/10/2023
+info: GET on /resetPassword - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: GET on /favicon.ico - 13/10/2023
+info: POST on /api/user/resetpassword - 13/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: GET on /resetPassword/64f6d5cd0344516ec5f15cfa/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvdG9tYXNhZ3Vlcm80MTIzQGdtYWlsLmNvbSIsImlkIjoiNjRmNmQ1Y2QwMzQ0NTE2ZWM1ZjE1Y2ZhIiwiaWF0IjoxNjk3MjIzNDAwLCJleHAiOjE2OTcyMjcwMDB9.VC0EqNBMhN-IMHIg8mmKka8oYGdms1Zmg4ZqlXhfwnA - 13/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: GET on /favicon.ico - 13/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/session/login - 13/10/2023
+info: POST on /api/session/login - 13/10/2023
+info: GET on / - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: GET on /resetPassword - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: POST on /api/user/resetpassword - 13/10/2023
+info: GET on /resetPassword/64f6d5cd0344516ec5f15cfa/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvdG9tYXNhZ3Vlcm80MTIzQGdtYWlsLmNvbSIsImlkIjoiNjRmNmQ1Y2QwMzQ0NTE2ZWM1ZjE1Y2ZhIiwiaWF0IjoxNjk3MjIzNDAwLCJleHAiOjE2OTcyMjcwMDB9.VC0EqNBMhN-IMHIg8mmKka8oYGdms1Zmg4ZqlXhfwnA - 13/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: GET on /favicon.ico - 13/10/2023
+info: GET on /resetPassword - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: POST on /api/user/resetpassword - 13/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /resetPassword - 13/10/2023
+info: GET on /static/css/style.css - 13/10/2023
+info: GET on /favicon.ico - 13/10/2023
+info: POST on /api/user/resetpassword - 13/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
