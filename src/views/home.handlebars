@@ -61,7 +61,16 @@
         const url = `/api/carts/{{@root.cartId}}/product/${id}`
         console.log(url)
         const res = await fetch(url, {method: "post"})
-        console.log(res)
+        const response = await res.json()
+        if(response.status == 'error'){
+            return Swal.fire({
+                title: 'Error',
+                icon: 'error',
+                text: 'You cant add your own product to the cart!',
+                confirmButtonText: 'Okay',
+                timer: 2500
+            })
+        }
         return Swal.fire({
             title: "Added to the cart!",
             icon: 'success',

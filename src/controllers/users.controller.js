@@ -5,6 +5,9 @@ import {logger} from '../services/logger/logger.js'
 import { generateUserErrorInfo } from "../services/errors/info.js";
 import { userService } from "../services/index.js";
 import config from '../config/config.js';
+import Mail from '../services/nodemailer/mail.js'
+
+const mail = new Mail()
 export const getAllUsers = async (req, res)=>{
     try {
         let populate = req.query?.populate || false
@@ -70,7 +73,6 @@ export const changeUserRol = async (req, res)=>{
         let getUser = await userService.getUserById(userId)
         if(getUser.rol === "user"){ getUser.rol = "premium" }
         else{ getUser.rol = "user" }
-
         const saveUser = await userService.updateUser(getUser)
         logger.info(saveUser)
         return res.send({status: 'success', payload: saveUser})
@@ -97,14 +99,18 @@ export const resetPassword = async (req, res)=>{
             code: EErrors.INVALID_TYPE_ERROR
         })
     }
-    // req.user = userExists
+
+    const newSecret = config.SECRET_JWT + userExists.password
+    
     const payload = {
         email: userExists.email,
         id: userExists._id
     }
-    const token = jwt.sign(payload, config.SECRET_JWT, { expiresIn: '1h' })
-    const resetLink = `https://127.0.0.1:8080/resetPassword/${userExists._id}/${token}`
-    console.log(resetLink)
+    const token = jwt.sign(payload, newSecret, { expiresIn: '1h' })
+
+    const resetLink = `http://127.0.0.1:8080/resetPassword/${userExists._id}/${token}`
+    let html =  `Here's the link to reset your password! You only got 1 hour to use it before it expires. ${resetLink} `
+    mail.send(userExists, "Reset password", html)
     return res.send('A link to reset your password has been sent to your email!')
     //Reset password
 }

@@ -5,7 +5,7 @@ const router = Router()
 
 router.get('/', getAllUsers)
 router.post('/', createUser)
-router.get('/:email', getUserByEmail)
+router.get('/email/:email', getUserByEmail)
 router.get('/:uid', getUserById)
 router.get('/premium/:uid', changeUserRol)
 

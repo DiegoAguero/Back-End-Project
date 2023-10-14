@@ -31,7 +31,7 @@
                                 </form>    
                             </td>
                             <td>
-                                <button onclick="removeFromCart('{{this.product._id}}')" id="{{@root.cartId}}" name="{{this.product._id}}">Remove from cart</button>
+                                <button onclick="removeFromCart('{{this.product._id}}')">Remove from cart</button>
                                 {{!-- <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}/delete" method="post">
                                     <button type="submit">Remove From Cart</button>
                                 </form>                    --}}
@@ -48,7 +48,8 @@
 
     async function removeFromCart(id){
         const response = await fetch(`/api/carts/{{@root.cartId}}/product/${id}/delete`, {method: "post"})
-        console.log(response)
+        const res = await response.json()
+        console.log(res.status)
         return Swal.fire({
             title: "Removed 1 unity from the cart!",
             icon: 'success',

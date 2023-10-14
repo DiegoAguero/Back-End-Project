@@ -40,14 +40,13 @@ export const addProductToCart = async (req, res)=>{
         if(user.rol === 'premium'){
             const allProducts = await productService.getProducts()
             const productFilteredByOwner = allProducts.filter(product=>{ return product.owner === user.email })
-            if(productFilteredByOwner >= 1){
+            if(productFilteredByOwner.length > 0){
+                console.log('premium user')
                 const ownerProduct = productFilteredByOwner.find(product => product._id.toString() === prodId.toString())
-                req.logger.info(ownerProduct)
                 return res.send({status: 'error', payload: 'You cant add your own product to the cart!'})
             }
         }
         const result = await cartService.addProductToCart(cartId, prodId)
-        req.logger.info(result)
         if(!result) return res.send({status: 'error', payload: 'Something inexpected happened adding a product'})
         // return res.send({status: 'success', payload: result})
         res.redirect(`/api/carts/${cartId}`)
@@ -74,7 +73,6 @@ export const deleteProductFromCart = async (req, res)=>{
         const prodId = req.params.pId
         // const carritoEncontrado = await cartModel.findById(cartId)
         const result = await cartService.deleteProductFromCart(cartId, prodId)
-        req.logger.info(result)
         if(!result) return res.send({status: 'error', payload: 'There has been a problem deleting a product from your cart'})
         // res.redirect(`/api/carts/${cartId}`)
         // res.send({result})

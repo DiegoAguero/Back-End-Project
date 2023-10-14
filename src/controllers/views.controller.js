@@ -1,3 +1,6 @@
+import {faker} from '@faker-js/faker/locale/es'
+
+
 import ViewManager from '../dao/mongo/views.mongo.js' 
 import { productService, cartService } from '../services/index.js'
 import config from '../config/config.js'
