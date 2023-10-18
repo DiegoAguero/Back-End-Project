@@ -1,0 +1,1030 @@
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /favicon.ico - 15/10/2023
+info: POST on /api/session/login - 15/10/2023
+info: GET on /products - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /static/images/lays-3d.jpg - 15/10/2023
+info: GET on /static/images/lays-papas.jpg - 15/10/2023
+info: GET on /static/images/doritos.jpg - 15/10/2023
+info: GET on /static/images/donsatur.jpg - 15/10/2023
+info: GET on /static/images/viladrau.jpg - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on / - 15/10/2023
+info: GET on /products - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/images/viladrau.jpg - 15/10/2023
+info: GET on /static/images/donsatur.jpg - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /static/images/lays-papas.jpg - 15/10/2023
+info: GET on /static/images/doritos.jpg - 15/10/2023
+info: GET on /static/images/lays-3d.jpg - 15/10/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /static/images/cocacola.jpg - 15/10/2023
+info: GET on /static/images/lays-3d.jpg - 15/10/2023
+info: GET on /static/images/pringlessourcream.png - 15/10/2023
+info: GET on /static/images/frutigram-chocolate.jpg - 15/10/2023
+info: GET on /static/images/chocolinas.jpg - 15/10/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /static/images/hellmans-mayonesa.jpg - 15/10/2023
+info: GET on /static/images/amanda.png - 15/10/2023
+info: GET on /static/images/mate.jpg - 15/10/2023
+info: GET on /static/images/termo.jpg - 15/10/2023
+info: GET on /static/images/merengadas.jpg - 15/10/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: POST on /api/carts/64f0562ce4d0d68169723d47/product/6525032476c61b16d06de890 - 15/10/2023
+info: POST on /api/carts/64f0562ce4d0d68169723d47/product/6525032476c61b16d06de890 - 15/10/2023
+info: GET on /products - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: 'Minecraft premium',
+  description: 'Premium',
+  price: 20,
+  thumbnail: 'premium',
+  code: 'minecraftpremium',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 20,
+  status: true,
+  _id: new ObjectId("652bf68dd988814e0333a5ee"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /api/products/delete/$%7Bprod._id%7D - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /notengo - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products/delete/6525032476c61b16d06de890 - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: 'sdasd',
+  description: '123',
+  price: 12,
+  thumbnail: 'asd',
+  code: 'asd',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 3123,
+  status: true,
+  _id: new ObjectId("652bf828b9bfda1767aab055"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /asd - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products/delete/652bf828b9bfda1767aab055 - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: 'asd',
+  description: '123',
+  price: 123,
+  thumbnail: '123',
+  code: '123',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 123,
+  status: true,
+  _id: new ObjectId("652bf837b9bfda1767aab065"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /123 - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products/delete/652bf837b9bfda1767aab065 - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: 'asd',
+  description: '123',
+  price: 123,
+  thumbnail: '123',
+  code: '123',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 123123,
+  status: true,
+  _id: new ObjectId("652bf8d0b9bfda1767aab075"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /123 - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products/delete/652bf8d0b9bfda1767aab075 - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: 'ads',
+  description: '123',
+  price: 13,
+  thumbnail: '213',
+  code: '132',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 123,
+  status: true,
+  _id: new ObjectId("652bf8e4b9bfda1767aab085"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /213 - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products/delete/652bf8e4b9bfda1767aab085 - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: 'sadads',
+  description: '123',
+  price: 123,
+  thumbnail: '123',
+  code: '123',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 123,
+  status: true,
+  _id: new ObjectId("652bf901b9bfda1767aab095"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /123 - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products/delete/652bf901b9bfda1767aab095 - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /favicon.ico - 15/10/2023
+info: POST on /api/session/login - 15/10/2023
+info: GET on /products - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /static/images/lays-3d.jpg - 15/10/2023
+info: GET on /static/images/lays-papas.jpg - 15/10/2023
+info: GET on /static/images/doritos.jpg - 15/10/2023
+info: GET on /static/images/donsatur.jpg - 15/10/2023
+info: GET on /static/images/viladrau.jpg - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: 'adasasd',
+  description: '123',
+  price: 123,
+  thumbnail: 'asd',
+  code: 'sad',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 123,
+  status: true,
+  _id: new ObjectId("652c39ed11919555826ad39c"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /asd - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: DELETE on /api/products/delete/652c39ed11919555826ad39c - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: '123',
+  description: '123',
+  price: 123,
+  thumbnail: '2131',
+  code: '23',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 123,
+  status: true,
+  _id: new ObjectId("652c3a0d11919555826ad3b0"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /2131 - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: DELETE on /api/products/delete/652c3a0d11919555826ad3b0 - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: '123',
+  description: '123',
+  price: 123,
+  thumbnail: '123',
+  code: '123',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 213,
+  status: true,
+  _id: new ObjectId("652c3a1d11919555826ad3c0"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /123 - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: DELETE on /api/products/delete/652c3a1d11919555826ad3c0 - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: '123',
+  description: '123',
+  price: 123,
+  thumbnail: '121233',
+  code: '123',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 123,
+  status: true,
+  _id: new ObjectId("652c3a2a11919555826ad3d4"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: GET on /121233 - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: DELETE on /api/products/delete/652c3a2a11919555826ad3d4 - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: POST on /api/products - 15/10/2023
+info: [object Object]
+info: {
+  title: '123',
+  description: '123',
+  price: 123,
+  thumbnail: '132',
+  code: '123',
+  owner: 'lucasrolandolopez@gmail.com',
+  stock: 123,
+  status: true,
+  _id: new ObjectId("652c3a9e11919555826ad3e8"),
+  __v: 0
+}
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 15/10/2023
+info: GET on /static/css/style.css - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /132 - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: DELETE on /api/products/delete/652c3a9e11919555826ad3e8 - 15/10/2023
+info: GET on /132 - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /static/css/style.css.map - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css - 15/10/2023
+info: GET on /premium - 15/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /static/css/style.css.map - 15/10/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 17/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/ - 17/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/ - 17/10/2023
+info: POST on /api/carts/ - 17/10/2023
+info: POST on /api/carts/ - 17/10/2023
+info: GET on /api/carts/64c39a8a3778f67e478b71cf - 17/10/2023
+info: [object Object]
+info: {"_id":"64c39a8a3778f67e478b71cf","products":[{"product":{"_id":"64cb7a92d99f26b6d04c32fe","title":"Chocolinas","description":"Chocolinas 500 gr","price":5,"thumbnail":"/static/images/chocolinas.jpg","code":"chocolinas500gr","stock":0,"status":false,"__v":0},"quantity":5},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0},"quantity":12}],"__v":4}
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/ - 17/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64c39a8a3778f67e478b71cf - 17/10/2023
+info: null
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/%2264c39a8a3778f67e478b71cf%22 - 17/10/2023
+info: null
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/%2264c39a8a3778f67e478b71cf%22 - 17/10/2023
+info: null
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64c39a8a3778f67e478b71cf - 17/10/2023
+info: null
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64c39a8a3778f67e478b71cf - 17/10/2023
+info: null
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64cd48ae7d86d3dc18998fe3 - 17/10/2023
+info: null
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64cd47d09dc48cb4a3009cc4 - 17/10/2023
+info: {
+  _id: new ObjectId("64cd47d09dc48cb4a3009cc4"),
+  products: [
+    {
+      product: new ObjectId("64c68a91456f4b467584190f"),
+      quantity: 2,
+      _id: new ObjectId("64cd487bacbc85c178f11f82")
+    }
+  ],
+  __v: 1
+}
+info: GET on /api/carts/64cd47d09dc48cb4a3009cc4 - 17/10/2023
+info: [object Object]
+info: {"_id":"64cd47d09dc48cb4a3009cc4","products":[],"__v":1}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 18/10/2023
+info: GET on /favicon.ico - 18/10/2023
+info: POST on /api/session/login - 18/10/2023
+info: GET on /api/session/login-github - 18/10/2023
+info: GET on /api/session/githubcallback?code=76e165a49c417fa18580 - 18/10/2023
+info: GET on /products - 18/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /favicon.ico - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: hola
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: hola
+info: hola
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: hola
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+error: undefined {"code":3,"name":"Update cart error"}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+error: undefined {"code":3,"name":"Update cart error"}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+error: undefined {"code":3,"name":"Update cart error"}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+error: undefined {"code":3,"name":"Update cart error"}
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+error: undefined {"code":3,"name":"Update cart error"}
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+error: undefined {"code":3,"name":"Update cart error"}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 18/10/2023
+info: [object Object]
+info: [object Object]
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+error: undefined {"kind":"embedded","path":"products","reason":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"ObjectId('64cb7a92d99f26b6d04c32fe')\" (type string) at path \"product\" because of \"BSONError\"","name":"CastError","path":"product","reason":{},"stringValue":"\"ObjectId('64cb7a92d99f26b6d04c32fe')\"","value":"ObjectId('64cb7a92d99f26b6d04c32fe')","valueType":"string"},"stringValue":"\"{ product: \"ObjectId('64cb7a92d99f26b6d04c32fe')\", quantity: 4 }\"","value":{"product":"ObjectId('64cb7a92d99f26b6d04c32fe')","quantity":4},"valueType":"Object"}
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+error: undefined {"kind":"embedded","path":"products","reason":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"ObjectId('64cb7a92d99f26b6d04c32fe')\" (type string) at path \"product\" because of \"BSONError\"","name":"CastError","path":"product","reason":{},"stringValue":"\"ObjectId('64cb7a92d99f26b6d04c32fe')\"","value":"ObjectId('64cb7a92d99f26b6d04c32fe')","valueType":"string"},"stringValue":"\"{ product: \"ObjectId('64cb7a92d99f26b6d04c32fe')\", quantity: 4 }\"","value":{"product":"ObjectId('64cb7a92d99f26b6d04c32fe')","quantity":4},"valueType":"Object"}
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c6339581befc089391f - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64c39c6339581befc089391f - 18/10/2023
+info: {
+  _id: new ObjectId("64c39c6339581befc089391f"),
+  products: [
+    { product: new ObjectId("64cb7a92d99f26b6d04c32fe"), quantity: 4 },
+    { product: new ObjectId("64c68aaf456f4b4675841914"), quantity: 5 }
+  ],
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: DELETE on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: {
+  _id: new ObjectId("64c39a8a3778f67e478b71cf"),
+  products: [
+    { product: new ObjectId("64cb7a92d99f26b6d04c32fe"), quantity: 4 },
+    { product: new ObjectId("64c68aaf456f4b4675841914"), quantity: 5 }
+  ],
+  __v: 4
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: DELETE on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: {
+  _id: new ObjectId("64c39a8a3778f67e478b71cf"),
+  products: [
+    { product: new ObjectId("64cb7a92d99f26b6d04c32fe"), quantity: 4 },
+    { product: new ObjectId("64c68aaf456f4b4675841914"), quantity: 5 }
+  ],
+  __v: 4
+}
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: GET on /api/carts/64c39c310a1eeaecd6acb594 - 18/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: null
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914 - 18/10/2023
+info: {
+  _id: new ObjectId("64c39c310a1eeaecd6acb594"),
+  products: [
+    { product: new ObjectId("64c68aaf456f4b4675841914"), quantity: 1 }
+  ],
+  __v: 1
+}
+info: Is repeated: { product: new ObjectId("64c68aaf456f4b4675841914"), quantity: 1 }
+info: Findedcart: {
+  _id: new ObjectId("64c39c310a1eeaecd6acb594"),
+  products: [
+    { product: new ObjectId("64c68aaf456f4b4675841914"), quantity: 1 }
+  ],
+  __v: 1
+}
+info: {
+  _id: new ObjectId("64c39c310a1eeaecd6acb594"),
+  products: [
+    { product: new ObjectId("64c68aaf456f4b4675841914"), quantity: 11 }
+  ],
+  __v: 1
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64c39c310a1eeaecd6acb594/product/64c68aaf456f4b4675841914/delete - 18/10/2023
+info: DELETE on /api/carts/64c39c310a1eeaecd6acb594 - 18/10/2023
+info: {
+  _id: new ObjectId("64c39c310a1eeaecd6acb594"),
+  products: [
+    { product: new ObjectId("64c68aaf456f4b4675841914"), quantity: 10 }
+  ],
+  __v: 1
+}

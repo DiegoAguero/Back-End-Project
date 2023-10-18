@@ -34,14 +34,35 @@
                         <h5 class="card-title">{{title}}</h5>
                         <p class="card-text">{{description}}</p>
                         <p class="card-text">Total stock:{{stock}}</p>
-                        <a href='/api/products/delete/${prod._id}' class="btn btn-danger">Delete product</a>
+                        <button onclick="deleteProduct('{{_id}}')" class="btn btn-danger">Delete product</button>
                     </div>
                 </div>
             {{/each}}
         {{/if}}
     </div>
 <script>
-
+    async function deleteProduct(id){
+        const fetchDelete = await fetch(`/api/products/delete/${id}`, {method: "DELETE"})
+        const response = await fetchDelete.json()
+        if(response.status === 'success'){
+            return Swal.fire({
+                title: "Product deleted successfully!",
+                icon: 'success',
+                text: "The product has been deleted successfully!",
+                confirmButtonText: "Okay",
+                timer: 2000
+            })
+        }else{
+            return Swal.fire({
+                title: "Error while deleting the product!",
+                icon: 'error',
+                text: "Something unexpected happened while deleting the product",
+                confirmButtonText: "Okay",
+                timer: 2000
+            })
+        }
+        console.log(response)
+    }
     async function addProductToDatabase(){
 
         const title = document.getElementById('title').value

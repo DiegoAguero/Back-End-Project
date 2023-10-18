@@ -1,0 +1,298 @@
+paths:
+  /api/carts/:
+    get:
+      summary: Obtains all the carts created
+      tags:
+        - Carts
+      responses:
+        "200":
+          description: The carts were successfully obtained
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#components/schemas/Cart'
+        "500":
+          description: Internal server error
+        "404":
+          description: The carts were not found
+    post:
+      summary: Creates a new cart
+      tags: 
+        - Carts
+      requestBody:
+        required: true
+        content: 
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/insertCart'
+      responses:
+        "200":
+          description: The product was added successfully
+        "500":
+          description: Internal server error
+        "404":
+          description: The cart was not found
+  /api/carts/{cId}:
+    get:
+      summary: Obtain the cart obtained from the given id
+      tags:
+        - Carts
+      parameters: 
+        - name: cId
+          in: path
+          required: true
+          description: Id of the cart requested
+          schema: 
+            $type: String
+      responses:
+        "200":
+          description: The cart was obtained successfully
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#components/schemas/Cart'
+        "500":
+          description: Internal server error
+        "404":
+          description: The cart was not found
+    put:
+      summary: Update the cart
+      tags:
+        - Carts
+      parameters:
+        - name: cId
+          in: path
+          required: true
+          description: Id of the cart requested
+          schema:
+            $type: String
+      requestBody:
+        required: true
+        content: 
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/insertProducts'
+      responses:
+        "200":
+          description: The cart was updated successfully
+        "500":
+          description: Internal server error
+        "404":
+          description: The cart was not found
+    delete: 
+      summary: Clear the products from the cart
+      tags:
+        - Carts
+      parameters: 
+        - name: cId
+          in: path
+          required: true
+          description: Id of the cart requested
+          schema:
+            $type: String
+            
+      responses:
+        "200":
+          description: The products from the cart were removed successfully
+        "500":
+          description: Internal server error
+        "404":
+          description: The cart was not found
+  /api/carts/{cId}/product/{pId}:
+    post:
+      summary: Add a product to the cart
+      tags:
+        - Carts
+      parameters:
+        - name: cId
+          in: path
+          required: true
+          description: Id of the cart requested
+          schema:
+            $type: String
+        - name: pId
+          in: path
+          required: true
+          description: Id of the product requested
+          schema:
+            $type: String
+      requestBody:
+        required: true
+        content: 
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/insertProduct'
+              
+      responses:
+        "200":
+          description: The product has been added!
+        "404":
+          description: The product or the cart was not found
+        "500":
+          description: Internal server error
+    put:
+      summary: Update quantity of a product from the cart
+      tags:
+        - Carts
+      parameters:
+        - name: cId
+          in: path
+          required: true
+          description: Id of the cart requested
+          schema:
+            $type: String
+        - name: pId
+          in: path
+          required: true
+          description: Id of the product requested
+          schema:
+            $type: String
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:  
+              $ref: '#components/requestBodies/insertQuantity'
+
+  /api/carts/{cId}/product/{pId}/delete:
+    delete:
+      summary: Delete a product from the cart
+      tags:
+        - Carts
+      parameters:
+        - name: cId
+          in: path
+          required: true
+          description: Id of the cart requested
+          schema:
+            $type: String
+        - name: pId
+          in: path
+          required: true
+          description: Id of the product requested
+          schema:
+            $type: String
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/insertProduct'
+      responses:
+        "200":
+          description: The product has been deleted!
+        "404":
+          description: The product or the cart was not found
+        "500":
+          description: Internal server error
+  /api/carts/{cId}/purchase:
+    post:
+      summary: Delete a product from the cart
+      tags:
+        - Carts
+      parameters:
+        - name: cId
+          in: path
+          required: true
+          description: Id of the cart requested
+          schema:
+            $type: String
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/purchaseProducts'
+components:
+  schemas:
+    Cart:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: Id autogenerated by mongo
+        products:
+          type: Array
+          items:
+            type: object
+            properties:
+              product: 
+                type: ObjectId
+                description: ID of the product added
+              quantity: 
+                type: Number
+                description: Quantity of the product added
+          description: Array of the products added to the cart
+      example:
+        _id: ObjectId("64c39a8a3778f67e478b71cf")
+        products:
+          - product: ObjectId("64cb7a92d99f26b6d04c32fe")
+            quantity: 3
+          - product: ObjectId("64c68af8456f4b4675841923")
+            quantity: 1
+  requestBodies:
+    insertCart: 
+      type: object
+      properties:
+        products:
+          type: Array
+          items:
+            type: object
+            properties:
+              product: 
+                type: ObjectId
+                description: ID of the product added
+              quantity: 
+                type: Number
+                description: Quantity of the product added
+          description: Products added to the cart
+      example:
+        - product: ObjectId("64cb7a92d99f26b6d04c32fe")
+          quantity: 3
+    insertProducts:
+      type: array
+      properties:
+        products:
+          type: array
+          items:
+            type: object
+            properties:
+              product: 
+                type: ObjectId
+                description: ID of the product added
+              quantity: 
+                type: Number
+                description: Quantity of the product added
+          description: Array of the products added to the cart
+      example:
+        - product: '64cb7a92d99f26b6d04c32fe'
+          quantity: 4
+        - product: '64c68aaf456f4b4675841914'
+          quantity: 5
+    insertProduct:
+      type: object
+      properties:
+        product: 
+          type: ObjectId
+          description: Id of the product added
+      example:
+        - product: '64c68a91456f4b467584190f'
+    insertQuantity:
+      type: object
+      properties:
+        product:
+          type: ObjectId
+          description: Id of the product
+        quantity:
+          type: Number
+          description: Quantity of the product added
+      example:
+        quantity: 10
+    purchaseProducts:
+      type: object
+      properties:
+      #Terminar esto y arrancar con products

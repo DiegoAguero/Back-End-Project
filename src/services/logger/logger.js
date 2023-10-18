@@ -28,7 +28,7 @@ switch (config.LOGGER) {
                     format: winston.format.combine(winston.format.simple())
                 }),
                 new winston.transports.File({
-                    filename: './logs/development.log',
+                    filename: './logs/errors.log',
                     level: 'debug',
                     format: winston.format.simple()
                 })
@@ -61,7 +61,7 @@ switch (config.LOGGER) {
                     format: winston.format.combine(winston.format.simple())
                 }),
                 new winston.transports.File({
-                    filename: './logs/development.log',
+                    filename: './logs/errors.log',
                     level: 'debug',
                     format: winston.format.simple()
                 })
@@ -69,34 +69,7 @@ switch (config.LOGGER) {
         })
         break;
 }
-// const loggerDevelopment = winston.createLogger({
-//     levels: customLevelOptions.levels,
-//     transports:[
-//         new winston.transports.Console({
-//             level: 'debug',
-//             format: winston.format.combine(winston.format.simple())
-//         }),
-//         new winston.transports.File({
-//             filename: './logs/development.log',
-//             level: 'debug',
-//             format: winston.format.simple()
-//         })
-//     ]
-// })
-// const loggerProduction = winston.createLogger({
-//     levels: customLevelOptions.levels,
-//     transports:[
-//         new winston.transports.Console({
-//             level: "info",
-//             format: winston.format.combine(winston.format.simple())
-//         }),
-//         new winston.transports.File({
-//             filename: "./logs/production.log",
-//             level: "info",
-//             format: winston.format.simple()
-//         })
-//     ]
-// })
+
 export const addLogger = (req, res, next) =>{
     req.logger = logger
 

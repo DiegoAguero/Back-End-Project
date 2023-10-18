@@ -4586,3 +4586,5 @@ info: {"_id":"64f0562ce4d0d68169723d47","products":[{"product":{"_id":"64c68f55b
 info: GET on /static/css/style.css - 14/10/2023
 info: GET on /static/css/style.css.map - 14/10/2023
 info: POST on /api/carts//product/6523bc689473cc2db281a4ca/delete - 14/10/2023
+info: Persistency with MONGO
+info: Mongo connected

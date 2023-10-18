@@ -3,6 +3,7 @@ import cartModel from "./models/cart.model.js";
 import prodModel from './models/products.model.js'
 import ProductManager from "./products.mongo.js";
 import EErrors from "../../services/errors/enums.js";
+import { logger } from "../../services/logger/logger.js";
 export default class CartManager{
     constructor(){
         this.productManager = new ProductManager()
@@ -43,10 +44,7 @@ export default class CartManager{
     async getCartById(populate = false, id){
         try{
             if(populate){
-                console.log(`Buscando el cart.. ${id}`)
-                const cart = await cartModel.findById(id).populate('products.product').lean().exec()
-                console.log({cart})
-                return cart
+                return await cartModel.findById(id).populate('products.product').lean().exec()
             }
             const cart = await cartModel.findById(id)
             return cart
@@ -85,8 +83,7 @@ export default class CartManager{
 
     async updateCart(cId, products){
         try {
-            const prod = await cartModel.findByIdAndUpdate({_id: cId}, {$set: {products: products}})
-            return prod
+            return await cartModel.findByIdAndUpdate(cId, {$set: {products: products}})
         } catch (error) {
             CustomError.createError({
                 name: "Update cart error",

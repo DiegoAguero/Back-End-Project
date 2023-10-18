@@ -1,6 +1,4 @@
 import {Router} from "express"
-import prod from '../app.js'
-import prodModel from "../dao/mongo/models/products.model.js"
 import { addProductToDatabase, deleteProduct, getProductByID, getProducts, updateProduct } from "../controllers/products.controller.js"
 
 
@@ -10,7 +8,7 @@ const router = Router()
 router.get('/', getProducts)
 router.post('/', addProductToDatabase)
 router.get('/:pId', getProductByID)
-router.get('/delete/:pId', deleteProduct)
+router.post('/delete/:pId', deleteProduct)
 
 //postman
 router.put('/:pId', updateProduct)

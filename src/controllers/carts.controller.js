@@ -1,4 +1,6 @@
 
+import CustomError from '../services/errors/customErrors.js'
+import EErrors from '../services/errors/enums.js'
 import {cartService, productService} from '../services/index.js'
 //El controller solamente debe pasar datos a la capa de negocio, osea al repository, luego ahí se hacen todas las preguntas
 //Cambiar todo lo de findedProduct y toda esta pelotudez
@@ -24,7 +26,6 @@ export const getCartById = async (req, res) =>{
     const id = req.params.cId
     const cart = await cartService.getCartById(true, id)
     
-    req.logger.info(JSON.stringify(cart))
     if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
     // res.send({status: 'success', payload: cart})
     return res.render('carts', {cart})
@@ -37,11 +38,10 @@ export const addProductToCart = async (req, res)=>{
         const cartId = req.params.cId
         const prodId = req.params.pId
         const user = req.user
-        if(user.rol === 'premium'){
+        if(user?.rol === 'premium'){
             const allProducts = await productService.getProducts()
             const productFilteredByOwner = allProducts.filter(product=>{ return product.owner === user.email })
             if(productFilteredByOwner.length > 0){
-                console.log('premium user')
                 const ownerProduct = productFilteredByOwner.find(product => product._id.toString() === prodId.toString())
                 return res.send({status: 'error', payload: 'You cant add your own product to the cart!'})
             }
@@ -59,9 +59,9 @@ export const addProductToCart = async (req, res)=>{
 
 export const clearCart = async (req, res)=>{
     const cartId = req.params.cId
-    const cart = await cartService.getCartById(cartId)
-    const result = await cartService.clearCart(cartId)
+    const cart = await cartService.getCartById(false, cartId)
     if(cart.products?.length === 0) return res.send({status: 'error', payload: 'There are no products in the cart at the moment.'})
+    const result = await cartService.clearCart(cartId)
     if(!result) return res.send({status: 'error', payload: 'Error clearing the products'})
     return res.send({status: 'success', payload: result})        
 
@@ -99,19 +99,16 @@ export const updateQuantityFromCart = async (req, res)=>{
         const cartId = req.params.cId
         const prodId = req.params.pId
         const quantity = parseInt(req.body.quantity)
-
-        const findedCart = await cartService.getCartById(cartId)
+        const findedCart = await cartService.getCartById(false, cartId)
         // const carritoEncontrado = await cartModel.findById(cartId)
 
         const isRepeated = findedCart.products.find(prod =>{
             return prod.product?._id.toString() === prodId
         })
-
         if(isRepeated){
             isRepeated.quantity += quantity
             await cartService.updateCart(cartId, findedCart.products)
             // await findedCart.save()
-            req.logger.info(findedCart)
             return res.send({status: 'success', payload: findedCart})
             // return res.render('carts', {findedCart})
 
@@ -119,7 +116,7 @@ export const updateQuantityFromCart = async (req, res)=>{
             return res.send({status: 'error', payLoad: 'No existe ningun producto'})
         }
     }catch(e){
-        return req.logger.error(e)
+        console.error(e)
     }
 }
 
@@ -129,14 +126,18 @@ export const updateCart = async (req, res)=>{
         const cartId = req.params.cId
         // const findedCart = await cartService.getCartById(cartId)
         // const carritoEncontrado = await cartModel.findById(cartId)
-        const products = req.body.products
-
+        const products = req.body
         const updateCart = await cartService.updateCart(cartId, products)
         if(!updateCart) return res.status(400).json({error: "There is a/many product/s that was/were not found/finded"})
-        return res.status(201).json({message: 'Carrito actualizado con exito', updateCart})
+        return res.status(201).json({message: 'Cart updated successfully!', updateCart})
 
     }catch(e){
-        return req.logger.error(e)
+        CustomError.createError({
+            name: "Update cart error",
+            cause: e,
+            message: "Error trying to update the cart",
+            code: EErrors.INVALID_TYPE_ERROR
+        })
     }
 }
 

@@ -5,10 +5,11 @@ import handlebars from 'express-handlebars'
 import {Server} from 'socket.io'
 import passport from 'passport'
 import cookieParser from 'cookie-parser'
+import swaggerJSDoc from 'swagger-jsdoc'
+import swaggerUIExpress from 'swagger-ui-express'
 
 import cartRoute from './routes/cart.router.js'
 import productsRoute from './routes/product.router.js'
-import ProductManager from './dao/mongo/ProductManager.js'
 import initializePassport from './config/passport.config.js'
 import msgModel from './dao/mongo/models/messages.model.js'
 import __dirname from './utils.js'
@@ -21,11 +22,10 @@ import { productService } from './services/index.js'
 import config from './config/config.js'
 import { addLogger } from './services/logger/logger.js'
 
-
 const app = express()
-
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }));    
+app.use(express.urlencoded({ extended: true }))
+
 app.use(cookieParser())
 app.use(session({
     store: MongoStore.create({
@@ -42,10 +42,37 @@ app.use(session({
     saveUninitialized: true,
     logging: true
 }))
+
+
+const httpServer = app.listen(config.PORT, ()=>{ console.log("listening") })
+const io = new Server(httpServer)
+
+app.engine('handlebars', handlebars.engine())
+app.set('view engine', 'handlebars')
+app.set('views', __dirname + '/views')
+
+app.use('/static', express.static(__dirname + '/public'))
+
+//passport
+initializePassport()
+app.use(passport.initialize())
+app.use(passport.session())
+
+const swaggerOptions = {
+    definition:{
+        openapi: '3.0.1',
+        info: {
+            title: 'Ecommerce Project',
+            description: 'This project has been created for the Back-End course from Coder House'
+        }
+    },
+    apis: [`${__dirname}/docs/**/*.yaml`]
+}
+const specs = swaggerJSDoc(swaggerOptions)
+app.use('/api/docs', swaggerUIExpress.serve, swaggerUIExpress.setup(specs))
 app.use(addLogger)
 //Logger test
 app.get('/loggerTest', (req, res) => {
-
     req.logger.fatal('fatal test')
     req.logger.error('error test')
     req.logger.warning('warning test')
@@ -54,26 +81,6 @@ app.get('/loggerTest', (req, res) => {
 
     res.send('logger testing')
 })
-const httpServer = app.listen(config.PORT, ()=>{ console.log("listening") })
-const io = new Server(httpServer)
-
-
-app.engine('handlebars', handlebars.engine())
-app.set('view engine', 'handlebars')
-app.set('views', __dirname + '/views')
-
-
-
-app.use('/static', express.static(__dirname + '/public'))
-
-const prod = new ProductManager()
-export default prod
-
-//passport
-initializePassport()
-app.use(passport.initialize())
-app.use(passport.session())
-
 app.use('/api/products', productsRoute)
 app.use('/api/carts', cartRoute)
 app.use('/api/session', sessionRoute)
@@ -102,7 +109,7 @@ io.on('connection', socket=>{
     console.log("New connection!")
     socket.on('newProduct', async data =>{
         try{
-            const  {title, description, price, thumbnail, code, stock} = await data
+            const {title, description, price, thumbnail, code, stock} = await data
             const product = {title, description, price, thumbnail, code, stock}
             const prodCreated = await productService.addProductToDatabase(product)
             const getProds = await productService.getProducts()

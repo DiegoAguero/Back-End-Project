@@ -48,11 +48,8 @@ export default class CartRepository{
         return await this.dao.updateCart(cId, products)
     }
     async clearCart(id){
-        const cart = await this.dao.getCartById(id)
-        cart.products = []
-        await this.dao.updateCart(id, cart.products)
-        // await cart.save()
-        return cart
+        const cart = await this.dao.getCartById(false, id)
+        return await this.dao.updateCart(cart._id, [])
     }
     async addProductToCart(cId, pId){
         const cart = await this.dao.getCartById(true, cId)
