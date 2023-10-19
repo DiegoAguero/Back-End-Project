@@ -1,6 +1,5 @@
 import CustomError from "../../services/errors/customErrors.js";
 import cartModel from "./models/cart.model.js";
-import prodModel from './models/products.model.js'
 import ProductManager from "./products.mongo.js";
 import EErrors from "../../services/errors/enums.js";
 import { logger } from "../../services/logger/logger.js";
@@ -83,7 +82,7 @@ export default class CartManager{
 
     async updateCart(cId, products){
         try {
-            return await cartModel.findByIdAndUpdate(cId, {$set: {products: products}})
+            return await cartModel.findByIdAndUpdate(cId, {$set: {products: products}}, {new: true})
         } catch (error) {
             CustomError.createError({
                 name: "Update cart error",

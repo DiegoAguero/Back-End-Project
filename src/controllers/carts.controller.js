@@ -147,9 +147,8 @@ export const purchaseProducts = async (req, res)=>{
         const userEmail = req.user?.email || req.body.email
 
         const ticket = await cartService.purchaseProducts(cartId, userEmail)
-        req.logger.info(ticket)
         return res.send({status: 'success', payload: ticket})
     } catch (error) {
-        return req.logger.error(error)
+        console.error(error)
     }
 }

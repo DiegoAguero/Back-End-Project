@@ -200,13 +200,19 @@ paths:
           required: true
           description: Id of the cart requested
           schema:
-            $type: String
       requestBody:
         required: true
         content:
           application/json:
             schema:
               $ref: '#components/requestBodies/purchaseProducts'
+      responses:
+        "200":
+          description: The products has been purchased!
+        "404":
+          description: The cart was not found
+        "500":
+          description: Internal server error
 components:
   schemas:
     Cart:
@@ -293,6 +299,25 @@ components:
       example:
         quantity: 10
     purchaseProducts:
-      type: object
+      type: Array
       properties:
-      #Terminar esto y arrancar con products
+        ticket:
+          type: Array
+        items:
+          type: object
+          properties:
+            code:
+              type: string
+              description: Unique code for the purchase
+              required: true
+            dateTime:
+              type: Date
+              description: Date of the purchase
+            amount:
+              type: Number
+              description: Amount of money spent on the purchase
+            purchaser:
+              type: String
+              description: Email of the purchaser
+      example:
+          email: lucasrolandolopez@gmail.com

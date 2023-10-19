@@ -129,7 +129,7 @@ export default class CartRepository{
         const resultCart = await cartService.updateCart(cId, productsNotProcessed)
         // console.log(resultCart)
         const ticket = await ticketService.createTicket(totalPrice, email)
-        return resultCart
+        return ticket
 
         // console.log(ticket)
         //Solucionar error de que ticketService no retorna el ticket

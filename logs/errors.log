@@ -1028,3 +1028,120 @@ info: {
   ],
   __v: 1
 }
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 19/10/2023
+info: DELETE on /api/carts/64c39a8a3778f67e478b71cf - 19/10/2023
+info: {
+  _id: new ObjectId("64c39a8a3778f67e478b71cf"),
+  products: [
+    { product: new ObjectId("64cb7a92d99f26b6d04c32fe"), quantity: 4 },
+    { product: new ObjectId("64c68aaf456f4b4675841914"), quantity: 5 }
+  ],
+  __v: 13
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 19/10/2023
+info: GET on /favicon.ico - 19/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c39a8a3778f67e478b71cf/purchase - 19/10/2023
+error: undefined {"code":3,"name":"Create ticket error"}
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c39a8a3778f67e478b71cf/purchase - 19/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c39a8a3778f67e478b71cf/purchase - 19/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c39a8a3778f67e478b71cf/purchase - 19/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c39a8a3778f67e478b71cf/purchase - 19/10/2023
+info: {
+  code: '6564FSYQ2561HZEA',
+  purchase_datetime: 2023-10-19T07:30:27.481Z,
+  amount: 0,
+  purchaser: 'lucasrolandolopez@gmail.com',
+  _id: new ObjectId("6530db13d294548756a315b1"),
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c39a8a3778f67e478b71cf/purchase - 19/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c39a8a3778f67e478b71cf/purchase - 19/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64c3a09cb49ed3d5b1537121/purchase - 19/10/2023
+info: 10
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 19/10/2023
+info: GET on /favicon.ico - 19/10/2023
+info: POST on /api/session/login - 19/10/2023
+info: GET on /products - 19/10/2023
+info: [object Object]
+info: [object Object]
+info: GET on /realtimeproducts - 19/10/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products/ - 19/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/products/ - 19/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/products/ - 19/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/products/ - 19/10/2023
+info: POST on /api/products/ - 19/10/2023

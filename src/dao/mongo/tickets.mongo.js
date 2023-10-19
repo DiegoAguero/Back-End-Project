@@ -6,8 +6,8 @@ export default class TicketManager{
     
     async createTicket(ticket){
         try {
+            console.log(ticket)
             const ticketCreated = await ticketModel.create(ticket)
-            logger.info(ticketCreated)
             return ticketCreated
             
         } catch (error) {
