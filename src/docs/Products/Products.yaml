@@ -26,17 +26,115 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#components/requestBodies/insertProduct'
+              $ref: '#components/requestBodies/insertTheProduct'
       responses:
         "200":
           description: The product was successfully created
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#components/schemas/Product'
         "500":
           description: Internal server error
         "404":
           description: The carts were not found
-  /api/products/{pId}:
-  /api/products/delete/{pId}:
+      example:
+        title: Lays
+        description: Papas fritas Lays 500gr
+        price: 2
+        stock: 38
+        code: lays500gr
+        status: true
 
+  /api/products/{pId}:
+    get:
+      summary: Obtains a specific product
+      tags:
+        - Products
+      parameters:
+        - name: pId
+          in: path
+          required: true
+          description: Id of the product requested
+          schema: 
+            $type: String
+      responses:
+        "200":
+          description: The product was successfully obtained
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#components/schemas/Product'
+        "500":
+          description: Internal server error
+        "404":
+          description: The carts were not found
+    put:
+      summary: Updates a product
+      tags: 
+        - Products
+      parameters:
+        - name: pId
+          in: path
+          required: true
+          description: Id of the product to be updated
+          schema: 
+            $type: String
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/insertTheProduct'
+      responses:
+        "200":
+          description: The product was successfully updated
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#components/schemas/Product'
+        "500":
+          description: Internal server error
+        "404":
+          description: The cart was not found
+      example:
+        title: Lays
+        description: Papas fritas Lays 500gr
+        price: 2
+        stock: 38
+        code: lays500gr
+        status: true
+  /api/products/delete/{pId}:
+    delete:
+      summary: Updates a product
+      tags: 
+        - Products
+      parameters:
+        - name: pId
+          in: path
+          required: true
+          description: Id of the product to be deleted
+          schema: 
+            $type: String
+      responses:
+        "200":
+          description: The product was successfully deleted
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#components/schemas/Product'
+        "500":
+          description: Internal server error
+        "404":
+          description: The carts were not found
 components:
   schemas:
     Product:
@@ -79,7 +177,7 @@ components:
         code: lays500gr
         status: true
   requestBodies:
-    insertProduct:
+    insertTheProduct:
       type: object
       properties:
         title:
@@ -114,5 +212,3 @@ components:
         stock: 38
         code: lays500gr
         status: true
-
-

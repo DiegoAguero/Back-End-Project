@@ -1145,3 +1145,46 @@ info: Persistency with MONGO
 info: Mongo connected
 info: POST on /api/products/ - 19/10/2023
 info: POST on /api/products/ - 19/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 23/10/2023
+info: GET on /api/products/ - 23/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products/%7BpId%7D - 23/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products/64c68b0f456f4b4675841928 - 23/10/2023
+info: {
+  owner: 'admin',
+  _id: new ObjectId("64c68b0f456f4b4675841928"),
+  title: 'Lays',
+  description: 'Papas fritas Lays 500gr',
+  price: 2,
+  thumbnail: '/static/images/lays-papas.jpg',
+  code: 'lays500gr',
+  stock: 38,
+  status: true,
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 23/10/2023
+info: GET on /favicon.ico - 23/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/products/delete/652bf68dd988814e0333a5ee - 23/10/2023

@@ -128,5 +128,9 @@
   "bugs": {
     "url": "https://github.com/DiegoAguero/Back-End-Project/issues"
   },
-  "homepage": "https://github.com/DiegoAguero/Back-End-Project#readme"
+  "homepage": "https://github.com/DiegoAguero/Back-End-Project#readme",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
 }

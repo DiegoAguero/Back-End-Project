@@ -66,7 +66,7 @@ export const updateStock = async (req, res)=>{
 
 export const addProductToDatabase = async (req, res)=>{
     try{
-        const {title, description, price, thumbnail, code, stock, status} = req.body[0]
+        const {title, description, price, thumbnail, code, stock, status} = req.body
         console.log(title, description, price, thumbnail, code, stock, status)
         if(req.user.rol === 'premium'){
             const owner = req.user.email
