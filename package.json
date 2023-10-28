@@ -117,7 +117,7 @@
     "winston": "^3.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/test/carts.test.js "
   },
   "repository": {
     "type": "git",
@@ -131,6 +131,7 @@
   "homepage": "https://github.com/DiegoAguero/Back-End-Project#readme",
   "devDependencies": {
     "chai": "^4.3.10",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
   }
 }

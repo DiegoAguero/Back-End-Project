@@ -6,7 +6,7 @@ import {productService} from '../services/index.js'
 export const getProducts = async(req, res)=>{
     try {
         const products = await productService.getProducts();
-        return res.send(products)
+        return res.send({status: 'success', payload: products})
     } catch (error) {
         return res.send({status: 'error', payload: error})
     }
@@ -18,7 +18,7 @@ export const getProductByID = async(req, res) =>{
         // const product = await prodModel.findOne({_id: id})
         const product = await productService.getProductById(id)
         req.logger.info(product)
-        return res.send(product)
+        return res.send({status: 'success', payload: product})
     }catch(error){
         return res.send({status: 'error', payload: error})
 
@@ -31,8 +31,8 @@ export const updateProduct = async (req, res)=>{
         const {title, description, price, thumbnail, code, stock, status} = req.body
         const newProduct = {title, description, price, thumbnail, code, stock, status}
         req.logger.info(id)
-        const product = await productService.updateProduct(parseInt(id), newProduct)
-        return res.send({status: 'success', product})
+        const product = await productService.updateProduct(id, newProduct)
+        return res.send({status: 'success', payload: product})
         
     }catch(error){
         throw new Error(error)
@@ -43,8 +43,9 @@ export const deleteProduct = async (req, res)=>{
     try{
         const id = req.params.pId
         const deleteProduct = await productService.deleteProduct(id)
+        console.log('Deleted product: ', deleteProduct)
         if(!deleteProduct) return res.send({status: 'error', payload: 'There has been a problem deleting the product'})
-        return res.send({status: 'success', payload: `product deleted, ${deleteProduct}}`})
+        return res.send({status: 'success', payload: deleteProduct})
         
     }catch(e){
         return console.error(e)
@@ -67,17 +68,15 @@ export const updateStock = async (req, res)=>{
 export const addProductToDatabase = async (req, res)=>{
     try{
         const {title, description, price, thumbnail, code, stock, status} = req.body
-        console.log(title, description, price, thumbnail, code, stock, status)
-        if(req.user.rol === 'premium'){
+        if(req.user?.rol === 'premium'){
             const owner = req.user.email
             const product = {title, description, price, thumbnail, code, owner, stock, status}
-            req.logger.info(product)
             const prodCreated = await productService.addProductToDatabase(product)
-            return res.send({status: 'success', product: prodCreated})
+            return res.send({status: 'success', payload: prodCreated})
         }
-        // const product = {title, description, price, thumbnail, code, stock, status}
-        // const prodCreated = await productService.addProductToDatabase(product)
-        // return res.send({status: 'success', product: prodCreated})
+        const product = {title, description, price, thumbnail, code, stock, status}
+        const prodCreated = await productService.addProductToDatabase(product)
+        return res.send({status: 'success', payload: prodCreated})
     }catch(error){
         req.logger.info("Error: " + error)
         return res.send({status: 'error', payload: error})

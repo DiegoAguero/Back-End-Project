@@ -1188,3 +1188,1132 @@ info: Mongo connected
 info: Persistency with MONGO
 info: Mongo connected
 info: DELETE on /api/products/delete/652bf68dd988814e0333a5ee - 23/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: GET on /api/products - 23/10/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: POST on /api/products - 23/10/2023
+info: Error: TypeError: Cannot read properties of undefined (reading 'rol')
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: POST on /api/products - 23/10/2023
+info: Error: TypeError: Cannot read properties of undefined (reading 'rol')
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: POST on /api/products - 23/10/2023
+info: Error: TypeError: Cannot read properties of undefined (reading 'rol')
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: POST on /api/products - 23/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("65362a1804ff07b9cb5ac89f"),
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 23/10/2023
+info: POST on /api/products - 23/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("65362a47e8e6a9a58066be44"),
+  __v: 0
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 25/10/2023
+info: POST on /api/products - 25/10/2023
+info: GET on /api/products/64c68aaf456f4b4675841914 - 25/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 25/10/2023
+info: POST on /api/products - 25/10/2023
+info: GET on /api/products/64c68aaf456f4b4675841914 - 25/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 25/10/2023
+info: POST on /api/products - 25/10/2023
+info: GET on /api/products/64c68aaf456f4b4675841914 - 25/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 25/10/2023
+info: POST on /api/products - 25/10/2023
+info: GET on /api/products/64c68aaf456f4b4675841914 - 25/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 25/10/2023
+info: POST on /api/products - 25/10/2023
+info: GET on /api/products/64c68aaf456f4b4675841914 - 25/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 25/10/2023
+info: POST on /api/products - 25/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("6538c0e9d84fd8e12d86a292"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 25/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a150e78cd6ccffb3d1f74"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/653a150e78cd6ccffb3d1f74 - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a15bafd1978e5a82b255e"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/653a150e78cd6ccffb3d1f74 - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a15ea7a63ba2938913ff2"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/653a150e78cd6ccffb3d1f74 - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a16186e55b88e66fd8266"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/653a16186e55b88e66fd8266 - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a1657841b7995f7647ad8"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/653a1657841b7995f7647ad8 - 26/10/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a167addc0baeb17783c77"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/653a167addc0baeb17783c77 - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a173d952d6da069ffc707"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/653a173d952d6da069ffc707 - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a179d97ad10a6c0fc3841"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/653a179d97ad10a6c0fc3841 - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a17fb8a77443ca772292e"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/653a17fb8a77443ca772292e - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a1c04a0f3ba6b7c5a061e"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/delete/653a1c04a0f3ba6b7c5a061e - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a1c48255484a0bf00626d"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/delete/653a1c48255484a0bf00626d - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a1c85a3227dd819c3c140"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: DELETE on /api/products/delete/653a1c85a3227dd819c3c140 - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a1e1b7b37f57afa808afa"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: PUT on /api/products/653a1e1b7b37f57afa808afa - 26/10/2023
+info: 653a1e1b7b37f57afa808afa
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a1e48c928f57ec33ed60d"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: PUT on /api/products/653a1e48c928f57ec33ed60d - 26/10/2023
+info: 653a1e48c928f57ec33ed60d
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a1ea424abb9a84d8be42a"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: PUT on /api/products/653a1ea424abb9a84d8be42a - 26/10/2023
+info: 653a1ea424abb9a84d8be42a
+info: DELETE on /api/products/delete/653a1ea424abb9a84d8be42a - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/products - 26/10/2023
+info: POST on /api/products - 26/10/2023
+info: {
+  title: 'Bolulo',
+  description: 'Bolulo description',
+  price: 20,
+  thumbnail: 'lel',
+  code: 'lel123',
+  owner: 'admin',
+  stock: 2,
+  status: true,
+  _id: new ObjectId("653a1eeabbec6d2e42ab8da3"),
+  __v: 0
+}
+info: GET on /api/products/64c68aaf456f4b4675841914 - 26/10/2023
+info: {
+  _id: new ObjectId("64c68aaf456f4b4675841914"),
+  title: 'Agua Viladrau',
+  description: 'Agua Viladrau',
+  price: 2,
+  thumbnail: '/static/images/viladrau.jpg',
+  code: 'viladrau',
+  stock: 68,
+  status: true,
+  __v: 0,
+  owner: 'admin'
+}
+info: PUT on /api/products/653a1eeabbec6d2e42ab8da3 - 26/10/2023
+info: 653a1eeabbec6d2e42ab8da3
+info: DELETE on /api/products/delete/653a1eeabbec6d2e42ab8da3 - 26/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 27/10/2023
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 27/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 27/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [
+    { product: new ObjectId("64c68a91456f4b467584190f"), quantity: 6 }
+  ],
+  __v: 1
+}
+info: Persistency with MONGO
+info: POST on /api/carts - 27/10/2023
+info: Mongo connected
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 27/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: { _id: new ObjectId("64da6c63d74f6291115e7aa3"), products: [], __v: 2 }
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 27/10/2023
+info: GET on /api/carts - 27/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 27/10/2023
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 27/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3 - 27/10/2023
+info: { _id: new ObjectId("64da6c63d74f6291115e7aa3"), products: [], __v: 3 }
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected

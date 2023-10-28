@@ -28,6 +28,7 @@ export default class ProductManager{
 
         await this.updateTotalProducts()
         const prodDeleted = await prodModel.deleteOne({_id: id})
+        console.log(prodDeleted)
         return prodDeleted
 
     }
