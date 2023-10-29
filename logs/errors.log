@@ -2317,3 +2317,190 @@ info: Persistency with MONGO
 info: Mongo connected
 info: Persistency with MONGO
 info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 29/10/2023
+info: GET on /api/carts - 29/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 29/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/purchase - 29/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 29/10/2023
+info: GET on /api/carts - 29/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: PUT on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [
+    { product: new ObjectId("64c68a91456f4b467584190f"), quantity: 1 }
+  ],
+  __v: 5
+}
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 29/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/purchase - 29/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 29/10/2023
+info: GET on /api/carts - 29/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: PUT on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [
+    { product: new ObjectId("64c68a91456f4b467584190f"), quantity: 1 }
+  ],
+  __v: 6
+}
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 29/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/purchase - 29/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 29/10/2023
+info: GET on /api/carts - 29/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: PUT on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [
+    { product: new ObjectId("64c68a91456f4b467584190f"), quantity: 1 }
+  ],
+  __v: 7
+}
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 29/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/purchase - 29/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 29/10/2023
+info: GET on /api/carts - 29/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: PUT on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [
+    { product: new ObjectId("64c68a91456f4b467584190f"), quantity: 1 }
+  ],
+  __v: 8
+}
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 29/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [
+    { product: new ObjectId("64c68a91456f4b467584190f"), quantity: 4 }
+  ],
+  __v: 8
+}
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/purchase - 29/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 29/10/2023
+info: GET on /api/carts - 29/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: PUT on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [
+    { product: new ObjectId("64c68a91456f4b467584190f"), quantity: 1 }
+  ],
+  __v: 9
+}
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 29/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [
+    { product: new ObjectId("64c68a91456f4b467584190f"), quantity: 4 }
+  ],
+  __v: 9
+}
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/purchase - 29/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 29/10/2023
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 29/10/2023
+info: PUT on /api/carts/64c39a8a3778f67e478b71cf - 29/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts - 29/10/2023
+info: GET on /api/carts - 29/10/2023
+info: GET on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: [object Object]
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: PUT on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f - 29/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [
+    { product: new ObjectId("64c68a91456f4b467584190f"), quantity: 1 }
+  ],
+  __v: 10
+}
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3/product/64c68a91456f4b467584190f/delete - 29/10/2023
+info: PUT on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: POST on /api/carts/64da6c63d74f6291115e7aa3/purchase - 29/10/2023
+info: DELETE on /api/carts/64da6c63d74f6291115e7aa3 - 29/10/2023
+info: {
+  _id: new ObjectId("64da6c63d74f6291115e7aa3"),
+  products: [],
+  __v: 10
+}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
