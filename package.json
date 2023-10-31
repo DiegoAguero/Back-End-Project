@@ -117,7 +117,7 @@
     "winston": "^3.10.0"
   },
   "scripts": {
-    "test": "mocha src/test/carts.test.js "
+    "test": "mocha src/test/sessions.test.js "
   },
   "repository": {
     "type": "git",

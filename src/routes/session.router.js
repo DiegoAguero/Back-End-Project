@@ -86,15 +86,11 @@ router.get('/current', authToken,(req, res)=>{
             email: req.user.email,
             rol: req.user.rol
         }
-        return res.json(user)
+        return res.send({status: 'success', payload: user})
 
     } catch (error) {
         return res.status(500).json({error: "Server error"})
     }
 
-})
-
-router.get('/resetPassword', (req, res)=>{
-    
 })
 export default router

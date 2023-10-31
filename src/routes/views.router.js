@@ -1,8 +1,7 @@
 import {Router} from 'express'
 import jwt from 'jsonwebtoken'
-import nodemailer from 'nodemailer'
 
-import {authorization, authToken, isValidPassword, createHash } from '../utils.js'
+import {authorization, authToken, createHash } from '../utils.js'
 import { productService, cartService, userService } from '../services/index.js'
 import {getProductsViews, premiumView, getCartView, getProductView, mockingProducts, realTimeProducts} from '../controllers/views.controller.js'
 import EErrors from '../services/errors/enums.js'

@@ -4,7 +4,7 @@ import GitHubStrategy from 'passport-github2'
 import passportJWT from 'passport-jwt'
 
 import { cartService, userService } from '../services/index.js'
-import userModel from '../dao/mongo/models/user.model.js'
+import { logger } from '../services/logger/logger.js'
 //.env config
 import config from './config.js'
 import { createHash, isValidPassword, extractCookie, generateToken } from '../utils.js'
@@ -34,7 +34,7 @@ function initializePassport(){
             try{
                 const user = await userService.getUserByEmail(profile._json.email)
                 if(user){
-                    console.log("User already exists " + profile._json.email)
+                    logger.info("User already exists " + profile._json.email)
                 }else{
                     const newCartForUser = await cartService.createCart()
                     const newUser = {
@@ -78,11 +78,11 @@ function initializePassport(){
         }, 
         async(req, username, password, done)=>{
             try{
+                console.log('Entro al register passport')
                 const {first_name, last_name, age, rol, email} = req.body
                 const user = await userService.getUserByEmail(username)
-                // const user = await userModel.findOne({email: username})
                 if(user){
-                    console.log("User already exist")
+                    logger.info("User already exist")
                     return done(null, false)
                 }
                 const newCartForUser = await cartService.createCart([])
