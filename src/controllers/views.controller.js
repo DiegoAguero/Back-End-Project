@@ -1,6 +1,5 @@
 import {faker} from '@faker-js/faker/locale/es'
 
-
 import ViewManager from '../dao/mongo/views.mongo.js' 
 import { productService, cartService } from '../services/index.js'
 import config from '../config/config.js'
@@ -24,7 +23,6 @@ export const getProductsViews = async (req, res)=>{
                 break;
             case 'FILE':
                 products = await productService.getProducts()
-                JSON.stringify(products)
                 break;
             default:
                 break;
@@ -44,8 +42,7 @@ export const premiumView = async (req, res)=>{
     const user = req.user
     const allProducts = await productService.getProducts()
     const productFilteredByOwner = allProducts.filter(product=>{ return product.owner === user.email })
-    console.log(productFilteredByOwner)
-    return res.render('createProduct', {user: user, totalProducts: productFilteredByOwner})
+    return res.status(201).render('createProduct', {user: user, totalProducts: productFilteredByOwner})
 }
 
 export const getCartView = async (req, res)=>{
@@ -53,7 +50,7 @@ export const getCartView = async (req, res)=>{
         const cId = req.params.cId
         const cart = await cartService.getCartById(true, cId)
         req.logger.info(JSON.stringify(cart))
-        return res.render('carts', {
+        return res.status(200).render('carts', {
             cart: cart,
         })
     }catch(e){
@@ -70,7 +67,7 @@ export const getProductView = async (req, res)=>{
     try{
         const pId = req.params.pId
         const product = await productService.getProductById(pId)
-        res.render('products', {product})
+        return res.status(200).render('products', {product})
     }catch(e){
         CustomError.createError({
             name: "Get product error",

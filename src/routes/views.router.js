@@ -87,7 +87,7 @@ router.post('/resetPassword/:uId/:token', async(req, res)=>{
             //Solucionar problema con el hash que no coincide con la contraseña antigua
             
             user.password = hashedPassword
-            await userService.updateUser(user)
+            await userService.updateUser(user._id, user)
             return res.send({status: 'success', payload: 'Password changed successfully!'})
         }else{
             return res.send({status: 'error', payload: 'Passwords do not match, try again!'})

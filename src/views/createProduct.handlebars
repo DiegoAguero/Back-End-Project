@@ -40,11 +40,35 @@
             {{/each}}
         {{/if}}
     </div>
+
+<script src="http://localhost:8080/socket.io/socket.io.js"></script>
 <script>
+    const socket = io()
+    const allProducts = document.getElementById('allProducts')
     async function deleteProduct(id){
         const fetchDelete = await fetch(`/api/products/delete/${id}`, {method: "DELETE"})
         const response = await fetchDelete.json()
         if(response.status === 'success'){
+            //Reutilizo el newPremiumProducts para recargar los productos cuando se elimimen
+            socket.emit('newPremiumProducts', response.payload.owner)
+            socket.on('reloadPremiumProducts', async prods =>{
+            let html = ''
+            prods.forEach(prod =>{
+                html += 
+                `
+                    <div class="bg-light card m-2" style="width: 16rem;">
+                        <img src="${prod.thumbnail}" class="card-img-top p-3" width="254px" height="254px" alt="${prod.title}">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">${prod.title}</h5>
+                            <p class="card-text">${prod.description}</p>
+                            <p class="card-text">Total stock:${prod.stock}</p>
+                            <button onclick="deleteProduct('${prod._id}')" class="btn btn-danger">Delete product</button>
+                        </div>
+                    </div>
+                `
+                })
+                allProducts.innerHTML = html
+            })
             return Swal.fire({
                 title: "Product deleted successfully!",
                 icon: 'success',
@@ -85,6 +109,41 @@
             body: JSON.stringify(newProd)
         })
         const result = await response.json()
-
+        if(result.status == 'success'){
+            socket.emit('newPremiumProducts', result.payload.owner)
+            socket.on('reloadPremiumProducts', async prods =>{
+                let html = ''
+                prods.forEach(prod =>{
+                    html += 
+                    `
+                        <div class="bg-light card m-2" style="width: 16rem;">
+                            <img src="${prod.thumbnail}" class="card-img-top p-3" width="254px" height="254px" alt="${prod.title}">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">${prod.title}</h5>
+                                <p class="card-text">${prod.description}</p>
+                                <p class="card-text">Total stock:${prod.stock}</p>
+                                <button onclick="deleteProduct('${prod._id}')" class="btn btn-danger">Delete product</button>
+                            </div>
+                        </div>
+                    `
+                })
+                allProducts.innerHTML = html
+            })
+            return Swal.fire({
+                title: 'Product created successfully!',
+                icon: 'success',
+                description: 'Your product was created!',
+                confirmButtonText: 'Ok',
+                timer: 2000
+            })
+        }else{
+            return Swal.fire({
+                title: 'Error while creating the product!',
+                icon: 'error',
+                description: 'Your product was not created!',
+                confirmButtonText: 'Ok',
+                timer: 2000
+            })
+        }   
     }
 </script>

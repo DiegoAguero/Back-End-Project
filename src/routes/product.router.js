@@ -1,11 +1,11 @@
 import {Router} from "express"
 import { addProductToDatabase, deleteProduct, getProductByID, getProducts, updateProduct } from "../controllers/products.controller.js"
-
+import { isPremium } from "../utils.js"
 
 const router = Router()
 
 router.get('/', getProducts)
-router.post('/', addProductToDatabase)
+router.post('/', isPremium, addProductToDatabase)
 router.get('/:pId', getProductByID)
 router.post('/delete/:pId', deleteProduct)
 

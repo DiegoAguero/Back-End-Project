@@ -2641,3 +2641,1345 @@ info: Persistency with MONGO
 info: Mongo connected
 info: Persistency with MONGO
 info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 31/10/2023
+info: GET on /favicon.ico - 31/10/2023
+info: PUT on /api/products/6523bc689473cc2db281a4ca - 31/10/2023
+info: 6523bc689473cc2db281a4ca
+info: POST on /api/products/ - 31/10/2023
+info: {
+  title: 'Layssadasd',
+  description: 'Papas fritas Lays 500gasdr',
+  price: 2,
+  thumbnail: '',
+  code: 'laysasd500gr',
+  owner: 'admin',
+  stock: 38,
+  status: true,
+  _id: new ObjectId("6540bce17413bef30fed80eb"),
+  __v: 0
+}
+info: DELETE on /api/products/delete/6540bce17413bef30fed80eb - 31/10/2023
+info: GET on / - 31/10/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with FILE
+info: GET on /register - 31/10/2023
+info: POST on /api/session/register - 31/10/2023
+info: User already exist
+info: POST on /api/session/login - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on / - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: POST on /api/carts//product/ - 31/10/2023
+info: undefined
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: POST on /api/carts//product/2 - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /api/carts/ - 31/10/2023
+info: POST on /api/carts/ - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 31/10/2023
+info: POST on /api/session/login - 31/10/2023
+info: POST on /api/session/login - 31/10/2023
+info: POST on /api/session/login - 31/10/2023
+info: GET on /resetPassword - 31/10/2023
+info: GET on /api/session/login-github - 31/10/2023
+info: GET on /api/session/githubcallback?code=a3d44449766f4f51ff1b - 31/10/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /favicon.ico - 31/10/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/session/logout - 31/10/2023
+info: cookie cleared
+info: GET on / - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/session/login - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: POST on /api/carts/20/product/2 - 31/10/2023
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: POST on /api/carts/20/product/2 - 31/10/2023
+info: Persistency with FILE
+info: GET on /products - 31/10/2023
+info: [object Object]
+info: GET on /url - 31/10/2023
+info: GET on /url - 31/10/2023
+info: POST on /api/carts/20/product/2 - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/carts/20/product/2 - 31/10/2023
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/20/product/3 - 31/10/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /api/session/logout - 1/11/2023
+info: cookie cleared
+info: GET on / - 1/11/2023
+info: GET on /favicon.ico - 1/11/2023
+info: GET on /register - 1/11/2023
+info: POST on /api/session/register - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/session/register - 1/11/2023
+info: User already exist
+info: GET on / - 1/11/2023
+info: POST on /api/session/login - 1/11/2023
+info: GET on /products - 1/11/2023
+info: [object Object]
+info: GET on /url - 1/11/2023
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on / - 1/11/2023
+info: GET on /api/session/login-github - 1/11/2023
+info: GET on /api/session/githubcallback?code=59a1d7a974306781b5b5 - 1/11/2023
+info: Persistency with FILE
+info: GET on /api/session/login-github - 1/11/2023
+info: GET on /api/session/githubcallback?code=faaae50791411a24af89 - 1/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 1/11/2023
+info: [object Object]
+info: GET on /url - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: POST on /api/carts/1/product/3 - 1/11/2023
+info: POST on /api/carts/1/product/3 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/3 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/3 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/3 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/ - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /api/carts/64f0562ce4d0d68169723d47 - 1/11/2023
+info: undefined
+info: GET on /api/carts/?populate=false - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/ - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/ - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/ - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/ - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on / - 1/11/2023
+info: GET on /favicon.ico - 1/11/2023
+info: GET on /api/session/login-github - 1/11/2023
+info: GET on /api/session/githubcallback?code=f193e5da85d5ff7a886a - 1/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 1/11/2023
+info: [object Object]
+info: GET on /url - 1/11/2023
+info: GET on /favicon.ico - 1/11/2023
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/ - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/ - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/ - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/3 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/3 - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/3 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /products - 1/11/2023
+info: [object Object]
+info: GET on /url - 1/11/2023
+info: GET on /url - 1/11/2023
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: GET on /products - 1/11/2023
+info: [object Object]
+info: GET on /url - 1/11/2023
+info: POST on /api/carts/1/product/2 - 1/11/2023
+info: Persistency with FILE
+info: GET on /cart/ - 1/11/2023
+info: GET on /products - 1/11/2023
+info: [object Object]
+info: GET on /url - 1/11/2023
+info: GET on /url - 1/11/2023
+info: GET on /products - 1/11/2023
+info: [object Object]
+info: GET on /url - 1/11/2023
+info: GET on /cart/1 - 1/11/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":1,"products":[{"product":2,"quantity":6},{"product":3,"quantity":3}]}
+info: POST on /api/carts/1/purchase - 1/11/2023
+info: Persistency with FILE
+info: GET on /cart/1 - 1/11/2023
+info: [object Object]
+info: [object Object]
+info: {"_id":1,"products":[{"product":2,"quantity":6},{"product":3,"quantity":3}]}
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /url - 1/11/2023
+info: GET on /products - 1/11/2023
+info: [object Object]
+info: GET on /url - 1/11/2023
+info: GET on /url - 1/11/2023
+info: GET on /cart/1 - 1/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"product":{"title":"Sprot","description":"Hola soy sprot","price":10,"thumbnail":"url","code":"12fsdf","stock":20,"status":true,"_id":2},"quantity":6},{"product":{"_id":3,"title":"Coca Colo","description":"Hola Coca Colo","price":25,"thumbnail":"url","code":"12ssdf","stock":5,"status":true},"quantity":3}]}
+info: POST on /api/carts/1/purchase - 1/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/purchase - 1/11/2023
+info: GET on /cart/1 - 1/11/2023
+info: [object Object]
+info: undefined
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on / - 5/11/2023
+info: GET on /favicon.ico - 5/11/2023
+info: GET on /api/session/login-github - 5/11/2023
+info: GET on /api/session/githubcallback?code=0801845a0b29c12d9721 - 5/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 5/11/2023
+info: [object Object]
+info: GET on /url - 5/11/2023
+info: GET on /favicon.ico - 5/11/2023
+info: POST on /api/carts/1/product/3 - 5/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/ - 5/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/3 - 5/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/3 - 5/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/3 - 5/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":3}]}
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":3}]}
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":3}]}
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":3}]}
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":3}]}
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":3}]}
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":3}]}
+info: GET on / - 5/11/2023
+info: GET on /products - 5/11/2023
+info: [object Object]
+info: GET on /url - 5/11/2023
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":3}]}
+info: POST on /api/carts/1/purchase - 5/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":3}]}
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[]}
+info: GET on / - 5/11/2023
+info: GET on /products - 5/11/2023
+info: [object Object]
+info: GET on /url - 5/11/2023
+info: POST on /api/carts/1/product/1 - 5/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/1 - 5/11/2023
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on / - 5/11/2023
+info: GET on /products - 5/11/2023
+info: [object Object]
+info: GET on /url - 5/11/2023
+info: POST on /api/carts/1/product/4 - 5/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"product":{"title":"Agua Agua","description":"Hola","price":5,"thumbnail":"url","code":"12fsdf","stock":1,"status":true,"_id":1},"quantity":2},{"product":{"_id":4,"title":"Mirinda","description":"Hola Mirinda","price":50,"thumbnail":"url","code":"14b","stock":25,"status":true},"quantity":1}]}
+info: POST on /api/carts/1/purchase - 5/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /cart/1 - 5/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":1}]}
+info: Persistency with FILE
+info: GET on /realtimeproducts - 7/11/2023
+info: GET on /favicon.ico - 7/11/2023
+info: GET on / - 7/11/2023
+info: GET on /api/session/login-github - 7/11/2023
+info: GET on /api/session/githubcallback?code=e442d4b47cfe83217356 - 7/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 7/11/2023
+info: [object Object]
+info: GET on /favicon.ico - 7/11/2023
+info: Persistency with FILE
+info: GET on /products - 7/11/2023
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium/1 - 7/11/2023
+info: GET on /api/users/premium/1 - 7/11/2023
+info: GET on /api/user/premium/1 - 7/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /api/user/premium/1 - 7/11/2023
+info: undefined
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on / - 7/11/2023
+info: GET on /products - 7/11/2023
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: GET on /api/user/premium/1 - 7/11/2023
+info: undefined
+info: Persistency with FILE
+info: GET on / - 7/11/2023
+info: GET on /products - 7/11/2023
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: GET on /products - 7/11/2023
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: GET on /url - 7/11/2023
+info: GET on /products - 7/11/2023
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: GET on /url - 7/11/2023
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: GET on / - 7/11/2023
+info: GET on /products - 7/11/2023
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: GET on /api/session/logout - 7/11/2023
+info: cookie cleared
+info: GET on / - 7/11/2023
+info: POST on /api/session/login - 7/11/2023
+info: GET on /api/session/login-github - 7/11/2023
+info: GET on /api/session/githubcallback?code=4702bc776232530f7aab - 7/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 7/11/2023
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: GET on /url - 7/11/2023
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 7/11/2023
+info: Persistency with FILE
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: GET on /premium - 7/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 7/11/2023
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 7/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /realtimeproducts - 8/11/2023
+info: GET on /favicon.ico - 8/11/2023
+info: GET on / - 8/11/2023
+info: GET on /api/session/login-github - 8/11/2023
+info: GET on /api/session/githubcallback?code=80f0c180fe27c6eef0d7 - 8/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/11/2023
+info: [object Object]
+info: GET on /url - 8/11/2023
+info: GET on /url - 8/11/2023
+info: GET on /favicon.ico - 8/11/2023
+info: GET on /premium - 8/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /url - 8/11/2023
+info: DELETE on /api/products/delete/12 - 8/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 8/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: DELETE on /api/products/delete/12 - 8/11/2023
+info: Persistency with FILE
+info: GET on /premium - 8/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 8/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 8/11/2023
+info: Persistency with FILE
+info: GET on /premium - 8/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 8/11/2023
+info: [object Object]
+info: [object Object]
+info: DELETE on /api/products/delete/12 - 8/11/2023
+info: Persistency with FILE
+info: GET on /premium - 8/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: GET on / - 9/11/2023
+info: GET on /favicon.ico - 9/11/2023
+info: GET on /api/session/login-github - 9/11/2023
+info: GET on /api/session/githubcallback?code=76261cb72fbbb8da3b9b - 9/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 9/11/2023
+info: [object Object]
+info: GET on /url - 9/11/2023
+info: GET on /favicon.ico - 9/11/2023
+info: GET on /cart/1 - 9/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"product":{"title":"Agua Agua","description":"Hola","price":5,"thumbnail":"url","code":"12fsdf","stock":1,"status":true,"_id":1},"quantity":1}]}
+info: GET on /cart/1 - 9/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"product":{"title":"Agua Agua","description":"Hola","price":5,"thumbnail":"url","code":"12fsdf","stock":1,"status":true,"_id":1},"quantity":1}]}
+info: GET on /cart/1 - 9/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"product":{"title":"Agua Agua","description":"Hola","price":5,"thumbnail":"url","code":"12fsdf","stock":1,"status":true,"_id":1},"quantity":1}]}
+info: GET on /cart/1 - 9/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"product":{"title":"Agua Agua","description":"Hola","price":5,"thumbnail":"url","code":"12fsdf","stock":1,"status":true,"_id":1},"quantity":1}]}
+info: POST on /api/carts/1/product/1 - 9/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/1 - 9/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/carts/1/product/1 - 9/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /cart/1 - 9/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: GET on /cart/1 - 9/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: GET on /cart/1 - 9/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: GET on / - 9/11/2023
+info: GET on /products - 9/11/2023
+info: [object Object]
+info: GET on /url - 9/11/2023
+info: GET on /cart/1 - 9/11/2023
+info: [object Object]
+info: {"_id":1,"products":[{"quantity":2}]}
+info: GET on / - 9/11/2023
+info: GET on /products - 9/11/2023
+info: [object Object]
+info: GET on /url - 9/11/2023
+info: POST on /api/carts/1/product/2 - 9/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /products - 9/11/2023
+info: [object Object]
+info: GET on /url - 9/11/2023
+info: POST on /api/carts/1/product/4 - 9/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/6 - 9/11/2023
+info: Persistency with FILE
+info: POST on /api/carts/1/product/6 - 9/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /api/products/1 - 10/11/2023
+info: [object Object]
+info: GET on /favicon.ico - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on / - 10/11/2023
+info: POST on /api/session/login - 10/11/2023
+info: GET on /api/session/login-github - 10/11/2023
+info: GET on /api/session/githubcallback?code=fee68a744690faa50160 - 10/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/11/2023
+info: [object Object]
+info: GET on /url - 10/11/2023
+info: GET on /favicon.ico - 10/11/2023
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /123 - 10/11/2023
+info: DELETE on /api/products/delete/14 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /asd - 10/11/2023
+info: DELETE on /api/products/delete/15 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /hol - 10/11/2023
+info: DELETE on /api/products/delete/15 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /ads - 10/11/2023
+info: GET on /hola - 10/11/2023
+info: DELETE on /api/products/delete/15 - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/15 - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/16 - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/15 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /hola - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /hola - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: DELETE on /api/products/delete/14 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /hola - 10/11/2023
+info: DELETE on /api/products/delete/15 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /hoa - 10/11/2023
+info: GET on /hol - 10/11/2023
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /hoa - 10/11/2023
+info: DELETE on /api/products/delete/14 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /diego - 10/11/2023
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: DELETE on /api/products/delete/undefined - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /hols - 10/11/2023
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /123 - 10/11/2023
+info: GET on /asd - 10/11/2023
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /123 - 10/11/2023
+info: DELETE on /api/products/delete/14 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /123 - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/14 - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /123 - 10/11/2023
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /asd - 10/11/2023
+info: GET on /123 - 10/11/2023
+info: POST on /api/products - 10/11/2023
+info: GET on /undefined - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: GET on /asd - 10/11/2023
+info: GET on /123 - 10/11/2023
+info: GET on /123 - 10/11/2023
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/14 - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/15 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /asd - 10/11/2023
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: GET on /asd - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/14 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: POST on /api/products - 10/11/2023
+info: GET on /asd - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /asd - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE
+info: GET on /premium - 10/11/2023
+info: [object Object]
+info: [object Object]
+info: POST on /api/products - 10/11/2023
+info: GET on /sd - 10/11/2023
+info: Persistency with FILE
+info: DELETE on /api/products/delete/13 - 10/11/2023
+info: Persistency with FILE

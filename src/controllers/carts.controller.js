@@ -25,7 +25,6 @@ export const getAllCarts = async (req, res)=>{
 export const getCartById = async (req, res) =>{
     const id = req.params.cId
     const cart = await cartService.getCartById(true, id)
-    
     if(!cart) return res.send({status: 'error', payload: 'The cart does not exist.'})
     res.send({status: 'success', payload: cart})
     // return res.render('carts', {cart})

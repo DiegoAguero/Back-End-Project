@@ -28,7 +28,6 @@ export default class ViewManager{
                     },
                     lean: true
                 }
-                logger.info(status)
                 const products = await prodModel.paginate(status, options)
                 products.prevLink = products.hasPrevPage? `/products?page=${products.prevPage}&limit=${limit}&sort=${sort}&status=${status}` : ''
                 products.nextLink = products.hasNextPage? `/products?page=${products.nextPage}&limit=${limit}&sort=${sort}&status=${status}` : ''

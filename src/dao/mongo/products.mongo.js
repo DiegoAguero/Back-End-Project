@@ -17,7 +17,7 @@ export default class ProductManager{
     async addProductToDatabase(product){
         try{
             const productCreated = await prodModel.create(product)
-            logger.info(productCreated)
+            // logger.info(productCreated)
             await this.updateTotalProducts()
             return productCreated
         }catch(e){
@@ -25,12 +25,9 @@ export default class ProductManager{
         }
     }
     async deleteProduct(id){
-
         await this.updateTotalProducts()
         const prodDeleted = await prodModel.deleteOne({_id: id})
-        console.log(prodDeleted)
         return prodDeleted
-
     }
 
     async updateProduct(id, product){

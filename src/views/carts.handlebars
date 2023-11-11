@@ -13,7 +13,7 @@
         </thead>
         <tbody id="tbody">
                 <h2>Productos en el carrito</h2>
-                {{@root.cart._id}}
+                
                     {{#each cart.products}} 
                         <tr>
                             <td>{{this.product._id}}</td>
@@ -26,15 +26,13 @@
                             <td>{{this.quantity}}</td>
                             {{!-- Ver logica --}}
                             <td>
-                                <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}" method="post">
+                                <button onclick="addOneToCart('{{this.product._id}}')">Add + 1</button>
+                                {{!-- <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}" method="post">
                                     <button type="submit">Add + 1</button>
-                                </form>    
+                                </form>     --}}
                             </td>
                             <td>
                                 <button onclick="removeFromCart('{{this.product._id}}')">Remove from cart</button>
-                                {{!-- <form action="/api/carts/{{@root.cart._id}}/product/{{this.product._id}}/delete" method="post">
-                                    <button type="submit">Remove From Cart</button>
-                                </form>                    --}}
                             </td>
                         </tr>
                     {{/each}}
@@ -45,9 +43,29 @@
     {{!-- <button id="purchase" onclick="purchaseProduct({{@root.cart._id}})" class="btn btn-danger">Finish purchase</button> --}}
 
 <script>
-
+    async function addOneToCart(id){
+        const response = await fetch(`/api/carts/{{@root.cart._id}}/product/${id}`, {method: "post"})
+        const res = await response.json()
+        if(res.status == 'error'){
+            return Swal.fire({
+                title: 'Error',
+                icon: 'error',
+                text: 'You cant add your own product to the cart!',
+                confirmButtonText: 'Okay',
+                timer: 2500
+            })
+        }
+        return Swal.fire({
+            title: "Added to the cart!",
+            icon: 'success',
+            text: "Product successfully added to the cart",
+            confirmButtonText: "Okay",
+            timer: 2000
+        })
+        
+    }
     async function removeFromCart(id){
-        const response = await fetch(`/api/carts/{{@root.cartId}}/product/${id}/delete`, {method: "post"})
+        const response = await fetch(`/api/carts/{{@root.cart._id}}/product/${id}/delete`, {method: "post"})
         const res = await response.json()
         console.log(res.status)
         return Swal.fire({
@@ -59,10 +77,19 @@
         })
     }
     async function purchaseProduct(id){
-        console.log(id)
         const response = await fetch(`/api/carts/${id}/purchase`, {method: "post"})
-        
-        console.log(response)
+        const res = await response.json()
+        console.log(res.payload.productsNotProcessed)
+        if(res.status == 'success'){
+            return Swal.fire({
+                title: "The products has been successfully purchased!",
+                icon: 'success',
+                text: "Here are the items that you couldn't purchase: ",
+                value: res.payload.productsNotProcessed,
+                confirmButtonText: 'Ok',
+                timer: 2000
+            })
+        }
     }
     
 </script>

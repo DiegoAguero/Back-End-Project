@@ -1,9 +1,8 @@
-import fs from 'fs'
 import TicketDTO from '../DTO/tickets.dto.js'
 import FileManager from './FileManager.js';
 
 export default class TicketManager extends FileManager{
-    constructor(path = './tickets.db.js'){
+    constructor(path = './db/tickets.db.js'){
         super(path)
     }
     async createTicket(ticket){

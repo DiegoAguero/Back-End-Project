@@ -40,9 +40,7 @@ export default class CartRepository{
     }
     async getCartById(populate = false, id){
         const cart = await this.dao.getCartById(populate, id)
-        logger.info(cart)
         return cart
-        // return await this.dao.getCartById(populate, id)
     }
     async updateCart(cId, products){
         return await this.dao.updateCart(cId, products)
@@ -56,18 +54,19 @@ export default class CartRepository{
         const getProduct = await productService.getProductById(pId)
         const isRepeated = cart.products?.find(prod =>{
             if(prod.product?._id){
+                //File?
+                //Preguntarle al profesor el tema del populate con file
                 return prod.product?._id.toString() === getProduct._id.toString()
             }else{
+                //File?
                 return prod?.product === getProduct._id
             }
         })
         if(!isRepeated){
             return await this.dao.addProductToCart(cId, pId)
-
         }else{
             isRepeated.quantity++
-            return await this.dao.updateCart(cart._id, cart.products)
-
+            return await this.dao.updateCart(cart._id, cart)
         }
     }
 
@@ -125,12 +124,12 @@ export default class CartRepository{
 
             }
         });
-
-        const resultCart = await cartService.updateCart(cId, productsNotProcessed)
+        cartPopulated.products = productsNotProcessed
+        const resultCart = await cartService.updateCart(cId, cartPopulated)
         // console.log(resultCart)
         const ticket = await ticketService.createTicket(totalPrice, email)
-        return ticket
-
+        // return res.send({status: 'success', payload: ticket, productsNotProcessed})
+        return ticket, resultCart
         // console.log(ticket)
         //Solucionar error de que ticketService no retorna el ticket
         // return ticket

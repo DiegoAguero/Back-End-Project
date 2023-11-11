@@ -25,16 +25,6 @@ export default class ProductsRepository{
     async deleteProduct(id){
         return await this.dao.deleteProduct(id)
     }
-
-    // {
-    //     "title": "Sour Cream Pringles",
-    //     "description": "Sour Cream Pringles 500gr",
-    //     "price": 5,
-    //     "thumbnail": "/static/images/pringlessourcream.png",
-    //     "code": "98cvs",
-    //     "stock": 5,
-    //     "status": true
-    // }
     async addProductToDatabase(product){
         const productToInsert = new ProductDTO(product)
         if(parseInt(productToInsert.stock) === 0) {

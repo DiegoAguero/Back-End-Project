@@ -20,9 +20,8 @@ export default class UserRepository{
     async getUserByEmail(id, populate = false){
         return await this.dao.getUserByEmail(id, populate)
     }
-    async updateUser(user){
+    async updateUser(userId, user){
         const userToInsert = new UserDTO(user)
-        console.log(userToInsert)
-        return await this.dao.updateUser(userToInsert)
+        return await this.dao.updateUser(userId, userToInsert)
     }
 }   

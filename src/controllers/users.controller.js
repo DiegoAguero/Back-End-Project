@@ -71,10 +71,8 @@ export const changeUserRol = async (req, res)=>{
     const userId = req.params.uid
     try {
         let getUser = await userService.getUserById(userId)
-        if(getUser.rol === "user"){ getUser.rol = "premium" }
-        else{ getUser.rol = "user" }
-        const saveUser = await userService.updateUser(getUser)
-        logger.info(saveUser)
+        if(getUser.rol === "user"){getUser.rol = "premium"}else{getUser.rol = "user"}
+        const saveUser = await userService.updateUser(userId, getUser)
         return res.send({status: 'success', payload: saveUser})
 
     } catch (error) {
@@ -88,7 +86,7 @@ export const changeUserRol = async (req, res)=>{
 }
 
 export const resetPassword = async (req, res)=>{
-    //ver nodemailer, video del profesor
+    
     const {email} = req.body
     const userExists = await userService.getUserByEmail(email)
     if(!userExists){

@@ -7,7 +7,6 @@ export default class CartManager extends FileManager{
         super(path)
         this.productManager = new ProductManager()
     }
-    //Terminar esto y products
     async createCart(array = []){
         const cartToInsert = new CartDTO(array)
         return await this.add(cartToInsert)
@@ -34,16 +33,18 @@ export default class CartManager extends FileManager{
         const cart = await this.getById(id)
         if(populate){
             const products = await this.productManager.getProducts()
-            const result = []
+            // const result = []
             if(cart?.products){
                 cart.products.forEach(product=>{
-                    let prod = products.find(prod=> parseInt(prod._id) == parseInt(product.product))
-                    result.push(prod)
+                    let prod = products.find(prod=>  parseInt(prod._id) == parseInt(product.product))
+                    //De esta forma modifico el producto y no el array entero
+                    product.product = prod
+                    // result.push(prod)
                 })
-                cart.products = result
-                console.log(result)
+                // console.log(result)
+                // cart.products = result
+                // return cartClone
             }
-
         }
         return cart
     }

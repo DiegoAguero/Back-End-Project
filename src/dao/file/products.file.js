@@ -1,4 +1,5 @@
 import FileManager from './FileManager.js'
+import ProductDTO from '../DTO/products.dto.js'
 export default class ProductManager extends FileManager {
     constructor(path = './db/products.json'){
         super(path)
@@ -13,9 +14,12 @@ export default class ProductManager extends FileManager {
     }
 
     async addProductToDatabase(product){
-        return await this.add(product)
+        const productToAdd = new ProductDTO(product)
+        return await this.add(productToAdd)
     }
-
+    async deleteProduct(id){
+        return await this.delete(id)
+    }
     async updateProduct(id, data){
         return await this.update(id, data)
     }

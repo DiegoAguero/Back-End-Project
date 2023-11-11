@@ -46,9 +46,9 @@ export default class UserManager{
             })
         }
     }
-    async updateUser(user){
+    async updateUser(userId, user){
         try {
-            return await userModel.findByIdAndUpdate({_id: user._id}, user)
+            return await userModel.findByIdAndUpdate({_id: userId}, user)
         } catch (error) {
             CustomError.createError({
                 name: "Update user error",

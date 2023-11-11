@@ -26,12 +26,19 @@ class FileManager{
         list.push(data)
         return fs.promises.writeFile(this.path, JSON.stringify(list)), data
     }
+    async delete(id){
+        const list = await this.get()
+        const getProd = this.getById(parseInt(id))
+        const filter = list.filter(d => d._id != parseInt(id))
+        fs.promises.writeFile(this.path, JSON.stringify(filter))
+        return getProd
+    }
     async update(id, data){
-        console.log(data)
         const list = await this.get()
         const idx = list.findIndex(item => item._id == id )
         list[idx] = data
-        return fs.promises.writeFile(this.path, JSON.stringify(list)), data
+        fs.promises.writeFile(this.path, JSON.stringify(list))
+        return data
     }
 }
 

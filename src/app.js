@@ -106,7 +106,7 @@ app.use('/', viewsRoute)
 
 const messages = []
 io.on('connection', socket=>{
-    console.log("New connection!")
+    // logger.info("New connection!")
     socket.on('newProduct', async data =>{
         try{
             const {title, description, price, thumbnail, code, stock} = await data
@@ -118,7 +118,16 @@ io.on('connection', socket=>{
             return console.error(e)
         }
     })
-
+    socket.on('newPremiumProducts', async owner =>{
+        try{
+            const getAllProducts = await productService.getProducts()
+            const filterByOwner = getAllProducts.filter(prod => prod.owner === owner)
+            console.log(filterByOwner)
+            socket.emit('reloadPremiumProducts', filterByOwner)
+        }catch(e){
+            return console.error(e)
+        }
+    })
     socket.on('newUser',  user=>{
         console.log(`${user} se conectó`)
         socket.on('message', async data=>{

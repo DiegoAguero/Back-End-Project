@@ -1,0 +1,1 @@
+[{"code":"7405YXOK5440PMHR","purchase_datetime":"2023-11-01T20:40:12.048Z","amount":135,"purchaser":"diegotomasaguero4123@gmail.com","_id":1},{"code":"7727LEJM7772KGQR","purchase_datetime":"2023-11-05T14:28:52.137Z","amount":55,"purchaser":"diegotomasaguero4123@gmail.com","_id":2}]

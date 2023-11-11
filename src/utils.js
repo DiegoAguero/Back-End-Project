@@ -53,3 +53,16 @@ export const authorization = rol =>{
     }
 }
 
+export const isPremium = async(req, res, next) =>{
+    try{
+        console.log(req.user.rol == 'premium')
+        if(req.user.rol == 'premium' || req.user.rol == 'admin'){
+            next()
+        }else{
+            throw new Error('You have to be premium role for this action!')
+        }
+    }catch(err){
+        next(err)
+    }
+}
+

@@ -36,5 +36,8 @@ export default class UserManager extends FileManager{
     async getUserById(id){
         return await this.getById(id)
     }
+    async updateUser(id, user){
+        return await this.update(id, user)
+    }
 
 }
