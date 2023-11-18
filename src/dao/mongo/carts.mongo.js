@@ -9,9 +9,7 @@ export default class CartManager{
     }
     async createCart(array){
         try {
-            
-            const cart = await cartModel.create(array)
-            return cart
+            return await cartModel.create(array)
         } catch (e) {
             return CustomError.createError({
                 name: "Create cart error",

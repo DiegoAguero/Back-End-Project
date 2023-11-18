@@ -128,23 +128,19 @@ function initializePassport(){
                 const user = await userService.getUserByEmail(username, true)
                 // const user = await userModel.findOne({email: username}).populate('cart').lean().exec()
                 if(!user){
-                    console.error('User doesnt exist')
+                    logger.error('User doesnt exist')
                     return done(null, false)
                 }
                 if(!isValidPassword(user, password)){
-                    console.error('Password is not valid')
+                    logger.error('Password is not valid')
                     return done(null, false)
                 }
-                // if(!user.cart){
-                //     const newCart = await cartService.createCart()
-                //     user.cart = newCart._id
-                //     await user.save()
-                //     console.log("Asignando nuevo carrito")
-                // }
-                console.log("Login completado")
+
                 const token = generateToken(user)
                 user.token = token
-                console.log(user)
+                //Preguntar al profesor/tutor si se puede hacer aca!
+                user.last_connection = new Date()
+                await userService.updateUser(user._id, user)
                 return done(null, user)
             } catch (error) {
                 return done('Error logging in... ' + error)

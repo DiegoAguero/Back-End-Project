@@ -1,0 +1,12 @@
+<form action="/api/user/{{user._id}}/documents" method="post" enctype="multipart/form-data">
+    <label for="profile">Profile (JPEG, PNG OR JPG FORMAT)</label>
+    <input type="file" name="profile" id="profile">
+    <br>
+    <label for="products">Products (JPEG, PNG OR JPG FORMAT)</label>
+    <input type="file" name="products" id="products">
+    <br>
+    <label for="documents">Documents (JPEG, PNG, JPG OR PDF FORMAT)</label>
+    <input type="file" name="documents" id="documents" multiple="multiple">
+    <br>
+    <button type="submit" class="btn btn-danger">Send data!</button>
+</form>

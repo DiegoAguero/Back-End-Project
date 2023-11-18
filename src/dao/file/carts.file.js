@@ -1,6 +1,6 @@
 import fs from 'fs'
 import FileManager from './FileManager.js'
-import CartDTO from '../DTO/carts.dto.js'
+import CartDTO from '../../DTO/carts.dto.js'
 import ProductManager from './products.file.js'
 export default class CartManager extends FileManager{
     constructor(path = './db/carts.db.js') {

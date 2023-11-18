@@ -100,3 +100,10 @@ export const realTimeProducts = async (req, res)=>{
     const totalProducts = await productService.getProducts()
     return res.render('realTimeProducts', {totalProducts})
 }
+
+export const uploadDocumentsView = async (req, res)=>{
+    const user = req.user
+    return res.render('documents', {
+        user: user
+    })
+}

@@ -1,5 +1,3 @@
-import ProductManager from "../dao/mongo/ProductManager.js";
-// import ProductsServices from '../services/products.repository.js'
 import {productService} from '../services/index.js'
 //El controller solamente debe pasar datos a la capa de negocio, osea al repository, luego ahí se hacen todas las preguntas
 
@@ -15,7 +13,6 @@ export const getProducts = async(req, res)=>{
 export const getProductByID = async(req, res) =>{
     try{
         const id = req.params.pId
-        // const product = await prodModel.findOne({_id: id})
         const product = await productService.getProductById(id)
         req.logger.info(product)
         return res.send({status: 'success', payload: product})

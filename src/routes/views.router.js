@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 
 import {authorization, authToken, createHash } from '../utils.js'
 import { productService, cartService, userService } from '../services/index.js'
-import {getProductsViews, premiumView, getCartView, getProductView, mockingProducts, realTimeProducts} from '../controllers/views.controller.js'
+import {getProductsViews, premiumView, getCartView, getProductView, mockingProducts, realTimeProducts, uploadDocumentsView} from '../controllers/views.controller.js'
 import EErrors from '../services/errors/enums.js'
 
 //.env config
@@ -19,6 +19,7 @@ router.get('/realtimeproducts', authToken, authorization('admin'), realTimeProdu
 router.get('/products', authToken, getProductsViews)
 router.get('/products/:pId', authToken, getProductView)
 router.get('/cart/:cId', authToken, getCartView)
+router.get('/user/:uid/documents', authToken, uploadDocumentsView)
 router.get('/mockingproducts', authorization('admin'), mockingProducts)
 router.get('/premium', authToken, authorization('premium'), premiumView)
 
@@ -30,14 +31,10 @@ router.get('/', (req, res)=>{
     if(req.user){
         return res.redirect('/products')
     }
-    // if(req.session?.user){
-    //     res.redirect('/products')
-    // }
     return res.render('login', {})
 })
 
 router.get('/register', (req, res)=>{
-    
     return res.render('register', {})
 })
 
@@ -52,10 +49,8 @@ router.get('/resetPassword/:uId/:token', async(req, res)=>{
         return res.send({status: 'error', payload: 'User not found'})
     }
     const secret = config.SECRET_JWT + user.password
-
     try {
         const payload = jwt.verify(token, secret)
-
         return res.render('resetPassword', {email: user.email})
     } catch (error) {
         const payload = {
@@ -85,7 +80,6 @@ router.post('/resetPassword/:uId/:token', async(req, res)=>{
                 throw new Error('You cannot use the same password to change it')
             }   
             //Solucionar problema con el hash que no coincide con la contraseña antigua
-            
             user.password = hashedPassword
             await userService.updateUser(user._id, user)
             return res.send({status: 'success', payload: 'Password changed successfully!'})

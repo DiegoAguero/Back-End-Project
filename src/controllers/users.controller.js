@@ -5,7 +5,7 @@ import {logger} from '../services/logger/logger.js'
 import { generateUserErrorInfo } from "../services/errors/info.js";
 import { userService } from "../services/index.js";
 import config from '../config/config.js';
-import Mail from '../services/nodemailer/mail.js'
+import Mail from '../services/nodemailer/mail.js';
 
 const mail = new Mail()
 export const getAllUsers = async (req, res)=>{
@@ -44,7 +44,6 @@ export const getUserById = async(req, res)=>{
         const getUser = await userService.getUserById(userId, true)
         return res.send({status:'success', payload: getUser})
     } catch (error) {
-        console.log(error)
         CustomError.createError({
             name: "Get user error",
             cause: generateUserErrorInfo(userId),
@@ -70,8 +69,19 @@ export const getUserByEmail = async (req, res)=>{
 export const changeUserRol = async (req, res)=>{
     const userId = req.params.uid
     try {
-        let getUser = await userService.getUserById(userId)
-        if(getUser.rol === "user"){getUser.rol = "premium"}else{getUser.rol = "user"}
+        const getUser = await userService.getUserById(userId)
+        let uploadedDocuments = 0;
+        let contador = 1;
+        getUser.documents.forEach(document =>{
+            if(document.reference?.split('\\'[11] === 'documents') && document.name != document.name[contador++]){
+                uploadedDocuments++
+            }
+        })
+        if(uploadedDocuments === 3){
+            getUser.rol = 'premium'        
+        }else{
+            return res.json(`No puedes ser premium todavia! Tienes que subir ${3 - uploadedDocuments} documento/s más para poder serlo!`)
+        }
         const saveUser = await userService.updateUser(userId, getUser)
         return res.send({status: 'success', payload: saveUser})
 
@@ -97,19 +107,27 @@ export const resetPassword = async (req, res)=>{
             code: EErrors.INVALID_TYPE_ERROR
         })
     }
-
     const newSecret = config.SECRET_JWT + userExists.password
-    
     const payload = {
         email: userExists.email,
         id: userExists._id
     }
     const token = jwt.sign(payload, newSecret, { expiresIn: '1h' })
-
     const resetLink = `http://127.0.0.1:8080/resetPassword/${userExists._id}/${token}`
     let html =  `Here's the link to reset your password! You only got 1 hour to use it before it expires. ${resetLink} `
     mail.send(userExists, "Reset password", html)
     return res.send('A link to reset your password has been sent to your email!')
     //Reset password
+}
+
+export const uploadDocuments = async(req, res)=>{
+    const userId = req.params.uid
+    const files = req.files
+    
+
+    const documents = await userService.uploadDocuments(userId, files)
+    console.log(documents)
+    //hacer logica de actualizar user.documents y ponerle la ruta de los documentos que subió
+    return res.json(req.files)
 }
 

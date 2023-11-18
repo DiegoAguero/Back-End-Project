@@ -1,4 +1,4 @@
-import TicketDTO from '../dao/DTO/tickets.dto.js'
+import TicketDTO from '../DTO/tickets.dto.js'
 import customId from 'r2-custom-id'
 export default class TicketRepository{
     constructor(dao){

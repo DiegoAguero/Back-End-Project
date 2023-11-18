@@ -1,4 +1,4 @@
-import CartDTO from '../dao/DTO/carts.dto.js'
+import CartDTO from '../DTO/carts.dto.js'
 import {cartService, productService, ticketService} from '../services/index.js'
 import CustomError from './errors/customErrors.js'
 import EErrors from './errors/enums.js'

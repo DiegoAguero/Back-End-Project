@@ -18,6 +18,7 @@ import sessionRoute from './routes/session.router.js'
 import ticketRoute from './routes/ticket.router.js'
 import userRoute from './routes/user.router.js'
 import { productService } from './services/index.js'
+import { logger } from './services/logger/logger.js'
 //.env config
 import config from './config/config.js'
 import { addLogger } from './services/logger/logger.js'
@@ -28,15 +29,6 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use(cookieParser())
 app.use(session({
-    store: MongoStore.create({
-        mongoUrl: config.MONGO_URI,
-        dbName: config.DB_NAME,
-        mongoOptions:{
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        },
-        ttl: 10000
-    }),
     secret: 'secret',
     resave: true,
     saveUninitialized: true,
@@ -88,25 +80,11 @@ app.use('/api/ticket', ticketRoute)
 app.use('/api/user', userRoute)
 app.use('/', viewsRoute)
 
-//corremos el server de mongoose
-// mongoose.set('strictQuery', false)
-
-// mongoose.connect(config.MONGO_URI, {
-//     dbName: config.DB_NAME
-// })
-//     .then(() =>{
-        
-//         console.log('DB Connected with mongoose')
-//         httpServer.on('error', e=> console.error(e))
-//     })
-//     .catch(e =>{
-//         console.log("ERROR: Cant connect to the DB")
-//     })
 
 
 const messages = []
 io.on('connection', socket=>{
-    // logger.info("New connection!")
+    logger.info("New connection!")
     socket.on('newProduct', async data =>{
         try{
             const {title, description, price, thumbnail, code, stock} = await data
@@ -122,7 +100,6 @@ io.on('connection', socket=>{
         try{
             const getAllProducts = await productService.getProducts()
             const filterByOwner = getAllProducts.filter(prod => prod.owner === owner)
-            console.log(filterByOwner)
             socket.emit('reloadPremiumProducts', filterByOwner)
         }catch(e){
             return console.error(e)

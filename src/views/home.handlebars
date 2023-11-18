@@ -11,9 +11,9 @@
         {{/if}}
         <h1>Email: {{user.email}}</h1>
         <h1>Rol: {{user.rol}}</h1>
-        <h1>
-            <a href="/cart/{{user.cart}}" class="btn btn-danger">Go to the cart!</a>
-        </h1>
+        <a href="/cart/{{user.cart}}" class="btn btn-danger">Go to the cart!</a>
+        <a href="/user/{{user._id}}/documents" class="btn btn-danger">Upload documents!</a>
+        <a href="/api/user/premium/{{user._id}}/" class="btn btn-danger">Become a premium user!</a>
         {{else}}
             <h2>Please, log in to purchase any product!</h2>
     {{/if}}

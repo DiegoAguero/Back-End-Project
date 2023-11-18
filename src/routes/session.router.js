@@ -4,6 +4,7 @@ import passport from 'passport'
 import { authToken } from '../utils.js'
 import config from '../config/config.js'
 import {logger} from '../services/logger/logger.js'	
+import { userService } from '../services/index.js'
 const router = Router()
 
 router.post('/login', 
@@ -39,6 +40,9 @@ router.post('/register',
 router.get('/logout', async(req, res)=>{
     try{
         if(req.cookies){
+            const user = req.user
+            user.last_connection = new Date()
+            await userService.updateUser(user._id, user)
             res.clearCookie(config.SECRET_JWT)
             req.session.destroy()
             logger.info("cookie cleared")

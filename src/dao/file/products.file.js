@@ -1,5 +1,5 @@
 import FileManager from './FileManager.js'
-import ProductDTO from '../DTO/products.dto.js'
+import ProductDTO from '../../DTO/products.dto.js'
 export default class ProductManager extends FileManager {
     constructor(path = './db/products.json'){
         super(path)

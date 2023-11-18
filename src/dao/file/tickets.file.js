@@ -1,4 +1,4 @@
-import TicketDTO from '../DTO/tickets.dto.js'
+import TicketDTO from '../../DTO/tickets.dto.js'
 import FileManager from './FileManager.js';
 
 export default class TicketManager extends FileManager{

@@ -17,8 +17,6 @@ export const createTicket = async (req, res)=>{
         }
         ticketCreated = await ticketService.createTicket({amount, purchaser})
         return res.send({status: 'success', payload: ticketCreated})
-
-
 }
 export const getTicketByCode = async (req, res)=>{
     const code = req.params.code

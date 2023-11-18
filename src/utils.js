@@ -31,7 +31,6 @@ export const authToken = (req, res, next) =>{
     const token = authHeader
     jwt.verify(token, config.SECRET_JWT, (error, credentials) =>{
         if(error) return res.status(403).send({error: 'Not authorized'})
-        
         logger.info(credentials.user)
         req.user = credentials.user
         next()
@@ -46,7 +45,7 @@ export const extractCookie = req =>{
 export const authorization = rol =>{
     return async(req, res, next)=>{
         const user = req.user
-        logger.info(user)
+        console.log(user)
         if(!user) return res.status(401).send({error: 'Unauthorized'})
         if(user.rol !== rol) return res.status(403).send({error: 'Not enough permissions'})
         return next()
@@ -55,8 +54,9 @@ export const authorization = rol =>{
 
 export const isPremium = async(req, res, next) =>{
     try{
-        console.log(req.user.rol == 'premium')
-        if(req.user.rol == 'premium' || req.user.rol == 'admin'){
+        const user = req.user
+        console.log(user.rol == 'premium')
+        if(user.rol == 'premium' || user.rol == 'admin'){
             next()
         }else{
             throw new Error('You have to be premium role for this action!')
