@@ -13,6 +13,6 @@ router.get('/:uid', authToken, getUserById)
 router.get('/premium/:uid', authToken, changeUserRol)
 //Poner middleware de multer
 router.post('/:uid/documents', uploadMiddleware, uploadDocuments)
-router.post('/resetPassword', authToken, resetPassword)
+router.post('/resetPassword', resetPassword)
 
 export default router

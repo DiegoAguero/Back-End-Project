@@ -28,18 +28,11 @@ export default class UserRepository{
         const profileFiles = files?.profile
         const productsFiles = files?.products
         const documentsFiles = files?.documents
-        const arrayDocuments = [];
-        // let contador = 1;
         productsFiles?.forEach(products=> user.documents.push({name: products.filename, reference: products.path}))
         profileFiles?.forEach(p => user.documents.push({name: p.filename, reference: p.path}))
         documentsFiles?.forEach(d => user.documents.push({name: d.filename, reference: d.path}))
         const updateUser = await this.dao.updateUser(user.id, user)
         return updateUser
-        // user.documents.forEach(document =>{
-        //     if(document.reference?.split('\\'[11] === 'documents') && document.name != document.name[contador++]){
-        //         arrayDocuments.push({name: document.name, reference: document.reference})
-        //     }
-        // })
-        // arrayDocuments.length === 3 ? console.log('Puedes ser usuario premium!') : console.log('No puedes ser usuario premium')
+
     }
 }   

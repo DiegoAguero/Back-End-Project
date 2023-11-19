@@ -1,4 +1,5 @@
 import {faker} from '@faker-js/faker/locale/es'
+import jwt from 'jsonwebtoken'
 
 import ViewManager from '../dao/mongo/views.mongo.js' 
 import { productService, cartService } from '../services/index.js'
@@ -6,6 +7,9 @@ import config from '../config/config.js'
 import CustomError from '../services/errors/customErrors.js'
 import EErrors from '../services/errors/enums.js'
 import {logger} from '../services/logger/logger.js'
+import { userService } from '../services/index.js'
+import { createHash } from '../utils.js'
+
 const viewServices = new ViewManager()
 
 export const getProductsViews = async (req, res)=>{
@@ -106,4 +110,72 @@ export const uploadDocumentsView = async (req, res)=>{
     return res.render('documents', {
         user: user
     })
+}
+
+export const chatView = async (req, res)=>{
+    return res.render('chat', {})
+}
+
+export const loginView = async (req, res)=>{
+    if(req.user) return res.redirect('/products') 
+
+    return res.render('login', {})
+}
+
+export const registerView = async (req, res)=>{
+    return res.render('register', {})
+}
+
+export const forgotPasswordView = async (req, res)=>{
+    return res.render('forgotPassword', {})
+}
+
+export const resetPasswordView = async (req, res)=>{
+    const {uId, token} = req.params
+    const user = await userService.getUserById(uId)
+    if(!user){
+        return res.send({status: 'error', payload: 'User not found'})
+    }
+    const secret = config.SECRET_JWT + user.password
+    try {
+        const payload = jwt.verify(token, secret)
+        return res.render('resetPassword', {email: user.email})
+    } catch (error) {
+        const payload = {
+            email: user.email,
+            _id: user._id
+        }
+        const newSecret = config.SECRET_JWT + user.password
+        const token = jwt.sign(payload, newSecret, {expiresIn: '1h'})
+        const resetLink = `http://127.0.0.1:8080/resetPassword/${user._id}/${token}`
+        let html = `The reset password link has been expired, creating a new one! You only got 1 hour to use it before it expires. ${resetLink} `
+        mail.send(user, "Reset password link expired", html)
+        return res.send({status: 'error', payload: `The link has already expired, creating a new one! Check your email.`})
+    }
+}
+
+export const resetPasswordPostView = async (req, res)=>{
+    const {uId, token} = req.params
+    const user = await userService.getUserById(uId)
+    const {password, confirmPassword} = req.body
+
+    const secret = config.SECRET_JWT + user.password
+    try {
+        const payload = jwt.verify(token, secret)
+        if(password === confirmPassword){
+            const hashedPassword = createHash(password)
+            if(hashedPassword === user.password){
+                throw new Error('You cannot use the same password to change it')
+            }   
+            //Solucionar problema con el hash que no coincide con la contraseña antigua
+            user.password = hashedPassword
+            await userService.updateUser(user._id, user)
+            return res.send({status: 'success', payload: 'Password changed successfully!'})
+        }else{
+            return res.send({status: 'error', payload: 'Passwords do not match, try again!'})
+        }
+        
+    } catch (error) {
+        return res.send({status: 'error', payload: error.message})
+    }
 }

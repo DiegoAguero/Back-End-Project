@@ -5083,3 +5083,147 @@ info: [object Object]
 info: GET on /api/session/logout - 18/11/2023
 info: cookie cleared
 info: GET on / - 18/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /realtimeproducts - 19/11/2023
+info: GET on /realtimeproducts - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /favicon.ico - 19/11/2023
+info: POST on /api/session/login - 19/11/2023
+info: GET on /products - 19/11/2023
+info: [object Object]
+info: GET on /api/session/logout - 19/11/2023
+info: cookie cleared
+info: GET on / - 19/11/2023
+info: GET on /resetPassword - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /api/session/logout - 19/11/2023
+info: Persistency with MONGO
+info: GET on /api/session/logout - 19/11/2023
+info: Mongo connected
+info: GET on / - 19/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/session/logout - 19/11/2023
+info: cookie cleared
+info: GET on / - 19/11/2023
+info: POST on /api/session/login - 19/11/2023
+error: Password is not valid
+info: GET on /api/session/login-github - 19/11/2023
+info: GET on /api/session/githubcallback?code=a7ed29eaee984c1dc691 - 19/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 19/11/2023
+info: [object Object]
+info: GET on /favicon.ico - 19/11/2023
+info: GET on /register - 19/11/2023
+info: POST on /api/session/register - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /products - 19/11/2023
+info: GET on /register - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /products - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /products - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /products - 19/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /register - 19/11/2023
+info: POST on /api/session/register - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /products - 19/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 19/11/2023
+info: GET on /products - 19/11/2023
+info: GET on /products - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /register - 19/11/2023
+info: POST on /api/session/register - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /products - 19/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /register - 19/11/2023
+info: POST on /api/session/register - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /products - 19/11/2023
+info: GET on /register - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /products - 19/11/2023
+info: GET on / - 19/11/2023
+info: POST on /api/session/login - 19/11/2023
+info: GET on /products - 19/11/2023
+info: [object Object]
+info: GET on /api/user/premium/6559e8b5503e050937094e6a/ - 19/11/2023
+info: [object Object]
+info: GET on /products - 19/11/2023
+info: [object Object]
+info: GET on /api/user/premium/6559e8b5503e050937094e6a/ - 19/11/2023
+info: [object Object]
+info: GET on /products - 19/11/2023
+info: [object Object]
+info: GET on /register - 19/11/2023
+info: GET on /api/session/logout - 19/11/2023
+info: cookie cleared
+info: GET on /api/session/logout - 19/11/2023
+info: cookie cleared
+info: GET on / - 19/11/2023
+info: GET on /api/session/logout - 19/11/2023
+info: cookie cleared
+info: GET on / - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /resetPassword - 19/11/2023
+info: POST on /api/user/resetpassword - 19/11/2023
+info: Persistency with MONGO
+info: POST on /api/user/resetpassword - 19/11/2023
+info: Mongo connected
+info: [object Object]
+info: GET on /resetPassword/6559e8b5503e050937094e6a/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvZXNlbG1lam9yMjIyQGdtYWlsLmNvbSIsImlkIjoiNjU1OWU4YjU1MDNlMDUwOTM3MDk0ZTZhIiwiaWF0IjoxNzAwMzkxMjk1LCJleHAiOjE3MDAzOTQ4OTV9.9I2vjirPoxU_HTH5pYgqeHKy_PO-2ZWDrdf-5yzfX-M - 19/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /resetPassword/6559e8b5503e050937094e6a/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvZXNlbG1lam9yMjIyQGdtYWlsLmNvbSIsImlkIjoiNjU1OWU4YjU1MDNlMDUwOTM3MDk0ZTZhIiwiaWF0IjoxNzAwMzkxMjk1LCJleHAiOjE3MDAzOTQ4OTV9.9I2vjirPoxU_HTH5pYgqeHKy_PO-2ZWDrdf-5yzfX-M - 19/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: GET on /resetPassword/6559e8b5503e050937094e6a/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvZXNlbG1lam9yMjIyQGdtYWlsLmNvbSIsImlkIjoiNjU1OWU4YjU1MDNlMDUwOTM3MDk0ZTZhIiwiaWF0IjoxNzAwMzkxMjk1LCJleHAiOjE3MDAzOTQ4OTV9.9I2vjirPoxU_HTH5pYgqeHKy_PO-2ZWDrdf-5yzfX-M - 19/11/2023
+info: Mongo connected
+info: POST on /resetPassword/6559e8b5503e050937094e6a/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvZXNlbG1lam9yMjIyQGdtYWlsLmNvbSIsImlkIjoiNjU1OWU4YjU1MDNlMDUwOTM3MDk0ZTZhIiwiaWF0IjoxNzAwMzkxMjk1LCJleHAiOjE3MDAzOTQ4OTV9.9I2vjirPoxU_HTH5pYgqeHKy_PO-2ZWDrdf-5yzfX-M - 19/11/2023
+info: Persistency with MONGO
+info: POST on /resetPassword/6559e8b5503e050937094e6a/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvZXNlbG1lam9yMjIyQGdtYWlsLmNvbSIsImlkIjoiNjU1OWU4YjU1MDNlMDUwOTM3MDk0ZTZhIiwiaWF0IjoxNzAwMzkxMjk1LCJleHAiOjE3MDAzOTQ4OTV9.9I2vjirPoxU_HTH5pYgqeHKy_PO-2ZWDrdf-5yzfX-M - 19/11/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 19/11/2023
+info: POST on /api/session/login - 19/11/2023
+info: GET on /products - 19/11/2023
+info: [object Object]
+info: POST on /api/session/login - 19/11/2023
+error: Password is not valid
+info: GET on /resetPassword - 19/11/2023
+info: POST on /api/user/resetpassword - 19/11/2023
+info: [object Object]
+info: GET on /resetPassword/6559e8b5503e050937094e6a/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvZXNlbG1lam9yMjIyQGdtYWlsLmNvbSIsImlkIjoiNjU1OWU4YjU1MDNlMDUwOTM3MDk0ZTZhIiwiaWF0IjoxNzAwMzkxMzk5LCJleHAiOjE3MDAzOTQ5OTl9.fX0c1tQC1vehWHorkmFiR5drEf3ZsTUdUR3S3yOeIdQ - 19/11/2023
+info: POST on /resetPassword/6559e8b5503e050937094e6a/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvZXNlbG1lam9yMjIyQGdtYWlsLmNvbSIsImlkIjoiNjU1OWU4YjU1MDNlMDUwOTM3MDk0ZTZhIiwiaWF0IjoxNzAwMzkxMzk5LCJleHAiOjE3MDAzOTQ5OTl9.fX0c1tQC1vehWHorkmFiR5drEf3ZsTUdUR3S3yOeIdQ - 19/11/2023
+info: GET on / - 19/11/2023
+info: GET on /products - 19/11/2023
+info: [object Object]
+info: GET on /api/session/logout - 19/11/2023
+info: cookie cleared
+info: GET on / - 19/11/2023
+info: POST on /api/session/login - 19/11/2023
+info: GET on /products - 19/11/2023
+info: [object Object]

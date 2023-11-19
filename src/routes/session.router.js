@@ -28,37 +28,28 @@ router.post('/login',
 router.post('/register', 
     passport.authenticate('register', '/register'),
     async(req, res)=>{
-    try {
+        console.log('hola')
         return res.redirect('/')
-        
-    } catch (error) {
-        return console.error(error)
     }
-})
+)
 
 
 router.get('/logout', async(req, res)=>{
-    try{
+    try{        
         if(req.cookies){
             const user = req.user
-            user.last_connection = new Date()
-            await userService.updateUser(user._id, user)
+            if(user){
+                user.last_connection = new Date()
+                await userService.updateUser(user._id, user)
+            }
             res.clearCookie(config.SECRET_JWT)
             req.session.destroy()
             logger.info("cookie cleared")
-            // res.end()
             return res.redirect('/')
         }else{
             logger.info("No cookies")
             return res.redirect('/')
-        }
-        // if(req.session?.user){
-        //     req.session.destroy()
-        //     console.log("error?")
-        //     return res.redirect('/')
-        // }else{
-        //     return res.redirect('/')
-        // }
+        }       
     }catch(e){
         return console.error(e)
     }
@@ -75,9 +66,7 @@ router.get(
     '/githubcallback', 
     passport.authenticate('github', {failureRedirect: '/'}), 
     async (req, res)=>{
-        // req.session.user = req.user
         return res.cookie(config.SECRET_JWT, req.user.token).redirect('/products')
-        // console.log(req.user)
     }
 )
 
