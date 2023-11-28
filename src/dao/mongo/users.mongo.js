@@ -17,7 +17,19 @@ export default class UserManager{
                 code: EErrors.DATABASES_ERROR
             })
         }
-
+    }
+    async getAllUsers(populate){
+        try {
+            if(populate) return await userModel.find().populate('cart').lean().exec()
+            return await userModel.find()
+        } catch (error) {
+            CustomError.createError({
+                name: 'Get all users error',
+                cause: error,
+                message: 'Error trying to get all the users',
+                code: EErrors.DATABASES_ERROR
+            })
+        }
     }
     
     async getUserById(id, populate = false){
@@ -58,7 +70,18 @@ export default class UserManager{
             })
         }
     }
-
+    async deleteUser(userId){
+        try {
+            return await userModel.findByIdAndDelete(userId)
+        } catch (error) {
+            CustomError.createError({
+                name: 'delete user error',
+                cause: error,
+                message: 'Error trying to delete the user',
+                code: EErrors.DATABASES_ERROR
+            })
+        }
+    }
 
 
 }

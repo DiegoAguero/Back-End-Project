@@ -1,0 +1,37 @@
+<div class="d-flex m-2" id="allUsers">
+    {{#each users}}
+        <div class="bg-light card m-2" style="width: 16rem;">
+            <div class="card-body text-dark">
+                <h5 class="card-title">First name: {{first_name}}</h5>
+                <p class="card-text">Last name: {{last_name}}</p>
+                <p class="card-text">Role:{{rol}}</p>
+                <button onclick="deleteUser('{{_id}}')" class="btn btn-secondary mb-2">Delete user</button>
+            </div>  
+        </div>
+    {{/each}}
+</div>
+
+<script>
+    async function deleteUser(id){
+        const deleteUser = await fetch(`/api/user/${id}`, {method: 'DELETE'})
+        const response = await deleteUser.json()
+        if(response.status == 'success'){
+            Swal.fire({
+                title: "User deleted successfully",
+                icon: 'success',
+                text: "The user has been deleted successfully! F5 to reload the users!",
+                confirmButtonText: "Okay",
+                timer: 2000
+            })
+            
+        }else{
+            Swal.fire({
+                title: 'Error trying to delete the user',
+                icon: 'error',
+                text: 'There has been an error trying to delete the user',
+                confirmButtonText: 'Ok..',
+                timer: 2000
+            })
+        }
+    }
+</script>

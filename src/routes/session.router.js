@@ -15,8 +15,6 @@ router.post('/login',
             return res.status(400).send('Invalid Credentials')
         }else{
             return res.cookie(config.SECRET_JWT, req.user.token).redirect('/products')
-
-            //return res.redirect('/products')
         }
 
     } catch (error) {

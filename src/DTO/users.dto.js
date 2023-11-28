@@ -8,7 +8,7 @@ export default class UserManager{
         this.password = user?.password ?? ''
         this.cart = user?.cart ?? ''
         this.rol = user?.rol ?? 'user'
-        this.last_connection = user?.last_connection ?? Date.now()
+        this.last_connection = user?.last_connection ?? new Date()
         this.document = user?.document ?? []
     }
 }   

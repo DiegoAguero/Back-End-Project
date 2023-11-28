@@ -8,11 +8,17 @@ import config from '../config/config.js';
 import Mail from '../services/nodemailer/mail.js';
 
 const mail = new Mail()
+
 export const getAllUsers = async (req, res)=>{
     try {
         let populate = req.query?.populate || false
         populate = populate === "false" ? false : true
-        return await userService.getAllUsers(populate)
+        const users = await userService.getAllUsers(populate)
+        const censoredUser = []
+        users.forEach(user=>{
+            censoredUser.push({first_name: user.first_name, last_name: user?.last_name ?? '', email: user.email, rol: user.rol, last_connection: user.last_connection, _id: user._id})
+        })
+        return res.status(200).render('users', {users: censoredUser})
 
     } catch (error) {
         return console.error(error)
@@ -116,18 +122,54 @@ export const resetPassword = async (req, res)=>{
     const resetLink = `http://127.0.0.1:8080/resetPassword/${userExists._id}/${token}`
     let html =  `Here's the link to reset your password! You only got 1 hour to use it before it expires. ${resetLink} `
     mail.send(userExists, "Reset password", html)
-    return res.send('A link to reset your password has been sent to your email!')
+    return res.status(200).send({status: 'success', payload: 'A link to reset your password has been sent to your email!'})
     //Reset password
 }
 
 export const uploadDocuments = async(req, res)=>{
-    const userId = req.params.uid
-    const files = req.files
-    
-
-    const documents = await userService.uploadDocuments(userId, files)
-    console.log(documents)
-    //hacer logica de actualizar user.documents y ponerle la ruta de los documentos que subió
-    return res.json(req.files)
+    try {
+        const userId = req.params.uid
+        const files = req.files
+        const documents = await userService.uploadDocuments(userId, files)
+        return res.status(200).send({status: 'success', payload: documents})
+    } catch (error) {
+        logger.error(error)
+    }
 }
 
+export const deleteUsers = async (req, res)=>{
+    try {
+        const date = new Date()
+        const allUsers = await userService.getAllUsers(false)
+        let html = `Your account has been deleted because of inactivity.`
+        allUsers.forEach(async user=>{
+            if(date.getMonth() > user?.last_connection.getMonth()){
+                
+                const users = await userService.getUserById(user._id)
+                mail.send(users, "Your account has been deleted because it's been inactive for the past 2 days.", html)
+                await userService.deleteUser(users._id)
+                
+            }else if((date.getDate() - user?.last_connection.getDate()) >= 2){
+                
+                const users = await userService.getUserById(user._id)
+                mail.send(users, "Your account has been deleted", html)
+                console.log('Borrando user dia: ', users)
+                await userService.deleteUser(users._id)
+                
+            }
+        })
+        return res.status(200).send({status: 'success', payload: 'The users has been purgated from the database.'})  
+    } catch (error) {
+        logger.error(error)
+    }
+}
+
+export const deleteUserById = async (req, res)=>{
+    try {
+        const uId = req.params.uid
+        const user = await userService.deleteUser(uId)
+        return res.status(200).send({status: 'success', payload: 'The user has been deleted'})
+    } catch (error) {
+        logger.error(error)
+    }
+}

@@ -1,19 +1,10 @@
 import {Router} from 'express'
-import jwt from 'jsonwebtoken'
 
-import {authorization, authToken, createHash } from '../utils.js'
-import { productService, cartService, userService } from '../services/index.js'
+import {authorization, authToken } from '../utils.js'
 import {getProductsViews, premiumView, getCartView, getProductView, mockingProducts, realTimeProducts, uploadDocumentsView, chatView, loginView, registerView, forgotPasswordView, resetPasswordView, resetPasswordPostView} from '../controllers/views.controller.js'
-import EErrors from '../services/errors/enums.js'
 
-//.env config
-import config from '../config/config.js'
-import {logger} from '../services/logger/logger.js'
-import CustomError from '../services/errors/customErrors.js'
-import Mail from '../services/nodemailer/mail.js'
 
 const router = Router()
-const mail = new Mail()
 
 router.get('/realtimeproducts', authToken, authorization('admin'), realTimeProducts)
 router.get('/products', authToken, getProductsViews)

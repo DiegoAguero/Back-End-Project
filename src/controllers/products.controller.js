@@ -1,6 +1,8 @@
-import {productService} from '../services/index.js'
-//El controller solamente debe pasar datos a la capa de negocio, osea al repository, luego ahí se hacen todas las preguntas
+import {productService, userService} from '../services/index.js'
+import Mail from '../services/nodemailer/mail.js';
 
+//El controller solamente debe pasar datos a la capa de negocio, osea al repository, luego ahí se hacen todas las preguntas
+const mail = new Mail()
 export const getProducts = async(req, res)=>{
     try {
         const products = await productService.getProducts();
@@ -39,6 +41,13 @@ export const updateProduct = async (req, res)=>{
 export const deleteProduct = async (req, res)=>{
     try{
         const id = req.params.pId
+        const product = await productService.getProductById(id)
+        if(product.owner != 'admin'){
+            let html = `Your product got deleted.`
+            const user = await userService.getUserByEmail(product.owner)
+            console.log('entre aca')
+            mail.send(user, 'Your product has been deleted.', html)
+        }
         const deleteProduct = await productService.deleteProduct(id)
         console.log('Deleted product: ', deleteProduct)
         if(!deleteProduct) return res.send({status: 'error', payload: 'There has been a problem deleting the product'})

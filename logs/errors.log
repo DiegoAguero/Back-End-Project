@@ -5227,3 +5227,839 @@ info: GET on / - 19/11/2023
 info: POST on /api/session/login - 19/11/2023
 info: GET on /products - 19/11/2023
 info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 21/11/2023
+info: GET on /favicon.ico - 21/11/2023
+info: GET on /resetPassword - 21/11/2023
+info: GET on / - 21/11/2023
+info: GET on / - 21/11/2023
+info: GET on / - 21/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 21/11/2023
+info: GET on / - 21/11/2023
+info: GET on /documents - 21/11/2023
+info: GET on / - 21/11/2023
+info: GET on /api/session/login-github - 21/11/2023
+info: GET on /api/session/githubcallback?code=9a645bc748391c9703ea - 21/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 21/11/2023
+info: [object Object]
+info: GET on /favicon.ico - 21/11/2023
+info: GET on /user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: GET on /user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: POST on /api/user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: GET on /products - 21/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: POST on /api/user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: GET on /products - 21/11/2023
+info: [object Object]
+info: GET on /user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: POST on /api/user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: POST on /api/user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: GET on /user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: POST on /api/user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: GET on /user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: POST on /api/user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: Persistency with MONGO
+info: GET on /user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: Mongo connected
+info: POST on /api/user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: GET on /user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: POST on /api/user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: GET on /products - 21/11/2023
+info: [object Object]
+info: GET on /user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: POST on /api/user/64f6d5cd0344516ec5f15cfa/documents - 21/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 26/11/2023
+info: GET on /favicon.ico - 26/11/2023
+info: POST on /api/session/login - 26/11/2023
+info: GET on /products - 26/11/2023
+info: [object Object]
+info: GET on / - 26/11/2023
+info: GET on /products - 26/11/2023
+info: [object Object]
+info: GET on /api/users/651c3e5785764a1a51305ba4 - 26/11/2023
+info: GET on /api/users/651c3e5785764a1a51305ba4 - 26/11/2023
+info: GET on /api/users/ - 26/11/2023
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Mongo connected
+info: Persistency with MONGO
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Mongo connected
+info: Persistency with MONGO
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Mongo connected
+info: Persistency with MONGO
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Mongo connected
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Mongo connected
+info: Persistency with MONGO
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Mongo connected
+info: Persistency with MONGO
+info: GET on /api/users/ - 26/11/2023
+info: Mongo connected
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/ - 26/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: DELETE on /api/user/ - 26/11/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: DELETE on /api/user/ - 26/11/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: DELETE on /api/user/ - 26/11/2023
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: DELETE on /api/user/ - 26/11/2023
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 26/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 27/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 27/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 27/11/2023
+info: [object Object]
+info: [object Object]
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/user/ - 27/11/2023
+info: [object Object]
+info: [object Object]
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 27/11/2023
+info: GET on /favicon.ico - 27/11/2023
+info: POST on /api/session/login - 27/11/2023
+info: GET on /products - 27/11/2023
+info: [object Object]
+info: GET on /api/user/ - 27/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: GET on /api/user/ - 27/11/2023
+info: [object Object]
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/ - 28/11/2023
+info: GET on /favicon.ico - 28/11/2023
+info: GET on / - 28/11/2023
+info: POST on /api/session/login - 28/11/2023
+error: Password is not valid
+info: POST on /api/session/login - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/users/delete/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/users/delete/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/users/delete/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/users/delete/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/users/delete/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/users/delete/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: GET on /api/users/delete/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/users/delete/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/delete/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 28/11/2023
+info: POST on /api/session/login - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/users - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: DELETE on /api/user/6532e5cdf648f48352cba8e9 - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: DELETE on /api/user/65306e83e17159f5c4df0484 - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /register - 28/11/2023
+info: POST on /api/session/register - 28/11/2023
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: DELETE on /api/user/6565a0172a006f6522441069 - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /register - 28/11/2023
+info: GET on /api/session/logout - 28/11/2023
+info: cookie cleared
+info: GET on / - 28/11/2023
+info: GET on /api/session/logout - 28/11/2023
+info: cookie cleared
+info: GET on / - 28/11/2023
+info: POST on /api/session/login - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: DELETE on /api/user/6565a0172a006f6522441069 - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: DELETE on /api/user/650d57438775e3845a1ed10a - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /register - 28/11/2023
+info: POST on /api/session/register - 28/11/2023
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: DELETE on /api/user/6565a1802a006f652244109a - 28/11/2023
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: DELETE on /api/user/6565a1802a006f652244109a - 28/11/2023
+info: GET on /api/session/logout - 28/11/2023
+info: cookie cleared
+info: GET on / - 28/11/2023
+info: POST on /api/session/login - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/user - 28/11/2023
+info: [object Object]
+info: GET on /api/user - 28/11/2023
+info: [object Object]
+info: GET on /api/user - 28/11/2023
+info: [object Object]
+info: DELETE on /api/user/6565a1802a006f652244109a - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: GET on /api/user - 28/11/2023
+info: [object Object]
+info: GET on /api/user - 28/11/2023
+info: [object Object]
+info: GET on /api/session/logout - 28/11/2023
+info: cookie cleared
+info: GET on / - 28/11/2023
+info: GET on /register - 28/11/2023
+info: POST on /api/session/register - 28/11/2023
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: GET on /products - 28/11/2023
+info: GET on / - 28/11/2023
+info: POST on /api/session/login - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/user - 28/11/2023
+info: [object Object]
+info: DELETE on /api/user/6565a21c2a006f65224410cc - 28/11/2023
+info: [object Object]
+info: GET on /api/user/ - 28/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /api/session/logout - 28/11/2023
+info: cookie cleared
+info: GET on / - 28/11/2023
+info: POST on /api/session/login - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /premium - 28/11/2023
+info: [object Object]
+info: New connection!
+info: POST on /api/products - 28/11/2023
+info: [object Object]
+info: GET on /nigawhat - 28/11/2023
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: GET on /api/session/logout - 28/11/2023
+info: cookie cleared
+info: GET on / - 28/11/2023
+info: GET on /register - 28/11/2023
+info: POST on /api/session/register - 28/11/2023
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: GET on /products - 28/11/2023
+info: GET on / - 28/11/2023
+info: POST on /api/session/login - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /user/6565a9bbbf5d9c447885f377/documents - 28/11/2023
+info: [object Object]
+info: POST on /api/user/6565a9bbbf5d9c447885f377/documents - 28/11/2023
+info: [object Object]
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/user/premium/6565a9bbbf5d9c447885f377/ - 28/11/2023
+info: [object Object]
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/user/premium/6565a9bbbf5d9c447885f377/ - 28/11/2023
+info: [object Object]
+info: GET on / - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /api/session/logout - 28/11/2023
+info: cookie cleared
+info: GET on / - 28/11/2023
+info: POST on /api/session/login - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /premium - 28/11/2023
+info: [object Object]
+info: New connection!
+info: POST on /api/products - 28/11/2023
+info: [object Object]
+info: GET on /url - 28/11/2023
+info: GET on /api/session/logout - 28/11/2023
+info: cookie cleared
+info: GET on / - 28/11/2023
+info: POST on /api/session/login - 28/11/2023
+info: GET on /products - 28/11/2023
+info: [object Object]
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: GET on /api/products/delete/6565aad1bf5d9c447885f3b8 - 28/11/2023
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!
+info: DELETE on /api/products/delete/6565aad1bf5d9c447885f3b8 - 28/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: DELETE on /api/products/delete/6565aad1bf5d9c447885f3b8 - 28/11/2023
+info: New connection!
+info: Mongo connected
+info: [object Object]
+info: Persistency with MONGO
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: New connection!
+info: DELETE on /api/products/delete/6565aad1bf5d9c447885f3b8 - 28/11/2023
+info: Mongo connected
+info: [object Object]
+info: GET on /realtimeproducts - 28/11/2023
+info: [object Object]
+info: New connection!

@@ -43,9 +43,10 @@
                     <td>{{this.description}}</td>
                     <td>{{this.price}}</td>
                     <td>{{this.stock}}</td>
+                    <td>{{this.owner}}</td>
                     <td>{{this.code}}</td>
                     <td>{{this.status}}</td>
-                    <td><a href="api/products/delete/{{this._id}}">🗑️</a></td>
+                    <td><button onclick="deleteProduct('{{this._id}}')">🗑️</button></td>
                 {{/each}}
                 </tr>
         </tbody>
@@ -55,7 +56,28 @@
 <script src="http://localhost:8080/socket.io/socket.io.js"></script>
 <script>
     const socket = io()
-
+    async function deleteProduct(id){
+        const deleteProd = await fetch(`/api/products/delete/${id}`, {method: 'DELETE'})
+        const response = await deleteProd.json()
+        if(response.status == 'success'){
+            Swal.fire({
+                title: "Product deleted successfully",
+                icon: 'success',
+                text: "The product has been deleted successfully!",
+                confirmButtonText: "Okay",
+                timer: 2000
+            })
+            
+        }else{
+            Swal.fire({
+                title: 'Error trying to delete the product',
+                icon: 'error',
+                text: 'There has been an error trying to delete the product',
+                confirmButtonText: 'Ok..',
+                timer: 2000
+            })
+        }
+    }
     document.getElementById('form').onsubmit = e =>{
         e.preventDefault()
         const title = document.getElementById('title').value
@@ -81,6 +103,7 @@
                         <td>${prod.description}</td>
                         <td>${prod.price}</td>
                         <td>${prod.stock}</td>
+                        <td>${prod.owner}</td>
                         <td>${prod.code}</td>
                         <td>${prod.status}</td>
                         <td><a href='api/products/delete/${prod._id}'>🗑️</a></td>

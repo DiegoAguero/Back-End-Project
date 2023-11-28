@@ -55,7 +55,6 @@ export const authorization = rol =>{
 export const isPremium = async(req, res, next) =>{
     try{
         const user = req.user
-        console.log(user.rol == 'premium')
         if(user.rol == 'premium' || user.rol == 'admin'){
             next()
         }else{
@@ -65,4 +64,3 @@ export const isPremium = async(req, res, next) =>{
         next(err)
     }
 }
-
