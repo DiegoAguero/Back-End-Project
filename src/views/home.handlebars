@@ -11,7 +11,12 @@
         {{/if}}
         <h1>Email: {{user.email}}</h1>
         <h1>Rol: {{user.rol}}</h1>
-        <a href="/cart/{{user.cart}}" class="btn btn-danger">Go to the cart!</a>
+        {{#if user.cart}}
+            <a href="/cart/{{user.cart}}" class="btn btn-danger">Go to the cart!</a>
+        {{else}}
+        <a href="/cart/{{user.cart._id}}" class="btn btn-danger">Go to the cart!</a>
+        {{/if}}
+
         <a href="/user/{{user._id}}/documents" class="btn btn-danger">Upload documents!</a>
         <a href="/api/user/premium/{{user._id}}/" class="btn btn-danger">Become a premium user!</a>
         {{else}}
@@ -37,20 +42,7 @@
                     </div>
                 {{/each}}
             {{/if}}
-            {{#if totalProducts}}
-                {{#each totalProducts}}
-                    <div class="bg-light card m-2" style="width: 16rem;">
-                        <img src="{{thumbnail}}" class="card-img-top p-3" width="254px" height="254px" alt="{{title}}">
-                        <div class="card-body text-dark">
-                            <h5 class="card-title">{{title}}</h5>
-                            <p class="card-text">{{description}}</p>
-                            <p class="card-text">${{price}}</p>
-                            <p class="card-text">Total stock:{{stock}}</p>
-                            <button onclick="addProductToTheCart('{{_id}}')" class="btn btn-secondary mb-2">Add to cart</button>
-                        </div>
-                    </div>
-                {{/each}}
-            {{/if}}
+
     </div>
     <div class="d-flex justify-content-center my-3">
         {{#if totalProducts.hasPrevPage}}
@@ -71,17 +63,29 @@
 <script>
 
     async function addProductToTheCart(id){
-        const url = `/api/carts/{{user.cart}}/product/${id}`
-        console.log(url)
+        let url
+        if('{{user.cart}}' != null){
+            url = `/api/carts/{{user.cart}}/product/${id}`
+        }else{
+            url = `/api/carts/{{user.cart._id}}/product/${id}`
+        }
         const res = await fetch(url, {method: "post"})
         const response = await res.json()
         console.log(response)
-        if(response.status == 'error'){
+        if(response.status == 'user-error'){
             return Swal.fire({
                 title: 'Error',
                 icon: 'error',
                 text: 'You cant add your own product to the cart!',
-                confirmButtonText: 'Okay',
+                confirmButtonText: 'Ok..',
+                timer: 2500
+            })
+        }else if(response.status == 'error'){
+            return Swal.fire({
+                title: 'Database error',
+                icon: 'error',
+                text: 'Something unexpected happened! Sorry.',
+                confirmButtonText: 'Ok..',
                 timer: 2500
             })
         }

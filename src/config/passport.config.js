@@ -138,7 +138,6 @@ function initializePassport(){
 
                 const token = generateToken(user)
                 user.token = token
-                //Preguntar al profesor/tutor si se puede hacer aca!
                 user.last_connection = new Date()
                 await userService.updateUser(user._id, user)
                 return done(null, user)

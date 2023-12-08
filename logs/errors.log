@@ -6063,3 +6063,2210 @@ info: [object Object]
 info: GET on /realtimeproducts - 28/11/2023
 info: [object Object]
 info: New connection!
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: GET on / - 29/11/2023
+info: GET on /favicon.ico - 29/11/2023
+info: Mongo connected
+info: GET on /api/session/login-github - 29/11/2023
+info: GET on /api/session/githubcallback?code=c2d84c7bd8355251b938 - 29/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 29/11/2023
+info: [object Object]
+info: GET on /favicon.ico - 29/11/2023
+info: GET on /payment-intents - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/carts/payment-intents - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 29/11/2023
+info: GET on /api/session/login-github - 29/11/2023
+info: GET on /api/session/githubcallback?code=059aebef9adb6970ae8e - 29/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 29/11/2023
+info: [object Object]
+info: GET on /payment-intents - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /payment-intents - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /payment-intents - 29/11/2023
+info: GET on /payment-intents - 29/11/2023
+info: GET on /payment-intents - 29/11/2023
+info: GET on /payment-intents - 29/11/2023
+info: GET on /payment-intents - 29/11/2023
+info: GET on /payment-intents - 29/11/2023
+info: GET on /payment-intents - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /api/session/logout - 29/11/2023
+info: cookie cleared
+info: GET on / - 29/11/2023
+info: GET on / - 29/11/2023
+info: POST on /api/session/login - 29/11/2023
+info: GET on /api/session/login-github - 29/11/2023
+info: GET on /api/session/githubcallback?code=c5b89d0e0de13c87bd2e - 29/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 29/11/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 29/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68f55bc27e50e669365ad","title":"Don Satur","description":"Bizcochitos Don Satur 200gr","price":2,"thumbnail":"/static/images/donsatur.jpg","code":"donsatur200gr","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":35,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":49,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":43}
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":43}
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":43}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product//delete - 29/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product//delete - 29/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product//delete - 29/11/2023
+info: GET on / - 29/11/2023
+info: GET on /api/session/login-github - 29/11/2023
+info: GET on /api/session/githubcallback?code=e69e5ed8dc1651a0f118 - 29/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 29/11/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 29/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 29/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":44}
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":44}
+info: GET on / - 29/11/2023
+info: GET on /products - 29/11/2023
+info: [object Object]
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":44}
+info: DELETE on /api/cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: DELETE on /api/cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":44}
+info: GET on /register - 29/11/2023
+info: GET on / - 29/11/2023
+info: GET on /products - 29/11/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 29/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":45}
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":45}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":45}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: Mongo connected
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":45}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 29/11/2023
+info: GET on /api/session/login-github - 29/11/2023
+info: GET on /api/session/githubcallback?code=4c8b3cd854169bbe228a - 29/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 29/11/2023
+info: [object Object]
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":45}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 29/11/2023
+info: [object Object]
+info: Mongo connected
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":45}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 29/11/2023
+info: GET on /products - 29/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 30/11/2023
+info: GET on /favicon.ico - 30/11/2023
+info: GET on /api/session/login-github - 30/11/2023
+info: GET on /api/session/githubcallback?code=5b17356984ccd2e2ac36 - 30/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: GET on /favicon.ico - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68af8456f4b4675841923 - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":47}
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":47}
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":47}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":49,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":49}
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":49,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":49}
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":49}
+info: GET on / - 30/11/2023
+info: GET on /api/session/login-github - 30/11/2023
+info: GET on /api/session/githubcallback?code=508f5b8bbe80c8eb7537 - 30/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 30/11/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: GET on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":50}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":51}
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":35,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":49,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":53}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":53}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":53}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":54}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":54}
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":54}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":55}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":55}
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":3}],"__v":55}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":35,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":35,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: GET on /cart/undefined - 30/11/2023
+info: Persistency with MONGO
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: Mongo connected
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":35,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":35,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: GET on /success - 30/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 30/11/2023
+info: GET on /api/session/login-github - 30/11/2023
+info: GET on /api/session/githubcallback?code=1057980bb1e425af12f9 - 30/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/ticket/ - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/ticket/ - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/ticket/ - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/ticket/ - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/ticket/ - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/ticket/ - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":62,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":35,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":50,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":29,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Mongo connected
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":42,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":25,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Mongo connected
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":38,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":23,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Mongo connected
+info: GET on /api/session/logout - 30/11/2023
+info: cookie cleared
+info: GET on / - 30/11/2023
+info: GET on /api/session/logout - 30/11/2023
+info: cookie cleared
+info: GET on / - 30/11/2023
+info: GET on /api/session/login-github - 30/11/2023
+info: GET on /api/session/githubcallback?code=f469c50e4ec75cfa1940 - 30/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":30,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":19,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: [object Object]
+info: GET on /success - 30/11/2023
+info: [object Object]
+info: GET on / - 30/11/2023
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":26,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":17,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":56}
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: GET on /api/session/logout - 30/11/2023
+info: cookie cleared
+info: GET on / - 30/11/2023
+info: GET on /api/session/login-github - 30/11/2023
+info: GET on /api/session/githubcallback?code=aa5636aaa9c3f9ab75cf - 30/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: GET on /api/session/logout - 30/11/2023
+info: cookie cleared
+info: GET on / - 30/11/2023
+info: GET on /api/session/login-github - 30/11/2023
+info: GET on /api/session/githubcallback?code=b4db81718fb2885c9734 - 30/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":56}
+info: GET on / - 30/11/2023
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 30/11/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":49,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":57}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Mongo connected
+info: GET on /api/session/logout - 30/11/2023
+info: cookie cleared
+info: GET on / - 30/11/2023
+info: POST on /api/session/login - 30/11/2023
+info: GET on /api/session/login-github - 30/11/2023
+info: GET on /api/session/githubcallback?code=26d382dc62aaf1068f7f - 30/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":57}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 30/11/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":47,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":58}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: [object Object]
+info: Persistency with MONGO
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: Mongo connected
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":58}
+info: GET on / - 30/11/2023
+info: GET on /api/session/login-github - 30/11/2023
+info: GET on /api/session/githubcallback?code=dbddcc4ce54e24e275b7 - 30/11/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68af8456f4b4675841923 - 30/11/2023
+info: GET on / - 30/11/2023
+info: GET on /products - 30/11/2023
+info: [object Object]
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 30/11/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0},"quantity":1}],"__v":59}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Persistency with MONGO
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 30/11/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 2/12/2023
+info: GET on /favicon.ico - 2/12/2023
+info: POST on /api/session/login - 2/12/2023
+info: POST on /api/session/login - 2/12/2023
+info: GET on /api/session/login-github - 2/12/2023
+info: GET on /api/session/githubcallback?code=575473f6e19ecf9adfab - 2/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: GET on /favicon.ico - 2/12/2023
+info: GET on /api/session/logout - 2/12/2023
+info: cookie cleared
+info: GET on / - 2/12/2023
+info: GET on /register - 2/12/2023
+info: POST on /api/session/register - 2/12/2023
+info: GET on / - 2/12/2023
+info: GET on /products - 2/12/2023
+info: GET on / - 2/12/2023
+info: GET on /products - 2/12/2023
+info: GET on / - 2/12/2023
+info: GET on /products - 2/12/2023
+info: GET on /products - 2/12/2023
+info: GET on / - 2/12/2023
+info: POST on /api/session/login - 2/12/2023
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: GET on /api/session/logout - 2/12/2023
+info: cookie cleared
+info: GET on / - 2/12/2023
+info: GET on /api/session/login-github - 2/12/2023
+info: GET on /api/session/githubcallback?code=c277490e724b50f9f61f - 2/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 2/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 2/12/2023
+info: GET on / - 2/12/2023
+info: GET on / - 2/12/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 2/12/2023
+info: GET on /api/session/login-github - 2/12/2023
+info: GET on /api/session/githubcallback?code=8393ad0e6c0a8a756066 - 2/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: GET on /api/session/logout - 2/12/2023
+info: cookie cleared
+info: GET on / - 2/12/2023
+info: POST on /api/session/login - 2/12/2023
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 2/12/2023
+info: [object Object]
+info: GET on /user/656b5ca46a0ff2a1ee6bd5c0/documents - 2/12/2023
+info: [object Object]
+info: GET on /user/656b5ca46a0ff2a1ee6bd5c0/documents - 2/12/2023
+info: [object Object]
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 2/12/2023
+info: [object Object]
+error: undefined
+info: Persistency with MONGO
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 2/12/2023
+info: [object Object]
+error: undefined
+info: Mongo connected
+info: GET on / - 2/12/2023
+info: POST on /api/session/login - 2/12/2023
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: GET on /cart/[object%20Object] - 2/12/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 2/12/2023
+info: [object Object]
+info: GET on /user/656b5ca46a0ff2a1ee6bd5c0/documents - 2/12/2023
+info: [object Object]
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 2/12/2023
+info: [object Object]
+error: undefined
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 2/12/2023
+info: GET on /api/session/login-github - 2/12/2023
+info: GET on /api/session/githubcallback?code=b2f25d26979bfdc6f9a2 - 2/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 2/12/2023
+info: [object Object]
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 2/12/2023
+info: [object Object]
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":22,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":15,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":61}
+info: GET on /premium - 2/12/2023
+info: [object Object]
+info: New connection!
+info: POST on /api/products - 2/12/2023
+info: [object Object]
+info: GET on /Hola%20lol%20123 - 2/12/2023
+info: POST on /api/products - 2/12/2023
+info: [object Object]
+info: GET on /Hola%20lol%20123 - 2/12/2023
+info: GET on /123 - 2/12/2023
+info: DELETE on /api/products/delete/656b690f9d3aeccaf25b2201 - 2/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on / - 3/12/2023
+info: GET on /favicon.ico - 3/12/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: Mongo connected
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Mongo connected
+info: GET on /user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: GET on /user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+error: Cannot read properties of undefined (reading 'dao')
+info: Persistency with MONGO
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: Mongo connected
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+error: userService.uploadDocuments is not a function
+error: userService.uploadDocuments is not a function
+info: Persistency with MONGO
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: Mongo connected
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: Persistency with MONGO
+info: Mongo connected
+info: Persistency with MONGO
+info: GET on / - 3/12/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: GET on /user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: Mongo connected
+info: GET on /premium - 3/12/2023
+info: [object Object]
+info: POST on /api/user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: GET on /user/656b5ca46a0ff2a1ee6bd5c0/documents - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: Mongo connected
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /api/user/premium/656b5ca46a0ff2a1ee6bd5c0/ - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on /premium - 3/12/2023
+info: [object Object]
+info: New connection!
+info: POST on /api/products - 3/12/2023
+info: [object Object]
+info: GET on /hola - 3/12/2023
+info: DELETE on /api/products/delete/656c3def0ef54976e8c66b08 - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: New connection!
+info: Persistency with MONGO
+info: Listening...
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: GET on / - 3/12/2023
+info: Mongo connected
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: Mongo connected
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: Mongo connected
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /products - 3/12/2023
+info: GET on / - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 3/12/2023
+info: GET on / - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/[object%20Object]/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /products - 3/12/2023
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /cart/[object%20Object] - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /cart/[object%20Object] - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on /cart/[object%20Object] - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on /cart/[object%20Object] - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /cart/[object%20Object] - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /cart/[object%20Object] - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: Mongo connected
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[],"__v":0}
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/[object%20Object]/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68af8456f4b4675841923 - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68af8456f4b4675841923 - 3/12/2023
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":22,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":15,"status":true,"__v":0,"owner":"admin"},"quantity":2},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":4}
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":4}
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: Mongo connected
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":4}
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: [object Object]
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":21,"status":true,"__v":0,"owner":"admin"},"quantity":3}],"__v":5}
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: Mongo connected
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+error: Password is not valid
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":5}
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68b3b456f4b467584192d - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68b3b456f4b467584192d - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68b3b456f4b467584192d - 3/12/2023
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":46,"status":true,"__v":0,"owner":"admin"},"quantity":3}],"__v":6}
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/purchase - 3/12/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":6}
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":6}
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: POST on /api/session/login - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /cart/656b5ca46a0ff2a1ee6bd5be - 3/12/2023
+info: {"_id":"656b5ca46a0ff2a1ee6bd5be","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":6}
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68af8456f4b4675841923 - 3/12/2023
+info: POST on /api/carts/656b5ca46a0ff2a1ee6bd5be/product/64c68af8456f4b4675841923 - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=f7a1f0418216db1fe12a - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: GET on /favicon.ico - 3/12/2023
+info: POST on /api/carts//product/64c68b0f456f4b4675841928 - 3/12/2023
+info: POST on /api/carts//product/64c68b0f456f4b4675841928 - 3/12/2023
+info: GET on /cart/ - 3/12/2023
+info: GET on /products - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":18,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":13,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":61}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=be2b6aaf6b8e66c5337b - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts//product/64c68b3b456f4b467584192d - 3/12/2023
+info: POST on /api/carts//product/64c68b3b456f4b467584192d - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":61}
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":17,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":62}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=4d876d428ce95b58b231 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on /products - 3/12/2023
+info: Mongo connected
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 3/12/2023
+info: GET on /products - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=3e5b6b7b8cbd34745fbc - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":43,"status":true,"__v":0,"owner":"admin"},"quantity":3}],"__v":63}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: Mongo connected
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=fa17b8894e0232177056 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":63}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: Mongo connected
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":63}
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=4acc333e640004778ac2 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":15,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":64}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: Mongo connected
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":64}
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=1452af0444d9df064564 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=8b5350ddfa321cc663e1 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":65}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: Mongo connected
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=a2bd64f078c9bf6d36cb - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":14,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":66}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: Mongo connected
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":66}
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":66}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=2ec5f330bf938b8ba25e - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":13,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":67}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=5a8eecb28433ac01ef48 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":40,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":68}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: Mongo connected
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":68}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=d2a44475d4e550216e32 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":68}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=f31d34bc19096620b4f3 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":68}
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":68}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=260b76befc5c452cab64 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":10,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":38,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":71}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: GET on /cart/[object%20Object] - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on / - 3/12/2023
+info: Mongo connected
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=a603e462f7ab333af2bd - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":10,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":72}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: GET on /success - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=ccc59c0c390acbf5c845 - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=ca2854a821822b4c423f - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":3}],"__v":73}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: GET on /success - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 3/12/2023
+info: cookie cleared
+info: GET on / - 3/12/2023
+info: GET on /api/session/login-github - 3/12/2023
+info: GET on /api/session/githubcallback?code=a523072be1b8b98f9cdf - 3/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 3/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 3/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":74}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 3/12/2023
+info: [object Object]
+info: GET on /success - 3/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 4/12/2023
+info: GET on /favicon.ico - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=60d9ad4d2e76903f607c - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: GET on /favicon.ico - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":74}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68af8456f4b4675841923/delete - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":74}
+info: GET on / - 4/12/2023
+info: GET on /products - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":4}],"__v":75}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: Mongo connected
+info: GET on /api/session/logout - 4/12/2023
+info: cookie cleared
+info: GET on / - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=b1a75729b8d53f3a6bdd - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":75}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":2},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":38,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":77}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: [object Object]
+info: GET on /success - 4/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 4/12/2023
+info: cookie cleared
+info: GET on / - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=7dc805e9dea2db0a3c86 - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/650aa2c0913f2dbe7a049da6 - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":10,"status":true,"__v":0,"owner":"admin"},"quantity":2},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"650aa2c0913f2dbe7a049da6","title":"Sour Cream Pringles","description":"Sour Cream Pringles 500gr","price":5,"thumbnail":"/static/images/pringlessourcream.png","code":"98cvs","stock":5,"status":true,"__v":0},"quantity":1}],"__v":80}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 4/12/2023
+info: cookie cleared
+info: GET on / - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=2771556bcd125a6952df - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c957cbc4a29aec4bc2f446 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c957cbc4a29aec4bc2f446 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68a91456f4b467584190f - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68a91456f4b467584190f - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7a92d99f26b6d04c32fe - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c957cbc4a29aec4bc2f446","title":"Frutigram Chocolate","description":"Frutigram Chocolate 250gr","price":5,"thumbnail":"/static/images/frutigram-chocolate.jpg","code":"frutigramchocolate","stock":17,"status":true,"__v":0},"quantity":2},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":32,"status":true,"__v":0,"owner":"admin"},"quantity":2},{"product":{"_id":"64cb7a92d99f26b6d04c32fe","title":"Chocolinas","description":"Chocolinas 500 gr","price":5,"thumbnail":"/static/images/chocolinas.jpg","code":"chocolinas500gr","stock":0,"status":false,"__v":0},"quantity":1}],"__v":83}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: [object Object]
+info: GET on /success - 4/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 4/12/2023
+info: cookie cleared
+info: GET on / - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=38768506931bc965845a - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b3b456f4b467584192d - 4/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68ad8456f4b467584191e - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68ad8456f4b467584191e - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68c72bc27e50e669365a1 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68c72bc27e50e669365a1 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64cb7a92d99f26b6d04c32fe","title":"Chocolinas","description":"Chocolinas 500 gr","price":5,"thumbnail":"/static/images/chocolinas.jpg","code":"chocolinas500gr","stock":0,"status":false,"__v":0},"quantity":1},{"product":{"_id":"64c68b3b456f4b467584192d","title":"3d","description":"Conitos 3d","price":4,"thumbnail":"/static/images/lays-3d.jpg","code":"conito3d","stock":38,"status":true,"__v":0,"owner":"admin"},"quantity":4},{"product":{"_id":"64c68b6c456f4b4675841932","title":"Mate","description":"Mate 100ml","price":10,"thumbnail":"/static/images/mate.jpg","code":"mate100ml","stock":40,"status":true,"__v":0},"quantity":3},{"product":{"_id":"64c68ad8456f4b467584191e","title":"Amanda","description":"Yerba mate Amanda 1kg","price":10,"thumbnail":"/static/images/amanda.png","code":"amandaMate","stock":67,"status":true,"__v":0,"owner":"admin"},"quantity":2},{"product":{"_id":"64c68c72bc27e50e669365a1","title":"Hellmann's","description":"Mayonesa Hellmann's 500gr","price":7,"thumbnail":"/static/images/hellmans-mayonesa.jpg","code":"hellmanns500gr","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":2},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3}],"__v":88}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: [object Object]
+info: GET on /success - 4/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 4/12/2023
+info: cookie cleared
+info: GET on / - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=a317c4af4c21678eb392 - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: GET on /products - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=1&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=1&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68a91456f4b467584190f - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/650aa2c0913f2dbe7a049da6 - 4/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68ad8456f4b467584191e - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68ad8456f4b467584191e - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 4/12/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /123 - 4/12/2023
+info: GET on /nigawhat - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6565a653b18b694fcf108b6b - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1},{"quantity":2},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":10,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68a91456f4b467584190f","title":"Coca Cola","description":"Coca Cola","price":5,"thumbnail":"/static/images/cocacola.jpg","code":"coke","stock":32,"status":true,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"650aa2c0913f2dbe7a049da6","title":"Sour Cream Pringles","description":"Sour Cream Pringles 500gr","price":5,"thumbnail":"/static/images/pringlessourcream.png","code":"98cvs","stock":5,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68ad8456f4b467584191e","title":"Amanda","description":"Yerba mate Amanda 1kg","price":10,"thumbnail":"/static/images/amanda.png","code":"amandaMate","stock":67,"status":true,"__v":0,"owner":"admin"},"quantity":2},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegos","description":"El maldito baldu cs, edicion limitada 1 unidad...","price":2000,"thumbnail":"","code":"balducs","owner":"admin","stock":1,"status":true,"__v":0},"quantity":1},{"product":{"_id":"6565a653b18b694fcf108b6b","title":"Niga what","description":"Niga niga what","price":20,"thumbnail":"nigawhat","code":"nigawhat","owner":"lucasrolandolopez@gmail.com","stock":20,"status":true,"__v":0},"quantity":1}],"__v":95}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: Mongo connected
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":95}
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":95}
+info: GET on / - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=ca3152030917f77a896f - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: GET on / - 4/12/2023
+info: GET on /products - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /123 - 4/12/2023
+info: GET on /nigawhat - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegos","description":"El maldito baldu cs, edicion limitada 1 unidad...","price":2000,"thumbnail":"","code":"balducs","owner":"admin","stock":1,"status":true,"__v":0},"quantity":1}],"__v":96}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: [object Object]
+info: GET on / - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=13e2d5bbc63ce5cefff3 - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 4/12/2023
+info: GET on /favicon.ico - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=f0bc3819b94ec5ffeeda - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: GET on /favicon.ico - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products - 4/12/2023
+info: GET on /premium - 4/12/2023
+info: New connection!
+info: GET on /123 - 4/12/2023
+info: GET on / - 4/12/2023
+info: GET on /products - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /123 - 4/12/2023
+info: GET on /nigawhat - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/656b69199d3aeccaf25b2207 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6565a653b18b694fcf108b6b - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6565a653b18b694fcf108b6b - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"6565a653b18b694fcf108b6b","title":"Niga what","description":"Niga niga what","price":20,"thumbnail":"nigawhat","code":"nigawhat","owner":"lucasrolandolopez@gmail.com","stock":20,"status":true,"__v":0},"quantity":2},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegos","description":"El maldito baldu cs, edicion limitada 1 unidad...","price":2000,"thumbnail":"","code":"balducs","owner":"admin","stock":1,"status":true,"__v":0},"quantity":2}],"__v":98}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: [object Object]
+info: GET on /success - 4/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 4/12/2023
+info: cookie cleared
+info: GET on / - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=963ca970e177de77f094 - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /123 - 4/12/2023
+info: GET on /nigawhat - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6565a653b18b694fcf108b6b - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegos","description":"El maldito baldu cs, edicion limitada 1 unidad...","price":2000,"thumbnail":"","code":"balducs","owner":"admin","stock":1,"status":true,"__v":0},"quantity":2},{"product":{"_id":"6565a653b18b694fcf108b6b","title":"Niga what","description":"Niga niga what","price":20,"thumbnail":"nigawhat","code":"nigawhat","owner":"lucasrolandolopez@gmail.com","stock":20,"status":true,"__v":0},"quantity":1}],"__v":100}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: [object Object]
+info: GET on / - 4/12/2023
+info: GET on /api/session/login-github - 4/12/2023
+info: GET on /api/session/githubcallback?code=7baf8a6335fc15a59dd6 - 4/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /nigawhat - 4/12/2023
+info: GET on /123 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6565a653b18b694fcf108b6b - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6565a653b18b694fcf108b6b - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1},{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegos","description":"El maldito baldu cs, edicion limitada 1 unidad...","price":2000,"thumbnail":"","code":"balducs","owner":"admin","stock":1,"status":true,"__v":0},"quantity":2},{"product":{"_id":"6565a653b18b694fcf108b6b","title":"Niga what","description":"Niga niga what","price":20,"thumbnail":"nigawhat","code":"nigawhat","owner":"lucasrolandolopez@gmail.com","stock":20,"status":true,"__v":0},"quantity":2}],"__v":102}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product//delete - 4/12/2023
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":102}
+info: GET on / - 4/12/2023
+info: GET on /products - 4/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /products?page=4&limit=5&sort=1&status=[object%20Object] - 4/12/2023
+info: GET on /nigawhat - 4/12/2023
+info: GET on /123 - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6523bc689473cc2db281a4ca - 4/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/6565a653b18b694fcf108b6b - 4/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 4/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"6523bc689473cc2db281a4ca","title":"Baldegos","description":"El maldito baldu cs, edicion limitada 1 unidad...","price":2000,"thumbnail":"","code":"balducs","owner":"admin","stock":1,"status":true,"__v":0},"quantity":2},{"product":{"_id":"6565a653b18b694fcf108b6b","title":"Niga what","description":"Niga niga what","price":20,"thumbnail":"nigawhat","code":"nigawhat","owner":"lucasrolandolopez@gmail.com","stock":20,"status":true,"__v":0},"quantity":1}],"__v":104}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 4/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 8/12/2023
+info: GET on /favicon.ico - 8/12/2023
+info: POST on /api/session/login - 8/12/2023
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=4eff14a11d976d6f6050 - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: GET on /favicon.ico - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":104}
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":104}
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68b6c456f4b4675841932","title":"Mate","description":"Mate 100ml","price":10,"thumbnail":"/static/images/mate.jpg","code":"mate100ml","stock":40,"status":true,"__v":0},"quantity":3}],"__v":105}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 8/12/2023
+info: cookie cleared
+info: GET on / - 8/12/2023
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=399d75274c66a4765f6a - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3},{"product":{"_id":"64c68b6c456f4b4675841932","title":"Mate","description":"Mate 100ml","price":10,"thumbnail":"/static/images/mate.jpg","code":"mate100ml","stock":40,"status":true,"__v":0},"quantity":1}],"__v":107}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":107}
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: GET on /api/session/logout - 8/12/2023
+info: cookie cleared
+info: GET on / - 8/12/2023
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=c7aca884dd96d263041e - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3},{"product":{"_id":"64c68b6c456f4b4675841932","title":"Mate","description":"Mate 100ml","price":10,"thumbnail":"/static/images/mate.jpg","code":"mate100ml","stock":40,"status":true,"__v":0},"quantity":1}],"__v":109}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":109}
+info: Persistency with MONGO
+info: Listening...
+info: GET on /api/session/logout - 8/12/2023
+info: cookie cleared
+info: GET on / - 8/12/2023
+info: Mongo connected
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=ce5f7a2f9dde7b39994a - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3},{"product":{"_id":"64c68b6c456f4b4675841932","title":"Mate","description":"Mate 100ml","price":10,"thumbnail":"/static/images/mate.jpg","code":"mate100ml","stock":40,"status":true,"__v":0},"quantity":1}],"__v":111}
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[],"__v":111}
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3},{"product":{"_id":"64c68b6c456f4b4675841932","title":"Mate","description":"Mate 100ml","price":10,"thumbnail":"/static/images/mate.jpg","code":"mate100ml","stock":40,"status":true,"__v":0},"quantity":1}],"__v":113}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 8/12/2023
+info: cookie cleared
+info: GET on / - 8/12/2023
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=4c335e495bbdecf888cc - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"quantity":1}],"__v":113}
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3},{"product":{"_id":"64c68b6c456f4b4675841932","title":"Mate","description":"Mate 100ml","price":10,"thumbnail":"/static/images/mate.jpg","code":"mate100ml","stock":40,"status":true,"__v":0},"quantity":1}],"__v":115}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 8/12/2023
+info: cookie cleared
+info: GET on / - 8/12/2023
+info: DELETE on /api/carts/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=bfc633eda0c580bcd9f0 - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68af8456f4b4675841923 - 8/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b6c456f4b4675841932 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b6c456f4b4675841932","title":"Mate","description":"Mate 100ml","price":10,"thumbnail":"/static/images/mate.jpg","code":"mate100ml","stock":40,"status":true,"__v":0},"quantity":1}],"__v":117}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":117}
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3}],"__v":118}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3}],"__v":118}
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 8/12/2023
+info: cookie cleared
+info: GET on / - 8/12/2023
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=1fec52cb553e20601b59 - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3}],"__v":118}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 8/12/2023
+info: POST on /api/session/login - 8/12/2023
+info: POST on /api/session/login - 8/12/2023
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=8318ad65142411c604db - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":1}],"__v":118}
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":1}],"__v":118}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: Persistency with MONGO
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 8/12/2023
+info: POST on /api/session/login - 8/12/2023
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=f1d6e97d02d713c18355 - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":118}
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: GET on /products?page=2&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: GET on /products?page=3&limit=5&sort=1&status=[object%20Object] - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64cb7ab0d99f26b6d04c3302 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":3}],"__v":119}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: GET on /success - 8/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected

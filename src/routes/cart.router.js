@@ -1,5 +1,5 @@
 import {Router} from 'express'
-import { addProductToCart, purchaseProducts, deleteProductFromCart, getCartById, updateCart, updateQuantityFromCart, createCart, clearCart, getAllCarts } from '../controllers/carts.controller.js'
+import { addProductToCart, purchaseProducts, deleteProductFromCart, getCartById, updateCart, updateQuantityFromCart, createCart, clearCart, getAllCarts, paymentIntents } from '../controllers/carts.controller.js'
 
 
 const router = Router()
@@ -13,6 +13,8 @@ router.post('/:cId', clearCart)
 
 router.post('/:cId/purchase', purchaseProducts)
 //postman
+
+router.post('/payment-intents', paymentIntents)
 router.delete('/:cId/product/:pId/delete', deleteProductFromCart)
 router.put('/:cId/product/:pId', updateQuantityFromCart)
 router.delete('/:cId', clearCart)

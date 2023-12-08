@@ -31,7 +31,6 @@ export const authToken = (req, res, next) =>{
     const token = authHeader
     jwt.verify(token, config.SECRET_JWT, (error, credentials) =>{
         if(error) return res.status(403).send({error: 'Not authorized'})
-        logger.info(credentials.user)
         req.user = credentials.user
         next()
     })

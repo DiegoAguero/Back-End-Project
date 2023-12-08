@@ -43,8 +43,7 @@ export default class CartManager{
             if(populate){
                 return await cartModel.findById(id).populate('products.product').lean().exec()
             }
-            const cart = await cartModel.findById(id)
-            return cart
+            return await cartModel.findById(id)
         }catch(e){
             CustomError.createError({   
                 name: "Get cart error",
@@ -54,20 +53,9 @@ export default class CartManager{
             })
         }
     }
-    // async getCartByIdPopulated(id){
-    //     try{
-    //         const cart = await cartModel.findById(id).populate('products.product').lean().exec()
-    //         console.log(cart)
-    //         if(!cart) throw new Error('The cart does not exist')
-    //         return cart
-    //     }catch(e){
-    //         return console.error(e)
-    //     }
-    // }
     async deleteCart(id){
         try {
-            const deletedCart = await cartModel.deleteOne({_id: id})
-            return deletedCart
+            return await cartModel.deleteOne({_id: id})
         } catch (error) {
             CustomError.createError({
                 name: "Delete cart error",
@@ -80,7 +68,10 @@ export default class CartManager{
 
     async updateCart(cId, products){
         try {
-            return await cartModel.findByIdAndUpdate(cId, {$set: {products: products}}, {new: true})
+            console.log(products)
+            const cart = await cartModel.findByIdAndUpdate({_id: cId}, {$set: {products: products}}, {new: true})
+            console.log(cart)
+            return cart
         } catch (error) {
             CustomError.createError({
                 name: "Update cart error",
@@ -97,7 +88,6 @@ export default class CartManager{
             cart.products.push({product: product._id, quantity: 1})
             await cart.save()
             return cart
-
         } catch (error) {
             CustomError.createError({
                 name: "Add product to cart error",

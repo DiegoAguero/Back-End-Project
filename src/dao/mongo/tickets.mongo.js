@@ -6,8 +6,8 @@ export default class TicketManager{
     
     async createTicket(ticket){
         try {
-            console.log(ticket)
             const ticketCreated = await ticketModel.create(ticket)
+            console.log(ticket)
             return ticketCreated
             
         } catch (error) {
@@ -18,14 +18,6 @@ export default class TicketManager{
                 code: EErrors.DATABASES_ERROR
             })
         }
-        // const ticket = {
-        //     code: code.toString(),
-        //     purchaser: purchaser,
-        //     amount: amount,
-        //     purchaser_datetime: dayTime
-        // }
-        // if(!ticketCreated) throw new Error('Error trying to create a ticket!')
-        // return ticketCreated
     }
     async getTicketByCode(code){
         try {

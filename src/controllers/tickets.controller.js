@@ -15,7 +15,7 @@ export const createTicket = async (req, res)=>{
                 code: EErrors.INVALID_TYPE_ERROR
             })
         }
-        ticketCreated = await ticketService.createTicket({amount, purchaser})
+        ticketCreated = await ticketService.createTicket(amount, purchaser)
         return res.send({status: 'success', payload: ticketCreated})
 }
 export const getTicketByCode = async (req, res)=>{

@@ -1,9 +1,9 @@
 
 import CustomError from '../services/errors/customErrors.js'
 import EErrors from '../services/errors/enums.js'
-import {cartService, productService} from '../services/index.js'
+import {cartService, productService, userService} from '../services/index.js'
+import PaymentService from '../services/payment.repository.js'
 //El controller solamente debe pasar datos a la capa de negocio, osea al repository, luego ahí se hacen todas las preguntas
-//Cambiar todo lo de findedProduct y toda esta pelotudez
 
 
 export const createCart = async (req, res) =>{
@@ -42,7 +42,9 @@ export const addProductToCart = async (req, res)=>{
             const productFilteredByOwner = allProducts.filter(product=>{ return product.owner === user.email })
             if(productFilteredByOwner.length > 0){
                 const ownerProduct = productFilteredByOwner.find(product => product._id.toString() === prodId.toString())
-                return res.send({status: 'error', payload: 'You cant add your own product to the cart!'})
+                if(ownerProduct){
+                    return res.send({status: 'user-error', payload: 'You cant add your own product to the cart!'})
+                }
             }
         }
         const result = await cartService.addProductToCart(cartId, prodId)
@@ -143,12 +145,33 @@ export const updateCart = async (req, res)=>{
 
 export const purchaseProducts = async (req, res)=>{
     try {
-        const cartId = req.params.cId
-        const userEmail = req.user?.email || req.body.email
 
-        const ticket = await cartService.purchaseProducts(cartId, userEmail)
+        const cartId = req.params.cId
+        const purchaser = req.user?.email || req.body.email
+        const ticket = await cartService.purchaseProducts(cartId, purchaser)
+        // console.log(ticket)
+        // return res.redirect(`${ticket}`)
         return res.send({status: 'success', payload: ticket})
+
     } catch (error) {
         console.error(error)
     }
+}
+
+export const paymentIntents = async (req, res)=>{
+    const paymentService = new PaymentService()
+    const userId = req.user._id
+    const user = await userService.getUserById(userId, true)
+    let amount = 0
+    const productsAmount = user.products.forEach(product=>{
+        amount += product.quantity * product.price
+    })
+    const paymentIntentInfo = {
+        amount: amount,
+        currency: 'usd',
+        payment_method_types: ['card']
+    }
+    const paymentResult = await paymentService.createPaymentIntent(paymentIntentInfo)
+    console.log(paymentResult)
+
 }

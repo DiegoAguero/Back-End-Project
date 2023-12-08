@@ -1,7 +1,7 @@
 import {Router} from 'express'
 
 import {authorization, authToken } from '../utils.js'
-import {getProductsViews, premiumView, getCartView, getProductView, mockingProducts, realTimeProducts, uploadDocumentsView, chatView, loginView, registerView, forgotPasswordView, resetPasswordView, resetPasswordPostView} from '../controllers/views.controller.js'
+import {getProductsViews, premiumView, getCartView, getProductView, mockingProducts, realTimeProducts, uploadDocumentsView, chatView, loginView, registerView, forgotPasswordView, resetPasswordView, resetPasswordPostView, success} from '../controllers/views.controller.js'
 
 
 const router = Router()
@@ -19,6 +19,5 @@ router.get('/register', registerView)
 router.get('/resetPassword', forgotPasswordView)
 router.get('/resetPassword/:uId/:token', resetPasswordView)
 router.post('/resetPassword/:uId/:token', resetPasswordPostView)
-
-
+router.get('/success', authToken, success)
 export default router

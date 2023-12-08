@@ -25,21 +25,5 @@ export default class UserRepository{
         const userToInsert = new UserDTO(user)
         return await this.dao.updateUser(userId, userToInsert)
     }
-    async uploadDocuments(userId, files){
-        try {
-            //cambiar esto urgente
-            const user = await this.dao.getUserById(userId)
-            const profileFiles = files?.profile
-            const productsFiles = files?.products
-            const documentsFiles = files?.documents
-            productsFiles?.forEach(products=> user.documents.push({name: products.filename, reference: products.path}))
-            profileFiles?.forEach(p => user.documents.push({name: p.filename, reference: p.path}))
-            documentsFiles?.forEach(d => user.documents.push({name: d.filename, reference: d.path}))
-            return await this.dao.updateUser(user.id, user)
-        } catch (error) {
-            logger.error(error)
-        }
 
-
-    }
 }   

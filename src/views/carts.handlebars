@@ -79,17 +79,18 @@
     async function purchaseProduct(id){
         const response = await fetch(`/api/carts/${id}/purchase`, {method: "post"})
         const res = await response.json()
-        console.log(res.payload.productsNotProcessed)
         if(res.status == 'success'){
+            window.location = res.payload.url
+        }else{
             return Swal.fire({
-                title: "The products has been successfully purchased!",
-                icon: 'success',
-                text: "Here are the items that you couldn't purchase: ",
-                value: res.payload.productsNotProcessed,
-                confirmButtonText: 'Ok',
+                title: "Error!",
+                icon: 'error',
+                text: "Something unexpected happened while purchasing the products! ",
+                confirmButtonText: 'Ok..',
                 timer: 2000
             })
         }
+
     }
     
 </script>

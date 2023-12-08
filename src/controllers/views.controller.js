@@ -118,7 +118,6 @@ export const chatView = async (req, res)=>{
 
 export const loginView = async (req, res)=>{
     if(req.user) return res.redirect('/products') 
-
     return res.render('login', {})
 }
 
@@ -178,4 +177,8 @@ export const resetPasswordPostView = async (req, res)=>{
     } catch (error) {
         return res.send({status: 'error', payload: error.message})
     }
+}
+
+export const success = async (req, res)=>{
+    return res.render('success', {})
 }

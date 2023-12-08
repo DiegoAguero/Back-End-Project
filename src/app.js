@@ -7,6 +7,7 @@ import passport from 'passport'
 import cookieParser from 'cookie-parser'
 import swaggerJSDoc from 'swagger-jsdoc'
 import swaggerUIExpress from 'swagger-ui-express'
+import cors from 'cors'
 
 import cartRoute from './routes/cart.router.js'
 import productsRoute from './routes/product.router.js'
@@ -24,31 +25,27 @@ import config from './config/config.js'
 import { addLogger } from './services/logger/logger.js'
 
 const app = express()
+app.use('/static', express.static(__dirname + '/public'))
+app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-
-app.use(cookieParser())
+app.use(cors())
 app.use(session({
     secret: 'secret',
     resave: true,
     saveUninitialized: true,
-    logging: true
 }))
+//passport
+initializePassport()
+app.use(passport.initialize())
+app.use(passport.session())
 
-
-const httpServer = app.listen(config.PORT, ()=>{ console.log("listening") })
+const httpServer = app.listen(config.PORT, ()=>{ logger.info('Listening...') })
 const io = new Server(httpServer)
 
 app.engine('handlebars', handlebars.engine())
 app.set('view engine', 'handlebars')
 app.set('views', __dirname + '/views')
-
-app.use('/static', express.static(__dirname + '/public'))
-
-//passport
-initializePassport()
-app.use(passport.initialize())
-app.use(passport.session())
 
 const swaggerOptions = {
     definition:{
@@ -70,7 +67,6 @@ app.get('/loggerTest', (req, res) => {
     req.logger.warning('warning test')
     req.logger.info('info test')
     req.logger.debug('debug test')
-
     res.send('logger testing')
 })
 app.use('/api/products', productsRoute)
@@ -79,8 +75,6 @@ app.use('/api/session', sessionRoute)
 app.use('/api/ticket', ticketRoute)
 app.use('/api/user', userRoute)
 app.use('/', viewsRoute)
-
-
 
 const messages = []
 io.on('connection', socket=>{

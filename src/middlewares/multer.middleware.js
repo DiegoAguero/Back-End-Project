@@ -2,7 +2,6 @@ import multer from 'multer'
 import __dirname from '../utils.js'
 const multerStorage = multer.diskStorage({
     destination: (req, file, cb)=>{
-
         if(file.fieldname === 'profile'){
             if(file.mimetype === 'image/png' || file.mimetype === 'image/jpg' || file.mimetype === 'image/jpeg' || file.mimetype === 'application/pdf' ){
                 cb(null, __dirname + '/public/uploads/profile/')

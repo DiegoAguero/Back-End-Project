@@ -12,5 +12,7 @@ export default  {
     PERSISTENCY: process.env.PERSISTENCY,
     LOGGER: process.env.LOGGER,
     MAIL_USER: process.env.MAIL_USER,
-    MAIL_PASSWORD: process.env.MAIL_PASSWORD
+    MAIL_PASSWORD: process.env.MAIL_PASSWORD,
+    STRIPE_PRIVATE_KEY: process.env.STRIPE_PRIVATE_KEY,
+    STRIPE_PUBLIC_KEY: process.env.STRIPE_PUBLIC_KEY
 }

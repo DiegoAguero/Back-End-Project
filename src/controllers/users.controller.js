@@ -79,11 +79,12 @@ export const changeUserRol = async (req, res)=>{
         let uploadedDocuments = 0;
         let contador = 1;
         getUser.documents.forEach(document =>{
+            console.log(document)
             if(document.reference?.split('\\'[11] === 'documents') && document.name != document.name[contador++]){
                 uploadedDocuments++
             }
         })
-        if(uploadedDocuments === 3){
+        if(uploadedDocuments >= 3){
             getUser.rol = 'premium'        
         }else{
             return res.json(`No puedes ser premium todavia! Tienes que subir ${3 - uploadedDocuments} documento/s más para poder serlo!`)
@@ -130,26 +131,35 @@ export const uploadDocuments = async(req, res)=>{
     try {
         const userId = req.params.uid
         const files = req.files
-        const documents = await userService.uploadDocuments(userId, files)
-        return res.status(200).send({status: 'success', payload: documents})
+        const user = await userService.getUserById(userId)
+        const profileFiles = files?.profile
+        const productsFiles = files?.products
+        const documentsFiles = files?.documents
+        productsFiles?.forEach(products=> user.documents.push({name: products.filename, reference: products.path}))
+        profileFiles?.forEach(p => user.documents.push({name: p.filename, reference: p.path}))
+        documentsFiles?.forEach(d => user.documents.push({name: d.filename, reference: d.path}))
+        // const documents = await userService.uploadDocuments(userId, files)
+        await userService.updateUser(user.id, user)
+        return res.status(200).send({status: 'success', payload: user.documents})
     } catch (error) {
-        logger.error(error)
+        logger.error(error.message)
     }
 }
 
 export const deleteUsers = async (req, res)=>{
     try {
         const date = new Date()
+        console.log(date.getDate())
         const allUsers = await userService.getAllUsers(false)
         let html = `Your account has been deleted because of inactivity.`
         allUsers.forEach(async user=>{
-            if(date.getMonth() > user?.last_connection.getMonth()){
+            if(date?.getMonth() > user?.last_connection?.getMonth()){
                 
                 const users = await userService.getUserById(user._id)
                 mail.send(users, "Your account has been deleted because it's been inactive for the past 2 days.", html)
                 await userService.deleteUser(users._id)
                 
-            }else if((date.getDate() - user?.last_connection.getDate()) >= 2){
+            }else if((date?.getDate() - user?.last_connection?.getDate()) >= 2){
                 
                 const users = await userService.getUserById(user._id)
                 mail.send(users, "Your account has been deleted", html)
