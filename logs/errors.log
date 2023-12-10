@@ -8692,3 +8692,269 @@ info: User already exists diegotomasaguero4123@gmail.com
 info: GET on /products - 10/12/2023
 info: Persistency with MONGO
 info: Listening...
+info: Persistency with MONGO
+info: Listening...
+info: GET on / - 10/12/2023
+info: Mongo connected
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /cart/[object%20Object] - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /products - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=d9e37a8f2bb8ef42135e - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+error: Password is not valid
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /cart/6575c83d38d67e983963b049 - 10/12/2023
+info: {"_id":"6575c83d38d67e983963b049","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":1}
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=14c88526bdb227d22478 - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: GET on /cart/ - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /products - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=1e53fb46e1bb7553f6f1 - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 10/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1}],"__v":121}
+info: GET on /products - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /cart/6575c83d38d67e983963b049 - 10/12/2023
+info: {"_id":"6575c83d38d67e983963b049","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":1}
+info: GET on /products - 10/12/2023
+info: GET on /user/6575c83d38d67e983963b04b/documents - 10/12/2023
+info: POST on /api/user/6575c83d38d67e983963b04b/documents - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: Mongo connected
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /api/user/premium/6575c83d38d67e983963b04b/ - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on / - 10/12/2023
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: New connection!
+info: GET on /products - 10/12/2023
+info: GET on /cart/6575c83d38d67e983963b049 - 10/12/2023
+info: {"_id":"6575c83d38d67e983963b049","products":[{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":12,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":1}
+info: POST on /api/carts/6575c83d38d67e983963b049/purchase - 10/12/2023
+info: [object Object]
+info: GET on /success - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023

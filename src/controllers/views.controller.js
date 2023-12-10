@@ -117,7 +117,6 @@ export const chatView = async (req, res)=>{
 }
 
 export const loginView = async (req, res)=>{
-    if(req.user) console.log(req.user)
     return res.render('login', {})
 }
 

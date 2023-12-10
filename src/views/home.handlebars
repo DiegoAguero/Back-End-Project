@@ -11,10 +11,10 @@
         {{/if}}
         <h1>Email: {{user.email}}</h1>
         <h1>Rol: {{user.rol}}</h1>
-        {{#if user.cart}}
-            <a href="/cart/{{user.cart}}" class="btn btn-danger">Go to the cart!</a>
+        {{#if user.cart._id}}
+            <a href="/cart/{{user.cart._id}}" class="btn btn-danger">Go to the cart!</a>
         {{else}}
-        <a href="/cart/{{user.cart._id}}" class="btn btn-danger">Go to the cart!</a>
+        <a href="/cart/{{user.cart}}" class="btn btn-danger">Go to the cart!</a>
         {{/if}}
 
         <a href="/user/{{user._id}}/documents" class="btn btn-danger">Upload documents!</a>
