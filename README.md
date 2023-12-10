@@ -39,7 +39,6 @@ Make sure you have the following installed before running the application:
 
 ## API documentation
 
-**API Documentation**
 The API documentation is generated using Swagger. Visit http://localhost:PORT/api/docs to interact with the endpoints
 
 ## Licence
