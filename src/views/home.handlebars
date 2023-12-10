@@ -65,10 +65,10 @@
 
     async function addProductToTheCart(id){
         let url
-        if('{{user.cart}}' != null){
-            url = `/api/carts/{{user.cart}}/product/${id}`
-        }else{
+        if('{{user.cart}}' == '[object Object]'){
             url = `/api/carts/{{user.cart._id}}/product/${id}`
+        }else{
+            url = `/api/carts/{{user.cart}}/product/${id}`
         }
         const res = await fetch(url, {method: "post"})
         const response = await res.json()
