@@ -8690,3 +8690,5 @@ info: GET on /api/session/login-github - 10/12/2023
 info: GET on /api/session/githubcallback?code=362a60176136b8b04e71 - 10/12/2023
 info: User already exists diegotomasaguero4123@gmail.com
 info: GET on /products - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
