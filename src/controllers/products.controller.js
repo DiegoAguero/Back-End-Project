@@ -45,11 +45,9 @@ export const deleteProduct = async (req, res)=>{
         if(product.owner != 'admin'){
             let html = `Your product got deleted.`
             const user = await userService.getUserByEmail(product.owner)
-            console.log('entre aca')
             mail.send(user, 'Your product has been deleted.', html)
         }
         const deleteProduct = await productService.deleteProduct(id)
-        console.log('Deleted product: ', deleteProduct)
         if(!deleteProduct) return res.send({status: 'error', payload: 'There has been a problem deleting the product'})
         return res.send({status: 'success', payload: deleteProduct})
         

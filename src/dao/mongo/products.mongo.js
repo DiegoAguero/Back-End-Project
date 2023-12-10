@@ -32,12 +32,6 @@ export default class ProductManager{
 
     async updateProduct(id, product){
         await this.updateTotalProducts()
-        // if(product.length > 1){
-        //     const allProducts = await this.getProducts()
-        //     product.forEach(prod => {
-        //         console.log(prod)
-        //     });
-        // }
         const prodUpdated = await prodModel.updateOne({_id: id}, product)
         return prodUpdated
     }

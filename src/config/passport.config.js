@@ -13,13 +13,6 @@ const LocalStrategy = local.Strategy
 const JWTStrategy = passportJWT.Strategy
 const JWTExtract = passportJWT.ExtractJwt
 
-
-
-
-// App ID: 375167
-// Client ID: Iv1.bde27374545eed48
-// Secret: 458779cf168171d5fc50e7d98d644bb0e5238da5
-
 function initializePassport(){
 
     passport.use('github', new GitHubStrategy(
@@ -29,8 +22,6 @@ function initializePassport(){
             callbackURL: config.CALLBACK_URL_GITHUB,
         },
         async (accessToken, refreshToken, profile, done)=>{
-
-
             try{
                 const user = await userService.getUserByEmail(profile._json.email)
                 if(user){
@@ -43,15 +34,11 @@ function initializePassport(){
                         cart: newCartForUser._id,
                         password: ''
                     }
-                    const result = await userService.createUser(newUser)
-                    // const result = await userModel.create(newUser)
+                    await userService.createUser(newUser)
                 }
-
                 //Creamos la token para el usuario
                 const token = generateToken(user)
                 user.token = token
-                // console.log(token)
-                // console.log(user)
                 return done(null, user)
             }catch(e){
                 return done("Error to log-in with Github. " + e)
@@ -65,11 +52,9 @@ function initializePassport(){
             secretOrKey: config.SECRET_JWT
         },
         (jwt_payload, done) => {
-            // console.log({jwt_payload})
             return done(null, jwt_payload)
         }
     ))
-
     //Esto funciona como un middleware
     passport.use('register', new LocalStrategy(
         {
@@ -78,7 +63,6 @@ function initializePassport(){
         }, 
         async(req, username, password, done)=>{
             try{
-                console.log('Entro al register passport')
                 const {first_name, last_name, age, rol, email} = req.body
                 const user = await userService.getUserByEmail(username)
                 if(user){
@@ -126,7 +110,6 @@ function initializePassport(){
 
                 }
                 const user = await userService.getUserByEmail(username, true)
-                // const user = await userModel.findOne({email: username}).populate('cart').lean().exec()
                 if(!user){
                     logger.error('User doesnt exist')
                     return done(null, false)

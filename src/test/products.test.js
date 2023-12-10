@@ -1,6 +1,7 @@
 import chai from 'chai'
 import supertest from 'supertest'
 import { logger } from '../services/logger/logger.js'
+import { generateToken } from '../utils.js'
 
 const expect = chai.expect
 const requester = supertest('http://127.0.0.1:8080')
@@ -8,17 +9,19 @@ const requester = supertest('http://127.0.0.1:8080')
 describe('Testing /api/products', ()=>{
     describe('Get products test', ()=>{
         it('On the endpoint /api/products must return a list of the products added to the database', async()=>{
+            const token = generateToken()
             const response = await requester.get('/api/products')
             const {status, ok, body} = response
             expect(status).to.be.eq(200)
             expect(ok).to.be.ok
-            expect(body.payload).to.be.an('array')
+            expect(body.payload).to.be.an('array').that.is.empty
         })
     })
     //Con esto obtengo el producto creado abajo, y lo elimino en el otro test
     let prodCreated;
     describe('Create a product test', ()=>{
         it('On the endpoint POST /api/products must create a product', async()=>{
+            const token = generateToken()
             const productMock = {
                 title: 'Product',
                 description: 'Product description',
@@ -37,7 +40,8 @@ describe('Testing /api/products', ()=>{
     })
     describe('Get a product by ID test', ()=>{
         it('On the endpoint GET /api/products/:pId must obtain a product', async()=>{
-            const result = await requester.get('/api/products/64c68aaf456f4b4675841914')
+            const token = generateToken()
+            const result = await requester.get('/api/products/64c68aaf456f4b4675841914').set('Cookie', secretForJWT=token)
             const {status, ok, body} = result
             expect(status).to.be.eq(200)
             expect(body.payload).to.have.property('_id')
@@ -45,7 +49,8 @@ describe('Testing /api/products', ()=>{
         })
     })
     describe('Update a product by ID test', ()=>{
-        it('On the endpoint PUT /api/products/:pId must', async()=>{
+        it('On the endpoint PUT /api/products/:pId must update to the new value/s', async()=>{
+            const token = generateToken()
             const prodMock = {
                 title: 'New Product',
                 description: 'New Product description',
@@ -55,9 +60,8 @@ describe('Testing /api/products', ()=>{
                 stock: 2,
                 status: true
             }
-            const result = await requester.put(`/api/products/${prodCreated.body.payload._id}`).send(prodMock)
+            const result = await requester.put(`/api/products/${prodCreated.body.payload._id}`).set('Cookie', secretForJWT=token).send(prodMock)
             const {status, ok, body} = result
-            console.log(body.payload)
             expect(body.payload).to.have.property('modifiedCount').to.be.eq(1)
             expect(status).to.be.eq(200)
             expect(ok).to.be.ok

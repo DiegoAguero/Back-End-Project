@@ -18,6 +18,7 @@ import viewsRoute from './routes/views.router.js'
 import sessionRoute from './routes/session.router.js'
 import ticketRoute from './routes/ticket.router.js'
 import userRoute from './routes/user.router.js'
+import paymentRoute from './routes/payment.router.js'
 import { productService } from './services/index.js'
 import { logger } from './services/logger/logger.js'
 //.env config
@@ -74,6 +75,7 @@ app.use('/api/carts', cartRoute)
 app.use('/api/session', sessionRoute)
 app.use('/api/ticket', ticketRoute)
 app.use('/api/user', userRoute)
+app.use('/api/payment', paymentRoute)
 app.use('/', viewsRoute)
 
 const messages = []
@@ -100,7 +102,7 @@ io.on('connection', socket=>{
         }
     })
     socket.on('newUser',  user=>{
-        console.log(`${user} se conectó`)
+        logger.info(`${user} se conectó`)
         socket.on('message', async data=>{
             try{
                 messages.push(data)

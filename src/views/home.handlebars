@@ -19,6 +19,7 @@
 
         <a href="/user/{{user._id}}/documents" class="btn btn-danger">Upload documents!</a>
         <a href="/api/user/premium/{{user._id}}/" class="btn btn-danger">Become a premium user!</a>
+        <a href="/premium" class="btn btn-danger">Go to the premium section!</a>
         {{else}}
             <h2>Please, log in to purchase any product!</h2>
     {{/if}}
@@ -71,7 +72,6 @@
         }
         const res = await fetch(url, {method: "post"})
         const response = await res.json()
-        console.log(response)
         if(response.status == 'user-error'){
             return Swal.fire({
                 title: 'Error',

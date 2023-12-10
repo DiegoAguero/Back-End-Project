@@ -79,7 +79,6 @@ export const changeUserRol = async (req, res)=>{
         let uploadedDocuments = 0;
         let contador = 1;
         getUser.documents.forEach(document =>{
-            console.log(document)
             if(document.reference?.split('\\'[11] === 'documents') && document.name != document.name[contador++]){
                 uploadedDocuments++
             }
@@ -149,7 +148,7 @@ export const uploadDocuments = async(req, res)=>{
 export const deleteUsers = async (req, res)=>{
     try {
         const date = new Date()
-        console.log(date.getDate())
+        .log(date.getDate())
         const allUsers = await userService.getAllUsers(false)
         let html = `Your account has been deleted because of inactivity.`
         allUsers.forEach(async user=>{
@@ -163,7 +162,6 @@ export const deleteUsers = async (req, res)=>{
                 
                 const users = await userService.getUserById(user._id)
                 mail.send(users, "Your account has been deleted", html)
-                console.log('Borrando user dia: ', users)
                 await userService.deleteUser(users._id)
                 
             }

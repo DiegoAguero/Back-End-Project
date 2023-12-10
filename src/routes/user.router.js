@@ -10,7 +10,7 @@ router.get('/email/:email', authToken, authorization('admin'), getUserByEmail)
 router.get('/:uid', authToken, getUserById)
 router.get('/premium/:uid', authToken, changeUserRol)
 router.post('/:uid/documents', authToken, uploadMiddleware, uploadDocuments)
-router.post('/resetPassword', authorization('admin'), authToken, resetPassword)
+router.post('/resetPassword', resetPassword)
 router.delete('/:uid', authorization('admin'), authToken, deleteUserById)
 router.delete('/', authorization('admin'), authToken, deleteUsers)
 

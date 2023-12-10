@@ -117,7 +117,7 @@ export const chatView = async (req, res)=>{
 }
 
 export const loginView = async (req, res)=>{
-    if(req.user) return res.redirect('/products') 
+    if(req.user) console.log(req.user)
     return res.render('login', {})
 }
 
@@ -181,4 +181,8 @@ export const resetPasswordPostView = async (req, res)=>{
 
 export const success = async (req, res)=>{
     return res.render('success', {})
+}
+
+export const cancel = async (req, res)=>{
+    return res.render('cancel', {})
 }

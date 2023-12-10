@@ -68,10 +68,7 @@ export default class CartManager{
 
     async updateCart(cId, products){
         try {
-            console.log(products)
-            const cart = await cartModel.findByIdAndUpdate({_id: cId}, {$set: {products: products}}, {new: true})
-            console.log(cart)
-            return cart
+            return await cartModel.findByIdAndUpdate({_id: cId}, {$set: {products: products}}, {new: true})
         } catch (error) {
             CustomError.createError({
                 name: "Update cart error",

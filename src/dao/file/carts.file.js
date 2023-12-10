@@ -33,17 +33,12 @@ export default class CartManager extends FileManager{
         const cart = await this.getById(id)
         if(populate){
             const products = await this.productManager.getProducts()
-            // const result = []
             if(cart?.products){
                 cart.products.forEach(product=>{
                     let prod = products.find(prod=>  parseInt(prod._id) == parseInt(product.product))
                     //De esta forma modifico el producto y no el array entero
                     product.product = prod
-                    // result.push(prod)
                 })
-                // console.log(result)
-                // cart.products = result
-                // return cartClone
             }
         }
         return cart

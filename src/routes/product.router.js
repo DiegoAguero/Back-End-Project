@@ -1,16 +1,16 @@
 import {Router} from "express"
 import { addProductToDatabase, deleteProduct, getProductByID, getProducts, updateProduct } from "../controllers/products.controller.js"
-import { isPremium, authToken } from "../utils.js"
+import { isPremium, authToken, authorization } from "../utils.js"
 
 const router = Router()
 
-router.get('/', getProducts)
+router.get('/', authorization('admin'), getProducts)
 router.post('/', authToken, isPremium, addProductToDatabase)
-router.get('/:pId', getProductByID)
-router.post('/delete/:pId', deleteProduct)
+router.get('/:pId', authToken, getProductByID)
+router.post('/delete/:pId', authorization('premium'), authorization('admin'), deleteProduct)
 
 //postman
-router.put('/:pId', updateProduct)
+router.put('/:pId', authorization('admin'), updateProduct)
 router.delete('/delete/:pId', deleteProduct)
 
 export default router

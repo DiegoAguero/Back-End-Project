@@ -2,9 +2,7 @@
 import CustomError from '../services/errors/customErrors.js'
 import EErrors from '../services/errors/enums.js'
 import {cartService, productService, userService} from '../services/index.js'
-import PaymentService from '../services/payment.repository.js'
 //El controller solamente debe pasar datos a la capa de negocio, osea al repository, luego ahí se hacen todas las preguntas
-
 
 export const createCart = async (req, res) =>{
     const cart = req.body
@@ -149,29 +147,9 @@ export const purchaseProducts = async (req, res)=>{
         const cartId = req.params.cId
         const purchaser = req.user?.email || req.body.email
         const ticket = await cartService.purchaseProducts(cartId, purchaser)
-        // console.log(ticket)
-        // return res.redirect(`${ticket}`)
         return res.send({status: 'success', payload: ticket})
 
     } catch (error) {
         console.error(error)
     }
-}
-
-export const paymentIntents = async (req, res)=>{
-    const paymentService = new PaymentService()
-    const userId = req.user._id
-    const user = await userService.getUserById(userId, true)
-    let amount = 0
-    const productsAmount = user.products.forEach(product=>{
-        amount += product.quantity * product.price
-    })
-    const paymentIntentInfo = {
-        amount: amount,
-        currency: 'usd',
-        payment_method_types: ['card']
-    }
-    const paymentResult = await paymentService.createPaymentIntent(paymentIntentInfo)
-    console.log(paymentResult)
-
 }

@@ -67,7 +67,6 @@
     async function removeFromCart(id){
         const response = await fetch(`/api/carts/{{@root.cart._id}}/product/${id}/delete`, {method: "post"})
         const res = await response.json()
-        console.log(res.status)
         return Swal.fire({
             title: "Removed 1 unity from the cart!",
             icon: 'success',

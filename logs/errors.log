@@ -8270,3 +8270,423 @@ info: Mongo connected
 info: Persistency with MONGO
 info: Listening...
 info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 8/12/2023
+info: cookie cleared
+info: GET on / - 8/12/2023
+info: GET on /api/session/login-github - 8/12/2023
+info: GET on /api/session/githubcallback?code=a884417a4cc5aa965af3 - 8/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":1}],"__v":119}
+info: GET on / - 8/12/2023
+info: GET on /products - 8/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 8/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 8/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64cb7ab0d99f26b6d04c3302","title":"Merengadas","description":"Merengadas 200 gr","price":10,"thumbnail":"/static/images/merengadas.jpg","code":"merengadas200gr","stock":2,"status":true,"__v":0},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":10,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":120}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 8/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/payment/payment-intent - 9/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/payment/payment-intent - 9/12/2023
+info: GET on /cancel - 9/12/2023
+info: GET on /favicon.ico - 9/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on /favicon.ico - 10/12/2023
+info: GET on /register - 10/12/2023
+info: POST on /api/session/register - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /login - 10/12/2023
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/session/login - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: Mongo connected
+info: GET on /products - 10/12/2023
+info: GET on /user/6575a591548d93c7f9b62561/documents - 10/12/2023
+info: POST on /api/user/6575a591548d93c7f9b62561/documents - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /api/user/premium/6575a591548d93c7f9b62561/ - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: Mongo connected
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: New connection!
+info: POST on /api/products - 10/12/2023
+info: GET on /link - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: New connection!
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /realtimeproducts - 10/12/2023
+info: New connection!
+info: DELETE on /api/products/delete/6565a653b18b694fcf108b6b - 10/12/2023
+info: [object Object]
+info: GET on /realtimeproducts - 10/12/2023
+info: New connection!
+info: DELETE on /api/products/delete/6575a60c5515f058307c7692 - 10/12/2023
+info: [object Object]
+info: GET on /realtimeproducts - 10/12/2023
+info: New connection!
+info: GET on /premium - 10/12/2023
+info: New connection!
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on /register - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /premiym - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: New connection!
+info: POST on /api/products - 10/12/2023
+info: GET on /hola - 10/12/2023
+info: DELETE on /api/products/delete/6575a882894a082bf8782da6 - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: New connection!
+info: DELETE on /api/products/delete/6575a882894a082bf8782da6 - 10/12/2023
+info: Mongo connected
+info: GET on /premium - 10/12/2023
+info: GET on /hola - 10/12/2023
+info: New connection!
+info: DELETE on /api/products/delete/6575a882894a082bf8782da6 - 10/12/2023
+info: DELETE on /api/products/delete/6575a882894a082bf8782da6 - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: GET on /hola - 10/12/2023
+info: New connection!
+info: DELETE on /api/products/delete/6575a882894a082bf8782da6 - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: GET on /premium - 10/12/2023
+info: New connection!
+info: Mongo connected
+info: GET on /hola - 10/12/2023
+info: New connection!
+info: DELETE on /api/products/delete/6575a882894a082bf8782da6 - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: New connection!
+info: GET on /hola - 10/12/2023
+info: DELETE on /api/products/delete/6575a882894a082bf8782da6 - 10/12/2023
+info: [object Object]
+info: Persistency with MONGO
+info: Listening...
+info: New connection!
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: New connection!
+info: Mongo connected
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: GET on /register - 10/12/2023
+info: Mongo connected
+info: POST on /api/session/register - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /products - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on /register - 10/12/2023
+info: POST on /api/session/register - 10/12/2023
+info: GET on / - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=d65bf26fe896f6e2b776 - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: GET on /favicon.ico - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on /api/carts/ - 10/12/2023
+info: GET on /api/products/ - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=53313a237d8a51a3e704 - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: POST on /api/session/register - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /api/session/current - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/products - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/products - 10/12/2023
+info: POST on /api/products - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/products - 10/12/2023
+info: POST on /api/products - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /resetPassword - 10/12/2023
+info: POST on /api/user/resetpassword - 10/12/2023
+info: [object Object]
+info: GET on /resetPassword/6575a591548d93c7f9b62561/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvbm9lc2VsbWVqb3IyMjJAZ21haWwuY29tIiwiaWQiOiI2NTc1YTU5MTU0OGQ5M2M3ZjliNjI1NjEiLCJpYXQiOjE3MDIyMTMxOTQsImV4cCI6MTcwMjIxNjc5NH0.ETVQ3J6BNMrgIRQmNGJidcZ7n_ok28LScLF-6i0b9BY - 10/12/2023
+info: POST on /resetPassword/6575a591548d93c7f9b62561/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvbm9lc2VsbWVqb3IyMjJAZ21haWwuY29tIiwiaWQiOiI2NTc1YTU5MTU0OGQ5M2M3ZjliNjI1NjEiLCJpYXQiOjE3MDIyMTMxOTQsImV4cCI6MTcwMjIxNjc5NH0.ETVQ3J6BNMrgIRQmNGJidcZ7n_ok28LScLF-6i0b9BY - 10/12/2023
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /products - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: POST on /api/session/login - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=347d5ecbb90d192e3b42 - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=5ba2d76cf405e72d42b0 - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 10/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68b0f456f4b4675841928 - 10/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 10/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68b0f456f4b4675841928","title":"Lays","description":"Papas fritas Lays 500gr","price":2,"thumbnail":"/static/images/lays-papas.jpg","code":"lays500gr","stock":9,"status":true,"__v":0,"owner":"admin"},"quantity":2}],"__v":121}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 10/12/2023
+info: [object Object]
+info: GET on /success - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on /logout - 10/12/2023
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=f64fcf4986ce808f880f - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: New connection!
+info: GET on /123 - 10/12/2023
+info: DELETE on /api/products/delete/656b69199d3aeccaf25b2207 - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: GET on /premium - 10/12/2023
+info: New connection!
+info: GET on /123 - 10/12/2023
+info: DELETE on /api/products/delete/656b69199d3aeccaf25b2207 - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: New connection!
+info: Mongo connected
+info: DELETE on /api/products/delete/656b69199d3aeccaf25b2207 - 10/12/2023
+info: [object Object]
+info: GET on /premium - 10/12/2023
+info: New connection!
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=362a60176136b8b04e71 - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
