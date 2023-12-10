@@ -120,6 +120,7 @@
     "winston": "^3.10.0"
   },
   "scripts": {
+    "start": "npm run start",
     "test": "mocha src/test/products.test.js "
   },
   "repository": {
