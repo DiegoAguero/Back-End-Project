@@ -8958,3 +8958,33 @@ info: GET on /products - 10/12/2023
 info: GET on /api/session/logout - 10/12/2023
 info: cookie cleared
 info: GET on / - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=506cd310077cb6a130f2 - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/product/64c68aaf456f4b4675841914 - 10/12/2023
+info: GET on /cart/64f6d5cd0344516ec5f15cf8 - 10/12/2023
+info: {"_id":"64f6d5cd0344516ec5f15cf8","products":[{"product":{"_id":"64c68af8456f4b4675841923","title":"Doritos","description":"Dorito Chips","price":3,"thumbnail":"/static/images/doritos.jpg","code":"dorito","stock":0,"status":false,"__v":0,"owner":"admin"},"quantity":1},{"product":{"_id":"64c68aaf456f4b4675841914","title":"Agua Viladrau","description":"Agua Viladrau","price":2,"thumbnail":"/static/images/viladrau.jpg","code":"viladrau","stock":10,"status":true,"__v":0,"owner":"admin"},"quantity":1}],"__v":122}
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 10/12/2023
+info: Persistency with MONGO
+info: Listening...
+info: POST on /api/carts/64f6d5cd0344516ec5f15cf8/purchase - 10/12/2023
+info: Mongo connected
+info: Persistency with MONGO
+info: Listening...
+info: Mongo connected
+info: GET on / - 10/12/2023
+info: GET on /api/session/login-github - 10/12/2023
+info: GET on /api/session/githubcallback?code=2cd1c4a45cb5090fd9fb - 10/12/2023
+info: User already exists diegotomasaguero4123@gmail.com
+info: GET on /products - 10/12/2023
+info: GET on /api/session/logout - 10/12/2023
+info: cookie cleared
+info: GET on / - 10/12/2023
+info: GET on /resetPassword - 10/12/2023
+info: POST on /api/user/resetpassword - 10/12/2023
+info: [object Object]

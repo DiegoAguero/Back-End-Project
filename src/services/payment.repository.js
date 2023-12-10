@@ -25,8 +25,8 @@ export default class PaymentService{
                 }
             }),
             mode: 'payment',
-            success_url: 'http://127.0.0.1:8080/success',
-            cancel_url: 'http://127.0.0.1:8080/cancel'
+            success_url: 'https://back-end-project-production-16e8.up.railway.app/success',
+            cancel_url: 'https://back-end-project-production-16e8.up.railway.app/cancel'
         })
         return pay
     }

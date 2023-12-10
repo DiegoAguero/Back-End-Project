@@ -145,7 +145,7 @@ export const resetPasswordView = async (req, res)=>{
         }
         const newSecret = config.SECRET_JWT + user.password
         const token = jwt.sign(payload, newSecret, {expiresIn: '1h'})
-        const resetLink = `http://127.0.0.1:8080/resetPassword/${user._id}/${token}`
+        const resetLink = `https://back-end-project-production-16e8.up.railway.app/resetPassword/${user._id}/${token}`
         let html = `The reset password link has been expired, creating a new one! You only got 1 hour to use it before it expires. ${resetLink} `
         mail.send(user, "Reset password link expired", html)
         return res.send({status: 'error', payload: `The link has already expired, creating a new one! Check your email.`})

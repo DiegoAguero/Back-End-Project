@@ -119,7 +119,7 @@ export const resetPassword = async (req, res)=>{
         id: userExists._id
     }
     const token = jwt.sign(payload, newSecret, { expiresIn: '1h' })
-    const resetLink = `http://127.0.0.1:8080/resetPassword/${userExists._id}/${token}`
+    const resetLink = `https://back-end-project-production-16e8.up.railway.app/resetPassword/${userExists._id}/${token}`
     let html =  `Here's the link to reset your password! You only got 1 hour to use it before it expires. ${resetLink} `
     mail.send(userExists, "Reset password", html)
     return res.status(200).send({status: 'success', payload: 'A link to reset your password has been sent to your email!'})
